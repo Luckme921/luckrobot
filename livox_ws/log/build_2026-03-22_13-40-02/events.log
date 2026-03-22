@@ -1,0 +1,757 @@
+[0.000000] (-) TimerEvent: {}
+[0.000957] (livox_ros_driver2) JobQueued: {'identifier': 'livox_ros_driver2', 'dependencies': OrderedDict()}
+[0.001262] (livox_ros_driver2) JobStarted: {'identifier': 'livox_ros_driver2'}
+[0.018745] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'cmake'}
+[0.019777] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '/home/nvidia/luckrobot/livox_ws/src/livox_ros_driver2', '-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2'], 'cwd': '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.1.101 52320 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/luckrobot/livox_ws/src/livox_ros_driver2'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', 'ROS2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2'), ('SSH_CONNECTION', '192.168.1.101 52320 192.168.1.66 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099289] (-) TimerEvent: {}
+[0.135664] (livox_ros_driver2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199460] (-) TimerEvent: {}
+[0.256485] (livox_ros_driver2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.277375] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299561] (-) TimerEvent: {}
+[0.400135] (-) TimerEvent: {}
+[0.427004] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.451506] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.452442] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.453775] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.464545] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500298] (-) TimerEvent: {}
+[0.600926] (-) TimerEvent: {}
+[0.629789] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.655059] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.656103] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.657686] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.660719] (livox_ros_driver2) StdoutLine: {'line': b'-- livox_ros_driver2 version: 1.2.5\n'}
+[0.666480] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.701068] (-) TimerEvent: {}
+[0.801591] (-) TimerEvent: {}
+[0.902075] (-) TimerEvent: {}
+[1.002703] (-) TimerEvent: {}
+[1.103292] (-) TimerEvent: {}
+[1.203787] (-) TimerEvent: {}
+[1.304390] (-) TimerEvent: {}
+[1.404972] (-) TimerEvent: {}
+[1.505526] (-) TimerEvent: {}
+[1.606159] (-) TimerEvent: {}
+[1.706741] (-) TimerEvent: {}
+[1.807424] (-) TimerEvent: {}
+[1.907914] (-) TimerEvent: {}
+[2.008341] (-) TimerEvent: {}
+[2.108851] (-) TimerEvent: {}
+[2.209409] (-) TimerEvent: {}
+[2.249341] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.309553] (-) TimerEvent: {}
+[2.410411] (-) TimerEvent: {}
+[2.511155] (-) TimerEvent: {}
+[2.611809] (-) TimerEvent: {}
+[2.680342] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.703087] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.711880] (-) TimerEvent: {}
+[2.798662] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.811965] (-) TimerEvent: {}
+[2.912350] (-) TimerEvent: {}
+[2.978867] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.984904] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.012436] (-) TimerEvent: {}
+[3.112946] (-) TimerEvent: {}
+[3.151995] (livox_ros_driver2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.212387] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.212996] (-) TimerEvent: {}
+[3.294995] (livox_ros_driver2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.313109] (-) TimerEvent: {}
+[3.313996] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.413355] (-) TimerEvent: {}
+[3.464206] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.464998] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.513572] (-) TimerEvent: {}
+[3.614290] (-) TimerEvent: {}
+[3.627172] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.630854] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.714412] (-) TimerEvent: {}
+[3.814900] (-) TimerEvent: {}
+[3.915408] (-) TimerEvent: {}
+[3.964814] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[3.985640] (livox_ros_driver2) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[4.015549] (-) TimerEvent: {}
+[4.042711] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[4.043309] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.115685] (-) TimerEvent: {}
+[4.122305] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[4.150706] (livox_ros_driver2) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[4.215872] (-) TimerEvent: {}
+[4.242181] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[4.242770] (livox_ros_driver2) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[4.316002] (-) TimerEvent: {}
+[4.416617] (-) TimerEvent: {}
+[4.517368] (-) TimerEvent: {}
+[4.618052] (-) TimerEvent: {}
+[4.718776] (-) TimerEvent: {}
+[4.819490] (-) TimerEvent: {}
+[4.920197] (-) TimerEvent: {}
+[5.021065] (-) TimerEvent: {}
+[5.121727] (-) TimerEvent: {}
+[5.222405] (-) TimerEvent: {}
+[5.323078] (-) TimerEvent: {}
+[5.423748] (-) TimerEvent: {}
+[5.524434] (-) TimerEvent: {}
+[5.625106] (-) TimerEvent: {}
+[5.725892] (-) TimerEvent: {}
+[5.826559] (-) TimerEvent: {}
+[5.927271] (-) TimerEvent: {}
+[6.028025] (-) TimerEvent: {}
+[6.128736] (-) TimerEvent: {}
+[6.229504] (-) TimerEvent: {}
+[6.301533] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[6.329683] (-) TimerEvent: {}
+[6.333072] (livox_ros_driver2) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[6.415712] (livox_ros_driver2) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[6.419396] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[6.429965] (-) TimerEvent: {}
+[6.530734] (-) TimerEvent: {}
+[6.545075] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[6.631043] (-) TimerEvent: {}
+[6.731653] (-) TimerEvent: {}
+[6.832249] (-) TimerEvent: {}
+[6.855585] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[6.868044] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[6.879629] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[6.932319] (-) TimerEvent: {}
+[7.032890] (-) TimerEvent: {}
+[7.133443] (-) TimerEvent: {}
+[7.157133] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[7.233638] (-) TimerEvent: {}
+[7.334150] (-) TimerEvent: {}
+[7.434757] (-) TimerEvent: {}
+[7.443862] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[7.534909] (-) TimerEvent: {}
+[7.635507] (-) TimerEvent: {}
+[7.720864] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[7.722544] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[7.724266] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[7.725893] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[7.727388] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[7.729080] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[7.729908] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[7.730690] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[7.732392] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[7.734280] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[7.735579] (-) TimerEvent: {}
+[7.736138] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[7.737854] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[7.739845] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[7.741754] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[7.743595] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[7.745472] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[7.747325] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[7.749105] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[7.751122] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[7.752819] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[7.754491] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[7.755213] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[7.756014] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[7.757801] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[7.759658] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[7.835751] (-) TimerEvent: {}
+[7.847635] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[7.849836] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'apr-1'\n"}
+[7.856032] (livox_ros_driver2) StdoutLine: {'line': b"--   No package 'apr-1' found\n"}
+[7.935906] (-) TimerEvent: {}
+[8.036492] (-) TimerEvent: {}
+[8.136946] (-) TimerEvent: {}
+[8.237436] (-) TimerEvent: {}
+[8.337983] (-) TimerEvent: {}
+[8.398317] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[8.438102] (-) TimerEvent: {}
+[8.538703] (-) TimerEvent: {}
+[8.639330] (-) TimerEvent: {}
+[8.740061] (-) TimerEvent: {}
+[8.840708] (-) TimerEvent: {}
+[8.941455] (-) TimerEvent: {}
+[8.983061] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.041569] (-) TimerEvent: {}
+[9.142067] (-) TimerEvent: {}
+[9.242624] (-) TimerEvent: {}
+[9.343239] (-) TimerEvent: {}
+[9.443797] (-) TimerEvent: {}
+[9.544287] (-) TimerEvent: {}
+[9.644801] (-) TimerEvent: {}
+[9.745356] (-) TimerEvent: {}
+[9.757343] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.818577] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[9.824943] (livox_ros_driver2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[9.845439] (-) TimerEvent: {}
+[9.898028] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[9.898838] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.899239] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.899510] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[9.945609] (-) TimerEvent: {}
+[9.952863] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[10.045749] (-) TimerEvent: {}
+[10.146267] (-) TimerEvent: {}
+[10.246971] (-) TimerEvent: {}
+[10.318250] (livox_ros_driver2) StdoutLine: {'line': b'-- Using numpy include directory: /usr/local/lib/python3.10/dist-packages/numpy/core/include\n'}
+[10.347084] (-) TimerEvent: {}
+[10.404010] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.447219] (-) TimerEvent: {}
+[10.454872] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[10.465643] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.467345] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nvidia/luckrobot/livox_ws/src/livox_ros_driver2/3rdparty;/home/nvidia/luckrobot/livox_ws/src/livox_ros_driver2/src\n'}
+[10.467563] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.477087] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[10.477300] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[10.479318] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[10.482505] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.484650] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[10.494067] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[10.494268] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[10.496342] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.502420] (livox_ros_driver2) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.547359] (-) TimerEvent: {}
+[10.647836] (-) TimerEvent: {}
+[10.653246] (livox_ros_driver2) StdoutLine: {'line': b'-- Generating done\n'}
+[10.702874] (livox_ros_driver2) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2\n'}
+[10.748007] (-) TimerEvent: {}
+[10.758910] (livox_ros_driver2) CommandEnded: {'returncode': 0}
+[10.764491] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'build'}
+[10.765603] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.1.101 52320 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/luckrobot/livox_ws/src/livox_ros_driver2'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', 'ROS2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2'), ('SSH_CONNECTION', '192.168.1.101 52320 192.168.1.66 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[10.848207] (-) TimerEvent: {}
+[10.862038] (livox_ros_driver2) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[10.883536] (livox_ros_driver2) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2_node.dir/rclcpp_components/node_main_livox_ros_driver2_node.cpp.o\x1b[0m\n'}
+[10.884143] (livox_ros_driver2) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[10.904116] (livox_ros_driver2) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_livox_ros_driver2\n'}
+[10.948318] (-) TimerEvent: {}
+[11.048928] (-) TimerEvent: {}
+[11.149517] (-) TimerEvent: {}
+[11.250051] (-) TimerEvent: {}
+[11.350685] (-) TimerEvent: {}
+[11.451298] (-) TimerEvent: {}
+[11.551892] (-) TimerEvent: {}
+[11.652526] (-) TimerEvent: {}
+[11.745376] (livox_ros_driver2) StdoutLine: {'line': b'running egg_info\n'}
+[11.748003] (livox_ros_driver2) StdoutLine: {'line': b'creating livox_ros_driver2.egg-info\n'}
+[11.752584] (-) TimerEvent: {}
+[11.785950] (livox_ros_driver2) StdoutLine: {'line': b'writing livox_ros_driver2.egg-info/PKG-INFO\n'}
+[11.786561] (livox_ros_driver2) StdoutLine: {'line': b'writing dependency_links to livox_ros_driver2.egg-info/dependency_links.txt\n'}
+[11.787213] (livox_ros_driver2) StdoutLine: {'line': b'writing top-level names to livox_ros_driver2.egg-info/top_level.txt\n'}
+[11.787493] (livox_ros_driver2) StdoutLine: {'line': b"writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'\n"}
+[11.852778] (-) TimerEvent: {}
+[11.904143] (livox_ros_driver2) StdoutLine: {'line': b"reading manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'\n"}
+[11.905562] (livox_ros_driver2) StdoutLine: {'line': b"writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'\n"}
+[11.909591] (livox_ros_driver2) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_msg__functions.c.o\x1b[0m\n'}
+[11.910001] (livox_ros_driver2) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_point__functions.c.o\x1b[0m\n'}
+[11.952977] (-) TimerEvent: {}
+[12.025523] (livox_ros_driver2) StdoutLine: {'line': b'[  8%] Built target livox_interfaces2__cpp\n'}
+[12.030187] (livox_ros_driver2) StdoutLine: {'line': b'[ 10%] \x1b[32m\x1b[1mLinking C shared library liblivox_ros_driver2__rosidl_generator_c.so\x1b[0m\n'}
+[12.047343] (livox_ros_driver2) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.047865] (livox_ros_driver2) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.048060] (livox_ros_driver2) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.053155] (-) TimerEvent: {}
+[12.060368] (livox_ros_driver2) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_build_livox_ros_driver2_egg\n'}
+[12.113490] (livox_ros_driver2) StdoutLine: {'line': b'[ 15%] Built target livox_interfaces2__rosidl_generator_c\n'}
+[12.137355] (livox_ros_driver2) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[12.138013] (livox_ros_driver2) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.153386] (-) TimerEvent: {}
+[12.254074] (-) TimerEvent: {}
+[12.354904] (-) TimerEvent: {}
+[12.455566] (-) TimerEvent: {}
+[12.556266] (-) TimerEvent: {}
+[12.657000] (-) TimerEvent: {}
+[12.757682] (-) TimerEvent: {}
+[12.858366] (-) TimerEvent: {}
+[12.957547] (livox_ros_driver2) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp.o\x1b[0m\n'}
+[12.958490] (-) TimerEvent: {}
+[13.039794] (livox_ros_driver2) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_point__type_support.cpp.o\x1b[0m\n'}
+[13.058771] (-) TimerEvent: {}
+[13.086196] (livox_ros_driver2) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_point__type_support.cpp.o\x1b[0m\n'}
+[13.158968] (-) TimerEvent: {}
+[13.173446] (livox_ros_driver2) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_point__type_support_c.cpp.o\x1b[0m\n'}
+[13.259173] (-) TimerEvent: {}
+[13.269346] (livox_ros_driver2) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_point__type_support.c.o\x1b[0m\n'}
+[13.357658] (livox_ros_driver2) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_msg__type_support.c.o\x1b[0m\n'}
+[13.359285] (-) TimerEvent: {}
+[13.459897] (-) TimerEvent: {}
+[13.462543] (livox_ros_driver2) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking C shared library liblivox_ros_driver2__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[13.536882] (livox_ros_driver2) StdoutLine: {'line': b'[ 31%] Built target livox_interfaces2__rosidl_typesupport_introspection_c\n'}
+[13.560113] (-) TimerEvent: {}
+[13.562745] (livox_ros_driver2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_msg__type_support_c.cpp.o\x1b[0m\n'}
+[13.619008] (livox_ros_driver2) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[13.660326] (-) TimerEvent: {}
+[13.761181] (-) TimerEvent: {}
+[13.862016] (-) TimerEvent: {}
+[13.935102] (livox_ros_driver2) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[13.962220] (-) TimerEvent: {}
+[14.031576] (livox_ros_driver2) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.062405] (-) TimerEvent: {}
+[14.130632] (livox_ros_driver2) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[14.162638] (-) TimerEvent: {}
+[14.263349] (-) TimerEvent: {}
+[14.274328] (livox_ros_driver2) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[14.362702] (livox_ros_driver2) StdoutLine: {'line': b'[ 42%] Built target livox_interfaces2__rosidl_typesupport_cpp\n'}
+[14.363463] (-) TimerEvent: {}
+[14.414249] (livox_ros_driver2) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/livox_ros_driver2.cpp.o\x1b[0m\n'}
+[14.463682] (-) TimerEvent: {}
+[14.537768] (livox_ros_driver2) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.563874] (-) TimerEvent: {}
+[14.664598] (-) TimerEvent: {}
+[14.735130] (livox_ros_driver2) StdoutLine: {'line': b'[ 45%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c\n'}
+[14.758292] (livox_ros_driver2) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o\x1b[0m\n'}
+[14.764820] (-) TimerEvent: {}
+[14.865515] (-) TimerEvent: {}
+[14.966216] (-) TimerEvent: {}
+[14.988083] (livox_ros_driver2) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[15.026228] (livox_ros_driver2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_point__type_support.cpp.o\x1b[0m\n'}
+[15.066447] (-) TimerEvent: {}
+[15.097513] (livox_ros_driver2) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[15.151199] (livox_ros_driver2) StdoutLine: {'line': b'[ 52%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp\n'}
+[15.166678] (-) TimerEvent: {}
+[15.171334] (livox_ros_driver2) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_c.so\x1b[0m\n'}
+[15.171827] (livox_ros_driver2) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/driver_node.cpp.o\x1b[0m\n'}
+[15.241136] (livox_ros_driver2) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[15.258527] (livox_ros_driver2) StdoutLine: {'line': b'[ 57%] Built target livox_interfaces2__rosidl_typesupport_c\n'}
+[15.267015] (-) TimerEvent: {}
+[15.279554] (livox_ros_driver2) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds.cpp.o\x1b[0m\n'}
+[15.367251] (-) TimerEvent: {}
+[15.408352] (livox_ros_driver2) StdoutLine: {'line': b'[ 59%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp\n'}
+[15.429331] (livox_ros_driver2) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds_lidar.cpp.o\x1b[0m\n'}
+[15.467453] (-) TimerEvent: {}
+[15.568190] (-) TimerEvent: {}
+[15.669044] (-) TimerEvent: {}
+[15.769836] (-) TimerEvent: {}
+[15.870599] (-) TimerEvent: {}
+[15.971430] (-) TimerEvent: {}
+[16.072178] (-) TimerEvent: {}
+[16.173075] (-) TimerEvent: {}
+[16.273843] (-) TimerEvent: {}
+[16.374676] (-) TimerEvent: {}
+[16.475717] (-) TimerEvent: {}
+[16.576601] (-) TimerEvent: {}
+[16.677350] (-) TimerEvent: {}
+[16.778080] (-) TimerEvent: {}
+[16.878985] (-) TimerEvent: {}
+[16.979812] (-) TimerEvent: {}
+[17.041167] (livox_ros_driver2) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/comm.cpp.o\x1b[0m\n'}
+[17.080013] (-) TimerEvent: {}
+[17.180890] (-) TimerEvent: {}
+[17.281687] (-) TimerEvent: {}
+[17.382451] (-) TimerEvent: {}
+[17.483317] (-) TimerEvent: {}
+[17.584133] (-) TimerEvent: {}
+[17.685147] (-) TimerEvent: {}
+[17.730819] (livox_ros_driver2) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/ldq.cpp.o\x1b[0m\n'}
+[17.785384] (-) TimerEvent: {}
+[17.886109] (-) TimerEvent: {}
+[17.986969] (-) TimerEvent: {}
+[18.087665] (-) TimerEvent: {}
+[18.188474] (-) TimerEvent: {}
+[18.289330] (-) TimerEvent: {}
+[18.390088] (-) TimerEvent: {}
+[18.474959] (livox_ros_driver2) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/semaphore.cpp.o\x1b[0m\n'}
+[18.490409] (-) TimerEvent: {}
+[18.591201] (-) TimerEvent: {}
+[18.691991] (-) TimerEvent: {}
+[18.792825] (-) TimerEvent: {}
+[18.893636] (-) TimerEvent: {}
+[18.994512] (-) TimerEvent: {}
+[19.074527] (livox_ros_driver2) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable livox_ros_driver2_node\x1b[0m\n'}
+[19.094685] (-) TimerEvent: {}
+[19.195428] (-) TimerEvent: {}
+[19.289401] (livox_ros_driver2) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/lidar_imu_data_queue.cpp.o\x1b[0m\n'}
+[19.295624] (-) TimerEvent: {}
+[19.342276] (livox_ros_driver2) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/cache_index.cpp.o\x1b[0m\n'}
+[19.364080] (livox_ros_driver2) StdoutLine: {'line': b'[ 71%] Built target livox_ros_driver2_node\n'}
+[19.395819] (-) TimerEvent: {}
+[19.408366] (livox_ros_driver2) StdoutLine: {'line': b'[ 71%] Built target livox_interfaces2\n'}
+[19.452231] (livox_ros_driver2) StdoutLine: {'line': b'[ 73%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[19.495996] (-) TimerEvent: {}
+[19.596700] (-) TimerEvent: {}
+[19.697412] (-) TimerEvent: {}
+[19.798162] (-) TimerEvent: {}
+[19.898932] (-) TimerEvent: {}
+[19.999660] (-) TimerEvent: {}
+[20.100402] (-) TimerEvent: {}
+[20.178729] (livox_ros_driver2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/pub_handler.cpp.o\x1b[0m\n'}
+[20.200607] (-) TimerEvent: {}
+[20.301338] (-) TimerEvent: {}
+[20.402075] (-) TimerEvent: {}
+[20.502777] (-) TimerEvent: {}
+[20.603545] (-) TimerEvent: {}
+[20.704269] (-) TimerEvent: {}
+[20.805008] (-) TimerEvent: {}
+[20.905697] (-) TimerEvent: {}
+[21.002227] (livox_ros_driver2) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_cfg_file.cpp.o\x1b[0m\n'}
+[21.005881] (-) TimerEvent: {}
+[21.106643] (-) TimerEvent: {}
+[21.127148] (livox_ros_driver2) StdoutLine: {'line': b'[ 77%] Built target livox_interfaces2__py\n'}
+[21.147153] (livox_ros_driver2) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_livox_lidar_cfg.cpp.o\x1b[0m\n'}
+[21.206866] (-) TimerEvent: {}
+[21.307600] (-) TimerEvent: {}
+[21.408351] (-) TimerEvent: {}
+[21.509101] (-) TimerEvent: {}
+[21.609856] (-) TimerEvent: {}
+[21.710601] (-) TimerEvent: {}
+[21.811386] (-) TimerEvent: {}
+[21.912112] (-) TimerEvent: {}
+[22.012901] (-) TimerEvent: {}
+[22.113657] (-) TimerEvent: {}
+[22.214452] (-) TimerEvent: {}
+[22.315193] (-) TimerEvent: {}
+[22.415953] (-) TimerEvent: {}
+[22.516699] (-) TimerEvent: {}
+[22.617446] (-) TimerEvent: {}
+[22.718163] (-) TimerEvent: {}
+[22.818902] (-) TimerEvent: {}
+[22.919623] (-) TimerEvent: {}
+[22.992560] (livox_ros_driver2) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/lidar_common_callback.cpp.o\x1b[0m\n'}
+[23.019824] (-) TimerEvent: {}
+[23.120539] (-) TimerEvent: {}
+[23.221259] (-) TimerEvent: {}
+[23.231039] (livox_ros_driver2) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/livox_lidar_callback.cpp.o\x1b[0m\n'}
+[23.321471] (-) TimerEvent: {}
+[23.422226] (-) TimerEvent: {}
+[23.522974] (-) TimerEvent: {}
+[23.558732] (livox_ros_driver2) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_point_s.c.o\x1b[0m\n'}
+[23.623156] (-) TimerEvent: {}
+[23.723886] (-) TimerEvent: {}
+[23.808493] (livox_ros_driver2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_msg_s.c.o\x1b[0m\n'}
+[23.824083] (-) TimerEvent: {}
+[23.924787] (-) TimerEvent: {}
+[24.025532] (-) TimerEvent: {}
+[24.075278] (livox_ros_driver2) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so\x1b[0m\n'}
+[24.125767] (-) TimerEvent: {}
+[24.169055] (livox_ros_driver2) StdoutLine: {'line': b'[ 87%] Built target livox_interfaces2__rosidl_generator_py\n'}
+[24.218328] (livox_ros_driver2) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[24.225999] (-) TimerEvent: {}
+[24.326738] (-) TimerEvent: {}
+[24.427460] (-) TimerEvent: {}
+[24.461614] (livox_ros_driver2) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[24.527658] (-) TimerEvent: {}
+[24.550988] (livox_ros_driver2) StdoutLine: {'line': b'[ 91%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext\n'}
+[24.602522] (livox_ros_driver2) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[24.605466] (livox_ros_driver2) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[24.627882] (-) TimerEvent: {}
+[24.728706] (-) TimerEvent: {}
+[24.829599] (-) TimerEvent: {}
+[24.840409] (livox_ros_driver2) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[24.856391] (livox_ros_driver2) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[24.926124] (livox_ros_driver2) StdoutLine: {'line': b'[ 98%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext\n'}
+[24.929721] (-) TimerEvent: {}
+[24.948444] (livox_ros_driver2) StdoutLine: {'line': b'[ 98%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext\n'}
+[25.029929] (-) TimerEvent: {}
+[25.130624] (-) TimerEvent: {}
+[25.231314] (-) TimerEvent: {}
+[25.331880] (-) TimerEvent: {}
+[25.432417] (-) TimerEvent: {}
+[25.533001] (-) TimerEvent: {}
+[25.633511] (-) TimerEvent: {}
+[25.734054] (-) TimerEvent: {}
+[25.834761] (-) TimerEvent: {}
+[25.935475] (-) TimerEvent: {}
+[26.036066] (-) TimerEvent: {}
+[26.136661] (-) TimerEvent: {}
+[26.237289] (-) TimerEvent: {}
+[26.337880] (-) TimerEvent: {}
+[26.438442] (-) TimerEvent: {}
+[26.543004] (-) TimerEvent: {}
+[26.643714] (-) TimerEvent: {}
+[26.744346] (-) TimerEvent: {}
+[26.845021] (-) TimerEvent: {}
+[26.945755] (-) TimerEvent: {}
+[27.046387] (-) TimerEvent: {}
+[27.147190] (-) TimerEvent: {}
+[27.247847] (-) TimerEvent: {}
+[27.348662] (-) TimerEvent: {}
+[27.449452] (-) TimerEvent: {}
+[27.550057] (-) TimerEvent: {}
+[27.650856] (-) TimerEvent: {}
+[27.751566] (-) TimerEvent: {}
+[27.852181] (-) TimerEvent: {}
+[27.952942] (-) TimerEvent: {}
+[28.053606] (-) TimerEvent: {}
+[28.154223] (-) TimerEvent: {}
+[28.255055] (-) TimerEvent: {}
+[28.355749] (-) TimerEvent: {}
+[28.456534] (-) TimerEvent: {}
+[28.557197] (-) TimerEvent: {}
+[28.657772] (-) TimerEvent: {}
+[28.758383] (-) TimerEvent: {}
+[28.859037] (-) TimerEvent: {}
+[28.959688] (-) TimerEvent: {}
+[29.060366] (-) TimerEvent: {}
+[29.161146] (-) TimerEvent: {}
+[29.261871] (-) TimerEvent: {}
+[29.362529] (-) TimerEvent: {}
+[29.463222] (-) TimerEvent: {}
+[29.563802] (-) TimerEvent: {}
+[29.664421] (-) TimerEvent: {}
+[29.765026] (-) TimerEvent: {}
+[29.865654] (-) TimerEvent: {}
+[29.966309] (-) TimerEvent: {}
+[30.067076] (-) TimerEvent: {}
+[30.167922] (-) TimerEvent: {}
+[30.268750] (-) TimerEvent: {}
+[30.369530] (-) TimerEvent: {}
+[30.470270] (-) TimerEvent: {}
+[30.571025] (-) TimerEvent: {}
+[30.671649] (-) TimerEvent: {}
+[30.772236] (-) TimerEvent: {}
+[30.872818] (-) TimerEvent: {}
+[30.973448] (-) TimerEvent: {}
+[31.074160] (-) TimerEvent: {}
+[31.174855] (-) TimerEvent: {}
+[31.275596] (-) TimerEvent: {}
+[31.376562] (-) TimerEvent: {}
+[31.477426] (-) TimerEvent: {}
+[31.578226] (-) TimerEvent: {}
+[31.679011] (-) TimerEvent: {}
+[31.779558] (-) TimerEvent: {}
+[31.880343] (-) TimerEvent: {}
+[31.980921] (-) TimerEvent: {}
+[32.081844] (-) TimerEvent: {}
+[32.182632] (-) TimerEvent: {}
+[32.283401] (-) TimerEvent: {}
+[32.383897] (-) TimerEvent: {}
+[32.484623] (-) TimerEvent: {}
+[32.585354] (-) TimerEvent: {}
+[32.685882] (-) TimerEvent: {}
+[32.786416] (-) TimerEvent: {}
+[32.886923] (-) TimerEvent: {}
+[32.987504] (-) TimerEvent: {}
+[33.088440] (-) TimerEvent: {}
+[33.189272] (-) TimerEvent: {}
+[33.289820] (-) TimerEvent: {}
+[33.390346] (-) TimerEvent: {}
+[33.490912] (-) TimerEvent: {}
+[33.591463] (-) TimerEvent: {}
+[33.692002] (-) TimerEvent: {}
+[33.792532] (-) TimerEvent: {}
+[33.893274] (-) TimerEvent: {}
+[33.994051] (-) TimerEvent: {}
+[34.094931] (-) TimerEvent: {}
+[34.195856] (-) TimerEvent: {}
+[34.296662] (-) TimerEvent: {}
+[34.397228] (-) TimerEvent: {}
+[34.498007] (-) TimerEvent: {}
+[34.598741] (-) TimerEvent: {}
+[34.699216] (-) TimerEvent: {}
+[34.799671] (-) TimerEvent: {}
+[34.900395] (-) TimerEvent: {}
+[35.001156] (-) TimerEvent: {}
+[35.101746] (-) TimerEvent: {}
+[35.202674] (-) TimerEvent: {}
+[35.303497] (-) TimerEvent: {}
+[35.404293] (-) TimerEvent: {}
+[35.505085] (-) TimerEvent: {}
+[35.605854] (-) TimerEvent: {}
+[35.706387] (-) TimerEvent: {}
+[35.806910] (-) TimerEvent: {}
+[35.907687] (-) TimerEvent: {}
+[36.008304] (-) TimerEvent: {}
+[36.108953] (-) TimerEvent: {}
+[36.209866] (-) TimerEvent: {}
+[36.310551] (-) TimerEvent: {}
+[36.411248] (-) TimerEvent: {}
+[36.511937] (-) TimerEvent: {}
+[36.612884] (-) TimerEvent: {}
+[36.713621] (-) TimerEvent: {}
+[36.732539] (livox_ros_driver2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2.so\x1b[0m\n'}
+[36.813786] (-) TimerEvent: {}
+[36.914411] (-) TimerEvent: {}
+[37.015128] (-) TimerEvent: {}
+[37.115836] (-) TimerEvent: {}
+[37.216778] (-) TimerEvent: {}
+[37.317500] (-) TimerEvent: {}
+[37.418425] (-) TimerEvent: {}
+[37.519138] (-) TimerEvent: {}
+[37.620065] (-) TimerEvent: {}
+[37.721041] (-) TimerEvent: {}
+[37.822015] (-) TimerEvent: {}
+[37.922990] (-) TimerEvent: {}
+[38.023934] (-) TimerEvent: {}
+[38.124608] (-) TimerEvent: {}
+[38.225535] (-) TimerEvent: {}
+[38.326208] (-) TimerEvent: {}
+[38.427183] (-) TimerEvent: {}
+[38.520131] (livox_ros_driver2) StdoutLine: {'line': b'[100%] Built target livox_ros_driver2\n'}
+[38.527273] (-) TimerEvent: {}
+[38.550185] (livox_ros_driver2) CommandEnded: {'returncode': 0}
+[38.552633] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'install'}
+[38.574622] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2'], 'cwd': '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.1.101 52320 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/luckrobot/livox_ws/src/livox_ros_driver2'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', 'ROS2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2'), ('SSH_CONNECTION', '192.168.1.101 52320 192.168.1.66 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[38.594631] (livox_ros_driver2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.595098] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/rosidl_interfaces/livox_ros_driver2\n'}
+[38.595638] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[38.595899] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[38.596082] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.h\n'}
+[38.596303] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.h\n'}
+[38.596510] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[38.596695] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.c\n'}
+[38.596937] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.h\n'}
+[38.597184] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.h\n'}
+[38.597406] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.h\n'}
+[38.597626] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.c\n'}
+[38.597869] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.h\n'}
+[38.598086] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.h\n'}
+[38.598322] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.h\n'}
+[38.598542] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_c__visibility_control.h\n'}
+[38.599419] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.sh\n'}
+[38.599722] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.dsv\n'}
+[38.600098] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so\n'}
+[38.600733] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so" to ""\n'}
+[38.600913] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[38.601127] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[38.601266] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[38.601441] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[38.601605] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h\n'}
+[38.601745] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[38.601901] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so\n'}
+[38.602490] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[38.602663] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[38.602876] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[38.603055] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[38.603220] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[38.603386] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_c.h\n'}
+[38.603524] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.c\n'}
+[38.603681] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.c\n'}
+[38.603855] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h\n'}
+[38.604186] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so\n'}
+[38.604770] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so" to ""\n'}
+[38.604951] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so\n'}
+[38.605434] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so" to ""\n'}
+[38.605606] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[38.605795] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[38.605953] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.hpp\n'}
+[38.606126] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[38.606281] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.hpp\n'}
+[38.606420] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__traits.hpp\n'}
+[38.606583] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.hpp\n'}
+[38.606740] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__builder.hpp\n'}
+[38.606945] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.hpp\n'}
+[38.607178] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__builder.hpp\n'}
+[38.607403] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.hpp\n'}
+[38.607631] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__traits.hpp\n'}
+[38.607859] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.hpp\n'}
+[38.608074] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[38.608341] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[38.608535] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[38.608697] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[38.608851] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[38.608987] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[38.609152] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/dds_fastrtps\n'}
+[38.609318] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[38.609540] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[38.610244] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[38.610417] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[38.610627] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[38.610765] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[38.610956] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.cpp\n'}
+[38.611122] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[38.611289] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[38.611449] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp\n'}
+[38.611669] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so\n'}
+[38.612340] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[38.612502] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so\n'}
+[38.613001] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so" to ""\n'}
+[38.613187] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.sh\n'}
+[38.613408] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.dsv\n'}
+[38.613667] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info\n'}
+[38.614014] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[38.614239] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[38.614453] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[38.614665] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[38.614966] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2\n'}
+[38.615153] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c\n'}
+[38.615418] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[38.615674] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py\n'}
+[38.615883] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.616133] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg\n'}
+[38.616298] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py\n'}
+[38.616528] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py\n'}
+[38.616776] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg_s.c\n'}
+[38.617027] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point_s.c\n'}
+[38.617269] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py\n'}
+[38.617546] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.617812] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.618073] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so\n'}
+[38.618346] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[38.627357] (-) TimerEvent: {}
+[38.715197] (livox_ros_driver2) StdoutLine: {'line': b"Listing '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2'...\n"}
+[38.715649] (livox_ros_driver2) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py'...\n"}
+[38.715831] (livox_ros_driver2) StdoutLine: {'line': b"Listing '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg'...\n"}
+[38.715982] (livox_ros_driver2) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py'...\n"}
+[38.716125] (livox_ros_driver2) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py'...\n"}
+[38.716261] (livox_ros_driver2) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py'...\n"}
+[38.727468] (-) TimerEvent: {}
+[38.729518] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.729963] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[38.730216] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.730977] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[38.731316] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.732057] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[38.732354] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so\n'}
+[38.732977] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so" to ""\n'}
+[38.733275] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.idl\n'}
+[38.733505] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.idl\n'}
+[38.733714] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.msg\n'}
+[38.733950] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.msg\n'}
+[38.734343] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node\n'}
+[38.735539] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node" to ""\n'}
+[38.735765] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2.so\n'}
+[38.743735] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2.so" to ""\n'}
+[38.744019] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config\n'}
+[38.744218] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS2.rviz\n'}
+[38.744452] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/HAP_config.json\n'}
+[38.744646] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS1.rviz\n'}
+[38.744847] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/mixed_HAP_MID360_config.json\n'}
+[38.745059] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360_config.json\n'}
+[38.745279] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360s_config.json\n'}
+[38.745556] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2\n'}
+[38.745760] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_mixed.py\n'}
+[38.746003] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_MID360_launch.py\n'}
+[38.746234] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_MID360s_launch.py\n'}
+[38.746459] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_HAP_launch.py\n'}
+[38.746687] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_HAP_launch.py\n'}
+[38.746917] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360s_launch.py\n'}
+[38.747137] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360_launch.py\n'}
+[38.747561] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/package_run_dependencies/livox_ros_driver2\n'}
+[38.747980] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/parent_prefix_path/livox_ros_driver2\n'}
+[38.748361] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.sh\n'}
+[38.748656] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.dsv\n'}
+[38.748993] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.sh\n'}
+[38.749315] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.dsv\n'}
+[38.749621] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.bash\n'}
+[38.749920] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.sh\n'}
+[38.750241] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.zsh\n'}
+[38.750552] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.dsv\n'}
+[38.750887] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv\n'}
+[38.751314] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/packages/livox_ros_driver2\n'}
+[38.751753] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport.cmake\n'}
+[38.752090] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport-noconfig.cmake\n'}
+[38.752469] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[38.752795] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[38.753175] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport.cmake\n'}
+[38.753514] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[38.753866] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport.cmake\n'}
+[38.754211] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[38.754559] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cppExport.cmake\n'}
+[38.754999] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[38.755332] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[38.755683] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[38.756016] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[38.756405] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport.cmake\n'}
+[38.756707] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[38.757116] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport.cmake\n'}
+[38.757454] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport-noconfig.cmake\n'}
+[38.757881] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/rclcpp_components/livox_ros_driver2\n'}
+[38.758194] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake-extras.cmake\n'}
+[38.758534] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[38.758846] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[38.759175] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[38.759506] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[38.759914] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[38.760184] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[38.760611] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake\n'}
+[38.760866] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config-version.cmake\n'}
+[38.761559] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.xml\n'}
+[38.765918] (livox_ros_driver2) CommandEnded: {'returncode': 0}
+[38.828194] (-) TimerEvent: {}
+[38.835589] (livox_ros_driver2) JobEnded: {'identifier': 'livox_ros_driver2', 'rc': 0}
+[38.837831] (-) EventReactorShutdown: {}
