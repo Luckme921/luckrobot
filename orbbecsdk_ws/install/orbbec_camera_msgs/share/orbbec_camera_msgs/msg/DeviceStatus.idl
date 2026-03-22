@@ -1,0 +1,65 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from orbbec_camera_msgs/msg/DeviceStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module orbbec_camera_msgs {
+  module msg {
+    struct DeviceStatus {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "--- Color stream ---")
+      double color_frame_rate_cur;
+
+      double color_frame_rate_avg;
+
+      double color_frame_rate_min;
+
+      double color_frame_rate_max;
+
+      double color_delay_ms_cur;
+
+      double color_delay_ms_avg;
+
+      double color_delay_ms_min;
+
+      double color_delay_ms_max;
+
+      @verbatim (language="comment", text=
+        "--- Depth stream ---")
+      double depth_frame_rate_cur;
+
+      double depth_frame_rate_avg;
+
+      double depth_frame_rate_min;
+
+      double depth_frame_rate_max;
+
+      double depth_delay_ms_cur;
+
+      double depth_delay_ms_avg;
+
+      double depth_delay_ms_min;
+
+      double depth_delay_ms_max;
+
+      @verbatim (language="comment", text=
+        "--- Device info ---")
+      boolean device_online;
+
+      @verbatim (language="comment", text=
+        "e.g. \"USB2.0\", \"USB3.0\", \"GigE\"")
+      string connection_type;
+
+      @verbatim (language="comment", text=
+        "--- Calibration status ---")
+      boolean customer_calibration_ready;
+
+      boolean calibration_from_factory;
+
+      boolean calibration_from_launch_param;
+    };
+  };
+};

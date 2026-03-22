@@ -1,0 +1,733 @@
+[0.026s] Invoking command in '/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs
+[0.144s] -- The C compiler identification is GNU 11.4.0
+[0.259s] -- The CXX compiler identification is GNU 11.4.0
+[0.279s] -- Detecting C compiler ABI info
+[0.427s] -- Detecting C compiler ABI info - done
+[0.452s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.453s] -- Detecting C compile features
+[0.454s] -- Detecting C compile features - done
+[0.465s] -- Detecting CXX compiler ABI info
+[0.635s] -- Detecting CXX compiler ABI info - done
+[0.660s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.661s] -- Detecting CXX compile features
+[0.663s] -- Detecting CXX compile features - done
+[0.673s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.313s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.565s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.574s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.589s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.680s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.754s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.914s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.638s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.596s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.656s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.663s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.734s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.735s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.735s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.735s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[5.788s] -- Found PythonExtra: .so  
+[6.197s] -- Using numpy include directory: /usr/local/lib/python3.10/dist-packages/numpy/core/include
+[6.257s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.311s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.317s] -- Added test 'lint_cmake' to check CMake code style
+[6.321s] -- Added test 'xmllint' to check XML markup files
+[6.327s] -- Configuring done
+[6.469s] -- Generating done
+[6.502s] -- Build files have been written to: /home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs
+[6.530s] Invoked command in '/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs
+[6.534s] Invoking command in '/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs -- -j6 -l6
+[6.632s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.657s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.674s] [  0%] Built target ament_cmake_python_copy_orbbec_camera_msgs
+[7.491s] running egg_info
+[7.493s] creating orbbec_camera_msgs.egg-info
+[7.529s] writing orbbec_camera_msgs.egg-info/PKG-INFO
+[7.530s] writing dependency_links to orbbec_camera_msgs.egg-info/dependency_links.txt
+[7.530s] writing top-level names to orbbec_camera_msgs.egg-info/top_level.txt
+[7.531s] writing manifest file 'orbbec_camera_msgs.egg-info/SOURCES.txt'
+[7.637s] reading manifest file 'orbbec_camera_msgs.egg-info/SOURCES.txt'
+[7.639s] writing manifest file 'orbbec_camera_msgs.egg-info/SOURCES.txt'
+[7.758s] [  0%] Built target ament_cmake_python_build_orbbec_camera_msgs_egg
+[10.425s] [  2%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/msg/detail/device_info__functions.c.o[0m
+[10.426s] [  2%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/msg/detail/device_status__functions.c.o[0m
+[10.426s] [  2%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/msg/detail/extrinsics__functions.c.o[0m
+[10.440s] [  3%] Built target orbbec_camera_msgs__cpp
+[10.441s] [  3%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/msg/detail/metadata__functions.c.o[0m
+[10.442s] [  4%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/msg/detail/imu_info__functions.c.o[0m
+[10.461s] [  4%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/msg/detail/rgbd__functions.c.o[0m
+[10.674s] [  5%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/get_bool__functions.c.o[0m
+[10.678s] [  5%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/get_device_info__functions.c.o[0m
+[10.679s] [  6%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/get_camera_info__functions.c.o[0m
+[10.685s] [  7%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/get_int32__functions.c.o[0m
+[10.697s] [  7%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/get_string__functions.c.o[0m
+[10.712s] [  8%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/set_filter__functions.c.o[0m
+[11.014s] [  9%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/set_int32__functions.c.o[0m
+[11.015s] [  9%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/set_string__functions.c.o[0m
+[11.015s] [ 10%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/set_arrays__functions.c.o[0m
+[11.032s] [ 10%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/get_user_calib_params__functions.c.o[0m
+[11.050s] [ 11%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/orbbec_camera_msgs/srv/detail/set_user_calib_params__functions.c.o[0m
+[11.089s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.357s] [ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.375s] [ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.416s] [ 14%] [32m[1mLinking C shared library liborbbec_camera_msgs__rosidl_generator_c.so[0m
+[11.504s] [ 14%] Built target orbbec_camera_msgs__rosidl_generator_c
+[11.528s] [ 16%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.529s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[11.530s] [ 16%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.419s] [ 17%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/msg/device_info__type_support.cpp.o[0m
+[13.820s] [ 17%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/msg/device_info__type_support.cpp.o[0m
+[13.903s] [ 18%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/msg/device_status__type_support.cpp.o[0m
+[13.975s] [ 19%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/msg/extrinsics__type_support.cpp.o[0m
+[14.048s] [ 19%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/msg/metadata__type_support.cpp.o[0m
+[14.121s] [ 21%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/msg/imu_info__type_support.cpp.o[0m
+[14.122s] [ 21%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/msg/device_status__type_support.cpp.o[0m
+[14.199s] [ 21%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/msg/rgbd__type_support.cpp.o[0m
+[14.274s] [ 22%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/get_bool__type_support.cpp.o[0m
+[14.356s] [ 23%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/get_device_info__type_support.cpp.o[0m
+[14.433s] [ 24%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/msg/detail/device_info__type_support.cpp.o[0m
+[14.442s] [ 24%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/get_camera_info__type_support.cpp.o[0m
+[14.529s] [ 25%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/get_int32__type_support.cpp.o[0m
+[14.613s] [ 26%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/get_string__type_support.cpp.o[0m
+[14.694s] [ 26%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/set_filter__type_support.cpp.o[0m
+[14.779s] [ 27%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/set_int32__type_support.cpp.o[0m
+[14.845s] [ 29%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/msg/detail/device_info__type_support.c.o[0m
+[14.845s] [ 29%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/msg/extrinsics__type_support.cpp.o[0m
+[14.862s] [ 29%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/set_string__type_support.cpp.o[0m
+[14.939s] [ 30%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/msg/detail/dds_fastrtps/device_info__type_support.cpp.o[0m
+[14.944s] [ 31%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/msg/detail/device_status__type_support.c.o[0m
+[14.944s] [ 31%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/set_arrays__type_support.cpp.o[0m
+[15.038s] [ 32%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/get_user_calib_params__type_support.cpp.o[0m
+[15.047s] [ 33%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/msg/detail/extrinsics__type_support.c.o[0m
+[15.126s] [ 33%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orbbec_camera_msgs/srv/set_user_calib_params__type_support.cpp.o[0m
+[15.153s] [ 33%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/msg/detail/device_info__type_support_c.cpp.o[0m
+[15.184s] [ 33%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/msg/detail/metadata__type_support.c.o[0m
+[15.213s] [ 34%] [32m[1mLinking CXX shared library liborbbec_camera_msgs__rosidl_typesupport_c.so[0m
+[15.291s] [ 35%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/msg/detail/imu_info__type_support.c.o[0m
+[15.317s] [ 35%] Built target orbbec_camera_msgs__rosidl_typesupport_c
+[15.339s] [ 35%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/msg/metadata__type_support.cpp.o[0m
+[15.452s] [ 36%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/msg/detail/rgbd__type_support.c.o[0m
+[15.540s] [ 36%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/msg/detail/device_status__type_support.cpp.o[0m
+[15.562s] [ 36%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/get_bool__type_support.c.o[0m
+[15.569s] [ 37%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/msg/imu_info__type_support.cpp.o[0m
+[15.675s] [ 38%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/get_device_info__type_support.c.o[0m
+[15.793s] [ 39%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/get_camera_info__type_support.c.o[0m
+[15.914s] [ 39%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/get_int32__type_support.c.o[0m
+[16.004s] [ 39%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/msg/detail/dds_fastrtps/device_status__type_support.cpp.o[0m
+[16.032s] [ 40%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/get_string__type_support.c.o[0m
+[16.058s] [ 41%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/msg/rgbd__type_support.cpp.o[0m
+[16.141s] [ 42%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/set_filter__type_support.c.o[0m
+[16.155s] [ 43%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/msg/detail/device_status__type_support_c.cpp.o[0m
+[16.267s] [ 43%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/set_int32__type_support.c.o[0m
+[16.314s] [ 43%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/get_bool__type_support.cpp.o[0m
+[16.372s] [ 44%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/set_string__type_support.c.o[0m
+[16.481s] [ 44%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/set_arrays__type_support.c.o[0m
+[16.608s] [ 45%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/msg/detail/extrinsics__type_support.cpp.o[0m
+[16.614s] [ 46%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/get_user_calib_params__type_support.c.o[0m
+[16.778s] [ 47%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orbbec_camera_msgs/srv/detail/set_user_calib_params__type_support.c.o[0m
+[16.790s] [ 48%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/get_device_info__type_support.cpp.o[0m
+[16.937s] [ 48%] [32m[1mLinking C shared library liborbbec_camera_msgs__rosidl_typesupport_introspection_c.so[0m
+[17.018s] [ 48%] Built target orbbec_camera_msgs__rosidl_typesupport_introspection_c
+[17.040s] [ 49%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/get_camera_info__type_support.cpp.o[0m
+[17.062s] [ 49%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/get_int32__type_support.cpp.o[0m
+[17.131s] [ 50%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/msg/detail/extrinsics__type_support_c.cpp.o[0m
+[17.140s] [ 51%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o[0m
+[17.553s] [ 52%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/get_string__type_support.cpp.o[0m
+[17.693s] [ 53%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/msg/detail/metadata__type_support.cpp.o[0m
+[17.741s] [ 53%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/set_filter__type_support.cpp.o[0m
+[17.790s] [ 54%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/set_int32__type_support.cpp.o[0m
+[18.068s] [ 54%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/msg/detail/metadata__type_support_c.cpp.o[0m
+[18.168s] [ 55%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/msg/detail/dds_fastrtps/metadata__type_support.cpp.o[0m
+[18.304s] [ 56%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/set_string__type_support.cpp.o[0m
+[18.437s] [ 56%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/set_arrays__type_support.cpp.o[0m
+[18.517s] [ 57%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/get_user_calib_params__type_support.cpp.o[0m
+[18.738s] [ 57%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/msg/detail/imu_info__type_support.cpp.o[0m
+[19.037s] [ 58%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/msg/detail/imu_info__type_support_c.cpp.o[0m
+[19.052s] [ 59%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orbbec_camera_msgs/srv/set_user_calib_params__type_support.cpp.o[0m
+[19.128s] [ 60%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/msg/detail/rgbd__type_support_c.cpp.o[0m
+[19.164s] [ 60%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/msg/detail/dds_fastrtps/imu_info__type_support.cpp.o[0m
+[19.251s] [ 61%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/msg/detail/dds_fastrtps/rgbd__type_support.cpp.o[0m
+[19.802s] [ 61%] [32m[1mLinking CXX shared library liborbbec_camera_msgs__rosidl_typesupport_cpp.so[0m
+[19.863s] [ 62%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/msg/detail/rgbd__type_support.cpp.o[0m
+[19.905s] [ 62%] Built target orbbec_camera_msgs__rosidl_typesupport_cpp
+[19.927s] [ 63%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/get_bool__type_support.cpp.o[0m
+[20.002s] [ 63%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/get_bool__type_support_c.cpp.o[0m
+[20.040s] [ 64%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/get_device_info__type_support_c.cpp.o[0m
+[20.207s] [ 64%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/get_bool__type_support.cpp.o[0m
+[20.356s] [ 65%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/get_device_info__type_support.cpp.o[0m
+[20.997s] [ 65%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/get_device_info__type_support.cpp.o[0m
+[21.016s] [ 65%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/get_camera_info__type_support_c.cpp.o[0m
+[21.044s] [ 66%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/get_int32__type_support_c.cpp.o[0m
+[21.088s] [ 67%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/get_camera_info__type_support.cpp.o[0m
+[21.298s] [ 68%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/get_camera_info__type_support.cpp.o[0m
+[21.521s] [ 68%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/get_int32__type_support.cpp.o[0m
+[21.949s] [ 69%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/get_string__type_support_c.cpp.o[0m
+[22.079s] [ 69%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/set_filter__type_support_c.cpp.o[0m
+[22.144s] [ 69%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/get_int32__type_support.cpp.o[0m
+[22.213s] [ 70%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/get_string__type_support.cpp.o[0m
+[22.379s] [ 71%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/get_string__type_support.cpp.o[0m
+[22.666s] [ 72%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/set_filter__type_support.cpp.o[0m
+[22.940s] [ 73%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/set_int32__type_support_c.cpp.o[0m
+[23.160s] [ 74%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/set_string__type_support_c.cpp.o[0m
+[23.211s] [ 75%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/set_filter__type_support.cpp.o[0m
+[23.279s] [ 75%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/set_int32__type_support.cpp.o[0m
+[23.472s] [ 75%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/set_int32__type_support.cpp.o[0m
+[23.906s] [ 75%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/set_arrays__type_support_c.cpp.o[0m
+[23.965s] [ 76%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/set_string__type_support.cpp.o[0m
+[24.203s] [ 77%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/get_user_calib_params__type_support_c.cpp.o[0m
+[24.334s] [ 78%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/set_string__type_support.cpp.o[0m
+[24.414s] [ 79%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/set_arrays__type_support.cpp.o[0m
+[24.554s] [ 79%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/set_arrays__type_support.cpp.o[0m
+[24.898s] [ 80%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orbbec_camera_msgs/srv/detail/set_user_calib_params__type_support_c.cpp.o[0m
+[25.122s] [ 81%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/get_user_calib_params__type_support.cpp.o[0m
+[25.242s] [ 82%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orbbec_camera_msgs/srv/detail/dds_fastrtps/set_user_calib_params__type_support.cpp.o[0m
+[25.432s] [ 82%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/get_user_calib_params__type_support.cpp.o[0m
+[25.603s] [ 83%] [32mBuilding CXX object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orbbec_camera_msgs/srv/detail/set_user_calib_params__type_support.cpp.o[0m
+[25.879s] [ 83%] [32m[1mLinking CXX shared library liborbbec_camera_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[26.065s] [ 83%] Built target orbbec_camera_msgs__rosidl_typesupport_fastrtps_c
+[26.372s] [ 83%] [32m[1mLinking CXX shared library liborbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[26.548s] [ 83%] Built target orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[26.686s] [ 84%] [32m[1mLinking CXX shared library liborbbec_camera_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[26.856s] [ 84%] Built target orbbec_camera_msgs__rosidl_typesupport_introspection_cpp
+[26.904s] [ 84%] Built target orbbec_camera_msgs
+[26.954s] [ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[33.063s] [ 85%] Built target orbbec_camera_msgs__py
+[33.110s] [ 88%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/msg/_metadata_s.c.o[0m
+[33.111s] [ 88%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/msg/_imu_info_s.c.o[0m
+[33.112s] [ 88%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/msg/_rgbd_s.c.o[0m
+[33.112s] [ 88%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/msg/_device_info_s.c.o[0m
+[33.112s] [ 88%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/msg/_device_status_s.c.o[0m
+[33.114s] [ 88%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/msg/_extrinsics_s.c.o[0m
+[33.411s] [ 89%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_get_bool_s.c.o[0m
+[33.429s] [ 90%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_get_device_info_s.c.o[0m
+[33.434s] [ 90%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_get_camera_info_s.c.o[0m
+[33.456s] [ 91%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_get_int32_s.c.o[0m
+[33.505s] [ 92%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_get_string_s.c.o[0m
+[33.512s] [ 92%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_set_filter_s.c.o[0m
+[33.750s] [ 93%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_set_int32_s.c.o[0m
+[33.759s] [ 94%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_set_string_s.c.o[0m
+[33.769s] [ 94%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_set_arrays_s.c.o[0m
+[33.793s] [ 95%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_get_user_calib_params_s.c.o[0m
+[33.839s] [ 95%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/orbbec_camera_msgs/srv/_set_user_calib_params_s.c.o[0m
+[34.232s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/orbbec_camera_msgs/liborbbec_camera_msgs__rosidl_generator_py.so[0m
+[34.327s] [ 96%] Built target orbbec_camera_msgs__rosidl_generator_py
+[34.373s] [ 99%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/orbbec_camera_msgs/_orbbec_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[34.374s] [ 99%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/orbbec_camera_msgs/_orbbec_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[34.374s] [ 99%] [32mBuilding C object CMakeFiles/orbbec_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/orbbec_camera_msgs/_orbbec_camera_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[35.518s] [100%] [32m[1mLinking C shared library rosidl_generator_py/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[35.518s] [100%] [32m[1mLinking C shared library rosidl_generator_py/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[35.519s] [100%] [32m[1mLinking C shared library rosidl_generator_py/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[35.620s] [100%] Built target orbbec_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[35.620s] [100%] Built target orbbec_camera_msgs__rosidl_typesupport_c__pyext
+[35.621s] [100%] Built target orbbec_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[35.651s] Invoked command in '/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs -- -j6 -l6
+[35.656s] Invoking command in '/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs
+[35.675s] -- Install configuration: "Release"
+[35.676s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/orbbec_camera_msgs
+[35.676s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs
+[35.677s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg
+[35.677s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/extrinsics.h
+[35.677s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/rgbd.h
+[35.677s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/metadata.h
+[35.678s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail
+[35.678s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__functions.h
+[35.678s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__struct.h
+[35.678s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__struct.h
+[35.678s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__functions.h
+[35.679s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__functions.c
+[35.679s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__functions.h
+[35.679s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__functions.c
+[35.679s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__struct.h
+[35.680s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__type_support.h
+[35.680s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__struct.h
+[35.680s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__type_support.h
+[35.680s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__type_support.h
+[35.680s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__functions.c
+[35.681s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__functions.h
+[35.681s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__functions.c
+[35.681s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__struct.h
+[35.681s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__type_support.h
+[35.682s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__type_support.h
+[35.682s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__functions.h
+[35.682s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__functions.h
+[35.682s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__functions.c
+[35.683s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__functions.c
+[35.683s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__type_support.h
+[35.683s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__struct.h
+[35.684s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/imu_info.h
+[35.684s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/device_info.h
+[35.684s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/device_status.h
+[35.684s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/rosidl_generator_c__visibility_control.h
+[35.684s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv
+[35.685s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_int32.h
+[35.685s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_device_info.h
+[35.685s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_bool.h
+[35.685s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_string.h
+[35.685s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_user_calib_params.h
+[35.686s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_arrays.h
+[35.686s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_string.h
+[35.686s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_user_calib_params.h
+[35.686s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_camera_info.h
+[35.687s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail
+[35.687s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__functions.c
+[35.687s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__type_support.h
+[35.687s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__functions.h
+[35.688s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__type_support.h
+[35.689s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__type_support.h
+[35.689s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__type_support.h
+[35.689s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__functions.h
+[35.689s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__functions.c
+[35.690s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__struct.h
+[35.690s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__type_support.h
+[35.690s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__functions.c
+[35.690s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__struct.h
+[35.691s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__functions.c
+[35.691s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__functions.h
+[35.691s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__functions.h
+[35.691s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__type_support.h
+[35.692s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__functions.h
+[35.692s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__functions.c
+[35.692s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__functions.h
+[35.692s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__struct.h
+[35.693s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__functions.h
+[35.693s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__type_support.h
+[35.693s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__struct.h
+[35.693s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__type_support.h
+[35.694s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__struct.h
+[35.694s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__functions.c
+[35.694s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__functions.c
+[35.695s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__struct.h
+[35.695s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__functions.h
+[35.695s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__struct.h
+[35.695s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__type_support.h
+[35.696s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__functions.h
+[35.696s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__functions.c
+[35.696s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__struct.h
+[35.696s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__struct.h
+[35.697s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__functions.c
+[35.697s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__functions.c
+[35.697s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__functions.h
+[35.697s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__functions.h
+[35.698s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__type_support.h
+[35.698s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__struct.h
+[35.698s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__struct.h
+[35.698s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__functions.c
+[35.699s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__type_support.h
+[35.699s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_filter.h
+[35.699s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_int32.h
+[35.700s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/environment/library_path.sh
+[35.700s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/environment/library_path.dsv
+[35.701s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_generator_c.so
+[35.702s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_generator_c.so" to ""
+[35.702s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs
+[35.702s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg
+[35.702s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail
+[35.703s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h
+[35.703s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__rosidl_typesupport_fastrtps_c.h
+[35.703s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h
+[35.703s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h
+[35.703s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[35.704s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h
+[35.704s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[35.704s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv
+[35.704s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail
+[35.704s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_fastrtps_c.h
+[35.705s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_fastrtps_c.h
+[35.705s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__rosidl_typesupport_fastrtps_c.h
+[35.705s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__rosidl_typesupport_fastrtps_c.h
+[35.705s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__rosidl_typesupport_fastrtps_c.h
+[35.705s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__rosidl_typesupport_fastrtps_c.h
+[35.705s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__rosidl_typesupport_fastrtps_c.h
+[35.706s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__rosidl_typesupport_fastrtps_c.h
+[35.706s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__rosidl_typesupport_fastrtps_c.h
+[35.706s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__rosidl_typesupport_fastrtps_c.h
+[35.707s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__rosidl_typesupport_fastrtps_c.h
+[35.707s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_fastrtps_c.so
+[35.708s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[35.708s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs
+[35.708s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg
+[35.709s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[35.709s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail
+[35.709s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_c.h
+[35.709s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__type_support.c
+[35.709s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__type_support.c
+[35.709s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__type_support.c
+[35.710s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__rosidl_typesupport_introspection_c.h
+[35.710s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__type_support.c
+[35.710s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_c.h
+[35.710s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h
+[35.711s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__type_support.c
+[35.711s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h
+[35.711s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h
+[35.712s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__type_support.c
+[35.712s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv
+[35.713s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail
+[35.713s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__type_support.c
+[35.713s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__rosidl_typesupport_introspection_c.h
+[35.713s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_introspection_c.h
+[35.714s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__rosidl_typesupport_introspection_c.h
+[35.714s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__rosidl_typesupport_introspection_c.h
+[35.715s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__type_support.c
+[35.715s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__type_support.c
+[35.716s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__rosidl_typesupport_introspection_c.h
+[35.716s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__type_support.c
+[35.717s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_introspection_c.h
+[35.717s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__rosidl_typesupport_introspection_c.h
+[35.717s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__rosidl_typesupport_introspection_c.h
+[35.717s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__type_support.c
+[35.718s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__type_support.c
+[35.718s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__rosidl_typesupport_introspection_c.h
+[35.718s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__rosidl_typesupport_introspection_c.h
+[35.718s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__type_support.c
+[35.719s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__rosidl_typesupport_introspection_c.h
+[35.719s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__type_support.c
+[35.720s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__type_support.c
+[35.720s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__type_support.c
+[35.720s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__type_support.c
+[35.721s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_introspection_c.so
+[35.721s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_introspection_c.so" to ""
+[35.721s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_c.so
+[35.722s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_c.so" to ""
+[35.722s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs
+[35.722s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg
+[35.723s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/extrinsics.hpp
+[35.723s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/imu_info.hpp
+[35.723s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/rgbd.hpp
+[35.724s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/metadata.hpp
+[35.724s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail
+[35.724s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__traits.hpp
+[35.724s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__type_support.hpp
+[35.725s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__struct.hpp
+[35.725s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__traits.hpp
+[35.725s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__struct.hpp
+[35.726s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__builder.hpp
+[35.726s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__type_support.hpp
+[35.726s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__type_support.hpp
+[35.727s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__type_support.hpp
+[35.727s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__struct.hpp
+[35.727s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__builder.hpp
+[35.727s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__builder.hpp
+[35.728s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__type_support.hpp
+[35.728s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__struct.hpp
+[35.728s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__struct.hpp
+[35.728s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__builder.hpp
+[35.729s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__type_support.hpp
+[35.729s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__traits.hpp
+[35.730s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__traits.hpp
+[35.730s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__traits.hpp
+[35.730s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__builder.hpp
+[35.731s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__traits.hpp
+[35.731s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__struct.hpp
+[35.731s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__builder.hpp
+[35.732s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/device_status.hpp
+[35.732s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/device_info.hpp
+[35.732s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[35.733s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv
+[35.733s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_string.hpp
+[35.734s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_int32.hpp
+[35.734s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_int32.hpp
+[35.734s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_filter.hpp
+[35.734s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_user_calib_params.hpp
+[35.735s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_string.hpp
+[35.735s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/set_arrays.hpp
+[35.735s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_user_calib_params.hpp
+[35.735s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_device_info.hpp
+[35.736s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_bool.hpp
+[35.736s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail
+[35.736s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__type_support.hpp
+[35.737s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__type_support.hpp
+[35.737s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__builder.hpp
+[35.737s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__type_support.hpp
+[35.737s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__builder.hpp
+[35.738s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__struct.hpp
+[35.738s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__builder.hpp
+[35.738s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__traits.hpp
+[35.738s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__struct.hpp
+[35.739s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__builder.hpp
+[35.739s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__builder.hpp
+[35.739s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__type_support.hpp
+[35.740s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__builder.hpp
+[35.740s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__traits.hpp
+[35.740s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__traits.hpp
+[35.740s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__struct.hpp
+[35.741s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__struct.hpp
+[35.741s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__struct.hpp
+[35.741s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__struct.hpp
+[35.742s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__type_support.hpp
+[35.742s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__builder.hpp
+[35.742s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__builder.hpp
+[35.742s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__traits.hpp
+[35.743s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__struct.hpp
+[35.743s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__type_support.hpp
+[35.743s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__type_support.hpp
+[35.743s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__traits.hpp
+[35.744s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__type_support.hpp
+[35.744s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__struct.hpp
+[35.744s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__struct.hpp
+[35.745s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__builder.hpp
+[35.745s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__traits.hpp
+[35.745s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__type_support.hpp
+[35.745s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__builder.hpp
+[35.746s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__traits.hpp
+[35.746s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__struct.hpp
+[35.746s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__traits.hpp
+[35.747s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__traits.hpp
+[35.747s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__builder.hpp
+[35.747s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__type_support.hpp
+[35.747s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__traits.hpp
+[35.748s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__struct.hpp
+[35.748s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__type_support.hpp
+[35.748s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__traits.hpp
+[35.748s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/get_camera_info.hpp
+[35.749s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs
+[35.749s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg
+[35.749s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail
+[35.749s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__rosidl_typesupport_fastrtps_cpp.hpp
+[35.750s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp
+[35.750s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[35.750s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp
+[35.750s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[35.751s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp
+[35.751s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/dds_fastrtps
+[35.751s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[35.751s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv
+[35.752s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail
+[35.752s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[35.752s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__rosidl_typesupport_fastrtps_cpp.hpp
+[35.753s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__rosidl_typesupport_fastrtps_cpp.hpp
+[35.753s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_fastrtps_cpp.hpp
+[35.753s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__rosidl_typesupport_fastrtps_cpp.hpp
+[35.753s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__rosidl_typesupport_fastrtps_cpp.hpp
+[35.754s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__rosidl_typesupport_fastrtps_cpp.hpp
+[35.754s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__rosidl_typesupport_fastrtps_cpp.hpp
+[35.754s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__rosidl_typesupport_fastrtps_cpp.hpp
+[35.754s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__rosidl_typesupport_fastrtps_cpp.hpp
+[35.755s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/dds_fastrtps
+[35.755s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__rosidl_typesupport_fastrtps_cpp.hpp
+[35.755s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.so
+[35.755s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[35.756s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs
+[35.756s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg
+[35.756s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail
+[35.756s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp
+[35.757s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__type_support.cpp
+[35.757s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__type_support.cpp
+[35.757s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__type_support.cpp
+[35.758s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__type_support.cpp
+[35.758s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[35.758s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_status__rosidl_typesupport_introspection_cpp.hpp
+[35.759s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp
+[35.759s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/extrinsics__type_support.cpp
+[35.759s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/device_info__type_support.cpp
+[35.759s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp
+[35.759s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp
+[35.760s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv
+[35.760s] -- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail
+[35.760s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__rosidl_typesupport_introspection_cpp.hpp
+[35.760s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__type_support.cpp
+[35.761s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__rosidl_typesupport_introspection_cpp.hpp
+[35.761s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_user_calib_params__type_support.cpp
+[35.761s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__rosidl_typesupport_introspection_cpp.hpp
+[35.761s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__rosidl_typesupport_introspection_cpp.hpp
+[35.761s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_arrays__rosidl_typesupport_introspection_cpp.hpp
+[35.762s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__type_support.cpp
+[35.762s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__rosidl_typesupport_introspection_cpp.hpp
+[35.762s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_string__type_support.cpp
+[35.762s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_introspection_cpp.hpp
+[35.763s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__rosidl_typesupport_introspection_cpp.hpp
+[35.763s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_string__type_support.cpp
+[35.763s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_int32__rosidl_typesupport_introspection_cpp.hpp
+[35.763s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_user_calib_params__type_support.cpp
+[35.763s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__type_support.cpp
+[35.764s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_int32__type_support.cpp
+[35.764s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_bool__rosidl_typesupport_introspection_cpp.hpp
+[35.764s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_camera_info__type_support.cpp
+[35.764s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__type_support.cpp
+[35.765s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/set_filter__type_support.cpp
+[35.765s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/include/orbbec_camera_msgs/orbbec_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_introspection_cpp.hpp
+[35.765s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_introspection_cpp.so
+[35.765s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[35.766s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_cpp.so
+[35.766s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_typesupport_cpp.so" to ""
+[35.766s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/environment/pythonpath.sh
+[35.766s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/environment/pythonpath.dsv
+[35.766s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs-2.7.6-py3.10.egg-info
+[35.767s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs-2.7.6-py3.10.egg-info/dependency_links.txt
+[35.767s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs-2.7.6-py3.10.egg-info/PKG-INFO
+[35.767s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs-2.7.6-py3.10.egg-info/top_level.txt
+[35.767s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs-2.7.6-py3.10.egg-info/SOURCES.txt
+[35.768s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs
+[35.768s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[35.768s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/_orbbec_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[35.768s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/__init__.py
+[35.769s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/liborbbec_camera_msgs__rosidl_generator_py.so
+[35.769s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg
+[35.769s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/__init__.py
+[35.769s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_device_status_s.c
+[35.770s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_device_info.py
+[35.770s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_imu_info_s.c
+[35.770s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_device_info_s.c
+[35.770s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_metadata.py
+[35.770s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_device_status.py
+[35.771s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_extrinsics_s.c
+[35.771s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_extrinsics.py
+[35.771s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_rgbd_s.c
+[35.771s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_metadata_s.c
+[35.772s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_rgbd.py
+[35.772s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_imu_info.py
+[35.772s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/_orbbec_camera_msgs_s.ep.rosidl_typesupport_c.c
+[35.772s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv
+[35.773s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_user_calib_params_s.c
+[35.773s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_int32.py
+[35.773s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/__init__.py
+[35.773s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_string.py
+[35.774s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_user_calib_params.py
+[35.774s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_device_info_s.c
+[35.774s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_arrays.py
+[35.774s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_int32_s.c
+[35.774s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_int32_s.c
+[35.775s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_arrays_s.c
+[35.775s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_bool_s.c
+[35.775s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_filter_s.c
+[35.775s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_bool.py
+[35.775s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_camera_info_s.c
+[35.776s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_string.py
+[35.776s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_int32.py
+[35.776s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_string_s.c
+[35.776s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_device_info.py
+[35.776s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_camera_info.py
+[35.776s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_filter.py
+[35.777s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_string_s.c
+[35.777s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_user_calib_params_s.c
+[35.777s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_user_calib_params.py
+[35.777s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[35.777s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/_orbbec_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[35.777s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[35.916s] Listing '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs'...
+[35.916s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/__init__.py'...
+[35.916s] Listing '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg'...
+[35.916s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/__init__.py'...
+[35.916s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_device_info.py'...
+[35.916s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_device_status.py'...
+[35.917s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_extrinsics.py'...
+[35.917s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_imu_info.py'...
+[35.917s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_metadata.py'...
+[35.917s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/msg/_rgbd.py'...
+[35.917s] Listing '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv'...
+[35.917s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/__init__.py'...
+[35.917s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_bool.py'...
+[35.918s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_camera_info.py'...
+[35.918s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_device_info.py'...
+[35.918s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_int32.py'...
+[35.918s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_string.py'...
+[35.918s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_get_user_calib_params.py'...
+[35.918s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_arrays.py'...
+[35.919s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_filter.py'...
+[35.919s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_int32.py'...
+[35.919s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_string.py'...
+[35.919s] Compiling '/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/srv/_set_user_calib_params.py'...
+[35.929s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[35.930s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[35.930s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[35.931s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[35.932s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[35.933s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages/orbbec_camera_msgs/orbbec_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[35.933s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_generator_py.so
+[35.934s] -- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib/liborbbec_camera_msgs__rosidl_generator_py.so" to ""
+[35.934s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/DeviceInfo.idl
+[35.934s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/DeviceStatus.idl
+[35.935s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/Extrinsics.idl
+[35.935s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/Metadata.idl
+[35.935s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/IMUInfo.idl
+[35.936s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/RGBD.idl
+[35.936s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetBool.idl
+[35.936s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetDeviceInfo.idl
+[35.937s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetCameraInfo.idl
+[35.937s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetInt32.idl
+[35.937s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetString.idl
+[35.938s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetFilter.idl
+[35.938s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetInt32.idl
+[35.938s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetString.idl
+[35.939s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetArrays.idl
+[35.939s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetUserCalibParams.idl
+[35.939s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetUserCalibParams.idl
+[35.940s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/DeviceInfo.msg
+[35.940s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/DeviceStatus.msg
+[35.940s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/Extrinsics.msg
+[35.941s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/Metadata.msg
+[35.941s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/IMUInfo.msg
+[35.941s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/msg/RGBD.msg
+[35.942s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetBool.srv
+[35.942s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetBool_Request.msg
+[35.942s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetBool_Response.msg
+[35.943s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetDeviceInfo.srv
+[35.943s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetDeviceInfo_Request.msg
+[35.943s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetDeviceInfo_Response.msg
+[35.944s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetCameraInfo.srv
+[35.944s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetCameraInfo_Request.msg
+[35.944s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetCameraInfo_Response.msg
+[35.945s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetInt32.srv
+[35.945s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetInt32_Request.msg
+[35.945s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetInt32_Response.msg
+[35.946s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetString.srv
+[35.946s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetString_Request.msg
+[35.946s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetString_Response.msg
+[35.947s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetFilter.srv
+[35.947s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetFilter_Request.msg
+[35.947s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetFilter_Response.msg
+[35.948s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetInt32.srv
+[35.948s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetInt32_Request.msg
+[35.948s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetInt32_Response.msg
+[35.949s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetString.srv
+[35.949s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetString_Request.msg
+[35.950s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetString_Response.msg
+[35.950s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetArrays.srv
+[35.950s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetArrays_Request.msg
+[35.951s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetArrays_Response.msg
+[35.951s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetUserCalibParams.srv
+[35.951s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetUserCalibParams_Request.msg
+[35.952s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/GetUserCalibParams_Response.msg
+[35.952s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetUserCalibParams.srv
+[35.952s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetUserCalibParams_Request.msg
+[35.953s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/srv/SetUserCalibParams_Response.msg
+[35.953s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/ament_index/resource_index/package_run_dependencies/orbbec_camera_msgs
+[35.954s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/ament_index/resource_index/parent_prefix_path/orbbec_camera_msgs
+[35.954s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/environment/ament_prefix_path.sh
+[35.954s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/environment/ament_prefix_path.dsv
+[35.955s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/environment/path.sh
+[35.955s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/environment/path.dsv
+[35.955s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/local_setup.bash
+[35.956s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/local_setup.sh
+[35.956s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/local_setup.zsh
+[35.956s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/local_setup.dsv
+[35.957s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/package.dsv
+[35.957s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/ament_index/resource_index/packages/orbbec_camera_msgs
+[35.958s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_generator_cExport.cmake
+[35.958s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_generator_cExport-release.cmake
+[35.958s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[35.959s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[35.960s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgs__rosidl_typesupport_introspection_cExport.cmake
+[35.960s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[35.961s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgs__rosidl_typesupport_cExport.cmake
+[35.961s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgs__rosidl_typesupport_cExport-release.cmake
+[35.962s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_generator_cppExport.cmake
+[35.962s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[35.962s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[35.963s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[35.963s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[35.963s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgs__rosidl_typesupport_cppExport.cmake
+[35.964s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgs__rosidl_typesupport_cppExport-release.cmake
+[35.964s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_generator_pyExport.cmake
+[35.964s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/export_orbbec_camera_msgs__rosidl_generator_pyExport-release.cmake
+[35.964s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/rosidl_cmake-extras.cmake
+[35.965s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.965s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.965s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[35.966s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[35.966s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[35.966s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[35.967s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgsConfig.cmake
+[35.967s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake/orbbec_camera_msgsConfig-version.cmake
+[35.967s] -- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/package.xml
+[35.975s] Invoked command in '/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs

@@ -1,0 +1,4 @@
+source;share/orbbec_camera/local_setup.bash
+source;share/orbbec_camera/local_setup.dsv
+source;share/orbbec_camera/local_setup.sh
+source;share/orbbec_camera/local_setup.zsh

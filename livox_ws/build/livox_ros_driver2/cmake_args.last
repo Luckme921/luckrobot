@@ -1,0 +1,1 @@
+['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble']

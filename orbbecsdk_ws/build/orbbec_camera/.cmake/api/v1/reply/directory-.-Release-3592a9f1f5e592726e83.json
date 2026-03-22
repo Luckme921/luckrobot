@@ -1,0 +1,927 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"rclcpp_components_register_node",
+			"ament_environment_hooks",
+			"_ament_cmake_export_libraries_register_environment_hook",
+			"ament_export_libraries",
+			"ament_index_register_resource",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"include",
+			"ament_execute_extensions",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_register_node.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_cmake_export_libraries-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_export_libraries.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake",
+			"/opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_package_hook.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 183,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 77,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 209,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 77,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 216,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 77,
+				"parent" : 6
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 225,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 77,
+				"parent" : 8
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 230,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 234,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 235,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 236,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 237,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 238,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 239,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 243,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 247,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 255,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 264,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 35,
+				"parent" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 25,
+				"parent" : 21
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 22
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 22
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 267,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 66,
+				"parent" : 25
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 26
+			},
+			{
+				"file" : 6,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 28
+			},
+			{
+				"command" : 5,
+				"file" : 6,
+				"line" : 29,
+				"parent" : 29
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 30
+			},
+			{
+				"command" : 10,
+				"file" : 6,
+				"line" : 48,
+				"parent" : 28
+			},
+			{
+				"command" : 5,
+				"file" : 6,
+				"line" : 43,
+				"parent" : 32
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 33
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 26
+			},
+			{
+				"file" : 9,
+				"parent" : 35
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 20,
+				"parent" : 36
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 37
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 37
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 37
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 37
+			},
+			{
+				"command" : 11,
+				"file" : 9,
+				"line" : 26,
+				"parent" : 36
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 42
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 42
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 42
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 107,
+				"parent" : 42
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 119,
+				"parent" : 42
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 26
+			},
+			{
+				"file" : 12,
+				"parent" : 48
+			},
+			{
+				"command" : 12,
+				"file" : 12,
+				"line" : 16,
+				"parent" : 49
+			},
+			{
+				"command" : 5,
+				"file" : 11,
+				"line" : 29,
+				"parent" : 50
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 51
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 26
+			},
+			{
+				"file" : 13,
+				"parent" : 53
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 18,
+				"parent" : 54
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 55
+			},
+			{
+				"command" : 13,
+				"file" : 8,
+				"line" : 68,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 122,
+				"parent" : 57
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 122,
+				"parent" : 57
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 122,
+				"parent" : 57
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 150,
+				"parent" : 57
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 157,
+				"parent" : 57
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"orbbec_camera_node"
+			],
+			"targetId" : "orbbec_camera_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 11,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"scripts/common_benchmark_node.py",
+				"scripts/service_benchmark_node.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"frame_latency_node"
+			],
+			"targetId" : "frame_latency_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"start_benchmark_node"
+			],
+			"targetId" : "start_benchmark_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 16,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"multi_save_rgbir_node"
+			],
+			"targetId" : "multi_save_rgbir_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"liborbbec_camera.so"
+			],
+			"targetId" : "orbbec_camera::@6890427a1f51a3e7e1df",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libframe_latency.so"
+			],
+			"targetId" : "frame_latency::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libstart_benchmark.so"
+			],
+			"targetId" : "start_benchmark::@6890427a1f51a3e7e1df",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmulti_save_rgbir.so"
+			],
+			"targetId" : "multi_save_rgbir::@6890427a1f51a3e7e1df",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/",
+			"paths" : 
+			[
+				"launch"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/",
+			"paths" : 
+			[
+				"config"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/",
+			"paths" : 
+			[
+				"examples"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "SDK/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "lib/",
+			"paths" : 
+			[
+				{
+					"from" : "SDK/lib/arm64",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : "lib/extensions",
+			"paths" : 
+			[
+				"SDK/lib/arm64/extensions/depthengine/libdepthengine.so",
+				"SDK/lib/arm64/extensions/depthengine/libdepthengine.so.2.0",
+				"SDK/lib/arm64/extensions/filters/libFilterProcessor.so",
+				"SDK/lib/arm64/extensions/filters/libob_priv_filter.so",
+				"SDK/lib/arm64/extensions/firmwareupdater/libfirmwareupdater.so",
+				"SDK/lib/arm64/extensions/frameprocessor/libob_frame_processor.so"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/udev",
+			"paths" : 
+			[
+				"scripts/99-obsensor-libusb.rules"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"list_devices_node"
+			],
+			"targetId" : "list_devices_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"list_depth_work_mode_node"
+			],
+			"targetId" : "list_depth_work_mode_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"list_camera_profile_mode_node"
+			],
+			"targetId" : "list_camera_profile_mode_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"topic_statistics_node"
+			],
+			"targetId" : "topic_statistics_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 17,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"service_benchmark_node"
+			],
+			"targetId" : "service_benchmark_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"ob_benchmark_node"
+			],
+			"targetId" : "ob_benchmark_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"435le_example_node"
+			],
+			"targetId" : "435le_example_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"set_device_ip"
+			],
+			"targetId" : "set_device_ip::@6890427a1f51a3e7e1df",
+			"targetIndex" : 14,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/orbbec_camera",
+			"paths" : 
+			[
+				"image_sync_example_node"
+			],
+			"targetId" : "image_sync_example_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/environment",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_environment_hooks/library_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/orbbec_camera"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/orbbec_camera"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 39,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/environment",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 40,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 41,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/environment",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 43,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 44,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 46,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 47,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 52,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_index/share/ament_index/resource_index/packages/orbbec_camera"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 56,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/rclcpp_components",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/orbbec_camera"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 58,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/cmake",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 59,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/cmake",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 60,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/cmake",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 61,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera/cmake",
+			"paths" : 
+			[
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_core/orbbec_cameraConfig.cmake",
+				"/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera/ament_cmake_core/orbbec_cameraConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 62,
+			"component" : "Unspecified",
+			"destination" : "share/orbbec_camera",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

@@ -1,0 +1,131 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_description
+-- Install configuration: "Release"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/launch
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/launch/launch_utils.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/launch/view_model.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/camera_infra1_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/camera_color_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/camera_infra2_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/base_link.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/camera_infra1_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/camera_depth_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/camera_color_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/camera_botter_screw_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2/camera_infra2_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/base_link.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_rgb_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_depth_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_IR1_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_color_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_bottom_screw_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_IR2_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_IR2_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_IR1_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini2l/camera_imu_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_infra1_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_color_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_infra2_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/base_link.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_IMU_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_infra1_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_depth_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_color_screw_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_color_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335L_336L/camera_infra2_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/AstraPlus.stl
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2/camera_infra1_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2/camera_color_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2/camera_depth_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2/base_link.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2/camera_infra1_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2/camera_depth_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2/camera_colorl_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/astra2/camera_bottom_screw_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Le
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Le/canera_RGB_ROS_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Le/canera_left_IR_ROS_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Le/canera_IMU_ROS_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Le/camera_botton_screw_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Le/base_Link.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Le/canera_right_IR_ROS_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/femto_bolt
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/femto_bolt/femto_bolt.stl
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_color_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_right_ir_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_depth_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_depth_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_link.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_color_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_bottom_screw_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_right_ir_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_left_ir_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335_336/camera_left_ir_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_infra1_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_color_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_infra2_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/base_link.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_IMU_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_infra1_optical_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_depth_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_color_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_bottom_screw_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/meshes/gemini335Lg/camera_infra2_frame.STL
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/astra2.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/gemini335Le.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_gemini_336.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_gemini335Lg.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_gemini336L.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_femto_bolt.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/femto_bolt.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_gemini2L.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/gemini335Lg.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_gemini335L.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_gemini_335.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_gemini335Le.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/gemini_335_336.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_gemini2.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/test_astra2.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/gemini335L_336L.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/gemini2L.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/urdf/gemini2.urdf.xacro
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/rviz
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/rviz/urdf.rviz
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/ament_index/resource_index/package_run_dependencies/orbbec_description
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/ament_index/resource_index/parent_prefix_path/orbbec_description
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/environment/ament_prefix_path.sh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/environment/ament_prefix_path.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/environment/path.sh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/environment/path.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/local_setup.bash
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/local_setup.sh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/local_setup.zsh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/local_setup.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/package.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/ament_index/resource_index/packages/orbbec_description
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/cmake/orbbec_descriptionConfig.cmake
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/cmake/orbbec_descriptionConfig-version.cmake
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description/share/orbbec_description/package.xml

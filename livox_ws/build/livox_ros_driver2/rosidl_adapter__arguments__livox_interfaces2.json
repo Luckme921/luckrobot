@@ -1,0 +1,7 @@
+{
+  "package_name": "livox_ros_driver2",
+  "non_idl_tuples": [
+    "/home/nvidia/luckrobot/livox_ws/src/livox_ros_driver2:msg/CustomPoint.msg",
+    "/home/nvidia/luckrobot/livox_ws/src/livox_ros_driver2:msg/CustomMsg.msg"
+  ]
+}

@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from orbbec_camera_msgs/srv/SetUserCalibParams.srv
+// generated code does not contain a copyright notice
+
+
+module orbbec_camera_msgs {
+  module srv {
+    typedef double double__9[9];
+    typedef double double__8[8];
+    typedef double double__3[3];
+    struct SetUserCalibParams_Request {
+      @verbatim (language="comment", text=
+        "Intrinsic camera matrix for the raw (distorted) images")
+      double__9 k;
+
+      @verbatim (language="comment", text=
+        "The distortion parameters")
+      double__8 d;
+
+      @verbatim (language="comment", text=
+        "Extrinsic rotation matrix")
+      double__9 rotation;
+
+      @verbatim (language="comment", text=
+        "Extrinsic translation vector")
+      double__3 translation;
+    };
+    struct SetUserCalibParams_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

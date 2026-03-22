@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from orbbec_camera_msgs/srv/SetString.srv
+// generated code does not contain a copyright notice
+
+
+module orbbec_camera_msgs {
+  module srv {
+    struct SetString_Request {
+      string data;
+    };
+    struct SetString_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

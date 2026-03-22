@@ -1,0 +1,435 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_index_cpp: 1.4.1 (/opt/ros/humble/share/ament_index_cpp/cmake)
+-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda-12.6 (found suitable exact version "12.6") 
+-- Found camera_info_manager: 3.1.12 (/opt/ros/humble/share/camera_info_manager/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+-- Found image_publisher: 3.0.9 (/opt/ros/humble/share/image_publisher/cmake)
+-- Found OpenCV: /usr/local (found version "4.10.0") 
+-- Found orbbec_camera_msgs: 2.7.6 (/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake)
+-- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_msgs: 0.25.19 (/opt/ros/humble/share/tf2_msgs/cmake)
+-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_sensor_msgs: 0.25.19 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+-- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- ORRBEC Machine : aarch64
+
+-- ORRBEC Machine Bits : 64
+
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera
+[ 11%] [32mBuilding CXX object CMakeFiles/start_benchmark.dir/tools/start_benchmark.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/orbbec_camera_node.dir/rclcpp_components/node_main_orbbec_camera_node.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/frame_latency.dir/tools/frame_latency.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/start_benchmark_node.dir/rclcpp_components/node_main_start_benchmark_node.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/d2c_viewer.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/frame_latency_node.dir/rclcpp_components/node_main_frame_latency_node.cpp.o[0m
+[ 15%] [32m[1mLinking CXX executable start_benchmark_node[0m
+[ 15%] Built target start_benchmark_node
+[ 17%] [32mBuilding CXX object CMakeFiles/multi_save_rgbir.dir/tools/multi_save_rgbir.cpp.o[0m
+[ 20%] [32m[1mLinking CXX executable frame_latency_node[0m
+[ 22%] [32m[1mLinking CXX executable orbbec_camera_node[0m
+[ 22%] Built target frame_latency_node
+[ 24%] [32mBuilding CXX object CMakeFiles/multi_save_rgbir_node.dir/rclcpp_components/node_main_multi_save_rgbir_node.cpp.o[0m
+[ 24%] Built target orbbec_camera_node
+[ 26%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/dynamic_params.cpp.o[0m
+[ 28%] [32m[1mLinking CXX executable multi_save_rgbir_node[0m
+[ 28%] Built target multi_save_rgbir_node
+[ 31%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/image_publisher.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_camera_node_driver.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_camera_node.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_lidar_node.cpp.o[0m
+[ 40%] [32m[1mLinking CXX shared library libstart_benchmark.so[0m
+[ 40%] Built target start_benchmark
+[ 42%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ros_param_backend.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ros_service.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/synced_imu_publisher.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/multi_save_rgbir.dir/src/utils.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/utils.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/jpeg_decoder.cpp.o[0m
+[ 55%] [32m[1mLinking CXX shared library libframe_latency.so[0m
+[ 55%] Built target frame_latency
+[ 57%] [32m[1mLinking CXX shared library libmulti_save_rgbir.so[0m
+[ 57%] Built target multi_save_rgbir
+[ 60%] [32m[1mLinking CXX shared library liborbbec_camera.so[0m
+[ 60%] Built target orbbec_camera
+[ 73%] [32mBuilding CXX object CMakeFiles/list_camera_profile_mode_node.dir/tools/list_camera_profile.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/set_device_ip.dir/tools/set_device_ip.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/list_devices_node.dir/tools/list_devices_node.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/list_depth_work_mode_node.dir/tools/list_depth_work_mode.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/topic_statistics_node.dir/tools/topic_statistics.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/ob_benchmark_node.dir/tools/ob_benchmark.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable list_depth_work_mode_node[0m
+[ 77%] [32m[1mLinking CXX executable set_device_ip[0m
+[ 77%] Built target list_depth_work_mode_node
+[ 80%] [32mBuilding CXX object CMakeFiles/435le_example_node.dir/examples/435le_new_interface/camera_example_node.cpp.o[0m
+[ 80%] Built target set_device_ip
+[ 82%] [32mBuilding CXX object CMakeFiles/service_benchmark_node.dir/scripts/service_benchmark_node.cpp.o[0m
+[ 84%] [32m[1mLinking CXX executable list_devices_node[0m
+[ 86%] [32m[1mLinking CXX executable list_camera_profile_mode_node[0m
+[ 86%] Built target list_devices_node
+[ 86%] Built target list_camera_profile_mode_node
+[ 88%] [32mBuilding CXX object CMakeFiles/image_sync_example_node.dir/examples/multi_camera_time_sync/image_sync_example_node.cpp.o[0m
+[ 91%] [32m[1mLinking CXX executable ob_benchmark_node[0m
+[ 91%] Built target ob_benchmark_node
+[ 93%] [32m[1mLinking CXX executable topic_statistics_node[0m
+[ 93%] Built target topic_statistics_node
+[ 95%] [32m[1mLinking CXX executable 435le_example_node[0m
+[ 95%] Built target 435le_example_node
+[ 97%] [32m[1mLinking CXX executable image_sync_example_node[0m
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[ 97%] Built target image_sync_example_node
+[100%] [32m[1mLinking CXX executable service_benchmark_node[0m
+[100%] Built target service_benchmark_node
+-- Install configuration: "Release"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/orbbec_camera_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/orbbec_camera_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/common_benchmark_node.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/service_benchmark_node.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/frame_latency_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/frame_latency_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/start_benchmark_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/start_benchmark_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/multi_save_rgbir_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/multi_save_rgbir_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/liborbbec_camera.so
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/liborbbec_camera.so" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/libframe_latency.so
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/libframe_latency.so" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/libstart_benchmark.so
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/libstart_benchmark.so" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/libmulti_save_rgbir.so
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/libmulti_save_rgbir.so" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/constants.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/ob_camera_node_driver.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/jpeg_decoder.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/dynamic_params.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/jetson_nv_decoder.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/synced_imu_publisher.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/fps_delay_status.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/fps_counter.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/utils.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/rk_mpp_decoder.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/ros_param_backend.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/d2c_viewer.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/image_publisher.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/ob_lidar_node.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/orbbec_camera/ob_camera_node.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/magic_enum
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/magic_enum/magic_enum.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_max_pro.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini345.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/femto.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/multi_camera_synced.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/orbbec_camera.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/femto_bolt.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_330_series_low_cpu.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini2L.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/lidar.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini435_le.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/orbbec_multicamera.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini2.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_a.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini305.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/multi_camera.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini345_lg.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini210.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_330_series.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_dcw2.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/astra.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_intra_process_demo_launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/femto_mega.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/multi_lidar.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/utils_yaml.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/astra2.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_al.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/depthfilter
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/depthfilter/Gemini2_v1.7.json
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/depthfilter/Openni_device.json
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/femto_mega.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/astra2.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/gemini330_series.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/common.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/tools
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/tools/startbenchmark
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/tools/startbenchmark/start_benchmark_params.json
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/tools/multisavergbir
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/tools/multisavergbir/multi_save_rgbir_params.json
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/OrbbecSDKConfig_v2.0.xml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/gemini2L.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/gemini2.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/camera_secondary_params.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/gemini330Lg_series.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/camera_params.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/femto.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/femto_bolt.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/.gitkeep
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//config/gemini305_dual_color.yaml
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/net_camera
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/net_camera/multi_net_camera.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_time_sync
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_time_sync/image_sync_example_node.cpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/benchmark
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/benchmark/ob_benchmark_1.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/benchmark/gemini_330_series_benchmark.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/benchmark/ob_benchmark_0.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/gmsl_camera
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/gmsl_camera/multi_gmsl_camera.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/gmsl_camera/multi_gmsl_camera_synced.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/gmsl_camera/gemini_330_gmsl.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/Config.ini
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/README.md
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/SyncFramesMain.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/script
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/script/config_frameMatch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/script/config_frameMatch_g330.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/script/config_frameMatch-systemTimestamp.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/script/config_frameMatch-Astra2_new.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/Python/script/config_frameMatch_Gemini2VL.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/9_ir_left_SNCP1E5420006D_Index0_1739874543394_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/6_ir_left_SNCP1E5420006D_Index0_1739874543561_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/1_ir_left_SNCP1L44P00051_Index1_1739874543494_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/0_color_SNCP1E5420006D_Index0_1739874543527_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/5_color_SNCP1E5420006D_Index0_1739874543327_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/8_color_SNCP1L44P00051_Index1_1739874543293_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/1_color_SNCP1E5420006D_Index0_1739874543494_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/5_color_SNCP1L44P00051_Index1_1739874543327_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/3_color_SNCP1E5420006D_Index0_1739874543260_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/8_ir_left_SNCP1L44P00051_Index1_1739874543294_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/7_ir_left_SNCP1E5420006D_Index0_1739874543427_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/7_ir_left_SNCP1L44P00051_Index1_1739874543427_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/2_ir_left_SNCP1L44P00051_Index1_1739874543460_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/2_color_SNCP1E5420006D_Index0_1739874543461_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/6_ir_left_SNCP1L44P00051_Index1_1739874543560_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/7_color_SNCP1E5420006D_Index0_1739874543427_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/9_color_SNCP1L44P00051_Index1_1739874543393_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/10_color_SNCP1E5420006D_Index0_1739874543227_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/3_ir_left_SNCP1E5420006D_Index0_1739874543260_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/9_ir_left_SNCP1L44P00051_Index1_1739874543394_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/0_ir_left_SNCP1L44P00051_Index1_1739874543527_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/6_color_SNCP1E5420006D_Index0_1739874543561_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/3_ir_left_SNCP1L44P00051_Index1_1739874543260_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/1_color_SNCP1L44P00051_Index1_1739874543494_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/4_color_SNCP1E5420006D_Index0_1739874543360_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/10_ir_left_SNCP1E5420006D_Index0_1739874543227_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/0_color_SNCP1L44P00051_Index1_1739874543527_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/7_color_SNCP1L44P00051_Index1_1739874543427_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/2_color_SNCP1L44P00051_Index1_1739874543460_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/0_ir_left_SNCP1E5420006D_Index0_1739874543527_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/4_color_SNCP1L44P00051_Index1_1739874543360_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/5_ir_left_SNCP1L44P00051_Index1_1739874543327_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/2_ir_left_SNCP1E5420006D_Index0_1739874543461_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/1_ir_left_SNCP1E5420006D_Index0_1739874543494_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/4_ir_left_SNCP1L44P00051_Index1_1739874543360_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/3_color_SNCP1L44P00051_Index1_1739874543260_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/5_ir_left_SNCP1E5420006D_Index0_1739874543327_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/8_ir_left_SNCP1E5420006D_Index0_1739874543294_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/10_ir_left_SNCP1L44P00051_Index1_1739874543227_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/8_color_SNCP1E5420006D_Index0_1739874543294_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/10_color_SNCP1L44P00051_Index1_1739874543227_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/6_color_SNCP1L44P00051_Index1_1739874543560_[0].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/4_ir_left_SNCP1E5420006D_Index0_1739874543361_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/matchFrames/9_color_SNCP1E5420006D_Index0_1739874543394_[1].jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/results-2025-02-25_163648/frameMatchLog.txt
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543294_f2_s1739874543319_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543427_f6_s1739874543485_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543560_f11_s1739874543687_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543494_f8_s1739874543540_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543527_f9_s1739874543616_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543393_f5_s1739874543470_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543394_f5_s1739874543661_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543293_f2_s1739874543446_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543360_f4_s1739874543468_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543560_f10_s1739874543618_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543227_f0_s1739874543304_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543327_f3_s1739874543460_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543260_f1_s1739874543294_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543460_f7_s1739874543685_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543360_f4_s1739874543460_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543494_f8_s1739874543687_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543460_f7_s1739874543505_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543427_f6_s1739874543684_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543227_f0_s1739874543250_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/ir#left_SNCP1L44P00051_Index1_g1739874543527_f10_s1739874543687_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543327_f3_s1739874543458_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1L44P00051_Index1/color_SNCP1L44P00051_Index1_g1739874543260_f1_s1739874543345_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543227_f0_s1739874543327_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543527_f9_s1739874543627_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543494_f8_s1739874543528_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543361_f4_s1739874543405_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543294_f2_s1739874543329_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543227_f0_s1739874543250_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543260_f1_s1739874543351_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543260_f1_s1739874543310_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543360_f4_s1739874543442_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543327_f3_s1739874543393_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543561_f10_s1739874543648_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543294_f2_s1739874543359_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543461_f7_s1739874543493_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543494_f8_s1739874543548_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543327_f3_s1739874543441_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543394_f5_s1739874543506_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543561_f10_s1739874543628_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543427_f6_s1739874543474_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/ir#left_SNCP1E5420006D_Index0_g1739874543394_f5_s1739874543473_e5000_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543461_f7_s1739874543520_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543527_f9_s1739874543603_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/TotalModeFrames/SNCP1E5420006D_Index0/color_SNCP1E5420006D_Index0_g1739874543427_f6_s1739874543518_e50_d16_.jpg
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/DevicesInfo.txt
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multicamera_sync/output/20250218102900/StreamProfileInfo.txt
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/gemini_330_series_synced_verify.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/gemini_synced_verify.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/multi_camera_synced_verification_tool/multi_camera_synced_verify.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/README.MD
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/lower_cpu_usage
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/lower_cpu_usage/multi_camera_lower_cpu_usage.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/lower_cpu_usage/gemini_330_series_lower_cpu_usage.launch.py
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/435le_new_interface
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/435le_new_interface/README.MD
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera//examples/435le_new_interface/camera_example_node.cpp
+-- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/ObSensor.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Pipeline.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Frame.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/StreamProfile.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Sensor.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Export.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Utils.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/MultipleDevices.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Advanced.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/RecordPlayback.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Context.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/TypeHelper.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Filter.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Error.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Version.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/ObTypes.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Property.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/h/Device.h
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Utils.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/StreamProfile.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Frame.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Types.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/RecordPlayback.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Error.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Context.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Sensor.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Filter.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Version.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Device.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/TypeHelper.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/hpp/Pipeline.hpp
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/include/libobsensor/ObSensor.hpp
+-- Up-to-date: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/filters
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/filters/libob_priv_filter.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/filters/libFilterProcessor.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/firmwareupdater
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/firmwareupdater/libfirmwareupdater.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/frameprocessor
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/frameprocessor/libob_frame_processor.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/depthengine
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/depthengine/libdepthengine.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//extensions/depthengine/libdepthengine.so.2.0
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//libOrbbecSDK.so.2
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//libOrbbecSDK.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib//libOrbbecSDK.so.2.7.6
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/extensions/libdepthengine.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/extensions/libdepthengine.so.2.0
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/extensions/libFilterProcessor.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/extensions/libob_priv_filter.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/extensions/libfirmwareupdater.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/extensions/libob_frame_processor.so
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/udev/99-obsensor-libusb.rules
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/list_devices_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/list_devices_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/list_depth_work_mode_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/list_depth_work_mode_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/list_camera_profile_mode_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/list_camera_profile_mode_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/topic_statistics_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/topic_statistics_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/service_benchmark_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/service_benchmark_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/ob_benchmark_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/ob_benchmark_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/435le_example_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/435le_example_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/set_device_ip
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/set_device_ip" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/image_sync_example_node
+-- Set runtime path of "/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib/orbbec_camera/image_sync_example_node" to ":/home/nvidia/luckrobot/orbbecsdk_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/arm64"
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/environment/library_path.sh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/environment/library_path.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/ament_index/resource_index/package_run_dependencies/orbbec_camera
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/ament_index/resource_index/parent_prefix_path/orbbec_camera
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/environment/ament_prefix_path.sh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/environment/ament_prefix_path.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/environment/path.sh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/environment/path.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/local_setup.bash
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/local_setup.sh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/local_setup.zsh
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/local_setup.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/package.dsv
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/ament_index/resource_index/packages/orbbec_camera
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/ament_index/resource_index/rclcpp_components/orbbec_camera
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/cmake/orbbec_cameraConfig.cmake
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/cmake/orbbec_cameraConfig-version.cmake
+-- Installing: /home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/share/orbbec_camera/package.xml

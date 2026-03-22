@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "orbbec_camera_msgs__py",
+		"source" : "/home/nvidia/luckrobot/orbbecsdk_ws/build/orbbec_camera_msgs/orbbec_camera_msgs__py"
+	}
+}

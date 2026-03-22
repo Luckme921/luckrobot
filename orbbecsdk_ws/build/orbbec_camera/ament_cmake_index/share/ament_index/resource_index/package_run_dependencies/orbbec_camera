@@ -1,0 +1,1 @@
+ament_lint_auto;ament_lint_common;ament_index_cpp;backward_ros;image_transport;image_publisher;rclcpp_components;cv_bridge;camera_info_manager;orbbec_camera_msgs;builtin_interfaces;rclcpp;sensor_msgs;std_msgs;std_srvs;statistics_msgs;tf2;tf2_ros;tf2_sensor_msgs;tf2_msgs;diagnostic_updater;diagnostic_msgs;libgflags-dev;nlohmann-json-dev;libgoogle-glog-dev;libssl-dev;opengl

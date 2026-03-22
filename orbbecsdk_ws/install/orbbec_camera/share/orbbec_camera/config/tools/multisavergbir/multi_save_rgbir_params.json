@@ -1,0 +1,13 @@
+{
+  "save_rgbir_params": {
+      "time_domain": "global",
+      "usb_ports": [
+          "2-1",
+          "2-3"
+      ],
+      "camera_name": [
+          "camera_01",
+          "camera_02"
+      ]
+  }
+}
