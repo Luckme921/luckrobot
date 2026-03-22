@@ -1,0 +1,82 @@
+[0.030s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller
+[0.171s] -- The C compiler identification is GNU 11.4.0
+[0.299s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.474s] -- Detecting C compiler ABI info - done
+[0.501s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.505s] -- Detecting C compile features
+[0.507s] -- Detecting C compile features - done
+[0.519s] -- Detecting CXX compiler ABI info
+[0.692s] -- Detecting CXX compiler ABI info - done
+[0.718s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.719s] -- Detecting CXX compile features
+[0.720s] -- Detecting CXX compile features - done
+[0.733s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.351s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.589s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[2.687s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.697s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.716s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.745s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.780s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.876s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.882s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.064s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.135s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.220s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.239s] -- Looking for pthread.h
+[3.400s] -- Looking for pthread.h - found
+[3.401s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.568s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.572s] -- Found Threads: TRUE  
+[3.703s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.743s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[3.744s] -- Checking for module 'libserial'
+[3.774s] --   Found libserial, version 1.0.0
+[3.850s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.062s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.063s] -- Configured cppcheck include dirs: 
+[4.063s] -- Configured cppcheck exclude dirs and/or files: 
+[4.066s] -- Added test 'lint_cmake' to check CMake code style
+[4.070s] -- Added test 'uncrustify' to check C / C++ code style
+[4.070s] -- Configured uncrustify additional arguments: 
+[4.072s] -- Added test 'xmllint' to check XML markup files
+[4.078s] -- Configuring done
+[4.121s] -- Generating done
+[4.136s] -- Build files have been written to: /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller
+[4.163s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller
+[4.168s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6
+[4.284s] [ 16%] [32mBuilding CXX object CMakeFiles/danger_command_node.dir/src/danger_command_node.cpp.o[0m
+[4.284s] [ 33%] [32mBuilding CXX object CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o[0m
+[4.291s] [ 50%] [32mBuilding CXX object CMakeFiles/wheel_controller_node.dir/src/wheel_controller_node.cpp.o[0m
+[24.707s] [ 66%] [32m[1mLinking CXX executable danger_command_node[0m
+[25.563s] [ 66%] Built target danger_command_node
+[25.695s] [ 83%] [32m[1mLinking CXX executable lead_screw_motor_node[0m
+[26.516s] [ 83%] Built target lead_screw_motor_node
+[27.504s] [100%] [32m[1mLinking CXX executable wheel_controller_node[0m
+[28.432s] [100%] Built target wheel_controller_node
+[28.458s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6
+[28.483s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller
+[28.499s] -- Install configuration: ""
+[28.499s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/wheel_controller_node
+[28.509s] -- Set runtime path of "/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/wheel_controller_node" to ""
+[28.509s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/lead_screw_motor_node
+[28.517s] -- Set runtime path of "/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/lead_screw_motor_node" to ""
+[28.517s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/danger_command_node
+[28.526s] -- Set runtime path of "/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/danger_command_node" to ""
+[28.526s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/ament_index/resource_index/package_run_dependencies/wheel_controller
+[28.527s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/ament_index/resource_index/parent_prefix_path/wheel_controller
+[28.527s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/environment/ament_prefix_path.sh
+[28.527s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/environment/ament_prefix_path.dsv
+[28.528s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/environment/path.sh
+[28.528s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/environment/path.dsv
+[28.528s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/local_setup.bash
+[28.529s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/local_setup.sh
+[28.529s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/local_setup.zsh
+[28.529s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/local_setup.dsv
+[28.529s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.dsv
+[28.530s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/ament_index/resource_index/packages/wheel_controller
+[28.530s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/cmake/wheel_controllerConfig.cmake
+[28.530s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/cmake/wheel_controllerConfig-version.cmake
+[28.531s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.xml
+[28.537s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller

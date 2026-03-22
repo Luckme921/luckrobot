@@ -1,0 +1,33 @@
+running egg_info
+creating ../../build/luckrobot_launch1/luckrobot_launch1.egg-info
+writing ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/PKG-INFO
+writing dependency_links to ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/dependency_links.txt
+writing requirements to ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/requires.txt
+writing top-level names to ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/top_level.txt
+writing manifest file '../../build/luckrobot_launch1/luckrobot_launch1.egg-info/SOURCES.txt'
+reading manifest file '../../build/luckrobot_launch1/luckrobot_launch1.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/luckrobot_launch1/luckrobot_launch1.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build
+creating /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build/lib
+creating /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build/lib/luckrobot_launch1
+copying luckrobot_launch1/__init__.py -> /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build/lib/luckrobot_launch1
+running install
+running install_lib
+creating /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1
+copying /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build/lib/luckrobot_launch1/__init__.py -> /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1
+byte-compiling /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/ament_index
+creating /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/ament_index/resource_index
+creating /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/ament_index/resource_index/packages
+copying resource/luckrobot_launch1 -> /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/ament_index/resource_index/packages
+copying package.xml -> /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1
+creating /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/launch
+copying launch/wheel_control_launch.py -> /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/launch
+running install_egg_info
+Copying ../../build/luckrobot_launch1/luckrobot_launch1.egg-info to /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/install.log'

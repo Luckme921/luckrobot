@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: luckrobot-launch1
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: nvidia
+Maintainer-email: 1814313359@qq.com
+License: Apache-2.0
+Provides-Extra: test
+License-File: LICENSE

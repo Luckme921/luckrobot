@@ -1,0 +1,6 @@
+source;share/luckrobot_launch1/hook/pythonpath.ps1
+source;share/luckrobot_launch1/hook/pythonpath.dsv
+source;share/luckrobot_launch1/hook/pythonpath.sh
+source;share/luckrobot_launch1/hook/ament_prefix_path.ps1
+source;share/luckrobot_launch1/hook/ament_prefix_path.dsv
+source;share/luckrobot_launch1/hook/ament_prefix_path.sh

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b8353338487d9cef08fe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wheel_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "danger_command_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-danger_command_node-2283101fa4ac56e2cd24.json",
+					"name" : "danger_command_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lead_screw_motor_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lead_screw_motor_node-9e39a24377cbea4bf11e.json",
+					"name" : "lead_screw_motor_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-dd0bdf81787c5b10c37f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheel_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheel_controller_node-e8badb91683fbdd7476d.json",
+					"name" : "wheel_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheel_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheel_controller_uninstall-317b9f4719f7f35df82a.json",
+					"name" : "wheel_controller_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller",
+		"source" : "/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
