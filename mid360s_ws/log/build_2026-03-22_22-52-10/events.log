@@ -1,0 +1,2226 @@
+[0.000000] (-) TimerEvent: {}
+[0.000965] (fast_lio) JobQueued: {'identifier': 'fast_lio', 'dependencies': OrderedDict()}
+[0.001289] (fast_lio) JobStarted: {'identifier': 'fast_lio'}
+[0.021700] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'cmake'}
+[0.022766] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/mid360s_ws/install/fast_lio'], 'cwd': '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.109 50794 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/luckrobot/mid360s_ws/src'), ('SSH_TTY', '/dev/pts/2'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio'), ('SSH_CONNECTION', '192.168.3.109 50794 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099345] (-) TimerEvent: {}
+[0.199960] (-) TimerEvent: {}
+[0.220170] (fast_lio) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300141] (-) TimerEvent: {}
+[0.388339] (fast_lio) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.400295] (-) TimerEvent: {}
+[0.413172] (fast_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500490] (-) TimerEvent: {}
+[0.566761] (fast_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.593928] (fast_lio) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.597970] (fast_lio) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.599943] (fast_lio) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.600550] (-) TimerEvent: {}
+[0.612732] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.700772] (-) TimerEvent: {}
+[0.787080] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.800858] (-) TimerEvent: {}
+[0.815291] (fast_lio) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.816334] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.818061] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.820594] (fast_lio) StderrLine: {'line': b'\x1b[0mCurrent CPU archtecture: aarch64\x1b[0m\n'}
+[0.901075] (-) TimerEvent: {}
+[1.001817] (-) TimerEvent: {}
+[1.102590] (-) TimerEvent: {}
+[1.203524] (-) TimerEvent: {}
+[1.304299] (-) TimerEvent: {}
+[1.405014] (-) TimerEvent: {}
+[1.505795] (-) TimerEvent: {}
+[1.606502] (-) TimerEvent: {}
+[1.631394] (fast_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[1.641210] (fast_lio) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.706575] (-) TimerEvent: {}
+[1.807112] (-) TimerEvent: {}
+[1.907721] (-) TimerEvent: {}
+[2.008292] (-) TimerEvent: {}
+[2.108808] (-) TimerEvent: {}
+[2.209420] (-) TimerEvent: {}
+[2.310015] (-) TimerEvent: {}
+[2.410831] (-) TimerEvent: {}
+[2.511702] (-) TimerEvent: {}
+[2.612387] (-) TimerEvent: {}
+[2.713007] (-) TimerEvent: {}
+[2.813615] (-) TimerEvent: {}
+[2.914421] (-) TimerEvent: {}
+[3.015198] (-) TimerEvent: {}
+[3.115754] (-) TimerEvent: {}
+[3.216408] (-) TimerEvent: {}
+[3.225866] (fast_lio) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.316576] (-) TimerEvent: {}
+[3.403272] (fast_lio) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.416680] (-) TimerEvent: {}
+[3.486564] (fast_lio) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.516783] (-) TimerEvent: {}
+[3.590781] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.602990] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.616875] (-) TimerEvent: {}
+[3.624584] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.655718] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.694572] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.716965] (-) TimerEvent: {}
+[3.804530] (fast_lio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.811753] (fast_lio) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.817051] (-) TimerEvent: {}
+[3.917489] (-) TimerEvent: {}
+[3.999911] (fast_lio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.017615] (-) TimerEvent: {}
+[4.070584] (fast_lio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.117760] (-) TimerEvent: {}
+[4.153488] (fast_lio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.177298] (fast_lio) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.218000] (-) TimerEvent: {}
+[4.318905] (-) TimerEvent: {}
+[4.334204] (fast_lio) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.335391] (fast_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.419136] (-) TimerEvent: {}
+[4.493492] (fast_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.497288] (fast_lio) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.519228] (-) TimerEvent: {}
+[4.619756] (-) TimerEvent: {}
+[4.649182] (fast_lio) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.18 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[4.714814] (fast_lio) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.719847] (-) TimerEvent: {}
+[4.746249] (fast_lio) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[4.785695] (fast_lio) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[4.819959] (-) TimerEvent: {}
+[4.826688] (fast_lio) StdoutLine: {'line': b'-- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[4.851464] (fast_lio) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[4.895969] (fast_lio) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[4.920058] (-) TimerEvent: {}
+[4.991016] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[5.014344] (fast_lio) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[5.020161] (-) TimerEvent: {}
+[5.085951] (fast_lio) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[5.086626] (fast_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[5.120298] (-) TimerEvent: {}
+[5.183409] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[5.209437] (fast_lio) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[5.220406] (-) TimerEvent: {}
+[5.297134] (fast_lio) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[5.297844] (fast_lio) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[5.320537] (-) TimerEvent: {}
+[5.421080] (-) TimerEvent: {}
+[5.521674] (-) TimerEvent: {}
+[5.622436] (-) TimerEvent: {}
+[5.723158] (-) TimerEvent: {}
+[5.823851] (-) TimerEvent: {}
+[5.924325] (-) TimerEvent: {}
+[6.024955] (-) TimerEvent: {}
+[6.125791] (-) TimerEvent: {}
+[6.226531] (-) TimerEvent: {}
+[6.327250] (-) TimerEvent: {}
+[6.427983] (-) TimerEvent: {}
+[6.528770] (-) TimerEvent: {}
+[6.629455] (-) TimerEvent: {}
+[6.730217] (-) TimerEvent: {}
+[6.831103] (-) TimerEvent: {}
+[6.931819] (-) TimerEvent: {}
+[7.032581] (-) TimerEvent: {}
+[7.133374] (-) TimerEvent: {}
+[7.234196] (-) TimerEvent: {}
+[7.334847] (-) TimerEvent: {}
+[7.435545] (-) TimerEvent: {}
+[7.487315] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[7.520159] (fast_lio) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[7.535657] (-) TimerEvent: {}
+[7.598288] (fast_lio) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[7.604891] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[7.635802] (-) TimerEvent: {}
+[7.734749] (fast_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[7.735911] (-) TimerEvent: {}
+[7.836636] (-) TimerEvent: {}
+[7.937225] (-) TimerEvent: {}
+[8.037923] (-) TimerEvent: {}
+[8.057803] (fast_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[8.069956] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[8.081909] (fast_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[8.137998] (-) TimerEvent: {}
+[8.238389] (-) TimerEvent: {}
+[8.338725] (-) TimerEvent: {}
+[8.362144] (fast_lio) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[8.438922] (-) TimerEvent: {}
+[8.539822] (-) TimerEvent: {}
+[8.640606] (-) TimerEvent: {}
+[8.647762] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[8.740707] (-) TimerEvent: {}
+[8.841107] (-) TimerEvent: {}
+[8.922127] (fast_lio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[8.924919] (fast_lio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[8.926752] (fast_lio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[8.928495] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[8.930283] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[8.932064] (fast_lio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[8.932903] (fast_lio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[8.933687] (fast_lio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[8.935434] (fast_lio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[8.937423] (fast_lio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[8.939659] (fast_lio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[8.941194] (-) TimerEvent: {}
+[8.941555] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[8.943452] (fast_lio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[8.945424] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[8.947368] (fast_lio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[8.949327] (fast_lio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[8.951274] (fast_lio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[8.953166] (fast_lio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[8.955221] (fast_lio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[8.956695] (fast_lio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[8.958344] (fast_lio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[8.959108] (fast_lio) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[8.960203] (fast_lio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[8.962020] (fast_lio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[8.963936] (fast_lio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[9.028925] (fast_lio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[9.032140] (fast_lio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[9.032407] (fast_lio) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[9.041285] (-) TimerEvent: {}
+[9.141626] (-) TimerEvent: {}
+[9.204679] (fast_lio) StdoutLine: {'line': b'-- Found livox_ros_driver2: 1.0.0 (/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)\n'}
+[9.241726] (-) TimerEvent: {}
+[9.256993] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[9.282265] (fast_lio) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:81 (find_package):\n'}
+[9.282601] (fast_lio) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[9.282885] (fast_lio) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[9.283115] (fast_lio) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[9.283332] (fast_lio) StderrLine: {'line': b'\n'}
+[9.283551] (fast_lio) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[9.283762] (fast_lio) StderrLine: {'line': b'\n'}
+[9.283967] (fast_lio) StderrLine: {'line': b'    /usr\n'}
+[9.284175] (fast_lio) StderrLine: {'line': b'\n'}
+[9.284382] (fast_lio) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[9.284591] (fast_lio) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[9.284797] (fast_lio) StderrLine: {'line': b'\x1b[0m\n'}
+[9.296503] (fast_lio) StderrLine: {'line': b'\x1b[0mEigen:/usr/include/eigen3\x1b[0m\n'}
+[9.296772] (fast_lio) StdoutLine: {'line': b'-- PCL: /usr/include/pcl-1.12\n'}
+[9.341820] (-) TimerEvent: {}
+[9.442283] (-) TimerEvent: {}
+[9.542944] (-) TimerEvent: {}
+[9.643501] (-) TimerEvent: {}
+[9.744204] (-) TimerEvent: {}
+[9.844841] (-) TimerEvent: {}
+[9.919575] (fast_lio) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[9.945056] (-) TimerEvent: {}
+[10.045674] (-) TimerEvent: {}
+[10.146302] (-) TimerEvent: {}
+[10.247014] (-) TimerEvent: {}
+[10.347924] (-) TimerEvent: {}
+[10.448772] (-) TimerEvent: {}
+[10.549391] (-) TimerEvent: {}
+[10.649954] (-) TimerEvent: {}
+[10.721484] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.750138] (-) TimerEvent: {}
+[10.850794] (-) TimerEvent: {}
+[10.951398] (-) TimerEvent: {}
+[11.027596] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.051561] (-) TimerEvent: {}
+[11.098142] (fast_lio) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[11.103658] (fast_lio) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[11.151719] (-) TimerEvent: {}
+[11.170522] (fast_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[11.171188] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[11.171550] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[11.171769] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[11.234142] (fast_lio) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[11.251903] (-) TimerEvent: {}
+[11.352587] (-) TimerEvent: {}
+[11.453213] (-) TimerEvent: {}
+[11.554112] (-) TimerEvent: {}
+[11.594419] (fast_lio) StdoutLine: {'line': b'-- Using numpy include directory: /usr/local/lib/python3.10/dist-packages/numpy/core/include\n'}
+[11.654327] (-) TimerEvent: {}
+[11.683461] (fast_lio) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.754551] (-) TimerEvent: {}
+[11.855398] (-) TimerEvent: {}
+[11.906929] (fast_lio) StdoutLine: {'line': b'-- Generating done\n'}
+[11.955595] (-) TimerEvent: {}
+[11.972427] (fast_lio) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/luckrobot/mid360s_ws/build/fast_lio\n'}
+[12.032767] (fast_lio) CommandEnded: {'returncode': 0}
+[12.034738] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'build'}
+[12.037893] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.109 50794 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/luckrobot/mid360s_ws/src'), ('SSH_TTY', '/dev/pts/2'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio'), ('SSH_CONNECTION', '192.168.3.109 50794 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[12.055686] (-) TimerEvent: {}
+[12.152846] (fast_lio) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[12.155826] (-) TimerEvent: {}
+[12.176425] (fast_lio) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[12.195573] (fast_lio) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_fast_lio\n'}
+[12.256020] (-) TimerEvent: {}
+[12.356630] (-) TimerEvent: {}
+[12.457254] (-) TimerEvent: {}
+[12.557875] (-) TimerEvent: {}
+[12.658485] (-) TimerEvent: {}
+[12.759135] (-) TimerEvent: {}
+[12.859822] (-) TimerEvent: {}
+[12.932873] (fast_lio) StdoutLine: {'line': b'[  5%] Built target fast_lio__cpp\n'}
+[12.944496] (fast_lio) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o\x1b[0m\n'}
+[12.953359] (fast_lio) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.954043] (fast_lio) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.960006] (-) TimerEvent: {}
+[12.961864] (fast_lio) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.045523] (fast_lio) StdoutLine: {'line': b'running egg_info\n'}
+[13.048086] (fast_lio) StdoutLine: {'line': b'creating fast_lio.egg-info\n'}
+[13.060185] (-) TimerEvent: {}
+[13.085496] (fast_lio) StdoutLine: {'line': b'writing fast_lio.egg-info/PKG-INFO\n'}
+[13.086077] (fast_lio) StdoutLine: {'line': b'writing dependency_links to fast_lio.egg-info/dependency_links.txt\n'}
+[13.086368] (fast_lio) StdoutLine: {'line': b'writing top-level names to fast_lio.egg-info/top_level.txt\n'}
+[13.086615] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[13.160359] (-) TimerEvent: {}
+[13.198447] (fast_lio) StdoutLine: {'line': b"reading manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[13.199909] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[13.225601] (fast_lio) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libfast_lio__rosidl_generator_c.so\x1b[0m\n'}
+[13.260536] (-) TimerEvent: {}
+[13.307820] (fast_lio) StdoutLine: {'line': b'[ 20%] Built target fast_lio__rosidl_generator_c\n'}
+[13.334007] (fast_lio) StdoutLine: {'line': b'[ 20%] Built target ament_cmake_python_build_fast_lio_egg\n'}
+[13.338530] (fast_lio) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.350201] (fast_lio) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[13.360732] (-) TimerEvent: {}
+[13.399731] (fast_lio) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.460917] (-) TimerEvent: {}
+[13.561524] (-) TimerEvent: {}
+[13.662148] (-) TimerEvent: {}
+[13.713133] (fast_lio) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[13.762329] (-) TimerEvent: {}
+[13.862971] (-) TimerEvent: {}
+[13.920968] (fast_lio) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[13.938468] (fast_lio) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[13.963136] (-) TimerEvent: {}
+[14.063756] (-) TimerEvent: {}
+[14.106858] (fast_lio) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o\x1b[0m\n'}
+[14.163955] (-) TimerEvent: {}
+[14.264647] (-) TimerEvent: {}
+[14.289092] (fast_lio) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[14.301495] (fast_lio) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o\x1b[0m\n'}
+[14.364863] (-) TimerEvent: {}
+[14.393094] (fast_lio) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.443672] (fast_lio) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.465073] (-) TimerEvent: {}
+[14.529378] (fast_lio) StdoutLine: {'line': b'[ 51%] Built target fast_lio__rosidl_typesupport_introspection_c\n'}
+[14.548120] (fast_lio) StdoutLine: {'line': b'[ 51%] Built target fast_lio__rosidl_typesupport_c\n'}
+[14.565267] (-) TimerEvent: {}
+[14.582572] (fast_lio) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[14.665492] (-) TimerEvent: {}
+[14.670055] (fast_lio) StdoutLine: {'line': b'[ 54%] Built target fast_lio__rosidl_typesupport_cpp\n'}
+[14.726971] (fast_lio) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[14.742591] (fast_lio) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[14.754656] (fast_lio) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[14.765688] (-) TimerEvent: {}
+[14.866389] (-) TimerEvent: {}
+[14.967108] (-) TimerEvent: {}
+[15.067787] (-) TimerEvent: {}
+[15.168485] (-) TimerEvent: {}
+[15.170006] (fast_lio) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[15.217218] (fast_lio) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[15.264505] (fast_lio) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[15.268672] (-) TimerEvent: {}
+[15.345936] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio__rosidl_typesupport_introspection_cpp\n'}
+[15.368892] (-) TimerEvent: {}
+[15.389798] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp\n'}
+[15.468888] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_c\n'}
+[15.469406] (-) TimerEvent: {}
+[15.528994] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio\n'}
+[15.569633] (-) TimerEvent: {}
+[15.580320] (fast_lio) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[15.669801] (-) TimerEvent: {}
+[15.770416] (-) TimerEvent: {}
+[15.871038] (-) TimerEvent: {}
+[15.971657] (-) TimerEvent: {}
+[16.072295] (-) TimerEvent: {}
+[16.172928] (-) TimerEvent: {}
+[16.273544] (-) TimerEvent: {}
+[16.374175] (-) TimerEvent: {}
+[16.474810] (-) TimerEvent: {}
+[16.575422] (-) TimerEvent: {}
+[16.632742] (fast_lio) StdoutLine: {'line': b'[ 74%] Built target fast_lio__py\n'}
+[16.675625] (-) TimerEvent: {}
+[16.681318] (fast_lio) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o\x1b[0m\n'}
+[16.775854] (-) TimerEvent: {}
+[16.876635] (-) TimerEvent: {}
+[16.977315] (-) TimerEvent: {}
+[17.063564] (fast_lio) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so\x1b[0m\n'}
+[17.077527] (-) TimerEvent: {}
+[17.150397] (fast_lio) StdoutLine: {'line': b'[ 80%] Built target fast_lio__rosidl_generator_py\n'}
+[17.177733] (-) TimerEvent: {}
+[17.196142] (fast_lio) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[17.216383] (fast_lio) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[17.243852] (fast_lio) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[17.277991] (-) TimerEvent: {}
+[17.378808] (-) TimerEvent: {}
+[17.479509] (-) TimerEvent: {}
+[17.540302] (fast_lio) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[17.545782] (fast_lio) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[17.546567] (fast_lio) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[17.579736] (-) TimerEvent: {}
+[17.637687] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext\n'}
+[17.650467] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_c__pyext\n'}
+[17.671526] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext\n'}
+[17.679901] (-) TimerEvent: {}
+[17.780623] (-) TimerEvent: {}
+[17.881259] (-) TimerEvent: {}
+[17.981881] (-) TimerEvent: {}
+[18.082548] (-) TimerEvent: {}
+[18.183177] (-) TimerEvent: {}
+[18.283875] (-) TimerEvent: {}
+[18.384591] (-) TimerEvent: {}
+[18.485289] (-) TimerEvent: {}
+[18.585985] (-) TimerEvent: {}
+[18.686743] (-) TimerEvent: {}
+[18.787470] (-) TimerEvent: {}
+[18.888244] (-) TimerEvent: {}
+[18.988963] (-) TimerEvent: {}
+[19.089740] (-) TimerEvent: {}
+[19.190612] (-) TimerEvent: {}
+[19.291373] (-) TimerEvent: {}
+[19.392068] (-) TimerEvent: {}
+[19.492645] (-) TimerEvent: {}
+[19.593249] (-) TimerEvent: {}
+[19.693934] (-) TimerEvent: {}
+[19.794599] (-) TimerEvent: {}
+[19.895191] (-) TimerEvent: {}
+[19.995815] (-) TimerEvent: {}
+[20.096426] (-) TimerEvent: {}
+[20.197075] (-) TimerEvent: {}
+[20.297701] (-) TimerEvent: {}
+[20.398399] (-) TimerEvent: {}
+[20.499001] (-) TimerEvent: {}
+[20.599597] (-) TimerEvent: {}
+[20.700324] (-) TimerEvent: {}
+[20.801028] (-) TimerEvent: {}
+[20.901663] (-) TimerEvent: {}
+[21.002250] (-) TimerEvent: {}
+[21.102867] (-) TimerEvent: {}
+[21.203543] (-) TimerEvent: {}
+[21.304150] (-) TimerEvent: {}
+[21.404787] (-) TimerEvent: {}
+[21.509912] (-) TimerEvent: {}
+[21.610613] (-) TimerEvent: {}
+[21.711336] (-) TimerEvent: {}
+[21.812079] (-) TimerEvent: {}
+[21.912828] (-) TimerEvent: {}
+[22.013568] (-) TimerEvent: {}
+[22.114234] (-) TimerEvent: {}
+[22.214908] (-) TimerEvent: {}
+[22.315586] (-) TimerEvent: {}
+[22.416336] (-) TimerEvent: {}
+[22.517100] (-) TimerEvent: {}
+[22.617790] (-) TimerEvent: {}
+[22.718439] (-) TimerEvent: {}
+[22.819250] (-) TimerEvent: {}
+[22.919993] (-) TimerEvent: {}
+[23.020770] (-) TimerEvent: {}
+[23.121383] (-) TimerEvent: {}
+[23.222056] (-) TimerEvent: {}
+[23.322821] (-) TimerEvent: {}
+[23.423425] (-) TimerEvent: {}
+[23.524092] (-) TimerEvent: {}
+[23.624693] (-) TimerEvent: {}
+[23.725402] (-) TimerEvent: {}
+[23.826141] (-) TimerEvent: {}
+[23.926927] (-) TimerEvent: {}
+[24.027709] (-) TimerEvent: {}
+[24.128469] (-) TimerEvent: {}
+[24.229164] (-) TimerEvent: {}
+[24.329859] (-) TimerEvent: {}
+[24.430511] (-) TimerEvent: {}
+[24.531174] (-) TimerEvent: {}
+[24.631998] (-) TimerEvent: {}
+[24.732632] (-) TimerEvent: {}
+[24.833334] (-) TimerEvent: {}
+[24.934118] (-) TimerEvent: {}
+[25.034841] (-) TimerEvent: {}
+[25.136750] (-) TimerEvent: {}
+[25.237516] (-) TimerEvent: {}
+[25.338201] (-) TimerEvent: {}
+[25.438899] (-) TimerEvent: {}
+[25.539600] (-) TimerEvent: {}
+[25.640442] (-) TimerEvent: {}
+[25.741506] (-) TimerEvent: {}
+[25.842259] (-) TimerEvent: {}
+[25.943355] (-) TimerEvent: {}
+[26.044211] (-) TimerEvent: {}
+[26.144931] (-) TimerEvent: {}
+[26.245536] (-) TimerEvent: {}
+[26.346194] (-) TimerEvent: {}
+[26.446813] (-) TimerEvent: {}
+[26.547429] (-) TimerEvent: {}
+[26.648199] (-) TimerEvent: {}
+[26.749001] (-) TimerEvent: {}
+[26.849758] (-) TimerEvent: {}
+[26.950567] (-) TimerEvent: {}
+[27.051326] (-) TimerEvent: {}
+[27.152146] (-) TimerEvent: {}
+[27.252916] (-) TimerEvent: {}
+[27.353651] (-) TimerEvent: {}
+[27.454468] (-) TimerEvent: {}
+[27.555210] (-) TimerEvent: {}
+[27.655939] (-) TimerEvent: {}
+[27.756687] (-) TimerEvent: {}
+[27.857296] (-) TimerEvent: {}
+[27.958022] (-) TimerEvent: {}
+[28.058731] (-) TimerEvent: {}
+[28.159398] (-) TimerEvent: {}
+[28.260082] (-) TimerEvent: {}
+[28.360715] (-) TimerEvent: {}
+[28.461290] (-) TimerEvent: {}
+[28.561968] (-) TimerEvent: {}
+[28.662662] (-) TimerEvent: {}
+[28.763177] (-) TimerEvent: {}
+[28.863821] (-) TimerEvent: {}
+[28.964444] (-) TimerEvent: {}
+[29.065060] (-) TimerEvent: {}
+[29.165685] (-) TimerEvent: {}
+[29.266261] (-) TimerEvent: {}
+[29.366787] (-) TimerEvent: {}
+[29.467267] (-) TimerEvent: {}
+[29.567907] (-) TimerEvent: {}
+[29.668412] (-) TimerEvent: {}
+[29.769072] (-) TimerEvent: {}
+[29.869783] (-) TimerEvent: {}
+[29.970446] (-) TimerEvent: {}
+[30.071039] (-) TimerEvent: {}
+[30.171641] (-) TimerEvent: {}
+[30.272130] (-) TimerEvent: {}
+[30.372680] (-) TimerEvent: {}
+[30.473140] (-) TimerEvent: {}
+[30.573687] (-) TimerEvent: {}
+[30.674248] (-) TimerEvent: {}
+[30.774805] (-) TimerEvent: {}
+[30.875428] (-) TimerEvent: {}
+[30.976119] (-) TimerEvent: {}
+[31.076769] (-) TimerEvent: {}
+[31.177269] (-) TimerEvent: {}
+[31.277843] (-) TimerEvent: {}
+[31.378387] (-) TimerEvent: {}
+[31.478918] (-) TimerEvent: {}
+[31.579436] (-) TimerEvent: {}
+[31.629014] (fast_lio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[31.629494] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[31.629711] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[31.629896] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[31.630040] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[31.630377] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[31.630533] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[31.630695] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/microsec_time_clock.hpp:18\x1b[m\x1b[K,\n'}
+[31.630839] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31\x1b[m\x1b[K,\n'}
+[31.630971] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36\x1b[m\x1b[K,\n'}
+[31.631099] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/sync/file_lock.hpp:26\x1b[m\x1b[K,\n'}
+[31.631307] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46\x1b[m\x1b[K,\n'}
+[31.631451] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73\x1b[m\x1b[K,\n'}
+[31.631620] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/src/IMU_Processing.hpp:18\x1b[m\x1b[K,\n'}
+[31.631780] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/src/laserMapping.cpp:47\x1b[m\x1b[K:\n'}
+[31.631911] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.632086] (fast_lio) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[31.632218] (fast_lio) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.679571] (-) TimerEvent: {}
+[31.780235] (-) TimerEvent: {}
+[31.880909] (-) TimerEvent: {}
+[31.981575] (-) TimerEvent: {}
+[32.082286] (-) TimerEvent: {}
+[32.182964] (-) TimerEvent: {}
+[32.283570] (-) TimerEvent: {}
+[32.384042] (-) TimerEvent: {}
+[32.484495] (-) TimerEvent: {}
+[32.585010] (-) TimerEvent: {}
+[32.685655] (-) TimerEvent: {}
+[32.786277] (-) TimerEvent: {}
+[32.886748] (-) TimerEvent: {}
+[32.987262] (-) TimerEvent: {}
+[33.087879] (-) TimerEvent: {}
+[33.188455] (-) TimerEvent: {}
+[33.289051] (-) TimerEvent: {}
+[33.389717] (-) TimerEvent: {}
+[33.490449] (-) TimerEvent: {}
+[33.591233] (-) TimerEvent: {}
+[33.691868] (-) TimerEvent: {}
+[33.792389] (-) TimerEvent: {}
+[33.893015] (-) TimerEvent: {}
+[33.993806] (-) TimerEvent: {}
+[34.094794] (-) TimerEvent: {}
+[34.195400] (-) TimerEvent: {}
+[34.296040] (-) TimerEvent: {}
+[34.396695] (-) TimerEvent: {}
+[34.497286] (-) TimerEvent: {}
+[34.597873] (-) TimerEvent: {}
+[34.698504] (-) TimerEvent: {}
+[34.799113] (-) TimerEvent: {}
+[34.899708] (-) TimerEvent: {}
+[35.000314] (-) TimerEvent: {}
+[35.100922] (-) TimerEvent: {}
+[35.201554] (-) TimerEvent: {}
+[35.302166] (-) TimerEvent: {}
+[35.402816] (-) TimerEvent: {}
+[35.503446] (-) TimerEvent: {}
+[35.604052] (-) TimerEvent: {}
+[35.704675] (-) TimerEvent: {}
+[35.805332] (-) TimerEvent: {}
+[35.905987] (-) TimerEvent: {}
+[36.006699] (-) TimerEvent: {}
+[36.107322] (-) TimerEvent: {}
+[36.208016] (-) TimerEvent: {}
+[36.308733] (-) TimerEvent: {}
+[36.409340] (-) TimerEvent: {}
+[36.510085] (-) TimerEvent: {}
+[36.610801] (-) TimerEvent: {}
+[36.711400] (-) TimerEvent: {}
+[36.812011] (-) TimerEvent: {}
+[36.912636] (-) TimerEvent: {}
+[37.013196] (-) TimerEvent: {}
+[37.113785] (-) TimerEvent: {}
+[37.214320] (-) TimerEvent: {}
+[37.314778] (-) TimerEvent: {}
+[37.415270] (-) TimerEvent: {}
+[37.515883] (-) TimerEvent: {}
+[37.616528] (-) TimerEvent: {}
+[37.717120] (-) TimerEvent: {}
+[37.817721] (-) TimerEvent: {}
+[37.918379] (-) TimerEvent: {}
+[38.019037] (-) TimerEvent: {}
+[38.119690] (-) TimerEvent: {}
+[38.220322] (-) TimerEvent: {}
+[38.320976] (-) TimerEvent: {}
+[38.421697] (-) TimerEvent: {}
+[38.522279] (-) TimerEvent: {}
+[38.622863] (-) TimerEvent: {}
+[38.723344] (-) TimerEvent: {}
+[38.823846] (-) TimerEvent: {}
+[38.924471] (-) TimerEvent: {}
+[39.025120] (-) TimerEvent: {}
+[39.125790] (-) TimerEvent: {}
+[39.226514] (-) TimerEvent: {}
+[39.327170] (-) TimerEvent: {}
+[39.427800] (-) TimerEvent: {}
+[39.528430] (-) TimerEvent: {}
+[39.629102] (-) TimerEvent: {}
+[39.729862] (-) TimerEvent: {}
+[39.830488] (-) TimerEvent: {}
+[39.931382] (-) TimerEvent: {}
+[40.032286] (-) TimerEvent: {}
+[40.132920] (-) TimerEvent: {}
+[40.233548] (-) TimerEvent: {}
+[40.334187] (-) TimerEvent: {}
+[40.435074] (-) TimerEvent: {}
+[40.535738] (-) TimerEvent: {}
+[40.636372] (-) TimerEvent: {}
+[40.736901] (-) TimerEvent: {}
+[40.837523] (-) TimerEvent: {}
+[40.938190] (-) TimerEvent: {}
+[41.038827] (-) TimerEvent: {}
+[41.139401] (-) TimerEvent: {}
+[41.239946] (-) TimerEvent: {}
+[41.340603] (-) TimerEvent: {}
+[41.441240] (-) TimerEvent: {}
+[41.541879] (-) TimerEvent: {}
+[41.642545] (-) TimerEvent: {}
+[41.743221] (-) TimerEvent: {}
+[41.843859] (-) TimerEvent: {}
+[41.944511] (-) TimerEvent: {}
+[42.045222] (-) TimerEvent: {}
+[42.145785] (-) TimerEvent: {}
+[42.246430] (-) TimerEvent: {}
+[42.347158] (-) TimerEvent: {}
+[42.447796] (-) TimerEvent: {}
+[42.548406] (-) TimerEvent: {}
+[42.648973] (-) TimerEvent: {}
+[42.749520] (-) TimerEvent: {}
+[42.850118] (-) TimerEvent: {}
+[42.950625] (-) TimerEvent: {}
+[43.051151] (-) TimerEvent: {}
+[43.151729] (-) TimerEvent: {}
+[43.252284] (-) TimerEvent: {}
+[43.352856] (-) TimerEvent: {}
+[43.453340] (-) TimerEvent: {}
+[43.553889] (-) TimerEvent: {}
+[43.654468] (-) TimerEvent: {}
+[43.755041] (-) TimerEvent: {}
+[43.855575] (-) TimerEvent: {}
+[43.956118] (-) TimerEvent: {}
+[44.056623] (-) TimerEvent: {}
+[44.157277] (-) TimerEvent: {}
+[44.257902] (-) TimerEvent: {}
+[44.358548] (-) TimerEvent: {}
+[44.459189] (-) TimerEvent: {}
+[44.559723] (-) TimerEvent: {}
+[44.660369] (-) TimerEvent: {}
+[44.761237] (-) TimerEvent: {}
+[44.861945] (-) TimerEvent: {}
+[44.962731] (-) TimerEvent: {}
+[45.063340] (-) TimerEvent: {}
+[45.164242] (-) TimerEvent: {}
+[45.264935] (-) TimerEvent: {}
+[45.365592] (-) TimerEvent: {}
+[45.466222] (-) TimerEvent: {}
+[45.567199] (-) TimerEvent: {}
+[45.667802] (-) TimerEvent: {}
+[45.768372] (-) TimerEvent: {}
+[45.868918] (-) TimerEvent: {}
+[45.969505] (-) TimerEvent: {}
+[46.064621] (fast_lio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/include/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83\x1b[m\x1b[K,\n'}
+[46.065137] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/include/IKFoM_toolkit/esekfom/esekfom.hpp:49\x1b[m\x1b[K,\n'}
+[46.065385] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/include/use-ikfom.hpp:4\x1b[m\x1b[K,\n'}
+[46.065593] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/src/IMU_Processing.hpp:22\x1b[m\x1b[K,\n'}
+[46.065767] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/src/laserMapping.cpp:47\x1b[m\x1b[K:\n'}
+[46.065910] (fast_lio) StderrLine: {'line': b'/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/include/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_FIter, _FIter> MTK::cos_sinc_sqrt(const scalar&) [with scalar = double]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[46.066083] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/include/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kscalar MTK::exp(MTK::vectview<scalar, dim>, MTK::vectview<const scalar, dim>, const scalar&) [with scalar = double; int n = 3]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[46.066226] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/include/IKFoM_toolkit/esekfom/../mtk/types/S2.hpp:140:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid MTK::S2<_scalar, den, num, S2_typ>::boxplus(MTK::vectview<const _scalar, 2>, MTK::S2<_scalar, den, num, S2_typ>::scalar) [with _scalar = double; int den = 98090; int num = 10000; int S2_typ = 1; MTK::S2<_scalar, den, num, S2_typ>::scalar = double]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[46.066366] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/include/use-ikfom.hpp:12:1:\x1b[m\x1b[K   required from here\n'}
+[46.066493] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2/include/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 in GCC 10.1\n'}
+[46.066717] (fast_lio) StderrLine: {'line': b'  143 | std::pair<scalar, scalar> \x1b[01;36m\x1b[Kcos_sinc_sqrt\x1b[m\x1b[K(const scalar &x2){\n'}
+[46.066867] (fast_lio) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[46.069614] (-) TimerEvent: {}
+[46.170134] (-) TimerEvent: {}
+[46.270799] (-) TimerEvent: {}
+[46.371413] (-) TimerEvent: {}
+[46.472047] (-) TimerEvent: {}
+[46.572625] (-) TimerEvent: {}
+[46.673212] (-) TimerEvent: {}
+[46.773819] (-) TimerEvent: {}
+[46.874501] (-) TimerEvent: {}
+[46.975087] (-) TimerEvent: {}
+[47.075590] (-) TimerEvent: {}
+[47.176233] (-) TimerEvent: {}
+[47.277453] (-) TimerEvent: {}
+[47.377974] (-) TimerEvent: {}
+[47.478619] (-) TimerEvent: {}
+[47.579261] (-) TimerEvent: {}
+[47.680101] (-) TimerEvent: {}
+[47.780731] (-) TimerEvent: {}
+[47.881364] (-) TimerEvent: {}
+[47.981929] (-) TimerEvent: {}
+[48.082463] (-) TimerEvent: {}
+[48.183142] (-) TimerEvent: {}
+[48.283838] (-) TimerEvent: {}
+[48.384420] (-) TimerEvent: {}
+[48.485060] (-) TimerEvent: {}
+[48.585782] (-) TimerEvent: {}
+[48.686411] (-) TimerEvent: {}
+[48.786968] (-) TimerEvent: {}
+[48.887670] (-) TimerEvent: {}
+[48.988174] (-) TimerEvent: {}
+[49.088698] (-) TimerEvent: {}
+[49.189194] (-) TimerEvent: {}
+[49.289816] (-) TimerEvent: {}
+[49.390605] (-) TimerEvent: {}
+[49.491312] (-) TimerEvent: {}
+[49.591986] (-) TimerEvent: {}
+[49.692644] (-) TimerEvent: {}
+[49.793123] (-) TimerEvent: {}
+[49.893645] (-) TimerEvent: {}
+[49.994183] (-) TimerEvent: {}
+[50.094840] (-) TimerEvent: {}
+[50.195808] (-) TimerEvent: {}
+[50.296528] (-) TimerEvent: {}
+[50.397163] (-) TimerEvent: {}
+[50.497919] (-) TimerEvent: {}
+[50.598644] (-) TimerEvent: {}
+[50.699312] (-) TimerEvent: {}
+[50.799944] (-) TimerEvent: {}
+[50.900928] (-) TimerEvent: {}
+[51.001658] (-) TimerEvent: {}
+[51.102639] (-) TimerEvent: {}
+[51.203591] (-) TimerEvent: {}
+[51.304555] (-) TimerEvent: {}
+[51.405261] (-) TimerEvent: {}
+[51.506190] (-) TimerEvent: {}
+[51.606952] (-) TimerEvent: {}
+[51.707882] (-) TimerEvent: {}
+[51.808597] (-) TimerEvent: {}
+[51.909533] (-) TimerEvent: {}
+[52.010260] (-) TimerEvent: {}
+[52.110984] (-) TimerEvent: {}
+[52.211959] (-) TimerEvent: {}
+[52.312968] (-) TimerEvent: {}
+[52.413943] (-) TimerEvent: {}
+[52.514908] (-) TimerEvent: {}
+[52.615884] (-) TimerEvent: {}
+[52.716848] (-) TimerEvent: {}
+[52.817569] (-) TimerEvent: {}
+[52.918368] (-) TimerEvent: {}
+[53.019024] (-) TimerEvent: {}
+[53.119661] (-) TimerEvent: {}
+[53.220374] (-) TimerEvent: {}
+[53.321095] (-) TimerEvent: {}
+[53.421818] (-) TimerEvent: {}
+[53.522560] (-) TimerEvent: {}
+[53.623311] (-) TimerEvent: {}
+[53.724077] (-) TimerEvent: {}
+[53.824835] (-) TimerEvent: {}
+[53.925592] (-) TimerEvent: {}
+[54.026326] (-) TimerEvent: {}
+[54.127067] (-) TimerEvent: {}
+[54.227799] (-) TimerEvent: {}
+[54.328379] (-) TimerEvent: {}
+[54.429119] (-) TimerEvent: {}
+[54.529661] (-) TimerEvent: {}
+[54.630666] (-) TimerEvent: {}
+[54.731619] (-) TimerEvent: {}
+[54.832332] (-) TimerEvent: {}
+[54.933238] (-) TimerEvent: {}
+[55.033902] (-) TimerEvent: {}
+[55.134587] (-) TimerEvent: {}
+[55.235299] (-) TimerEvent: {}
+[55.335997] (-) TimerEvent: {}
+[55.436899] (-) TimerEvent: {}
+[55.537575] (-) TimerEvent: {}
+[55.638265] (-) TimerEvent: {}
+[55.739054] (-) TimerEvent: {}
+[55.839947] (-) TimerEvent: {}
+[55.940843] (-) TimerEvent: {}
+[56.041521] (-) TimerEvent: {}
+[56.142408] (-) TimerEvent: {}
+[56.243144] (-) TimerEvent: {}
+[56.343862] (-) TimerEvent: {}
+[56.444566] (-) TimerEvent: {}
+[56.545253] (-) TimerEvent: {}
+[56.645932] (-) TimerEvent: {}
+[56.746623] (-) TimerEvent: {}
+[56.847350] (-) TimerEvent: {}
+[56.948050] (-) TimerEvent: {}
+[57.048745] (-) TimerEvent: {}
+[57.149435] (-) TimerEvent: {}
+[57.250346] (-) TimerEvent: {}
+[57.351116] (-) TimerEvent: {}
+[57.451830] (-) TimerEvent: {}
+[57.552527] (-) TimerEvent: {}
+[57.653169] (-) TimerEvent: {}
+[57.753797] (-) TimerEvent: {}
+[57.854427] (-) TimerEvent: {}
+[57.955165] (-) TimerEvent: {}
+[58.055868] (-) TimerEvent: {}
+[58.156583] (-) TimerEvent: {}
+[58.257564] (-) TimerEvent: {}
+[58.358544] (-) TimerEvent: {}
+[58.459324] (-) TimerEvent: {}
+[58.560053] (-) TimerEvent: {}
+[58.661016] (-) TimerEvent: {}
+[58.761758] (-) TimerEvent: {}
+[58.862490] (-) TimerEvent: {}
+[58.963245] (-) TimerEvent: {}
+[59.063961] (-) TimerEvent: {}
+[59.164684] (-) TimerEvent: {}
+[59.265670] (-) TimerEvent: {}
+[59.366663] (-) TimerEvent: {}
+[59.467458] (-) TimerEvent: {}
+[59.568192] (-) TimerEvent: {}
+[59.668901] (-) TimerEvent: {}
+[59.769888] (-) TimerEvent: {}
+[59.870648] (-) TimerEvent: {}
+[59.971397] (-) TimerEvent: {}
+[60.072115] (-) TimerEvent: {}
+[60.172844] (-) TimerEvent: {}
+[60.273823] (-) TimerEvent: {}
+[60.374541] (-) TimerEvent: {}
+[60.475209] (-) TimerEvent: {}
+[60.575833] (-) TimerEvent: {}
+[60.676479] (-) TimerEvent: {}
+[60.777220] (-) TimerEvent: {}
+[60.878213] (-) TimerEvent: {}
+[60.978999] (-) TimerEvent: {}
+[61.079745] (-) TimerEvent: {}
+[61.180496] (-) TimerEvent: {}
+[61.281235] (-) TimerEvent: {}
+[61.382207] (-) TimerEvent: {}
+[61.482925] (-) TimerEvent: {}
+[61.583556] (-) TimerEvent: {}
+[61.684192] (-) TimerEvent: {}
+[61.784835] (-) TimerEvent: {}
+[61.885445] (-) TimerEvent: {}
+[61.985910] (-) TimerEvent: {}
+[62.086422] (-) TimerEvent: {}
+[62.187072] (-) TimerEvent: {}
+[62.287574] (-) TimerEvent: {}
+[62.388077] (-) TimerEvent: {}
+[62.488499] (-) TimerEvent: {}
+[62.589010] (-) TimerEvent: {}
+[62.689676] (-) TimerEvent: {}
+[62.790279] (-) TimerEvent: {}
+[62.890916] (-) TimerEvent: {}
+[62.991562] (-) TimerEvent: {}
+[63.092298] (-) TimerEvent: {}
+[63.192999] (-) TimerEvent: {}
+[63.293498] (-) TimerEvent: {}
+[63.393967] (-) TimerEvent: {}
+[63.494418] (-) TimerEvent: {}
+[63.594894] (-) TimerEvent: {}
+[63.695450] (-) TimerEvent: {}
+[63.796032] (-) TimerEvent: {}
+[63.896586] (-) TimerEvent: {}
+[63.997072] (-) TimerEvent: {}
+[64.097576] (-) TimerEvent: {}
+[64.198166] (-) TimerEvent: {}
+[64.298660] (-) TimerEvent: {}
+[64.399210] (-) TimerEvent: {}
+[64.499667] (-) TimerEvent: {}
+[64.600105] (-) TimerEvent: {}
+[64.700562] (-) TimerEvent: {}
+[64.801020] (-) TimerEvent: {}
+[64.901571] (-) TimerEvent: {}
+[65.002035] (-) TimerEvent: {}
+[65.102519] (-) TimerEvent: {}
+[65.203135] (-) TimerEvent: {}
+[65.303602] (-) TimerEvent: {}
+[65.404177] (-) TimerEvent: {}
+[65.504882] (-) TimerEvent: {}
+[65.605549] (-) TimerEvent: {}
+[65.706202] (-) TimerEvent: {}
+[65.806874] (-) TimerEvent: {}
+[65.907530] (-) TimerEvent: {}
+[66.008196] (-) TimerEvent: {}
+[66.108894] (-) TimerEvent: {}
+[66.209670] (-) TimerEvent: {}
+[66.310293] (-) TimerEvent: {}
+[66.410888] (-) TimerEvent: {}
+[66.511542] (-) TimerEvent: {}
+[66.612203] (-) TimerEvent: {}
+[66.712894] (-) TimerEvent: {}
+[66.813555] (-) TimerEvent: {}
+[66.914250] (-) TimerEvent: {}
+[67.015018] (-) TimerEvent: {}
+[67.115710] (-) TimerEvent: {}
+[67.216438] (-) TimerEvent: {}
+[67.317049] (-) TimerEvent: {}
+[67.417789] (-) TimerEvent: {}
+[67.518710] (-) TimerEvent: {}
+[67.619307] (-) TimerEvent: {}
+[67.720038] (-) TimerEvent: {}
+[67.820703] (-) TimerEvent: {}
+[67.921441] (-) TimerEvent: {}
+[68.022148] (-) TimerEvent: {}
+[68.122811] (-) TimerEvent: {}
+[68.223464] (-) TimerEvent: {}
+[68.324167] (-) TimerEvent: {}
+[68.424861] (-) TimerEvent: {}
+[68.525383] (-) TimerEvent: {}
+[68.625996] (-) TimerEvent: {}
+[68.726571] (-) TimerEvent: {}
+[68.827095] (-) TimerEvent: {}
+[68.927669] (-) TimerEvent: {}
+[69.028140] (-) TimerEvent: {}
+[69.128606] (-) TimerEvent: {}
+[69.229181] (-) TimerEvent: {}
+[69.329694] (-) TimerEvent: {}
+[69.430398] (-) TimerEvent: {}
+[69.530998] (-) TimerEvent: {}
+[69.631491] (-) TimerEvent: {}
+[69.732026] (-) TimerEvent: {}
+[69.832542] (-) TimerEvent: {}
+[69.933184] (-) TimerEvent: {}
+[70.033865] (-) TimerEvent: {}
+[70.134468] (-) TimerEvent: {}
+[70.234960] (-) TimerEvent: {}
+[70.335543] (-) TimerEvent: {}
+[70.436179] (-) TimerEvent: {}
+[70.536688] (-) TimerEvent: {}
+[70.637198] (-) TimerEvent: {}
+[70.737882] (-) TimerEvent: {}
+[70.838491] (-) TimerEvent: {}
+[70.939034] (-) TimerEvent: {}
+[71.039640] (-) TimerEvent: {}
+[71.140117] (-) TimerEvent: {}
+[71.240591] (-) TimerEvent: {}
+[71.341148] (-) TimerEvent: {}
+[71.441774] (-) TimerEvent: {}
+[71.542277] (-) TimerEvent: {}
+[71.642742] (-) TimerEvent: {}
+[71.743248] (-) TimerEvent: {}
+[71.843914] (-) TimerEvent: {}
+[71.944590] (-) TimerEvent: {}
+[72.045244] (-) TimerEvent: {}
+[72.146012] (-) TimerEvent: {}
+[72.246554] (-) TimerEvent: {}
+[72.347045] (-) TimerEvent: {}
+[72.447565] (-) TimerEvent: {}
+[72.548177] (-) TimerEvent: {}
+[72.648846] (-) TimerEvent: {}
+[72.749407] (-) TimerEvent: {}
+[72.849995] (-) TimerEvent: {}
+[72.950665] (-) TimerEvent: {}
+[73.051271] (-) TimerEvent: {}
+[73.151895] (-) TimerEvent: {}
+[73.252416] (-) TimerEvent: {}
+[73.352899] (-) TimerEvent: {}
+[73.453436] (-) TimerEvent: {}
+[73.554005] (-) TimerEvent: {}
+[73.654740] (-) TimerEvent: {}
+[73.755332] (-) TimerEvent: {}
+[73.855935] (-) TimerEvent: {}
+[73.956606] (-) TimerEvent: {}
+[74.057178] (-) TimerEvent: {}
+[74.157785] (-) TimerEvent: {}
+[74.258295] (-) TimerEvent: {}
+[74.358836] (-) TimerEvent: {}
+[74.459563] (-) TimerEvent: {}
+[74.560279] (-) TimerEvent: {}
+[74.660960] (-) TimerEvent: {}
+[74.761627] (-) TimerEvent: {}
+[74.862303] (-) TimerEvent: {}
+[74.962978] (-) TimerEvent: {}
+[75.063628] (-) TimerEvent: {}
+[75.164342] (-) TimerEvent: {}
+[75.264937] (-) TimerEvent: {}
+[75.365624] (-) TimerEvent: {}
+[75.466316] (-) TimerEvent: {}
+[75.566976] (-) TimerEvent: {}
+[75.667969] (-) TimerEvent: {}
+[75.768556] (-) TimerEvent: {}
+[75.869097] (-) TimerEvent: {}
+[75.969710] (-) TimerEvent: {}
+[76.070353] (-) TimerEvent: {}
+[76.171173] (-) TimerEvent: {}
+[76.271895] (-) TimerEvent: {}
+[76.372408] (-) TimerEvent: {}
+[76.472903] (-) TimerEvent: {}
+[76.573460] (-) TimerEvent: {}
+[76.674173] (-) TimerEvent: {}
+[76.774908] (-) TimerEvent: {}
+[76.875775] (-) TimerEvent: {}
+[76.976314] (-) TimerEvent: {}
+[77.076868] (-) TimerEvent: {}
+[77.177533] (-) TimerEvent: {}
+[77.278070] (-) TimerEvent: {}
+[77.378664] (-) TimerEvent: {}
+[77.479273] (-) TimerEvent: {}
+[77.579960] (-) TimerEvent: {}
+[77.680625] (-) TimerEvent: {}
+[77.781239] (-) TimerEvent: {}
+[77.881933] (-) TimerEvent: {}
+[77.982455] (-) TimerEvent: {}
+[78.083041] (-) TimerEvent: {}
+[78.183899] (-) TimerEvent: {}
+[78.284414] (-) TimerEvent: {}
+[78.384938] (-) TimerEvent: {}
+[78.485502] (-) TimerEvent: {}
+[78.586040] (-) TimerEvent: {}
+[78.686728] (-) TimerEvent: {}
+[78.787252] (-) TimerEvent: {}
+[78.887956] (-) TimerEvent: {}
+[78.988493] (-) TimerEvent: {}
+[79.089017] (-) TimerEvent: {}
+[79.189662] (-) TimerEvent: {}
+[79.290253] (-) TimerEvent: {}
+[79.390871] (-) TimerEvent: {}
+[79.491521] (-) TimerEvent: {}
+[79.592079] (-) TimerEvent: {}
+[79.692751] (-) TimerEvent: {}
+[79.793262] (-) TimerEvent: {}
+[79.893947] (-) TimerEvent: {}
+[79.994631] (-) TimerEvent: {}
+[80.095295] (-) TimerEvent: {}
+[80.195947] (-) TimerEvent: {}
+[80.296468] (-) TimerEvent: {}
+[80.396963] (-) TimerEvent: {}
+[80.497585] (-) TimerEvent: {}
+[80.598159] (-) TimerEvent: {}
+[80.698804] (-) TimerEvent: {}
+[80.799327] (-) TimerEvent: {}
+[80.899958] (-) TimerEvent: {}
+[81.000565] (-) TimerEvent: {}
+[81.101117] (-) TimerEvent: {}
+[81.201818] (-) TimerEvent: {}
+[81.302335] (-) TimerEvent: {}
+[81.402969] (-) TimerEvent: {}
+[81.503564] (-) TimerEvent: {}
+[81.604123] (-) TimerEvent: {}
+[81.704795] (-) TimerEvent: {}
+[81.805272] (-) TimerEvent: {}
+[81.905708] (-) TimerEvent: {}
+[82.006141] (-) TimerEvent: {}
+[82.106625] (-) TimerEvent: {}
+[82.207373] (-) TimerEvent: {}
+[82.307954] (-) TimerEvent: {}
+[82.408508] (-) TimerEvent: {}
+[82.509159] (-) TimerEvent: {}
+[82.609862] (-) TimerEvent: {}
+[82.710536] (-) TimerEvent: {}
+[82.811241] (-) TimerEvent: {}
+[82.911931] (-) TimerEvent: {}
+[83.012576] (-) TimerEvent: {}
+[83.113246] (-) TimerEvent: {}
+[83.213904] (-) TimerEvent: {}
+[83.314562] (-) TimerEvent: {}
+[83.415502] (-) TimerEvent: {}
+[83.516241] (-) TimerEvent: {}
+[83.617174] (-) TimerEvent: {}
+[83.717862] (-) TimerEvent: {}
+[83.818504] (-) TimerEvent: {}
+[83.919474] (-) TimerEvent: {}
+[84.020446] (-) TimerEvent: {}
+[84.121127] (-) TimerEvent: {}
+[84.221767] (-) TimerEvent: {}
+[84.322382] (-) TimerEvent: {}
+[84.422921] (-) TimerEvent: {}
+[84.523440] (-) TimerEvent: {}
+[84.624236] (-) TimerEvent: {}
+[84.724873] (-) TimerEvent: {}
+[84.825536] (-) TimerEvent: {}
+[84.926264] (-) TimerEvent: {}
+[85.027249] (-) TimerEvent: {}
+[85.127966] (-) TimerEvent: {}
+[85.228688] (-) TimerEvent: {}
+[85.329395] (-) TimerEvent: {}
+[85.430112] (-) TimerEvent: {}
+[85.530859] (-) TimerEvent: {}
+[85.631584] (-) TimerEvent: {}
+[85.732309] (-) TimerEvent: {}
+[85.833028] (-) TimerEvent: {}
+[85.933767] (-) TimerEvent: {}
+[86.034500] (-) TimerEvent: {}
+[86.135236] (-) TimerEvent: {}
+[86.235946] (-) TimerEvent: {}
+[86.336667] (-) TimerEvent: {}
+[86.437372] (-) TimerEvent: {}
+[86.537999] (-) TimerEvent: {}
+[86.638716] (-) TimerEvent: {}
+[86.739432] (-) TimerEvent: {}
+[86.840131] (-) TimerEvent: {}
+[86.941047] (-) TimerEvent: {}
+[87.041999] (-) TimerEvent: {}
+[87.142709] (-) TimerEvent: {}
+[87.243387] (-) TimerEvent: {}
+[87.344127] (-) TimerEvent: {}
+[87.445087] (-) TimerEvent: {}
+[87.546018] (-) TimerEvent: {}
+[87.649985] (-) TimerEvent: {}
+[87.750727] (-) TimerEvent: {}
+[87.851664] (-) TimerEvent: {}
+[87.952399] (-) TimerEvent: {}
+[88.053338] (-) TimerEvent: {}
+[88.154049] (-) TimerEvent: {}
+[88.254770] (-) TimerEvent: {}
+[88.355456] (-) TimerEvent: {}
+[88.456149] (-) TimerEvent: {}
+[88.556842] (-) TimerEvent: {}
+[88.657546] (-) TimerEvent: {}
+[88.758246] (-) TimerEvent: {}
+[88.858971] (-) TimerEvent: {}
+[88.959520] (-) TimerEvent: {}
+[89.060007] (-) TimerEvent: {}
+[89.160630] (-) TimerEvent: {}
+[89.261269] (-) TimerEvent: {}
+[89.362024] (-) TimerEvent: {}
+[89.462753] (-) TimerEvent: {}
+[89.563428] (-) TimerEvent: {}
+[89.664121] (-) TimerEvent: {}
+[89.765051] (-) TimerEvent: {}
+[89.865558] (-) TimerEvent: {}
+[89.966236] (-) TimerEvent: {}
+[90.066927] (-) TimerEvent: {}
+[90.167672] (-) TimerEvent: {}
+[90.268468] (-) TimerEvent: {}
+[90.369080] (-) TimerEvent: {}
+[90.469806] (-) TimerEvent: {}
+[90.570415] (-) TimerEvent: {}
+[90.670997] (-) TimerEvent: {}
+[90.771542] (-) TimerEvent: {}
+[90.872067] (-) TimerEvent: {}
+[90.972590] (-) TimerEvent: {}
+[91.073122] (-) TimerEvent: {}
+[91.173628] (-) TimerEvent: {}
+[91.274143] (-) TimerEvent: {}
+[91.374767] (-) TimerEvent: {}
+[91.475520] (-) TimerEvent: {}
+[91.576145] (-) TimerEvent: {}
+[91.676913] (-) TimerEvent: {}
+[91.777432] (-) TimerEvent: {}
+[91.878149] (-) TimerEvent: {}
+[91.978823] (-) TimerEvent: {}
+[92.079513] (-) TimerEvent: {}
+[92.180171] (-) TimerEvent: {}
+[92.280851] (-) TimerEvent: {}
+[92.381399] (-) TimerEvent: {}
+[92.482315] (-) TimerEvent: {}
+[92.583125] (-) TimerEvent: {}
+[92.683837] (-) TimerEvent: {}
+[92.784348] (-) TimerEvent: {}
+[92.885077] (-) TimerEvent: {}
+[92.985589] (-) TimerEvent: {}
+[93.086282] (-) TimerEvent: {}
+[93.186992] (-) TimerEvent: {}
+[93.287677] (-) TimerEvent: {}
+[93.388144] (-) TimerEvent: {}
+[93.488619] (-) TimerEvent: {}
+[93.589234] (-) TimerEvent: {}
+[93.689725] (-) TimerEvent: {}
+[93.790179] (-) TimerEvent: {}
+[93.890554] (-) TimerEvent: {}
+[93.990940] (-) TimerEvent: {}
+[94.091289] (-) TimerEvent: {}
+[94.191629] (-) TimerEvent: {}
+[94.291976] (-) TimerEvent: {}
+[94.392320] (-) TimerEvent: {}
+[94.492750] (-) TimerEvent: {}
+[94.593371] (-) TimerEvent: {}
+[94.693794] (-) TimerEvent: {}
+[94.794220] (-) TimerEvent: {}
+[94.894584] (-) TimerEvent: {}
+[94.994935] (-) TimerEvent: {}
+[95.095264] (-) TimerEvent: {}
+[95.195593] (-) TimerEvent: {}
+[95.295923] (-) TimerEvent: {}
+[95.396238] (-) TimerEvent: {}
+[95.496664] (-) TimerEvent: {}
+[95.597298] (-) TimerEvent: {}
+[95.697741] (-) TimerEvent: {}
+[95.798120] (-) TimerEvent: {}
+[95.898472] (-) TimerEvent: {}
+[95.998843] (-) TimerEvent: {}
+[96.099204] (-) TimerEvent: {}
+[96.199555] (-) TimerEvent: {}
+[96.299904] (-) TimerEvent: {}
+[96.400234] (-) TimerEvent: {}
+[96.500683] (-) TimerEvent: {}
+[96.601317] (-) TimerEvent: {}
+[96.701758] (-) TimerEvent: {}
+[96.802146] (-) TimerEvent: {}
+[96.902518] (-) TimerEvent: {}
+[97.002902] (-) TimerEvent: {}
+[97.103252] (-) TimerEvent: {}
+[97.203591] (-) TimerEvent: {}
+[97.303936] (-) TimerEvent: {}
+[97.404257] (-) TimerEvent: {}
+[97.504691] (-) TimerEvent: {}
+[97.605333] (-) TimerEvent: {}
+[97.705848] (-) TimerEvent: {}
+[97.806247] (-) TimerEvent: {}
+[97.906619] (-) TimerEvent: {}
+[98.006990] (-) TimerEvent: {}
+[98.107335] (-) TimerEvent: {}
+[98.207692] (-) TimerEvent: {}
+[98.308060] (-) TimerEvent: {}
+[98.408383] (-) TimerEvent: {}
+[98.508779] (-) TimerEvent: {}
+[98.609281] (-) TimerEvent: {}
+[98.709741] (-) TimerEvent: {}
+[98.810131] (-) TimerEvent: {}
+[98.910471] (-) TimerEvent: {}
+[99.010819] (-) TimerEvent: {}
+[99.111143] (-) TimerEvent: {}
+[99.211493] (-) TimerEvent: {}
+[99.311841] (-) TimerEvent: {}
+[99.412159] (-) TimerEvent: {}
+[99.512489] (-) TimerEvent: {}
+[99.612924] (-) TimerEvent: {}
+[99.713578] (-) TimerEvent: {}
+[99.814048] (-) TimerEvent: {}
+[99.914452] (-) TimerEvent: {}
+[100.014830] (-) TimerEvent: {}
+[100.115184] (-) TimerEvent: {}
+[100.215548] (-) TimerEvent: {}
+[100.315901] (-) TimerEvent: {}
+[100.416220] (-) TimerEvent: {}
+[100.516535] (-) TimerEvent: {}
+[100.616966] (-) TimerEvent: {}
+[100.717595] (-) TimerEvent: {}
+[100.818005] (-) TimerEvent: {}
+[100.918351] (-) TimerEvent: {}
+[101.018700] (-) TimerEvent: {}
+[101.119033] (-) TimerEvent: {}
+[101.219381] (-) TimerEvent: {}
+[101.319743] (-) TimerEvent: {}
+[101.420076] (-) TimerEvent: {}
+[101.520389] (-) TimerEvent: {}
+[101.620809] (-) TimerEvent: {}
+[101.721447] (-) TimerEvent: {}
+[101.821864] (-) TimerEvent: {}
+[101.922239] (-) TimerEvent: {}
+[102.022663] (-) TimerEvent: {}
+[102.123039] (-) TimerEvent: {}
+[102.223388] (-) TimerEvent: {}
+[102.323728] (-) TimerEvent: {}
+[102.424045] (-) TimerEvent: {}
+[102.524370] (-) TimerEvent: {}
+[102.624782] (-) TimerEvent: {}
+[102.725376] (-) TimerEvent: {}
+[102.825819] (-) TimerEvent: {}
+[102.926173] (-) TimerEvent: {}
+[103.026499] (-) TimerEvent: {}
+[103.126839] (-) TimerEvent: {}
+[103.227174] (-) TimerEvent: {}
+[103.327517] (-) TimerEvent: {}
+[103.427840] (-) TimerEvent: {}
+[103.528158] (-) TimerEvent: {}
+[103.628712] (-) TimerEvent: {}
+[103.729548] (-) TimerEvent: {}
+[103.830174] (-) TimerEvent: {}
+[103.930742] (-) TimerEvent: {}
+[104.031254] (-) TimerEvent: {}
+[104.131765] (-) TimerEvent: {}
+[104.232301] (-) TimerEvent: {}
+[104.332851] (-) TimerEvent: {}
+[104.433386] (-) TimerEvent: {}
+[104.533916] (-) TimerEvent: {}
+[104.634447] (-) TimerEvent: {}
+[104.735102] (-) TimerEvent: {}
+[104.835882] (-) TimerEvent: {}
+[104.936724] (-) TimerEvent: {}
+[105.037516] (-) TimerEvent: {}
+[105.138177] (-) TimerEvent: {}
+[105.238655] (-) TimerEvent: {}
+[105.339167] (-) TimerEvent: {}
+[105.439839] (-) TimerEvent: {}
+[105.540300] (-) TimerEvent: {}
+[105.640968] (-) TimerEvent: {}
+[105.741789] (-) TimerEvent: {}
+[105.842739] (-) TimerEvent: {}
+[105.943525] (-) TimerEvent: {}
+[106.044058] (-) TimerEvent: {}
+[106.144814] (-) TimerEvent: {}
+[106.245419] (-) TimerEvent: {}
+[106.346230] (-) TimerEvent: {}
+[106.446999] (-) TimerEvent: {}
+[106.547748] (-) TimerEvent: {}
+[106.648498] (-) TimerEvent: {}
+[106.749114] (-) TimerEvent: {}
+[106.849837] (-) TimerEvent: {}
+[106.950464] (-) TimerEvent: {}
+[107.051044] (-) TimerEvent: {}
+[107.151566] (-) TimerEvent: {}
+[107.252107] (-) TimerEvent: {}
+[107.352874] (-) TimerEvent: {}
+[107.453625] (-) TimerEvent: {}
+[107.554384] (-) TimerEvent: {}
+[107.654941] (-) TimerEvent: {}
+[107.755552] (-) TimerEvent: {}
+[107.856523] (-) TimerEvent: {}
+[107.957386] (-) TimerEvent: {}
+[108.058170] (-) TimerEvent: {}
+[108.158723] (-) TimerEvent: {}
+[108.259499] (-) TimerEvent: {}
+[108.360036] (-) TimerEvent: {}
+[108.460769] (-) TimerEvent: {}
+[108.561290] (-) TimerEvent: {}
+[108.661833] (-) TimerEvent: {}
+[108.762429] (-) TimerEvent: {}
+[108.863412] (-) TimerEvent: {}
+[108.964237] (-) TimerEvent: {}
+[109.064999] (-) TimerEvent: {}
+[109.165521] (-) TimerEvent: {}
+[109.266299] (-) TimerEvent: {}
+[109.367067] (-) TimerEvent: {}
+[109.467806] (-) TimerEvent: {}
+[109.568551] (-) TimerEvent: {}
+[109.669079] (-) TimerEvent: {}
+[109.769671] (-) TimerEvent: {}
+[109.870320] (-) TimerEvent: {}
+[109.970977] (-) TimerEvent: {}
+[110.071490] (-) TimerEvent: {}
+[110.172027] (-) TimerEvent: {}
+[110.272774] (-) TimerEvent: {}
+[110.373300] (-) TimerEvent: {}
+[110.473813] (-) TimerEvent: {}
+[110.574332] (-) TimerEvent: {}
+[110.675062] (-) TimerEvent: {}
+[110.775581] (-) TimerEvent: {}
+[110.876176] (-) TimerEvent: {}
+[110.976887] (-) TimerEvent: {}
+[111.077717] (-) TimerEvent: {}
+[111.178446] (-) TimerEvent: {}
+[111.278987] (-) TimerEvent: {}
+[111.379457] (-) TimerEvent: {}
+[111.479883] (-) TimerEvent: {}
+[111.580617] (-) TimerEvent: {}
+[111.681338] (-) TimerEvent: {}
+[111.781835] (-) TimerEvent: {}
+[111.882413] (-) TimerEvent: {}
+[111.983164] (-) TimerEvent: {}
+[112.084006] (-) TimerEvent: {}
+[112.184751] (-) TimerEvent: {}
+[112.285284] (-) TimerEvent: {}
+[112.385821] (-) TimerEvent: {}
+[112.486343] (-) TimerEvent: {}
+[112.587118] (-) TimerEvent: {}
+[112.687642] (-) TimerEvent: {}
+[112.788157] (-) TimerEvent: {}
+[112.888747] (-) TimerEvent: {}
+[112.989680] (-) TimerEvent: {}
+[113.090487] (-) TimerEvent: {}
+[113.191022] (-) TimerEvent: {}
+[113.291540] (-) TimerEvent: {}
+[113.392077] (-) TimerEvent: {}
+[113.492835] (-) TimerEvent: {}
+[113.593348] (-) TimerEvent: {}
+[113.693858] (-) TimerEvent: {}
+[113.794366] (-) TimerEvent: {}
+[113.894956] (-) TimerEvent: {}
+[113.995855] (-) TimerEvent: {}
+[114.096650] (-) TimerEvent: {}
+[114.197169] (-) TimerEvent: {}
+[114.297699] (-) TimerEvent: {}
+[114.398249] (-) TimerEvent: {}
+[114.498776] (-) TimerEvent: {}
+[114.599262] (-) TimerEvent: {}
+[114.699709] (-) TimerEvent: {}
+[114.800214] (-) TimerEvent: {}
+[114.900814] (-) TimerEvent: {}
+[115.001746] (-) TimerEvent: {}
+[115.102285] (-) TimerEvent: {}
+[115.202738] (-) TimerEvent: {}
+[115.303340] (-) TimerEvent: {}
+[115.404073] (-) TimerEvent: {}
+[115.504646] (-) TimerEvent: {}
+[115.605168] (-) TimerEvent: {}
+[115.705661] (-) TimerEvent: {}
+[115.806144] (-) TimerEvent: {}
+[115.906853] (-) TimerEvent: {}
+[116.007444] (-) TimerEvent: {}
+[116.108141] (-) TimerEvent: {}
+[116.208710] (-) TimerEvent: {}
+[116.309255] (-) TimerEvent: {}
+[116.410016] (-) TimerEvent: {}
+[116.510547] (-) TimerEvent: {}
+[116.611076] (-) TimerEvent: {}
+[116.711582] (-) TimerEvent: {}
+[116.812069] (-) TimerEvent: {}
+[116.912756] (-) TimerEvent: {}
+[117.013335] (-) TimerEvent: {}
+[117.114024] (-) TimerEvent: {}
+[117.214610] (-) TimerEvent: {}
+[117.315420] (-) TimerEvent: {}
+[117.416186] (-) TimerEvent: {}
+[117.516706] (-) TimerEvent: {}
+[117.617202] (-) TimerEvent: {}
+[117.717700] (-) TimerEvent: {}
+[117.818238] (-) TimerEvent: {}
+[117.918762] (-) TimerEvent: {}
+[118.019329] (-) TimerEvent: {}
+[118.120012] (-) TimerEvent: {}
+[118.220832] (-) TimerEvent: {}
+[118.321588] (-) TimerEvent: {}
+[118.422120] (-) TimerEvent: {}
+[118.522625] (-) TimerEvent: {}
+[118.623146] (-) TimerEvent: {}
+[118.723897] (-) TimerEvent: {}
+[118.824407] (-) TimerEvent: {}
+[118.924908] (-) TimerEvent: {}
+[119.025476] (-) TimerEvent: {}
+[119.126167] (-) TimerEvent: {}
+[119.227006] (-) TimerEvent: {}
+[119.327583] (-) TimerEvent: {}
+[119.428123] (-) TimerEvent: {}
+[119.528652] (-) TimerEvent: {}
+[119.629190] (-) TimerEvent: {}
+[119.730010] (-) TimerEvent: {}
+[119.830554] (-) TimerEvent: {}
+[119.931115] (-) TimerEvent: {}
+[120.031697] (-) TimerEvent: {}
+[120.132387] (-) TimerEvent: {}
+[120.233026] (-) TimerEvent: {}
+[120.334004] (-) TimerEvent: {}
+[120.434938] (-) TimerEvent: {}
+[120.535808] (-) TimerEvent: {}
+[120.636351] (-) TimerEvent: {}
+[120.736875] (-) TimerEvent: {}
+[120.837414] (-) TimerEvent: {}
+[120.937957] (-) TimerEvent: {}
+[121.038523] (-) TimerEvent: {}
+[121.139380] (-) TimerEvent: {}
+[121.240214] (-) TimerEvent: {}
+[121.340820] (-) TimerEvent: {}
+[121.441392] (-) TimerEvent: {}
+[121.541943] (-) TimerEvent: {}
+[121.642441] (-) TimerEvent: {}
+[121.742973] (-) TimerEvent: {}
+[121.843507] (-) TimerEvent: {}
+[121.944056] (-) TimerEvent: {}
+[122.044589] (-) TimerEvent: {}
+[122.145185] (-) TimerEvent: {}
+[122.245890] (-) TimerEvent: {}
+[122.346527] (-) TimerEvent: {}
+[122.447108] (-) TimerEvent: {}
+[122.547865] (-) TimerEvent: {}
+[122.648391] (-) TimerEvent: {}
+[122.749123] (-) TimerEvent: {}
+[122.849614] (-) TimerEvent: {}
+[122.950281] (-) TimerEvent: {}
+[123.050945] (-) TimerEvent: {}
+[123.151723] (-) TimerEvent: {}
+[123.252627] (-) TimerEvent: {}
+[123.353215] (-) TimerEvent: {}
+[123.453707] (-) TimerEvent: {}
+[123.554385] (-) TimerEvent: {}
+[123.654900] (-) TimerEvent: {}
+[123.755643] (-) TimerEvent: {}
+[123.856161] (-) TimerEvent: {}
+[123.956886] (-) TimerEvent: {}
+[124.057423] (-) TimerEvent: {}
+[124.158022] (-) TimerEvent: {}
+[124.258941] (-) TimerEvent: {}
+[124.359577] (-) TimerEvent: {}
+[124.460157] (-) TimerEvent: {}
+[124.560925] (-) TimerEvent: {}
+[124.661460] (-) TimerEvent: {}
+[124.762218] (-) TimerEvent: {}
+[124.862772] (-) TimerEvent: {}
+[124.963506] (-) TimerEvent: {}
+[125.064248] (-) TimerEvent: {}
+[125.164840] (-) TimerEvent: {}
+[125.265785] (-) TimerEvent: {}
+[125.366643] (-) TimerEvent: {}
+[125.467476] (-) TimerEvent: {}
+[125.568085] (-) TimerEvent: {}
+[125.669038] (-) TimerEvent: {}
+[125.769659] (-) TimerEvent: {}
+[125.870414] (-) TimerEvent: {}
+[125.971184] (-) TimerEvent: {}
+[126.071936] (-) TimerEvent: {}
+[126.172484] (-) TimerEvent: {}
+[126.273371] (-) TimerEvent: {}
+[126.374210] (-) TimerEvent: {}
+[126.474995] (-) TimerEvent: {}
+[126.575510] (-) TimerEvent: {}
+[126.676019] (-) TimerEvent: {}
+[126.776523] (-) TimerEvent: {}
+[126.877230] (-) TimerEvent: {}
+[126.977940] (-) TimerEvent: {}
+[127.078693] (-) TimerEvent: {}
+[127.179245] (-) TimerEvent: {}
+[127.280114] (-) TimerEvent: {}
+[127.380744] (-) TimerEvent: {}
+[127.481290] (-) TimerEvent: {}
+[127.581811] (-) TimerEvent: {}
+[127.682559] (-) TimerEvent: {}
+[127.783134] (-) TimerEvent: {}
+[127.883558] (-) TimerEvent: {}
+[127.984059] (-) TimerEvent: {}
+[128.084776] (-) TimerEvent: {}
+[128.185283] (-) TimerEvent: {}
+[128.285857] (-) TimerEvent: {}
+[128.386542] (-) TimerEvent: {}
+[128.487157] (-) TimerEvent: {}
+[128.587720] (-) TimerEvent: {}
+[128.688255] (-) TimerEvent: {}
+[128.788742] (-) TimerEvent: {}
+[128.889174] (-) TimerEvent: {}
+[128.989899] (-) TimerEvent: {}
+[129.090619] (-) TimerEvent: {}
+[129.191127] (-) TimerEvent: {}
+[129.291698] (-) TimerEvent: {}
+[129.392389] (-) TimerEvent: {}
+[129.493205] (-) TimerEvent: {}
+[129.593747] (-) TimerEvent: {}
+[129.694258] (-) TimerEvent: {}
+[129.794776] (-) TimerEvent: {}
+[129.895290] (-) TimerEvent: {}
+[129.995809] (-) TimerEvent: {}
+[130.096325] (-) TimerEvent: {}
+[130.196824] (-) TimerEvent: {}
+[130.297408] (-) TimerEvent: {}
+[130.398353] (-) TimerEvent: {}
+[130.499274] (-) TimerEvent: {}
+[130.599814] (-) TimerEvent: {}
+[130.700312] (-) TimerEvent: {}
+[130.800826] (-) TimerEvent: {}
+[130.901570] (-) TimerEvent: {}
+[131.002293] (-) TimerEvent: {}
+[131.102793] (-) TimerEvent: {}
+[131.203285] (-) TimerEvent: {}
+[131.303857] (-) TimerEvent: {}
+[131.404743] (-) TimerEvent: {}
+[131.505329] (-) TimerEvent: {}
+[131.605851] (-) TimerEvent: {}
+[131.706358] (-) TimerEvent: {}
+[131.807027] (-) TimerEvent: {}
+[131.907773] (-) TimerEvent: {}
+[132.008297] (-) TimerEvent: {}
+[132.108800] (-) TimerEvent: {}
+[132.209293] (-) TimerEvent: {}
+[132.309856] (-) TimerEvent: {}
+[132.410740] (-) TimerEvent: {}
+[132.511338] (-) TimerEvent: {}
+[132.611849] (-) TimerEvent: {}
+[132.712364] (-) TimerEvent: {}
+[132.813108] (-) TimerEvent: {}
+[132.913616] (-) TimerEvent: {}
+[133.014110] (-) TimerEvent: {}
+[133.114600] (-) TimerEvent: {}
+[133.215122] (-) TimerEvent: {}
+[133.315660] (-) TimerEvent: {}
+[133.416463] (-) TimerEvent: {}
+[133.517142] (-) TimerEvent: {}
+[133.617714] (-) TimerEvent: {}
+[133.718458] (-) TimerEvent: {}
+[133.819232] (-) TimerEvent: {}
+[133.919704] (-) TimerEvent: {}
+[134.020129] (-) TimerEvent: {}
+[134.120620] (-) TimerEvent: {}
+[134.221339] (-) TimerEvent: {}
+[134.322071] (-) TimerEvent: {}
+[134.422651] (-) TimerEvent: {}
+[134.523386] (-) TimerEvent: {}
+[134.623965] (-) TimerEvent: {}
+[134.724722] (-) TimerEvent: {}
+[134.825468] (-) TimerEvent: {}
+[134.925972] (-) TimerEvent: {}
+[135.026483] (-) TimerEvent: {}
+[135.127034] (-) TimerEvent: {}
+[135.227759] (-) TimerEvent: {}
+[135.328500] (-) TimerEvent: {}
+[135.429082] (-) TimerEvent: {}
+[135.529764] (-) TimerEvent: {}
+[135.630575] (-) TimerEvent: {}
+[135.731372] (-) TimerEvent: {}
+[135.831902] (-) TimerEvent: {}
+[135.932411] (-) TimerEvent: {}
+[136.032917] (-) TimerEvent: {}
+[136.133634] (-) TimerEvent: {}
+[136.234357] (-) TimerEvent: {}
+[136.334902] (-) TimerEvent: {}
+[136.435474] (-) TimerEvent: {}
+[136.536173] (-) TimerEvent: {}
+[136.637021] (-) TimerEvent: {}
+[136.737787] (-) TimerEvent: {}
+[136.838315] (-) TimerEvent: {}
+[136.938849] (-) TimerEvent: {}
+[137.039369] (-) TimerEvent: {}
+[137.140108] (-) TimerEvent: {}
+[137.240836] (-) TimerEvent: {}
+[137.341362] (-) TimerEvent: {}
+[137.441950] (-) TimerEvent: {}
+[137.542942] (-) TimerEvent: {}
+[137.643580] (-) TimerEvent: {}
+[137.744141] (-) TimerEvent: {}
+[137.844680] (-) TimerEvent: {}
+[137.945235] (-) TimerEvent: {}
+[138.045965] (-) TimerEvent: {}
+[138.146718] (-) TimerEvent: {}
+[138.247220] (-) TimerEvent: {}
+[138.347729] (-) TimerEvent: {}
+[138.448294] (-) TimerEvent: {}
+[138.549197] (-) TimerEvent: {}
+[138.650025] (-) TimerEvent: {}
+[138.750557] (-) TimerEvent: {}
+[138.851090] (-) TimerEvent: {}
+[138.951598] (-) TimerEvent: {}
+[139.052323] (-) TimerEvent: {}
+[139.152841] (-) TimerEvent: {}
+[139.253339] (-) TimerEvent: {}
+[139.353835] (-) TimerEvent: {}
+[139.454552] (-) TimerEvent: {}
+[139.555383] (-) TimerEvent: {}
+[139.656078] (-) TimerEvent: {}
+[139.756655] (-) TimerEvent: {}
+[139.857204] (-) TimerEvent: {}
+[139.957975] (-) TimerEvent: {}
+[140.058500] (-) TimerEvent: {}
+[140.159023] (-) TimerEvent: {}
+[140.259522] (-) TimerEvent: {}
+[140.360048] (-) TimerEvent: {}
+[140.460798] (-) TimerEvent: {}
+[140.561408] (-) TimerEvent: {}
+[140.662175] (-) TimerEvent: {}
+[140.762777] (-) TimerEvent: {}
+[140.863342] (-) TimerEvent: {}
+[140.964101] (-) TimerEvent: {}
+[141.064620] (-) TimerEvent: {}
+[141.165117] (-) TimerEvent: {}
+[141.265623] (-) TimerEvent: {}
+[141.366380] (-) TimerEvent: {}
+[141.467169] (-) TimerEvent: {}
+[141.567750] (-) TimerEvent: {}
+[141.668427] (-) TimerEvent: {}
+[141.769026] (-) TimerEvent: {}
+[141.869795] (-) TimerEvent: {}
+[141.970541] (-) TimerEvent: {}
+[142.071077] (-) TimerEvent: {}
+[142.171580] (-) TimerEvent: {}
+[142.272098] (-) TimerEvent: {}
+[142.372859] (-) TimerEvent: {}
+[142.473600] (-) TimerEvent: {}
+[142.574172] (-) TimerEvent: {}
+[142.674860] (-) TimerEvent: {}
+[142.775454] (-) TimerEvent: {}
+[142.876014] (-) TimerEvent: {}
+[142.976538] (-) TimerEvent: {}
+[143.077059] (-) TimerEvent: {}
+[143.177549] (-) TimerEvent: {}
+[143.278062] (-) TimerEvent: {}
+[143.378595] (-) TimerEvent: {}
+[143.479137] (-) TimerEvent: {}
+[143.579714] (-) TimerEvent: {}
+[143.680375] (-) TimerEvent: {}
+[143.780974] (-) TimerEvent: {}
+[143.881534] (-) TimerEvent: {}
+[143.982065] (-) TimerEvent: {}
+[144.082566] (-) TimerEvent: {}
+[144.183074] (-) TimerEvent: {}
+[144.283593] (-) TimerEvent: {}
+[144.384356] (-) TimerEvent: {}
+[144.484882] (-) TimerEvent: {}
+[144.585420] (-) TimerEvent: {}
+[144.686043] (-) TimerEvent: {}
+[144.786692] (-) TimerEvent: {}
+[144.887216] (-) TimerEvent: {}
+[144.987712] (-) TimerEvent: {}
+[145.088184] (-) TimerEvent: {}
+[145.188657] (-) TimerEvent: {}
+[145.289131] (-) TimerEvent: {}
+[145.389644] (-) TimerEvent: {}
+[145.490387] (-) TimerEvent: {}
+[145.590904] (-) TimerEvent: {}
+[145.691488] (-) TimerEvent: {}
+[145.792146] (-) TimerEvent: {}
+[145.892876] (-) TimerEvent: {}
+[145.993376] (-) TimerEvent: {}
+[146.093865] (-) TimerEvent: {}
+[146.194346] (-) TimerEvent: {}
+[146.294857] (-) TimerEvent: {}
+[146.395349] (-) TimerEvent: {}
+[146.495812] (-) TimerEvent: {}
+[146.596311] (-) TimerEvent: {}
+[146.696863] (-) TimerEvent: {}
+[146.797845] (-) TimerEvent: {}
+[146.898621] (-) TimerEvent: {}
+[146.999158] (-) TimerEvent: {}
+[147.099839] (-) TimerEvent: {}
+[147.200319] (-) TimerEvent: {}
+[147.301005] (-) TimerEvent: {}
+[147.401709] (-) TimerEvent: {}
+[147.502431] (-) TimerEvent: {}
+[147.603190] (-) TimerEvent: {}
+[147.703766] (-) TimerEvent: {}
+[147.804458] (-) TimerEvent: {}
+[147.905275] (-) TimerEvent: {}
+[148.006046] (-) TimerEvent: {}
+[148.106798] (-) TimerEvent: {}
+[148.207333] (-) TimerEvent: {}
+[148.307861] (-) TimerEvent: {}
+[148.408391] (-) TimerEvent: {}
+[148.508910] (-) TimerEvent: {}
+[148.609442] (-) TimerEvent: {}
+[148.710016] (-) TimerEvent: {}
+[148.810943] (-) TimerEvent: {}
+[148.911784] (-) TimerEvent: {}
+[149.012556] (-) TimerEvent: {}
+[149.113293] (-) TimerEvent: {}
+[149.214022] (-) TimerEvent: {}
+[149.314536] (-) TimerEvent: {}
+[149.415105] (-) TimerEvent: {}
+[149.515643] (-) TimerEvent: {}
+[149.616199] (-) TimerEvent: {}
+[149.716777] (-) TimerEvent: {}
+[149.817476] (-) TimerEvent: {}
+[149.918071] (-) TimerEvent: {}
+[150.018820] (-) TimerEvent: {}
+[150.119520] (-) TimerEvent: {}
+[150.220238] (-) TimerEvent: {}
+[150.320969] (-) TimerEvent: {}
+[150.421737] (-) TimerEvent: {}
+[150.522439] (-) TimerEvent: {}
+[150.623170] (-) TimerEvent: {}
+[150.723873] (-) TimerEvent: {}
+[150.824690] (-) TimerEvent: {}
+[150.925367] (-) TimerEvent: {}
+[151.026091] (-) TimerEvent: {}
+[151.126615] (-) TimerEvent: {}
+[151.227379] (-) TimerEvent: {}
+[151.327923] (-) TimerEvent: {}
+[151.428678] (-) TimerEvent: {}
+[151.529395] (-) TimerEvent: {}
+[151.629919] (-) TimerEvent: {}
+[151.730435] (-) TimerEvent: {}
+[151.831056] (-) TimerEvent: {}
+[151.931791] (-) TimerEvent: {}
+[152.032397] (-) TimerEvent: {}
+[152.132955] (-) TimerEvent: {}
+[152.233494] (-) TimerEvent: {}
+[152.334030] (-) TimerEvent: {}
+[152.434581] (-) TimerEvent: {}
+[152.535135] (-) TimerEvent: {}
+[152.635873] (-) TimerEvent: {}
+[152.736606] (-) TimerEvent: {}
+[152.837215] (-) TimerEvent: {}
+[152.938110] (-) TimerEvent: {}
+[153.038894] (-) TimerEvent: {}
+[153.139404] (-) TimerEvent: {}
+[153.239917] (-) TimerEvent: {}
+[153.340444] (-) TimerEvent: {}
+[153.441150] (-) TimerEvent: {}
+[153.541683] (-) TimerEvent: {}
+[153.642366] (-) TimerEvent: {}
+[153.742873] (-) TimerEvent: {}
+[153.843450] (-) TimerEvent: {}
+[153.944330] (-) TimerEvent: {}
+[154.045113] (-) TimerEvent: {}
+[154.145869] (-) TimerEvent: {}
+[154.246316] (-) TimerEvent: {}
+[154.346788] (-) TimerEvent: {}
+[154.447284] (-) TimerEvent: {}
+[154.547791] (-) TimerEvent: {}
+[154.648306] (-) TimerEvent: {}
+[154.748825] (-) TimerEvent: {}
+[154.849387] (-) TimerEvent: {}
+[154.950033] (-) TimerEvent: {}
+[155.050826] (-) TimerEvent: {}
+[155.151582] (-) TimerEvent: {}
+[155.252086] (-) TimerEvent: {}
+[155.352607] (-) TimerEvent: {}
+[155.453124] (-) TimerEvent: {}
+[155.553649] (-) TimerEvent: {}
+[155.654194] (-) TimerEvent: {}
+[155.754778] (-) TimerEvent: {}
+[155.855337] (-) TimerEvent: {}
+[155.955957] (-) TimerEvent: {}
+[156.056533] (-) TimerEvent: {}
+[156.157101] (-) TimerEvent: {}
+[156.257635] (-) TimerEvent: {}
+[156.358188] (-) TimerEvent: {}
+[156.458741] (-) TimerEvent: {}
+[156.559253] (-) TimerEvent: {}
+[156.659768] (-) TimerEvent: {}
+[156.760267] (-) TimerEvent: {}
+[156.860783] (-) TimerEvent: {}
+[156.961582] (-) TimerEvent: {}
+[157.062298] (-) TimerEvent: {}
+[157.163031] (-) TimerEvent: {}
+[157.263586] (-) TimerEvent: {}
+[157.364151] (-) TimerEvent: {}
+[157.464702] (-) TimerEvent: {}
+[157.565209] (-) TimerEvent: {}
+[157.665881] (-) TimerEvent: {}
+[157.766395] (-) TimerEvent: {}
+[157.866944] (-) TimerEvent: {}
+[157.967534] (-) TimerEvent: {}
+[158.068202] (-) TimerEvent: {}
+[158.168997] (-) TimerEvent: {}
+[158.269547] (-) TimerEvent: {}
+[158.370106] (-) TimerEvent: {}
+[158.470660] (-) TimerEvent: {}
+[158.571448] (-) TimerEvent: {}
+[158.672205] (-) TimerEvent: {}
+[158.772932] (-) TimerEvent: {}
+[158.873455] (-) TimerEvent: {}
+[158.974060] (-) TimerEvent: {}
+[159.074977] (-) TimerEvent: {}
+[159.175796] (-) TimerEvent: {}
+[159.276320] (-) TimerEvent: {}
+[159.376875] (-) TimerEvent: {}
+[159.477419] (-) TimerEvent: {}
+[159.577931] (-) TimerEvent: {}
+[159.678628] (-) TimerEvent: {}
+[159.779176] (-) TimerEvent: {}
+[159.879903] (-) TimerEvent: {}
+[159.980453] (-) TimerEvent: {}
+[160.081342] (-) TimerEvent: {}
+[160.182134] (-) TimerEvent: {}
+[160.282640] (-) TimerEvent: {}
+[160.383166] (-) TimerEvent: {}
+[160.483688] (-) TimerEvent: {}
+[160.584173] (-) TimerEvent: {}
+[160.684838] (-) TimerEvent: {}
+[160.785531] (-) TimerEvent: {}
+[160.885986] (-) TimerEvent: {}
+[160.986464] (-) TimerEvent: {}
+[161.087132] (-) TimerEvent: {}
+[161.187973] (-) TimerEvent: {}
+[161.288468] (-) TimerEvent: {}
+[161.388973] (-) TimerEvent: {}
+[161.489472] (-) TimerEvent: {}
+[161.589957] (-) TimerEvent: {}
+[161.690423] (-) TimerEvent: {}
+[161.790954] (-) TimerEvent: {}
+[161.891476] (-) TimerEvent: {}
+[161.992219] (-) TimerEvent: {}
+[162.093075] (-) TimerEvent: {}
+[162.193789] (-) TimerEvent: {}
+[162.294421] (-) TimerEvent: {}
+[162.395035] (-) TimerEvent: {}
+[162.495835] (-) TimerEvent: {}
+[162.596340] (-) TimerEvent: {}
+[162.696734] (-) TimerEvent: {}
+[162.797093] (-) TimerEvent: {}
+[162.897476] (-) TimerEvent: {}
+[162.998170] (-) TimerEvent: {}
+[163.098785] (-) TimerEvent: {}
+[163.199484] (-) TimerEvent: {}
+[163.300066] (-) TimerEvent: {}
+[163.400624] (-) TimerEvent: {}
+[163.501398] (-) TimerEvent: {}
+[163.601969] (-) TimerEvent: {}
+[163.702495] (-) TimerEvent: {}
+[163.803021] (-) TimerEvent: {}
+[163.903525] (-) TimerEvent: {}
+[164.004249] (-) TimerEvent: {}
+[164.104834] (-) TimerEvent: {}
+[164.205464] (-) TimerEvent: {}
+[164.305955] (-) TimerEvent: {}
+[164.406782] (-) TimerEvent: {}
+[164.507336] (-) TimerEvent: {}
+[164.607855] (-) TimerEvent: {}
+[164.708368] (-) TimerEvent: {}
+[164.808896] (-) TimerEvent: {}
+[164.909628] (-) TimerEvent: {}
+[165.010349] (-) TimerEvent: {}
+[165.110940] (-) TimerEvent: {}
+[165.211597] (-) TimerEvent: {}
+[165.312176] (-) TimerEvent: {}
+[165.412754] (-) TimerEvent: {}
+[165.513500] (-) TimerEvent: {}
+[165.614014] (-) TimerEvent: {}
+[165.714518] (-) TimerEvent: {}
+[165.815017] (-) TimerEvent: {}
+[165.915563] (-) TimerEvent: {}
+[166.016085] (-) TimerEvent: {}
+[166.116650] (-) TimerEvent: {}
+[166.217324] (-) TimerEvent: {}
+[166.318142] (-) TimerEvent: {}
+[166.418771] (-) TimerEvent: {}
+[166.519305] (-) TimerEvent: {}
+[166.619827] (-) TimerEvent: {}
+[166.720354] (-) TimerEvent: {}
+[166.821080] (-) TimerEvent: {}
+[166.921577] (-) TimerEvent: {}
+[167.022080] (-) TimerEvent: {}
+[167.122644] (-) TimerEvent: {}
+[167.223327] (-) TimerEvent: {}
+[167.324196] (-) TimerEvent: {}
+[167.424769] (-) TimerEvent: {}
+[167.525299] (-) TimerEvent: {}
+[167.625818] (-) TimerEvent: {}
+[167.726292] (-) TimerEvent: {}
+[167.826960] (-) TimerEvent: {}
+[167.927437] (-) TimerEvent: {}
+[168.027853] (-) TimerEvent: {}
+[168.128336] (-) TimerEvent: {}
+[168.229154] (-) TimerEvent: {}
+[168.330073] (-) TimerEvent: {}
+[168.430700] (-) TimerEvent: {}
+[168.531273] (-) TimerEvent: {}
+[168.631787] (-) TimerEvent: {}
+[168.732313] (-) TimerEvent: {}
+[168.832854] (-) TimerEvent: {}
+[168.933363] (-) TimerEvent: {}
+[169.033852] (-) TimerEvent: {}
+[169.134556] (-) TimerEvent: {}
+[169.235419] (-) TimerEvent: {}
+[169.336120] (-) TimerEvent: {}
+[169.436735] (-) TimerEvent: {}
+[169.537288] (-) TimerEvent: {}
+[169.638051] (-) TimerEvent: {}
+[169.738593] (-) TimerEvent: {}
+[169.839145] (-) TimerEvent: {}
+[169.939681] (-) TimerEvent: {}
+[170.040438] (-) TimerEvent: {}
+[170.141172] (-) TimerEvent: {}
+[170.241746] (-) TimerEvent: {}
+[170.342427] (-) TimerEvent: {}
+[170.443107] (-) TimerEvent: {}
+[170.543939] (-) TimerEvent: {}
+[170.644697] (-) TimerEvent: {}
+[170.745182] (-) TimerEvent: {}
+[170.845613] (-) TimerEvent: {}
+[170.946053] (-) TimerEvent: {}
+[171.046577] (-) TimerEvent: {}
+[171.147302] (-) TimerEvent: {}
+[171.247857] (-) TimerEvent: {}
+[171.348534] (-) TimerEvent: {}
+[171.449145] (-) TimerEvent: {}
+[171.549699] (-) TimerEvent: {}
+[171.650415] (-) TimerEvent: {}
+[171.750940] (-) TimerEvent: {}
+[171.851454] (-) TimerEvent: {}
+[171.951983] (-) TimerEvent: {}
+[172.052512] (-) TimerEvent: {}
+[172.153226] (-) TimerEvent: {}
+[172.253769] (-) TimerEvent: {}
+[172.354399] (-) TimerEvent: {}
+[172.455036] (-) TimerEvent: {}
+[172.555576] (-) TimerEvent: {}
+[172.656290] (-) TimerEvent: {}
+[172.756775] (-) TimerEvent: {}
+[172.857307] (-) TimerEvent: {}
+[172.957853] (-) TimerEvent: {}
+[173.058585] (-) TimerEvent: {}
+[173.159105] (-) TimerEvent: {}
+[173.259594] (-) TimerEvent: {}
+[173.360184] (-) TimerEvent: {}
+[173.461092] (-) TimerEvent: {}
+[173.561680] (-) TimerEvent: {}
+[173.662189] (-) TimerEvent: {}
+[173.762695] (-) TimerEvent: {}
+[173.863244] (-) TimerEvent: {}
+[173.963819] (-) TimerEvent: {}
+[174.064357] (-) TimerEvent: {}
+[174.164860] (-) TimerEvent: {}
+[174.265365] (-) TimerEvent: {}
+[174.366187] (-) TimerEvent: {}
+[174.467192] (-) TimerEvent: {}
+[174.567794] (-) TimerEvent: {}
+[174.668304] (-) TimerEvent: {}
+[174.768800] (-) TimerEvent: {}
+[174.869535] (-) TimerEvent: {}
+[174.970273] (-) TimerEvent: {}
+[175.070783] (-) TimerEvent: {}
+[175.171274] (-) TimerEvent: {}
+[175.271859] (-) TimerEvent: {}
+[175.372895] (-) TimerEvent: {}
+[175.473611] (-) TimerEvent: {}
+[175.574218] (-) TimerEvent: {}
+[175.674767] (-) TimerEvent: {}
+[175.775288] (-) TimerEvent: {}
+[175.875825] (-) TimerEvent: {}
+[175.976364] (-) TimerEvent: {}
+[176.076807] (-) TimerEvent: {}
+[176.177257] (-) TimerEvent: {}
+[176.277873] (-) TimerEvent: {}
+[176.378431] (-) TimerEvent: {}
+[176.479169] (-) TimerEvent: {}
+[176.579739] (-) TimerEvent: {}
+[176.680264] (-) TimerEvent: {}
+[176.781025] (-) TimerEvent: {}
+[176.881557] (-) TimerEvent: {}
+[176.982014] (-) TimerEvent: {}
+[177.082424] (-) TimerEvent: {}
+[177.182950] (-) TimerEvent: {}
+[177.283671] (-) TimerEvent: {}
+[177.384264] (-) TimerEvent: {}
+[177.484962] (-) TimerEvent: {}
+[177.585563] (-) TimerEvent: {}
+[177.686081] (-) TimerEvent: {}
+[177.786799] (-) TimerEvent: {}
+[177.887542] (-) TimerEvent: {}
+[177.988023] (-) TimerEvent: {}
+[178.088444] (-) TimerEvent: {}
+[178.188939] (-) TimerEvent: {}
+[178.289661] (-) TimerEvent: {}
+[178.390231] (-) TimerEvent: {}
+[178.490943] (-) TimerEvent: {}
+[178.591564] (-) TimerEvent: {}
+[178.692367] (-) TimerEvent: {}
+[178.792937] (-) TimerEvent: {}
+[178.893434] (-) TimerEvent: {}
+[178.993866] (-) TimerEvent: {}
+[179.094645] (-) TimerEvent: {}
+[179.195440] (-) TimerEvent: {}
+[179.296223] (-) TimerEvent: {}
+[179.396729] (-) TimerEvent: {}
+[179.497351] (-) TimerEvent: {}
+[179.598091] (-) TimerEvent: {}
+[179.698937] (-) TimerEvent: {}
+[179.799496] (-) TimerEvent: {}
+[179.900046] (-) TimerEvent: {}
+[180.000595] (-) TimerEvent: {}
+[180.101091] (-) TimerEvent: {}
+[180.201519] (-) TimerEvent: {}
+[180.302018] (-) TimerEvent: {}
+[180.402545] (-) TimerEvent: {}
+[180.503212] (-) TimerEvent: {}
+[180.603925] (-) TimerEvent: {}
+[180.704523] (-) TimerEvent: {}
+[180.805060] (-) TimerEvent: {}
+[180.905576] (-) TimerEvent: {}
+[181.006110] (-) TimerEvent: {}
+[181.106844] (-) TimerEvent: {}
+[181.207525] (-) TimerEvent: {}
+[181.307955] (-) TimerEvent: {}
+[181.408370] (-) TimerEvent: {}
+[181.508937] (-) TimerEvent: {}
+[181.609611] (-) TimerEvent: {}
+[181.710157] (-) TimerEvent: {}
+[181.810631] (-) TimerEvent: {}
+[181.911107] (-) TimerEvent: {}
+[182.011637] (-) TimerEvent: {}
+[182.112154] (-) TimerEvent: {}
+[182.212641] (-) TimerEvent: {}
+[182.313122] (-) TimerEvent: {}
+[182.413632] (-) TimerEvent: {}
+[182.514228] (-) TimerEvent: {}
+[182.614950] (-) TimerEvent: {}
+[182.715557] (-) TimerEvent: {}
+[182.816098] (-) TimerEvent: {}
+[182.916864] (-) TimerEvent: {}
+[183.017387] (-) TimerEvent: {}
+[183.117891] (-) TimerEvent: {}
+[183.218382] (-) TimerEvent: {}
+[183.318912] (-) TimerEvent: {}
+[183.419643] (-) TimerEvent: {}
+[183.520221] (-) TimerEvent: {}
+[183.620874] (-) TimerEvent: {}
+[183.721461] (-) TimerEvent: {}
+[183.821971] (-) TimerEvent: {}
+[183.922738] (-) TimerEvent: {}
+[184.023445] (-) TimerEvent: {}
+[184.123909] (-) TimerEvent: {}
+[184.224466] (-) TimerEvent: {}
+[184.325126] (-) TimerEvent: {}
+[184.425779] (-) TimerEvent: {}
+[184.526409] (-) TimerEvent: {}
+[184.627045] (-) TimerEvent: {}
+[184.727660] (-) TimerEvent: {}
+[184.828456] (-) TimerEvent: {}
+[184.929231] (-) TimerEvent: {}
+[185.029790] (-) TimerEvent: {}
+[185.130345] (-) TimerEvent: {}
+[185.230898] (-) TimerEvent: {}
+[185.331402] (-) TimerEvent: {}
+[185.431974] (-) TimerEvent: {}
+[185.532677] (-) TimerEvent: {}
+[185.612987] (fast_lio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable fastlio_mapping\x1b[0m\n'}
+[185.632822] (-) TimerEvent: {}
+[185.733435] (-) TimerEvent: {}
+[185.834108] (-) TimerEvent: {}
+[185.934827] (-) TimerEvent: {}
+[186.035525] (-) TimerEvent: {}
+[186.136272] (-) TimerEvent: {}
+[186.237184] (-) TimerEvent: {}
+[186.337933] (-) TimerEvent: {}
+[186.438597] (-) TimerEvent: {}
+[186.539304] (-) TimerEvent: {}
+[186.640052] (-) TimerEvent: {}
+[186.740774] (-) TimerEvent: {}
+[186.841461] (-) TimerEvent: {}
+[186.942054] (-) TimerEvent: {}
+[187.042594] (-) TimerEvent: {}
+[187.143157] (-) TimerEvent: {}
+[187.243683] (-) TimerEvent: {}
+[187.344194] (-) TimerEvent: {}
+[187.444677] (-) TimerEvent: {}
+[187.545157] (-) TimerEvent: {}
+[187.645680] (-) TimerEvent: {}
+[187.746319] (-) TimerEvent: {}
+[187.846842] (-) TimerEvent: {}
+[187.947316] (-) TimerEvent: {}
+[188.047764] (-) TimerEvent: {}
+[188.148191] (-) TimerEvent: {}
+[188.248628] (-) TimerEvent: {}
+[188.349069] (-) TimerEvent: {}
+[188.449495] (-) TimerEvent: {}
+[188.549924] (-) TimerEvent: {}
+[188.650384] (-) TimerEvent: {}
+[188.683828] (fast_lio) StdoutLine: {'line': b'[100%] Built target fastlio_mapping\n'}
+[188.714372] (fast_lio) CommandEnded: {'returncode': 0}
+[188.716880] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'install'}
+[188.740202] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio'], 'cwd': '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.109 50794 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/luckrobot/mid360s_ws/src'), ('SSH_TTY', '/dev/pts/2'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio'), ('SSH_CONNECTION', '192.168.3.109 50794 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[188.750493] (-) TimerEvent: {}
+[188.759971] (fast_lio) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[188.761124] (fast_lio) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[188.762008] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio\n'}
+[188.782951] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h\n'}
+[188.802480] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h\n'}
+[188.822842] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h\n'}
+[188.843247] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h\n'}
+[188.850602] (-) TimerEvent: {}
+[188.864552] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h\n'}
+[188.884922] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/library_path.sh\n'}
+[188.905367] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/library_path.dsv\n'}
+[188.925723] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h\n'}
+[188.947168] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[188.950710] (-) TimerEvent: {}
+[188.968656] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp\n'}
+[188.988314] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp\n'}
+[189.008976] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp\n'}
+[189.027932] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp\n'}
+[189.046896] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp\n'}
+[189.050822] (-) TimerEvent: {}
+[189.066031] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[189.087182] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[189.105996] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[189.125710] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h\n'}
+[189.145718] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[189.150941] (-) TimerEvent: {}
+[189.167269] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[189.187460] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/pythonpath.sh\n'}
+[189.207221] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/pythonpath.dsv\n'}
+[189.228619] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[189.248312] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[189.251031] (-) TimerEvent: {}
+[189.268271] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[189.287245] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[189.306429] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py\n'}
+[189.326873] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c\n'}
+[189.347197] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[189.351130] (-) TimerEvent: {}
+[189.367054] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[189.386450] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[189.405327] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[189.424558] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[189.444717] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so\n'}
+[189.451244] (-) TimerEvent: {}
+[189.466536] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py\n'}
+[189.486983] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py\n'}
+[189.506191] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c\n'}
+[189.527570] (fast_lio) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[189.528498] (fast_lio) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[189.529486] (fast_lio) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[189.530241] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/msg/Pose6D.idl\n'}
+[189.549160] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/msg/Pose6D.msg\n'}
+[189.551339] (-) TimerEvent: {}
+[189.571197] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/fast_lio/fastlio_mapping\n'}
+[189.590398] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/avia.yaml\n'}
+[189.610473] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/horizon.yaml\n'}
+[189.630695] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/mid360.yaml\n'}
+[189.651534] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/ouster64.yaml\n'}
+[189.652031] (-) TimerEvent: {}
+[189.672737] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/velodyne.yaml\n'}
+[189.692185] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch\n'}
+[189.711602] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/launch/mapping.launch.py\n'}
+[189.732207] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/rviz/fastlio.rviz\n'}
+[189.752156] (-) TimerEvent: {}
+[189.753608] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio\n'}
+[189.772785] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio\n'}
+[189.793147] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh\n'}
+[189.814438] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv\n'}
+[189.833581] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/path.sh\n'}
+[189.852289] (-) TimerEvent: {}
+[189.853040] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/path.dsv\n'}
+[189.874684] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/local_setup.bash\n'}
+[189.895819] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/local_setup.sh\n'}
+[189.914723] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/local_setup.zsh\n'}
+[189.934143] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/local_setup.dsv\n'}
+[189.952404] (-) TimerEvent: {}
+[189.954512] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.dsv\n'}
+[189.974686] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/ament_index/resource_index/packages/fast_lio\n'}
+[189.994418] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake\n'}
+[190.014338] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[190.035253] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[190.052528] (-) TimerEvent: {}
+[190.054265] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[190.073767] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[190.092173] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[190.111762] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[190.131576] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake\n'}
+[190.149769] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake\n'}
+[190.152616] (-) TimerEvent: {}
+[190.169888] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.xml\n'}
+[190.190435] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so\n'}
+[190.191524] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""\n'}
+[190.191960] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so\n'}
+[190.192816] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[190.193166] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so\n'}
+[190.194044] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[190.194361] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so\n'}
+[190.195307] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""\n'}
+[190.195617] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so\n'}
+[190.196439] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""\n'}
+[190.196733] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so\n'}
+[190.197627] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[190.197921] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so\n'}
+[190.198801] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""\n'}
+[190.252746] (-) TimerEvent: {}
+[190.288210] (fast_lio) StdoutLine: {'line': b"Listing '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...\n"}
+[190.288522] (fast_lio) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...\n"}
+[190.288711] (fast_lio) StdoutLine: {'line': b"Listing '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...\n"}
+[190.288857] (fast_lio) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...\n"}
+[190.288991] (fast_lio) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...\n"}
+[190.300716] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so\n'}
+[190.301809] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""\n'}
+[190.302179] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake\n'}
+[190.302749] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake\n'}
+[190.303374] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[190.303916] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[190.304487] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake\n'}
+[190.305021] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[190.305536] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[190.306088] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake\n'}
+[190.306611] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[190.307186] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake\n'}
+[190.307681] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake\n'}
+[190.308218] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[190.308734] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[190.309449] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake\n'}
+[190.309783] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake\n'}
+[190.310318] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake\n'}
+[190.310861] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake\n'}
+[190.317393] (fast_lio) CommandEnded: {'returncode': 0}
+[190.353177] (-) TimerEvent: {}
+[190.379003] (fast_lio) JobEnded: {'identifier': 'fast_lio', 'rc': 0}
+[190.381195] (-) EventReactorShutdown: {}
