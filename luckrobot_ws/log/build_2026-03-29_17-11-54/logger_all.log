@@ -1,0 +1,316 @@
+[0.274s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.275s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff83a2c280>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff83b817b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff83b817b0>>)[0m
+[0.870s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.870s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.870s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.870s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.871s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.871s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.871s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/nvidia/luckrobot/luckrobot_ws'
+[0.871s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.871s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.872s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.872s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.872s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.872s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.872s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.872s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.872s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.903s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.903s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.903s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.903s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.903s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.904s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.904s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.904s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.905s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.905s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.905s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.905s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.905s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.905s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.906s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.906s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.906s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.906s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.906s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.906s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.906s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.907s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.907s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.907s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.907s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.907s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.907s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.907s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.907s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extensions ['ignore', 'ignore_ament_install']
+[0.908s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extension 'ignore'
+[0.908s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extension 'ignore_ament_install'
+[0.908s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extensions ['colcon_pkg']
+[0.908s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extension 'colcon_pkg'
+[0.908s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extensions ['colcon_meta']
+[0.908s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extension 'colcon_meta'
+[0.908s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extensions ['ros']
+[0.908s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/keyboard_control) by extension 'ros'
+[0.914s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/keyboard_control' with type 'ros.ament_python' and name 'keyboard_control'[0m
+[0.915s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extensions ['ignore', 'ignore_ament_install']
+[0.915s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extension 'ignore'
+[0.915s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extension 'ignore_ament_install'
+[0.915s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extensions ['colcon_pkg']
+[0.915s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extension 'colcon_pkg'
+[0.916s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extensions ['colcon_meta']
+[0.916s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extension 'colcon_meta'
+[0.916s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extensions ['ros']
+[0.916s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/luckrobot_launch1) by extension 'ros'
+[0.918s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/luckrobot_launch1' with type 'ros.ament_python' and name 'luckrobot_launch1'[0m
+[0.918s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extensions ['ignore', 'ignore_ament_install']
+[0.918s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extension 'ignore'
+[0.918s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extension 'ignore_ament_install'
+[0.918s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extensions ['colcon_pkg']
+[0.919s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extension 'colcon_pkg'
+[0.919s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extensions ['colcon_meta']
+[0.919s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extension 'colcon_meta'
+[0.919s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extensions ['ros']
+[0.919s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robot_display) by extension 'ros'
+[0.920s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/robot_display' with type 'ros.ament_cmake' and name 'robot_display'[0m
+[0.920s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.920s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extension 'ignore'
+[0.921s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extension 'ignore_ament_install'
+[0.921s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extensions ['colcon_pkg']
+[0.921s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extension 'colcon_pkg'
+[0.921s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extensions ['colcon_meta']
+[0.921s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extension 'colcon_meta'
+[0.921s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extensions ['ros']
+[0.921s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wheel_controller) by extension 'ros'
+[0.923s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/wheel_controller' with type 'ros.ament_cmake' and name 'wheel_controller'[0m
+[0.923s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.923s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.923s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.924s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.924s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.962s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.963s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.965s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.965s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.966s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.966s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.966s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.966s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.968s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 0 installed packages in /home/nvidia/luckrobot/luckrobot_ws/install[0m
+[0.969s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 1 installed packages in /home/nvidia/luckrobot/mid360s_ws/install[0m
+[0.970s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 3 installed packages in /home/nvidia/luckrobot/orbbecsdk_ws/install[0m
+[0.971s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 1 installed packages in /home/nvidia/luckrobot/livox_ws/install[0m
+[0.974s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 333 installed packages in /opt/ros/humble[0m
+[0.978s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[1.078s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'cmake_args' from command line to 'None'
+[1.078s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'cmake_target' from command line to 'None'
+[1.078s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.078s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'cmake_clean_cache' from command line to 'False'
+[1.078s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'cmake_clean_first' from command line to 'False'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'cmake_force_configure' from command line to 'False'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'ament_cmake_args' from command line to 'None'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'catkin_cmake_args' from command line to 'None'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'keyboard_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'keyboard_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control', 'merge_install': False, 'path': '/home/nvidia/luckrobot/luckrobot_ws/src/keyboard_control', 'symlink_install': False, 'test_result_base': None}[0m
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'cmake_args' from command line to 'None'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'cmake_target' from command line to 'None'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'cmake_clean_cache' from command line to 'False'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'cmake_clean_first' from command line to 'False'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'cmake_force_configure' from command line to 'False'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'ament_cmake_args' from command line to 'None'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'catkin_cmake_args' from command line to 'None'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robot_display' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'robot_display' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display', 'merge_install': False, 'path': '/home/nvidia/luckrobot/luckrobot_ws/src/robot_display', 'symlink_install': False, 'test_result_base': None}[0m
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'cmake_args' from command line to 'None'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'cmake_target' from command line to 'None'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.082s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wheel_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.082s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'wheel_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller', 'merge_install': False, 'path': '/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller', 'symlink_install': False, 'test_result_base': None}[0m
+[1.082s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'cmake_args' from command line to 'None'
+[1.082s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'cmake_target' from command line to 'None'
+[1.082s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.083s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'cmake_clean_cache' from command line to 'False'
+[1.083s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'cmake_clean_first' from command line to 'False'
+[1.083s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'cmake_force_configure' from command line to 'False'
+[1.083s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'ament_cmake_args' from command line to 'None'
+[1.083s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'catkin_cmake_args' from command line to 'None'
+[1.083s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'luckrobot_launch1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.083s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'luckrobot_launch1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1', 'merge_install': False, 'path': '/home/nvidia/luckrobot/luckrobot_ws/src/luckrobot_launch1', 'symlink_install': False, 'test_result_base': None}[0m
+[1.083s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[1.086s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[1.086s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller' with build type 'ament_cmake'
+[1.087s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller'
+[1.091s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.092s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.092s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.102s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/nvidia/luckrobot/luckrobot_ws/src/keyboard_control' with build type 'ament_python'
+[1.103s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('keyboard_control', 'ament_prefix_path')
+[1.103s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.ps1'
+[1.105s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.dsv'
+[1.106s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.sh'
+[1.108s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.108s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.117s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/nvidia/luckrobot/luckrobot_ws/src/robot_display' with build type 'ament_cmake'
+[1.117s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/nvidia/luckrobot/luckrobot_ws/src/robot_display'
+[1.118s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.118s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.133s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller[0m
+[2.074s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/nvidia/luckrobot/luckrobot_ws/src/keyboard_control'
+[2.075s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.075s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[2.100s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/luckrobot_ws/src/robot_display -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/luckrobot_ws/install/robot_display[0m
+[3.793s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/luckrobot_ws/src/keyboard_control': PYTHONPATH=/home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/build install --record /home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/install.log --single-version-externally-managed install_data[0m
+[5.054s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/luckrobot_ws/src/robot_display -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/luckrobot_ws/install/robot_display[0m
+[5.058s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/robot_display -- -j6 -l6[0m
+[5.148s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/robot_display -- -j6 -l6[0m
+[5.171s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/luckrobot_ws/build/robot_display[0m
+[5.224s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(robot_display)
+[5.225s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/luckrobot_ws/build/robot_display[0m
+[5.230s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display' for CMake module files
+[5.231s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display' for CMake config files
+[5.232s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('robot_display', 'cmake_prefix_path')
+[5.232s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/hook/cmake_prefix_path.ps1'
+[5.234s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/hook/cmake_prefix_path.dsv'
+[5.234s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/hook/cmake_prefix_path.sh'
+[5.236s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/bin'
+[5.236s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/lib/pkgconfig/robot_display.pc'
+[5.237s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/lib/python3.10/site-packages'
+[5.238s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/bin'
+[5.238s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.ps1'
+[5.240s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.dsv'
+[5.242s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.sh'
+[5.243s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.bash'
+[5.245s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.zsh'
+[5.247s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/colcon-core/packages/robot_display)
+[5.249s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(robot_display)
+[5.249s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display' for CMake module files
+[5.250s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display' for CMake config files
+[5.251s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('robot_display', 'cmake_prefix_path')
+[5.251s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/hook/cmake_prefix_path.ps1'
+[5.252s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/hook/cmake_prefix_path.dsv'
+[5.253s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/hook/cmake_prefix_path.sh'
+[5.254s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/bin'
+[5.255s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/lib/pkgconfig/robot_display.pc'
+[5.255s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/lib/python3.10/site-packages'
+[5.256s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/bin'
+[5.257s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.ps1'
+[5.259s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.dsv'
+[5.260s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.sh'
+[5.261s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.bash'
+[5.263s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.zsh'
+[5.264s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/colcon-core/packages/robot_display)
+[5.418s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller[0m
+[5.421s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6[0m
+[5.466s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control' for CMake module files
+[5.468s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control' for CMake config files
+[5.469s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib'
+[5.470s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/bin'
+[5.470s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/pkgconfig/keyboard_control.pc'
+[5.470s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages'
+[5.471s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('keyboard_control', 'pythonpath')
+[5.471s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/hook/pythonpath.ps1'
+[5.473s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/hook/pythonpath.dsv'
+[5.467s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/luckrobot_ws/src/keyboard_control' returned '0': PYTHONPATH=/home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/build install --record /home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/install.log --single-version-externally-managed install_data[0m
+[5.474s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/hook/pythonpath.sh'
+[5.476s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/bin'
+[5.476s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(keyboard_control)
+[5.477s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/package.ps1'
+[5.478s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/package.dsv'
+[5.479s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/package.sh'
+[5.480s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/package.bash'
+[5.481s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/keyboard_control/package.zsh'
+[5.482s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/share/colcon-core/packages/keyboard_control)
+[29.543s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6[0m
+[29.547s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller[0m
+[29.602s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(wheel_controller)
+[29.603s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller' for CMake module files
+[29.605s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller[0m
+[29.606s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller' for CMake config files
+[29.607s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('wheel_controller', 'cmake_prefix_path')
+[29.608s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/hook/cmake_prefix_path.ps1'
+[29.610s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/hook/cmake_prefix_path.dsv'
+[29.611s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/hook/cmake_prefix_path.sh'
+[29.613s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib'
+[29.613s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/bin'
+[29.613s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/pkgconfig/wheel_controller.pc'
+[29.614s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/python3.10/site-packages'
+[29.616s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/bin'
+[29.617s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.ps1'
+[29.618s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.dsv'
+[29.620s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.sh'
+[29.621s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.bash'
+[29.623s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.zsh'
+[29.624s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/colcon-core/packages/wheel_controller)
+[29.626s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(wheel_controller)
+[29.627s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller' for CMake module files
+[29.629s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller' for CMake config files
+[29.630s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('wheel_controller', 'cmake_prefix_path')
+[29.630s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/hook/cmake_prefix_path.ps1'
+[29.632s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/hook/cmake_prefix_path.dsv'
+[29.633s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/hook/cmake_prefix_path.sh'
+[29.635s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib'
+[29.636s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/bin'
+[29.636s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/pkgconfig/wheel_controller.pc'
+[29.637s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/python3.10/site-packages'
+[29.638s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/bin'
+[29.639s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.ps1'
+[29.641s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.dsv'
+[29.643s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.sh'
+[29.644s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.bash'
+[29.646s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.zsh'
+[29.647s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/colcon-core/packages/wheel_controller)
+[29.648s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/nvidia/luckrobot/luckrobot_ws/src/luckrobot_launch1' with build type 'ament_python'
+[29.649s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('luckrobot_launch1', 'ament_prefix_path')
+[29.650s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/hook/ament_prefix_path.ps1'
+[29.653s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/hook/ament_prefix_path.dsv'
+[29.654s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/hook/ament_prefix_path.sh'
+[29.656s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[29.656s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[30.578s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/nvidia/luckrobot/luckrobot_ws/src/luckrobot_launch1'
+[30.579s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.579s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[32.211s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/luckrobot_ws/src/luckrobot_launch1': CMAKE_PREFIX_PATH=/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs PYTHONPATH=/home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/luckrobot_launch1 build --build-base /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build install --record /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/install.log --single-version-externally-managed install_data[0m
+[33.683s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1' for CMake module files
+[33.685s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/luckrobot_ws/src/luckrobot_launch1' returned '0': CMAKE_PREFIX_PATH=/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs PYTHONPATH=/home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/luckrobot_launch1 build --build-base /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build install --record /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/install.log --single-version-externally-managed install_data[0m
+[33.686s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1' for CMake config files
+[33.688s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib'
+[33.688s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/bin'
+[33.688s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/pkgconfig/luckrobot_launch1.pc'
+[33.689s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages'
+[33.690s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('luckrobot_launch1', 'pythonpath')
+[33.690s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/hook/pythonpath.ps1'
+[33.692s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/hook/pythonpath.dsv'
+[33.694s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/hook/pythonpath.sh'
+[33.697s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/bin'
+[33.697s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(luckrobot_launch1)
+[33.699s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/package.ps1'
+[33.700s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/package.dsv'
+[33.702s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/package.sh'
+[33.704s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/package.bash'
+[33.705s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/package.zsh'
+[33.706s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/colcon-core/packages/luckrobot_launch1)
+[33.707s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[33.708s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[33.709s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[33.710s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[33.732s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[33.733s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[33.733s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[33.768s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[33.770s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/nvidia/luckrobot/luckrobot_ws/install/local_setup.ps1'
+[33.774s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/nvidia/luckrobot/luckrobot_ws/install/_local_setup_util_ps1.py'
+[33.779s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/nvidia/luckrobot/luckrobot_ws/install/setup.ps1'
+[33.784s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/nvidia/luckrobot/luckrobot_ws/install/local_setup.sh'
+[33.786s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/nvidia/luckrobot/luckrobot_ws/install/_local_setup_util_sh.py'
+[33.788s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/nvidia/luckrobot/luckrobot_ws/install/setup.sh'
+[33.793s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/nvidia/luckrobot/luckrobot_ws/install/local_setup.bash'
+[33.795s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/nvidia/luckrobot/luckrobot_ws/install/setup.bash'
+[33.800s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/nvidia/luckrobot/luckrobot_ws/install/local_setup.zsh'
+[33.802s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/nvidia/luckrobot/luckrobot_ws/install/setup.zsh'

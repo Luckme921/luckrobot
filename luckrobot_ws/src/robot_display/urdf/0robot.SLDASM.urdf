@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot_display">
+  <link name="base_footprint"/>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0098325143429585 -5.25402826668038E-05 0.392384583771952"
+        rpy="0 0 0" />
+      <mass
+        value="1.52093247375048" />
+      <inertia
+        ixx="0.0176542350747674"
+        ixy="-3.06486251135192E-08"
+        ixz="2.89095999810399E-05"
+        iyy="0.0170775483739283"
+        iyz="-6.04177568974501E-08"
+        izz="0.00135407024623668" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.0105" rpy="0 0 0"/>
+  </joint>
+  <link
+    name="whell_left_link">
+    <inertial>
+      <origin
+        xyz="-7.85437210625017E-07 0.000481373425572085 1.11756020026998E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.315479735385035" />
+      <inertia
+        ixx="0.000221117820208823"
+        ixy="3.58338438686885E-10"
+        ixz="-6.72123977051147E-09"
+        iyy="0.000357084383299597"
+        iyz="1.42519931702684E-08"
+        izz="0.000221134649609164" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/whell_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/whell_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="whell_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.188 0.04"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="whell_left_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel_right_link">
+    <inertial>
+      <origin
+        xyz="7.8544E-07 -0.00048137 1.1176E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.31548" />
+      <inertia
+        ixx="0.00022112"
+        ixy="3.5831E-10"
+        ixz="6.7212E-09"
+        iyy="0.00035708"
+        iyz="-1.4252E-08"
+        izz="0.00022113" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/wheel_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/wheel_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.188 0.04"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_right_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="screw_link">
+    <inertial>
+      <origin
+        xyz="-0.0223688776113594 6.2820359101037E-06 -0.0190287645686289"
+        rpy="0 0 0" />
+      <mass
+        value="0.266367645981795" />
+      <inertia
+        ixx="0.00245967565059239"
+        ixy="3.30950035005088E-09"
+        ixz="-1.52531776687285E-06"
+        iyy="0.000120948281441654"
+        iyz="-3.29427001439406E-09"
+        izz="0.00247208394953323" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/screw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/screw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="screw_joint"
+    type="prismatic">
+    <origin
+      xyz="0.061648 5E-05 0.48875"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="screw_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.012844 -0.0004913 0.00011816"
+        rpy="0 0 0" />
+      <mass
+        value="0.032639" />
+      <inertia
+        ixx="4.0769E-05"
+        ixy="-2.0296E-07"
+        ixz="8.1065E-08"
+        iyy="4.4252E-06"
+        iyz="2.2503E-07"
+        izz="4.0166E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.067499 6.1597E-05 0.78446"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="livox_link">
+    <inertial>
+      <origin
+        xyz="-0.0011535 -1.685E-05 0.004186"
+        rpy="0 0 0" />
+      <mass
+        value="0.052593" />
+      <inertia
+        ixx="1.1365E-05"
+        ixy="-5.6844E-09"
+        ixz="5.266E-10"
+        iyy="1.1397E-05"
+        iyz="-6.4096E-10"
+        izz="1.9179E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/livox_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_display/meshes/livox_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="livox_joint"
+    type="fixed">
+    <origin
+      xyz="0.017002 5.3506E-05 0.87097"
+      rpy="0 0.34907 0.00016022" />
+    <parent
+      link="base_link" />
+    <child
+      link="livox_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

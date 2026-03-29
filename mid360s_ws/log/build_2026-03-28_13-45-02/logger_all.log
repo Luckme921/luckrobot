@@ -1,0 +1,168 @@
+[0.337s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.338s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff916d3910>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff91620e80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff91620e80>>)[0m
+[1.123s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[1.124s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[1.124s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[1.124s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[1.124s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[1.124s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[1.125s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/nvidia/luckrobot/mid360s_ws'
+[1.125s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.125s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[1.125s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[1.125s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[1.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[1.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[1.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[1.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[1.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[1.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[1.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[1.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[1.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[1.159s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[1.159s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.159s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[1.159s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[1.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[1.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[1.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[1.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[1.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extensions ['ignore', 'ignore_ament_install']
+[1.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extension 'ignore'
+[1.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extension 'ignore_ament_install'
+[1.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extensions ['colcon_pkg']
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extension 'colcon_pkg'
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extensions ['colcon_meta']
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extension 'colcon_meta'
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extensions ['ros']
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extension 'ros'
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extensions ['cmake', 'python']
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extension 'cmake'
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extension 'python'
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extensions ['python_setup_py']
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(map) by extension 'python_setup_py'
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[1.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extensions ['ignore', 'ignore_ament_install']
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extension 'ignore'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extension 'ignore_ament_install'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extensions ['colcon_pkg']
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extension 'colcon_pkg'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extensions ['colcon_meta']
+[1.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extension 'colcon_meta'
+[1.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extensions ['ros']
+[1.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/FAST_LIO_ROS2) by extension 'ros'
+[1.174s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/FAST_LIO_ROS2' with type 'ros.ament_cmake' and name 'fast_lio'[0m
+[1.174s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[1.174s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[1.174s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[1.175s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[1.175s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[1.218s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[1.219s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[1.225s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 1 installed packages in /home/nvidia/luckrobot/mid360s_ws/install[0m
+[1.226s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 3 installed packages in /home/nvidia/luckrobot/orbbecsdk_ws/install[0m
+[1.227s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 3 installed packages in /home/nvidia/luckrobot/luckrobot_ws/install[0m
+[1.228s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 1 installed packages in /home/nvidia/luckrobot/livox_ws/install[0m
+[1.231s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 282 installed packages in /opt/ros/humble[0m
+[1.234s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[1.322s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'cmake_args' from command line to 'None'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'cmake_target' from command line to 'None'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'cmake_clean_cache' from command line to 'False'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'cmake_clean_first' from command line to 'False'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'cmake_force_configure' from command line to 'False'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'ament_cmake_args' from command line to 'None'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'catkin_cmake_args' from command line to 'None'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fast_lio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.323s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'fast_lio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio', 'merge_install': False, 'path': '/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2', 'symlink_install': False, 'test_result_base': None}[0m
+[1.324s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[1.327s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[1.327s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2' with build type 'ament_cmake'
+[1.328s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2'
+[1.335s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.336s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.336s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.365s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2 -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/mid360s_ws/install/fast_lio[0m
+[9.060s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake /home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2 -DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/mid360s_ws/install/fast_lio[0m
+[9.061s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/mid360s_ws/build/fast_lio -- -j6 -l6[0m
+[10.823s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/mid360s_ws/build/fast_lio -- -j6 -l6[0m
+[10.845s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/mid360s_ws/build/fast_lio[0m
+[11.046s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(fast_lio)
+[11.048s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/mid360s_ws/build/fast_lio[0m
+[11.058s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio' for CMake module files
+[11.060s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio' for CMake config files
+[11.063s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('fast_lio', 'cmake_prefix_path')
+[11.064s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.ps1'
+[11.067s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.dsv'
+[11.069s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.sh'
+[11.072s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib'
+[11.073s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('fast_lio', 'ld_library_path_lib')
+[11.074s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.ps1'
+[11.075s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.dsv'
+[11.076s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.sh'
+[11.077s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/bin'
+[11.077s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/pkgconfig/fast_lio.pc'
+[11.078s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/python3.10/site-packages'
+[11.079s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/bin'
+[11.080s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.ps1'
+[11.082s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.dsv'
+[11.091s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.sh'
+[11.095s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.bash'
+[11.097s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.zsh'
+[11.099s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/colcon-core/packages/fast_lio)
+[11.101s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(fast_lio)
+[11.102s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio' for CMake module files
+[11.103s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio' for CMake config files
+[11.105s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('fast_lio', 'cmake_prefix_path')
+[11.106s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.ps1'
+[11.108s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.dsv'
+[11.109s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.sh'
+[11.110s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib'
+[11.110s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('fast_lio', 'ld_library_path_lib')
+[11.111s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.ps1'
+[11.112s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.dsv'
+[11.114s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.sh'
+[11.115s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/bin'
+[11.115s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/pkgconfig/fast_lio.pc'
+[11.115s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/python3.10/site-packages'
+[11.116s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/bin'
+[11.117s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.ps1'
+[11.119s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.dsv'
+[11.120s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.sh'
+[11.121s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.bash'
+[11.122s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.zsh'
+[11.124s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/colcon-core/packages/fast_lio)
+[11.125s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[11.126s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[11.126s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[11.126s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[11.141s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.143s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.143s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[11.182s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[11.183s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/nvidia/luckrobot/mid360s_ws/install/local_setup.ps1'
+[11.186s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/nvidia/luckrobot/mid360s_ws/install/_local_setup_util_ps1.py'
+[11.192s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/nvidia/luckrobot/mid360s_ws/install/setup.ps1'
+[11.198s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/nvidia/luckrobot/mid360s_ws/install/local_setup.sh'
+[11.200s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/nvidia/luckrobot/mid360s_ws/install/_local_setup_util_sh.py'
+[11.202s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/nvidia/luckrobot/mid360s_ws/install/setup.sh'
+[11.207s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/nvidia/luckrobot/mid360s_ws/install/local_setup.bash'
+[11.209s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/nvidia/luckrobot/mid360s_ws/install/setup.bash'
+[11.219s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/nvidia/luckrobot/mid360s_ws/install/local_setup.zsh'
+[11.221s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/nvidia/luckrobot/mid360s_ws/install/setup.zsh'
