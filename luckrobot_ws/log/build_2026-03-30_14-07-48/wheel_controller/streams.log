@@ -1,0 +1,123 @@
+[0.028s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6
+[0.166s] [ 25%] Built target lead_screw_motor_node
+[0.174s] [ 75%] Built target danger_command_node
+[0.174s] [ 75%] Built target wheel_controller_node
+[0.181s] [ 87%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
+[6.440s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In constructor ‘[01m[KRobotStatePublisher::RobotStatePublisher()[m[K’:
+[6.441s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:43:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[6.441s]    43 |         wheel_sub_ = this->[01;31m[Kcreate_subscription<std_msgs::msg/float64MultiArray>[m[K(
+[6.441s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.449s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:43:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRobotStatePublisher::create_subscription<<expression error> >(const char [15], int, RobotStatePublisher::RobotStatePublisher()::<lambda(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)>)[m[K’
+[6.449s]    43 |         wheel_sub_ = [01;31m[Kthis->create_subscription<std_msgs::msg/float64MultiArray>([m[K
+[6.449s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[6.449s]    44 | [01;31m[K            "wheel_position", 100,[m[K
+[6.449s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                              
+[6.450s]    45 | [01;31m[K            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {[m[K
+[6.450s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K     
+[6.450s]    46 | [01;31m[K                if(msg->data.size() < 2) return;[m[K
+[6.450s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                
+[6.450s]    47 | [01;31m[K                double raw_l = msg->data[0];[m[K
+[6.450s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                    
+[6.450s]    48 | [01;31m[K                double raw_r = msg->data[1];[m[K
+[6.451s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                    
+[6.451s]    49 | 
+[6.451s]       |                                                                                 
+[6.451s]    50 | [01;31m[K                // 🔥 仅过滤：突发0.0脏数据（正常运动不会突然从大角度变0）[m[K
+[6.451s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K      
+[6.451s]    51 | [01;31m[K                bool dirty_left  = (raw_l == 0.0 && std::fabs(last_valid_left_) > DIRTY_DATA_THRESH);[m[K
+[6.451s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.452s]    52 | [01;31m[K                bool dirty_right = (raw_r == 0.0 && std::fabs(last_valid_right_) > DIRTY_DATA_THRESH);[m[K
+[6.452s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.452s]    53 | 
+[6.452s]       |                                                                                 
+[6.452s]    54 | [01;31m[K                // 脏数据：直接丢弃，保持上一帧有效角度[m[K
+[6.452s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+[6.452s]    55 | [01;31m[K                if (dirty_left || dirty_right) {[m[K
+[6.453s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                
+[6.453s]    56 | [01;31m[K                    wheel_left_.store(last_valid_left_);[m[K
+[6.453s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                        
+[6.453s]    57 | [01;31m[K                    wheel_right_.store(last_valid_right_);[m[K
+[6.453s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                      
+[6.453s]    58 | [01;31m[K                    return;[m[K
+[6.453s]       |                     [01;31m[K~~~~~~~[m[K                                                     
+[6.454s]    59 | [01;31m[K                }[m[K
+[6.454s]       |                 [01;31m[K~[m[K                                                               
+[6.454s]    60 | 
+[6.454s]       |                                                                                 
+[6.454s]    61 | [01;31m[K                // 正常数据：纯透传，零修改、零处理、零约束[m[K
+[6.454s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                     
+[6.454s]    62 | [01;31m[K                wheel_left_.store(raw_l);[m[K
+[6.467s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                       
+[6.467s]    63 | [01;31m[K                wheel_right_.store(raw_r);[m[K
+[6.467s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                      
+[6.467s]    64 | [01;31m[K                last_valid_left_ = raw_l;[m[K
+[6.468s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                       
+[6.468s]    65 | [01;31m[K                last_valid_right_ = raw_r;[m[K
+[6.468s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                      
+[6.468s]    66 | [01;31m[K            }[m[K
+[6.468s]       |             [01;31m[K~[m[K                                                                   
+[6.468s]    67 | [01;31m[K        )[m[K;
+[6.468s]       |         [01;31m[K~[m[K                                                                       
+[6.469s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[6.469s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[6.469s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.469s]                  from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:1[m[K:
+[6.469s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[6.469s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[6.469s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[6.470s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.470s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:43:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.470s]    43 |         wheel_sub_ = [01;31m[Kthis->create_subscription<std_msgs::msg/float64MultiArray>([m[K
+[6.470s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[6.470s]    44 | [01;31m[K            "wheel_position", 100,[m[K
+[6.470s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                              
+[6.470s]    45 | [01;31m[K            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {[m[K
+[6.471s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K     
+[6.471s]    46 | [01;31m[K                if(msg->data.size() < 2) return;[m[K
+[6.471s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                
+[6.471s]    47 | [01;31m[K                double raw_l = msg->data[0];[m[K
+[6.471s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                    
+[6.471s]    48 | [01;31m[K                double raw_r = msg->data[1];[m[K
+[6.471s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                    
+[6.472s]    49 | 
+[6.472s]       |                                                                                 
+[6.472s]    50 | [01;31m[K                // 🔥 仅过滤：突发0.0脏数据（正常运动不会突然从大角度变0）[m[K
+[6.472s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K      
+[6.472s]    51 | [01;31m[K                bool dirty_left  = (raw_l == 0.0 && std::fabs(last_valid_left_) > DIRTY_DATA_THRESH);[m[K
+[6.472s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.472s]    52 | [01;31m[K                bool dirty_right = (raw_r == 0.0 && std::fabs(last_valid_right_) > DIRTY_DATA_THRESH);[m[K
+[6.473s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.473s]    53 | 
+[6.473s]       |                                                                                 
+[6.473s]    54 | [01;31m[K                // 脏数据：直接丢弃，保持上一帧有效角度[m[K
+[6.473s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+[6.473s]    55 | [01;31m[K                if (dirty_left || dirty_right) {[m[K
+[6.473s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                
+[6.474s]    56 | [01;31m[K                    wheel_left_.store(last_valid_left_);[m[K
+[6.474s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                        
+[6.474s]    57 | [01;31m[K                    wheel_right_.store(last_valid_right_);[m[K
+[6.474s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                      
+[6.474s]    58 | [01;31m[K                    return;[m[K
+[6.474s]       |                     [01;31m[K~~~~~~~[m[K                                                     
+[6.479s]    59 | [01;31m[K                }[m[K
+[6.479s]       |                 [01;31m[K~[m[K                                                               
+[6.479s]    60 | 
+[6.479s]       |                                                                                 
+[6.480s]    61 | [01;31m[K                // 正常数据：纯透传，零修改、零处理、零约束[m[K
+[6.480s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                     
+[6.480s]    62 | [01;31m[K                wheel_left_.store(raw_l);[m[K
+[6.480s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                       
+[6.480s]    63 | [01;31m[K                wheel_right_.store(raw_r);[m[K
+[6.481s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                      
+[6.481s]    64 | [01;31m[K                last_valid_left_ = raw_l;[m[K
+[6.481s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                       
+[6.481s]    65 | [01;31m[K                last_valid_right_ = raw_r;[m[K
+[6.481s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                      
+[6.482s]    66 | [01;31m[K            }[m[K
+[6.482s]       |             [01;31m[K~[m[K                                                                   
+[6.482s]    67 | [01;31m[K        )[m[K;
+[6.482s]       |         [01;31m[K~[m[K                                                                       
+[13.002s] gmake[2]: *** [CMakeFiles/state_publisher_node.dir/build.make:76：CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o] 错误 1
+[13.002s] gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/state_publisher_node.dir/all] 错误 2
+[13.003s] gmake: *** [Makefile:146：all] 错误 2
+[13.009s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6

@@ -4,123 +4,118 @@
 #include <sensor_msgs/msg/joint_state.hpp>
 #include <atomic>
 #include <cmath>
+#include <queue>
+#include <mutex>
+#define PI 3.14159265358979323846
 
-// 严格匹配URDF & 你的配置
-#define LEFT_WHEEL_JOINT    "whell_left_joint"
-#define RIGHT_WHEEL_JOINT   "wheel_right_joint"
-#define SCREW_JOINT         "screw_joint"
+// 固定配置
+#define LEFT_JOINT   "whell_left_joint"
+#define RIGHT_JOINT  "wheel_right_joint"
+#define SCREW_JOINT  "screw_joint"
 
-// 核心要求：移动速度 1cm/s = 10mm/s
-const float MOVE_SPEED_MM_PER_SEC = 10.0f;
-// 控制频率 50Hz (20ms)
-const float CONTROL_PERIOD = 0.02f;
+// 丝杠参数
+const float INIT_SPEED = 20.0f;
+const float NORMAL_SPEED = 50.0f;
+const float DT = 0.02f;
+const float START_POS = 470.0f;
+const float ZERO_POS = 0.0f;
 
-class RobotStatePublisher : public rclcpp::Node
+const double THRESH = 0.1;
+
+enum State { INIT, RUN };
+
+class JointPublisher : public rclcpp::Node
 {
 public:
-    RobotStatePublisher() : Node("state_publisher_node")
+    JointPublisher() : Node("joint_pub")
     {
-        // 初始化：丝杠在顶端(0mm)，当前位置=目标位置=0
-        wheel_left_ = 0.0;
-        wheel_right_ = 0.0;
-        current_pos_mm_ = 0.0f;   // 当前位置(mm)
-        target_pos_mm_ = 0.0f;    // 目标位置(mm)
+        wheel_l_ = 0.0;
+        wheel_r_ = 0.0;
+        screw_pos_ = START_POS;
+        target_ = ZERO_POS;
+        state_ = INIT;
 
-        // 轮子订阅（无闪烁）
+        // 轮子订阅：仅过滤0.0脏数据
         wheel_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
             "wheel_position", 100,
             [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
-                if(msg->data.size() >= 2){
-                    wheel_left_ = -msg->data[0] * 0.0174533;
-                    wheel_right_ = -msg->data[1] * 0.0174533;
-                }
+                if (msg->data.size() < 2) return;
+                double l = msg->data[0];
+                double r = msg->data[1];
+
+                if (l == 0.0 && std::fabs(wheel_l_.load()) > THRESH) {}
+                else wheel_l_ = l;
+
+                if (r == 0.0 && std::fabs(wheel_r_.load()) > THRESH) {}
+                else wheel_r_ = r;
             }
         );
 
-        // 核心：增量式丝杠控制（方向修正+累加 + 无软限位）
+        // 丝杠指令
         screw_sub_ = this->create_subscription<std_msgs::msg::Float32>(
             "/lead_screw/displacement", 100,
             [this](const std_msgs::msg::Float32::SharedPtr msg) {
-                // 方向反转：负值=向下
-                float delta = -msg->data;
-                // 修复原子变量累加操作
-                target_pos_mm_.store(target_pos_mm_.load() + delta);
-                
-                RCLCPP_INFO(this->get_logger(), 
-                    "增量: %.0fmm | 目标位置: %.0fmm", 
-                    delta, target_pos_mm_.load());
+                std::lock_guard<std::mutex> lock(mtx_);
+                q_.push(-msg->data);
             }
         );
 
-        // 发布关节状态
-        joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 100);
-
-        // 50Hz平滑控制定时器
-        control_timer_ = this->create_wall_timer(
+        // 50Hz发布
+        timer_ = this->create_wall_timer(
             std::chrono::milliseconds(20),
-            std::bind(&RobotStatePublisher::smooth_control, this)
+            std::bind(&JointPublisher::pub, this)
         );
 
-        RCLCPP_INFO(this->get_logger(), "✅ 节点启动成功");
-        RCLCPP_INFO(this->get_logger(), "✅ 方向：负值=向下");
-        RCLCPP_INFO(this->get_logger(), "✅ 速度：1cm/s");
-        RCLCPP_INFO(this->get_logger(), "✅ 控制：增量累加模式");
-        RCLCPP_INFO(this->get_logger(), "✅ 已移除：软限位保护(无行程限制)");
+        pub_ = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 10);
     }
 
 private:
-    // 匀速平滑运动控制
-    void smooth_control()
+    void pub()
     {
-        // 每帧移动步长
-        float step = MOVE_SPEED_MM_PER_SEC * CONTROL_PERIOD;
-        float curr = current_pos_mm_.load();
-        float target = target_pos_mm_.load();
+        // 丝杠运动
+        float curr = screw_pos_.load();
+        float tgt = target_.load();
 
-        // 平滑趋近目标位置（无任何限位）
-        if (curr < target) {
-            current_pos_mm_.store(curr + step);
-        } else if (curr > target) {
-            current_pos_mm_.store(curr - step);
+        if (state_ == INIT) {
+            if (curr > tgt) screw_pos_ = curr - INIT_SPEED * DT;
+            else { screw_pos_ = ZERO_POS; state_ = RUN; }
+        } else {
+            if (std::fabs(curr - tgt) < 0.1f) {
+                std::lock_guard<std::mutex> lock(mtx_);
+                if (!q_.empty()) { target_ = tgt + q_.front(); q_.pop(); }
+            } else {
+                screw_pos_ = curr + (curr < tgt ? 1 : -1) * NORMAL_SPEED * DT;
+            }
         }
 
-        // 发布关节数据（mm转m）
-        publish_joint_state();
-    }
-
-    // 发布joint_states
-    void publish_joint_state()
-    {
+        // 角度 → 弧度转换（唯一修改的地方）
         auto msg = sensor_msgs::msg::JointState();
-        msg.header.stamp = this->get_clock()->now();
-
-        msg.name = {LEFT_WHEEL_JOINT, RIGHT_WHEEL_JOINT, SCREW_JOINT};
+        msg.header.stamp = get_clock()->now();
+        msg.name = {LEFT_JOINT, RIGHT_JOINT, SCREW_JOINT};
         msg.position = {
-            wheel_left_.load(std::memory_order_relaxed),
-            wheel_right_.load(std::memory_order_relaxed),
-            current_pos_mm_.load() / 1000.0f  // 毫米转米
+            wheel_l_.load() * PI / 180.0,   // 角度转弧度
+            wheel_r_.load() * PI / 180.0,   // 角度转弧度
+            screw_pos_.load() / 1000.0f
         };
-
-        joint_pub_->publish(msg);
+        pub_->publish(msg);
     }
 
-    // 通信句柄
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr wheel_sub_;
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr screw_sub_;
-    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
-    rclcpp::TimerBase::SharedPtr control_timer_;
+    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr pub_;
+    rclcpp::TimerBase::SharedPtr timer_;
 
-    // 线程安全变量
-    std::atomic<double> wheel_left_;
-    std::atomic<double> wheel_right_;
-    std::atomic<float> current_pos_mm_;  // 当前位置(mm)
-    std::atomic<float> target_pos_mm_;   // 目标位置(mm)
+    std::atomic<double> wheel_l_, wheel_r_;
+    std::atomic<float> screw_pos_, target_;
+    std::atomic<State> state_;
+    std::queue<float> q_;
+    std::mutex mtx_;
 };
 
-int main(int argc, char *argv[])
+int main(int argc, char** argv)
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<RobotStatePublisher>());
+    rclcpp::spin(std::make_shared<JointPublisher>());
     rclcpp::shutdown();
     return 0;
 }

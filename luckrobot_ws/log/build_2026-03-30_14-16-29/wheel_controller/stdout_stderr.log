@@ -1,0 +1,51 @@
+[35m[1mConsolidate compiler generated dependencies of target state_publisher_node[0m
+[ 37%] Built target danger_command_node
+[ 50%] Built target wheel_controller_node
+[ 87%] Built target lead_screw_motor_node
+[ 87%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:191:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kdouble RobotStatePublisher::angle_diff(double, double)[m[K’ cannot be overloaded with ‘[01m[Kdouble RobotStatePublisher::angle_diff(double, double)[m[K’
+  191 |     double [01;31m[Kangle_diff[m[K(double current, double last) {
+      |            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:132:12:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kdouble RobotStatePublisher::angle_diff(double, double)[m[K’
+  132 |     double [01;36m[Kangle_diff[m[K(double current, double last) {
+      |            [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In lambda function:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:104:13:[m[K [01;31m[Kerror: [m[Kjump to label ‘[01m[Kpublish_data[m[K’
+  104 |             [01;31m[Kpublish_data[m[K:
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:73:26:[m[K [01;36m[Knote: [m[K  from here
+   73 |                     goto [01;36m[Kpublish_data[m[K; // 稳定期内纯透传
+      |                          [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:83:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kbool jump_right[m[K’
+   83 |                 bool [01;36m[Kjump_right[m[K = std::fabs(delta_r) > ANGLE_JUMP_THRESH;
+      |                      [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:82:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kbool jump_left[m[K’
+   82 |                 bool [01;36m[Kjump_left[m[K = std::fabs(delta_l) > ANGLE_JUMP_THRESH;
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:79:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble delta_r[m[K’
+   79 |                 double [01;36m[Kdelta_r[m[K = angle_diff(processed_r, last_valid_right_);
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:78:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble delta_l[m[K’
+   78 |                 double [01;36m[Kdelta_l[m[K = angle_diff(processed_l, last_valid_left_);
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:104:13:[m[K [01;31m[Kerror: [m[Kjump to label ‘[01m[Kpublish_data[m[K’
+  104 |             [01;31m[Kpublish_data[m[K:
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:64:26:[m[K [01;36m[Knote: [m[K  from here
+   64 |                     goto [01;36m[Kpublish_data[m[K; // 跳过后续处理，直接发布
+      |                          [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:83:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kbool jump_right[m[K’
+   83 |                 bool [01;36m[Kjump_right[m[K = std::fabs(delta_r) > ANGLE_JUMP_THRESH;
+      |                      [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:82:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kbool jump_left[m[K’
+   82 |                 bool [01;36m[Kjump_left[m[K = std::fabs(delta_l) > ANGLE_JUMP_THRESH;
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:79:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble delta_r[m[K’
+   79 |                 double [01;36m[Kdelta_r[m[K = angle_diff(processed_r, last_valid_right_);
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:78:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble delta_l[m[K’
+   78 |                 double [01;36m[Kdelta_l[m[K = angle_diff(processed_l, last_valid_left_);
+      |                        [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/state_publisher_node.dir/build.make:76：CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/state_publisher_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
