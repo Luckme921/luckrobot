@@ -1,0 +1,22 @@
+[2.660s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/src/keyboard_control': PYTHONPATH=/home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/build install --record /home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/install.log --single-version-externally-managed install_data
+[3.664s] running egg_info
+[3.705s] writing ../../build/keyboard_control/keyboard_control.egg-info/PKG-INFO
+[3.705s] writing dependency_links to ../../build/keyboard_control/keyboard_control.egg-info/dependency_links.txt
+[3.706s] writing entry points to ../../build/keyboard_control/keyboard_control.egg-info/entry_points.txt
+[3.706s] writing requirements to ../../build/keyboard_control/keyboard_control.egg-info/requires.txt
+[3.706s] writing top-level names to ../../build/keyboard_control/keyboard_control.egg-info/top_level.txt
+[3.815s] reading manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[3.816s] adding license file 'LICENSE'
+[3.817s] writing manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[3.817s] running build
+[3.818s] running build_py
+[3.818s] running install
+[3.831s] running install_lib
+[3.874s] running install_data
+[3.874s] running install_egg_info
+[3.917s] removing '/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control-0.0.0-py3.10.egg-info' (and everything under it)
+[3.918s] Copying ../../build/keyboard_control/keyboard_control.egg-info to /home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control-0.0.0-py3.10.egg-info
+[3.920s] running install_scripts
+[4.079s] Installing keyboard_teleop script to /home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/keyboard_control
+[4.080s] writing list of installed files to '/home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/install.log'
+[4.208s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/src/keyboard_control' returned '0': PYTHONPATH=/home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/build install --record /home/nvidia/luckrobot/luckrobot_ws/build/keyboard_control/install.log --single-version-externally-managed install_data

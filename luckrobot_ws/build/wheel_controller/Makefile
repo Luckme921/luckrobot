@@ -236,6 +236,19 @@ danger_command_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/danger_command_node.dir/build.make CMakeFiles/danger_command_node.dir/build
 .PHONY : danger_command_node/fast
 
+#=============================================================================
+# Target rules for targets named state_publisher_node
+
+# Build rule for target.
+state_publisher_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 state_publisher_node
+.PHONY : state_publisher_node
+
+# fast build rule for target.
+state_publisher_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_publisher_node.dir/build.make CMakeFiles/state_publisher_node.dir/build
+.PHONY : state_publisher_node/fast
+
 src/danger_command_node.o: src/danger_command_node.cpp.o
 .PHONY : src/danger_command_node.o
 
@@ -284,6 +297,30 @@ src/lead_screw_motor_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lead_screw_motor_node.dir/build.make CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.s
 .PHONY : src/lead_screw_motor_node.cpp.s
 
+src/state_publisher_node.o: src/state_publisher_node.cpp.o
+.PHONY : src/state_publisher_node.o
+
+# target to build an object file
+src/state_publisher_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_publisher_node.dir/build.make CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o
+.PHONY : src/state_publisher_node.cpp.o
+
+src/state_publisher_node.i: src/state_publisher_node.cpp.i
+.PHONY : src/state_publisher_node.i
+
+# target to preprocess a source file
+src/state_publisher_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_publisher_node.dir/build.make CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.i
+.PHONY : src/state_publisher_node.cpp.i
+
+src/state_publisher_node.s: src/state_publisher_node.cpp.s
+.PHONY : src/state_publisher_node.s
+
+# target to generate assembly for a file
+src/state_publisher_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_publisher_node.dir/build.make CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.s
+.PHONY : src/state_publisher_node.cpp.s
+
 src/wheel_controller_node.o: src/wheel_controller_node.cpp.o
 .PHONY : src/wheel_controller_node.o
 
@@ -325,6 +362,7 @@ help:
 	@echo "... wheel_controller_uninstall"
 	@echo "... danger_command_node"
 	@echo "... lead_screw_motor_node"
+	@echo "... state_publisher_node"
 	@echo "... wheel_controller_node"
 	@echo "... src/danger_command_node.o"
 	@echo "... src/danger_command_node.i"
@@ -332,6 +370,9 @@ help:
 	@echo "... src/lead_screw_motor_node.o"
 	@echo "... src/lead_screw_motor_node.i"
 	@echo "... src/lead_screw_motor_node.s"
+	@echo "... src/state_publisher_node.o"
+	@echo "... src/state_publisher_node.i"
+	@echo "... src/state_publisher_node.s"
 	@echo "... src/wheel_controller_node.o"
 	@echo "... src/wheel_controller_node.i"
 	@echo "... src/wheel_controller_node.s"

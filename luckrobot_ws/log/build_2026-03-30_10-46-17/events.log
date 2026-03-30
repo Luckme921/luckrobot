@@ -1,0 +1,329 @@
+[0.000000] (-) TimerEvent: {}
+[0.000706] (-) JobUnselected: {'identifier': 'keyboard_control'}
+[0.001288] (-) JobUnselected: {'identifier': 'luckrobot_launch1'}
+[0.001612] (-) JobUnselected: {'identifier': 'robot_display'}
+[0.001981] (wheel_controller) JobQueued: {'identifier': 'wheel_controller', 'dependencies': OrderedDict()}
+[0.002098] (wheel_controller) JobStarted: {'identifier': 'wheel_controller'}
+[0.022147] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'cmake'}
+[0.023731] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'build'}
+[0.025252] (wheel_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.104 56621 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller'), ('SSH_CONNECTION', '192.168.3.104 56621 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099406] (-) TimerEvent: {}
+[0.135002] (wheel_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target state_publisher\x1b[0m\n'}
+[0.156549] (wheel_controller) StdoutLine: {'line': b'[ 50%] Built target danger_command_node\n'}
+[0.157097] (wheel_controller) StdoutLine: {'line': b'[ 50%] Built target wheel_controller_node\n'}
+[0.157454] (wheel_controller) StdoutLine: {'line': b'[ 75%] Built target lead_screw_motor_node\n'}
+[0.183488] (wheel_controller) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/state_publisher.dir/src/state_publisher.cpp.o\x1b[0m\n'}
+[0.199572] (-) TimerEvent: {}
+[0.300297] (-) TimerEvent: {}
+[0.400978] (-) TimerEvent: {}
+[0.501654] (-) TimerEvent: {}
+[0.602338] (-) TimerEvent: {}
+[0.703030] (-) TimerEvent: {}
+[0.803731] (-) TimerEvent: {}
+[0.904453] (-) TimerEvent: {}
+[1.005147] (-) TimerEvent: {}
+[1.105836] (-) TimerEvent: {}
+[1.206548] (-) TimerEvent: {}
+[1.307242] (-) TimerEvent: {}
+[1.408077] (-) TimerEvent: {}
+[1.508762] (-) TimerEvent: {}
+[1.609457] (-) TimerEvent: {}
+[1.710152] (-) TimerEvent: {}
+[1.810841] (-) TimerEvent: {}
+[1.911523] (-) TimerEvent: {}
+[2.012267] (-) TimerEvent: {}
+[2.112969] (-) TimerEvent: {}
+[2.213677] (-) TimerEvent: {}
+[2.314385] (-) TimerEvent: {}
+[2.415102] (-) TimerEvent: {}
+[2.515817] (-) TimerEvent: {}
+[2.616590] (-) TimerEvent: {}
+[2.717312] (-) TimerEvent: {}
+[2.818028] (-) TimerEvent: {}
+[2.918739] (-) TimerEvent: {}
+[3.019450] (-) TimerEvent: {}
+[3.120177] (-) TimerEvent: {}
+[3.220904] (-) TimerEvent: {}
+[3.321655] (-) TimerEvent: {}
+[3.422404] (-) TimerEvent: {}
+[3.523140] (-) TimerEvent: {}
+[3.623869] (-) TimerEvent: {}
+[3.724594] (-) TimerEvent: {}
+[3.825306] (-) TimerEvent: {}
+[3.926018] (-) TimerEvent: {}
+[4.026759] (-) TimerEvent: {}
+[4.127499] (-) TimerEvent: {}
+[4.228374] (-) TimerEvent: {}
+[4.329195] (-) TimerEvent: {}
+[4.429900] (-) TimerEvent: {}
+[4.530588] (-) TimerEvent: {}
+[4.631310] (-) TimerEvent: {}
+[4.732022] (-) TimerEvent: {}
+[4.832722] (-) TimerEvent: {}
+[4.933433] (-) TimerEvent: {}
+[5.034151] (-) TimerEvent: {}
+[5.134873] (-) TimerEvent: {}
+[5.235597] (-) TimerEvent: {}
+[5.336339] (-) TimerEvent: {}
+[5.437029] (-) TimerEvent: {}
+[5.537703] (-) TimerEvent: {}
+[5.638389] (-) TimerEvent: {}
+[5.739192] (-) TimerEvent: {}
+[5.839962] (-) TimerEvent: {}
+[5.940680] (-) TimerEvent: {}
+[6.041515] (-) TimerEvent: {}
+[6.142324] (-) TimerEvent: {}
+[6.243132] (-) TimerEvent: {}
+[6.343981] (-) TimerEvent: {}
+[6.444772] (-) TimerEvent: {}
+[6.545847] (-) TimerEvent: {}
+[6.646686] (-) TimerEvent: {}
+[6.747489] (-) TimerEvent: {}
+[6.848325] (-) TimerEvent: {}
+[6.949164] (-) TimerEvent: {}
+[7.049989] (-) TimerEvent: {}
+[7.150818] (-) TimerEvent: {}
+[7.251629] (-) TimerEvent: {}
+[7.352444] (-) TimerEvent: {}
+[7.453257] (-) TimerEvent: {}
+[7.554092] (-) TimerEvent: {}
+[7.654939] (-) TimerEvent: {}
+[7.755777] (-) TimerEvent: {}
+[7.856649] (-) TimerEvent: {}
+[7.957485] (-) TimerEvent: {}
+[8.058336] (-) TimerEvent: {}
+[8.159130] (-) TimerEvent: {}
+[8.260011] (-) TimerEvent: {}
+[8.360816] (-) TimerEvent: {}
+[8.461659] (-) TimerEvent: {}
+[8.562513] (-) TimerEvent: {}
+[8.663364] (-) TimerEvent: {}
+[8.764370] (-) TimerEvent: {}
+[8.865192] (-) TimerEvent: {}
+[8.966008] (-) TimerEvent: {}
+[9.066817] (-) TimerEvent: {}
+[9.167665] (-) TimerEvent: {}
+[9.268493] (-) TimerEvent: {}
+[9.369296] (-) TimerEvent: {}
+[9.470104] (-) TimerEvent: {}
+[9.570929] (-) TimerEvent: {}
+[9.671707] (-) TimerEvent: {}
+[9.772532] (-) TimerEvent: {}
+[9.873338] (-) TimerEvent: {}
+[9.974159] (-) TimerEvent: {}
+[10.074972] (-) TimerEvent: {}
+[10.175782] (-) TimerEvent: {}
+[10.276619] (-) TimerEvent: {}
+[10.377397] (-) TimerEvent: {}
+[10.478217] (-) TimerEvent: {}
+[10.578998] (-) TimerEvent: {}
+[10.679778] (-) TimerEvent: {}
+[10.780579] (-) TimerEvent: {}
+[10.881355] (-) TimerEvent: {}
+[10.982192] (-) TimerEvent: {}
+[11.083030] (-) TimerEvent: {}
+[11.183857] (-) TimerEvent: {}
+[11.284688] (-) TimerEvent: {}
+[11.385726] (-) TimerEvent: {}
+[11.486580] (-) TimerEvent: {}
+[11.587431] (-) TimerEvent: {}
+[11.688563] (-) TimerEvent: {}
+[11.789386] (-) TimerEvent: {}
+[11.890078] (-) TimerEvent: {}
+[11.990810] (-) TimerEvent: {}
+[12.091533] (-) TimerEvent: {}
+[12.192278] (-) TimerEvent: {}
+[12.293004] (-) TimerEvent: {}
+[12.393824] (-) TimerEvent: {}
+[12.494615] (-) TimerEvent: {}
+[12.595405] (-) TimerEvent: {}
+[12.696240] (-) TimerEvent: {}
+[12.797029] (-) TimerEvent: {}
+[12.897847] (-) TimerEvent: {}
+[12.998669] (-) TimerEvent: {}
+[13.099487] (-) TimerEvent: {}
+[13.200328] (-) TimerEvent: {}
+[13.301110] (-) TimerEvent: {}
+[13.401904] (-) TimerEvent: {}
+[13.502705] (-) TimerEvent: {}
+[13.603485] (-) TimerEvent: {}
+[13.704324] (-) TimerEvent: {}
+[13.805102] (-) TimerEvent: {}
+[13.905872] (-) TimerEvent: {}
+[14.006630] (-) TimerEvent: {}
+[14.107440] (-) TimerEvent: {}
+[14.208287] (-) TimerEvent: {}
+[14.309094] (-) TimerEvent: {}
+[14.409892] (-) TimerEvent: {}
+[14.510675] (-) TimerEvent: {}
+[14.611457] (-) TimerEvent: {}
+[14.712288] (-) TimerEvent: {}
+[14.813067] (-) TimerEvent: {}
+[14.913838] (-) TimerEvent: {}
+[15.014630] (-) TimerEvent: {}
+[15.115437] (-) TimerEvent: {}
+[15.216228] (-) TimerEvent: {}
+[15.317006] (-) TimerEvent: {}
+[15.417786] (-) TimerEvent: {}
+[15.518560] (-) TimerEvent: {}
+[15.619603] (-) TimerEvent: {}
+[15.720439] (-) TimerEvent: {}
+[15.821230] (-) TimerEvent: {}
+[15.922007] (-) TimerEvent: {}
+[16.022788] (-) TimerEvent: {}
+[16.123590] (-) TimerEvent: {}
+[16.224397] (-) TimerEvent: {}
+[16.325182] (-) TimerEvent: {}
+[16.425974] (-) TimerEvent: {}
+[16.526779] (-) TimerEvent: {}
+[16.627545] (-) TimerEvent: {}
+[16.728292] (-) TimerEvent: {}
+[16.829038] (-) TimerEvent: {}
+[16.929787] (-) TimerEvent: {}
+[17.030555] (-) TimerEvent: {}
+[17.131355] (-) TimerEvent: {}
+[17.232143] (-) TimerEvent: {}
+[17.332909] (-) TimerEvent: {}
+[17.433663] (-) TimerEvent: {}
+[17.534433] (-) TimerEvent: {}
+[17.635192] (-) TimerEvent: {}
+[17.735983] (-) TimerEvent: {}
+[17.836756] (-) TimerEvent: {}
+[17.937508] (-) TimerEvent: {}
+[18.038296] (-) TimerEvent: {}
+[18.139124] (-) TimerEvent: {}
+[18.239885] (-) TimerEvent: {}
+[18.340686] (-) TimerEvent: {}
+[18.441446] (-) TimerEvent: {}
+[18.542232] (-) TimerEvent: {}
+[18.642972] (-) TimerEvent: {}
+[18.743735] (-) TimerEvent: {}
+[18.844525] (-) TimerEvent: {}
+[18.945267] (-) TimerEvent: {}
+[19.046014] (-) TimerEvent: {}
+[19.146800] (-) TimerEvent: {}
+[19.247558] (-) TimerEvent: {}
+[19.348328] (-) TimerEvent: {}
+[19.449072] (-) TimerEvent: {}
+[19.549825] (-) TimerEvent: {}
+[19.650566] (-) TimerEvent: {}
+[19.751329] (-) TimerEvent: {}
+[19.852092] (-) TimerEvent: {}
+[19.952853] (-) TimerEvent: {}
+[20.053611] (-) TimerEvent: {}
+[20.154391] (-) TimerEvent: {}
+[20.255143] (-) TimerEvent: {}
+[20.355886] (-) TimerEvent: {}
+[20.456638] (-) TimerEvent: {}
+[20.557375] (-) TimerEvent: {}
+[20.658000] (-) TimerEvent: {}
+[20.758630] (-) TimerEvent: {}
+[20.859273] (-) TimerEvent: {}
+[20.960014] (-) TimerEvent: {}
+[21.060654] (-) TimerEvent: {}
+[21.161295] (-) TimerEvent: {}
+[21.261948] (-) TimerEvent: {}
+[21.362597] (-) TimerEvent: {}
+[21.463238] (-) TimerEvent: {}
+[21.563891] (-) TimerEvent: {}
+[21.664564] (-) TimerEvent: {}
+[21.765208] (-) TimerEvent: {}
+[21.865857] (-) TimerEvent: {}
+[21.966508] (-) TimerEvent: {}
+[22.067141] (-) TimerEvent: {}
+[22.167812] (-) TimerEvent: {}
+[22.268489] (-) TimerEvent: {}
+[22.369153] (-) TimerEvent: {}
+[22.469792] (-) TimerEvent: {}
+[22.570450] (-) TimerEvent: {}
+[22.671089] (-) TimerEvent: {}
+[22.771729] (-) TimerEvent: {}
+[22.872412] (-) TimerEvent: {}
+[22.973094] (-) TimerEvent: {}
+[23.073775] (-) TimerEvent: {}
+[23.174455] (-) TimerEvent: {}
+[23.275139] (-) TimerEvent: {}
+[23.375815] (-) TimerEvent: {}
+[23.476502] (-) TimerEvent: {}
+[23.577193] (-) TimerEvent: {}
+[23.677872] (-) TimerEvent: {}
+[23.778550] (-) TimerEvent: {}
+[23.879244] (-) TimerEvent: {}
+[23.979958] (-) TimerEvent: {}
+[24.080642] (-) TimerEvent: {}
+[24.181347] (-) TimerEvent: {}
+[24.282016] (-) TimerEvent: {}
+[24.382664] (-) TimerEvent: {}
+[24.483316] (-) TimerEvent: {}
+[24.583989] (-) TimerEvent: {}
+[24.684630] (-) TimerEvent: {}
+[24.785270] (-) TimerEvent: {}
+[24.885925] (-) TimerEvent: {}
+[24.986590] (-) TimerEvent: {}
+[25.087244] (-) TimerEvent: {}
+[25.187909] (-) TimerEvent: {}
+[25.288592] (-) TimerEvent: {}
+[25.389272] (-) TimerEvent: {}
+[25.489928] (-) TimerEvent: {}
+[25.590580] (-) TimerEvent: {}
+[25.691225] (-) TimerEvent: {}
+[25.791869] (-) TimerEvent: {}
+[25.892545] (-) TimerEvent: {}
+[25.993219] (-) TimerEvent: {}
+[26.093885] (-) TimerEvent: {}
+[26.194584] (-) TimerEvent: {}
+[26.295362] (-) TimerEvent: {}
+[26.396117] (-) TimerEvent: {}
+[26.496827] (-) TimerEvent: {}
+[26.597537] (-) TimerEvent: {}
+[26.698230] (-) TimerEvent: {}
+[26.798933] (-) TimerEvent: {}
+[26.899657] (-) TimerEvent: {}
+[27.000450] (-) TimerEvent: {}
+[27.101188] (-) TimerEvent: {}
+[27.201978] (-) TimerEvent: {}
+[27.302749] (-) TimerEvent: {}
+[27.393392] (wheel_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable state_publisher\x1b[0m\n'}
+[27.402895] (-) TimerEvent: {}
+[27.503553] (-) TimerEvent: {}
+[27.604283] (-) TimerEvent: {}
+[27.705043] (-) TimerEvent: {}
+[27.805826] (-) TimerEvent: {}
+[27.906642] (-) TimerEvent: {}
+[28.007354] (-) TimerEvent: {}
+[28.108082] (-) TimerEvent: {}
+[28.208795] (-) TimerEvent: {}
+[28.309523] (-) TimerEvent: {}
+[28.410254] (-) TimerEvent: {}
+[28.510963] (-) TimerEvent: {}
+[28.611636] (-) TimerEvent: {}
+[28.691334] (wheel_controller) StdoutLine: {'line': b'[100%] Built target state_publisher\n'}
+[28.711790] (-) TimerEvent: {}
+[28.718200] (wheel_controller) CommandEnded: {'returncode': 0}
+[28.719692] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'install'}
+[28.740580] (wheel_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller'], 'cwd': '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.104 56621 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller'), ('SSH_CONNECTION', '192.168.3.104 56621 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[28.760288] (wheel_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.760781] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/wheel_controller_node\n'}
+[28.761229] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/lead_screw_motor_node\n'}
+[28.761787] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/danger_command_node\n'}
+[28.762479] (wheel_controller) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/state_publisher\n'}
+[28.781038] (wheel_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/lib/wheel_controller/state_publisher" to ""\n'}
+[28.781513] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/ament_index/resource_index/package_run_dependencies/wheel_controller\n'}
+[28.781757] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/ament_index/resource_index/parent_prefix_path/wheel_controller\n'}
+[28.782000] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/environment/ament_prefix_path.sh\n'}
+[28.782183] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/environment/ament_prefix_path.dsv\n'}
+[28.782334] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/environment/path.sh\n'}
+[28.782481] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/environment/path.dsv\n'}
+[28.782688] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/local_setup.bash\n'}
+[28.782893] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/local_setup.sh\n'}
+[28.783044] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/local_setup.zsh\n'}
+[28.783186] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/local_setup.dsv\n'}
+[28.783327] (wheel_controller) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.dsv\n'}
+[28.783495] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/ament_index/resource_index/packages/wheel_controller\n'}
+[28.783635] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/cmake/wheel_controllerConfig.cmake\n'}
+[28.783774] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/cmake/wheel_controllerConfig-version.cmake\n'}
+[28.783953] (wheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller/share/wheel_controller/package.xml\n'}
+[28.787425] (wheel_controller) CommandEnded: {'returncode': 0}
+[28.812334] (-) TimerEvent: {}
+[28.850955] (wheel_controller) JobEnded: {'identifier': 'wheel_controller', 'rc': 0}
+[28.853272] (-) EventReactorShutdown: {}

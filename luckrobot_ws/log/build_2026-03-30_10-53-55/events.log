@@ -1,0 +1,197 @@
+[0.000000] (-) TimerEvent: {}
+[0.000697] (-) JobUnselected: {'identifier': 'keyboard_control'}
+[0.001197] (-) JobUnselected: {'identifier': 'luckrobot_launch1'}
+[0.001494] (-) JobUnselected: {'identifier': 'robot_display'}
+[0.001802] (wheel_controller) JobQueued: {'identifier': 'wheel_controller', 'dependencies': OrderedDict()}
+[0.001914] (wheel_controller) JobStarted: {'identifier': 'wheel_controller'}
+[0.025701] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'cmake'}
+[0.027150] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'build'}
+[0.028581] (wheel_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.104 56621 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller'), ('SSH_CONNECTION', '192.168.3.104 56621 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099394] (-) TimerEvent: {}
+[0.149785] (wheel_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target state_publisher\x1b[0m\n'}
+[0.161926] (wheel_controller) StdoutLine: {'line': b'[ 25%] Built target danger_command_node\n'}
+[0.181234] (wheel_controller) StdoutLine: {'line': b'[ 50%] Built target wheel_controller_node\n'}
+[0.182708] (wheel_controller) StdoutLine: {'line': b'[ 75%] Built target lead_screw_motor_node\n'}
+[0.190930] (wheel_controller) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/state_publisher.dir/src/state_publisher.cpp.o\x1b[0m\n'}
+[0.199593] (-) TimerEvent: {}
+[0.300307] (-) TimerEvent: {}
+[0.401025] (-) TimerEvent: {}
+[0.501755] (-) TimerEvent: {}
+[0.602502] (-) TimerEvent: {}
+[0.703231] (-) TimerEvent: {}
+[0.803974] (-) TimerEvent: {}
+[0.904721] (-) TimerEvent: {}
+[1.005421] (-) TimerEvent: {}
+[1.106156] (-) TimerEvent: {}
+[1.206895] (-) TimerEvent: {}
+[1.307671] (-) TimerEvent: {}
+[1.408690] (-) TimerEvent: {}
+[1.509426] (-) TimerEvent: {}
+[1.610124] (-) TimerEvent: {}
+[1.710825] (-) TimerEvent: {}
+[1.811574] (-) TimerEvent: {}
+[1.912364] (-) TimerEvent: {}
+[2.013043] (-) TimerEvent: {}
+[2.113705] (-) TimerEvent: {}
+[2.214455] (-) TimerEvent: {}
+[2.315213] (-) TimerEvent: {}
+[2.415970] (-) TimerEvent: {}
+[2.516733] (-) TimerEvent: {}
+[2.617506] (-) TimerEvent: {}
+[2.718265] (-) TimerEvent: {}
+[2.818965] (-) TimerEvent: {}
+[2.919727] (-) TimerEvent: {}
+[3.020523] (-) TimerEvent: {}
+[3.121289] (-) TimerEvent: {}
+[3.222047] (-) TimerEvent: {}
+[3.322781] (-) TimerEvent: {}
+[3.423529] (-) TimerEvent: {}
+[3.524357] (-) TimerEvent: {}
+[3.625193] (-) TimerEvent: {}
+[3.726006] (-) TimerEvent: {}
+[3.826731] (-) TimerEvent: {}
+[3.927448] (-) TimerEvent: {}
+[4.028185] (-) TimerEvent: {}
+[4.128942] (-) TimerEvent: {}
+[4.229700] (-) TimerEvent: {}
+[4.330445] (-) TimerEvent: {}
+[4.431289] (-) TimerEvent: {}
+[4.532081] (-) TimerEvent: {}
+[4.632860] (-) TimerEvent: {}
+[4.733542] (-) TimerEvent: {}
+[4.834234] (-) TimerEvent: {}
+[4.934937] (-) TimerEvent: {}
+[5.035683] (-) TimerEvent: {}
+[5.136574] (-) TimerEvent: {}
+[5.237312] (-) TimerEvent: {}
+[5.338026] (-) TimerEvent: {}
+[5.438730] (-) TimerEvent: {}
+[5.539455] (-) TimerEvent: {}
+[5.640185] (-) TimerEvent: {}
+[5.740872] (-) TimerEvent: {}
+[5.841677] (-) TimerEvent: {}
+[5.942413] (-) TimerEvent: {}
+[6.043160] (-) TimerEvent: {}
+[6.144010] (-) TimerEvent: {}
+[6.244867] (-) TimerEvent: {}
+[6.294464] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KRobotStatePublisher::RobotStatePublisher()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.295077] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:23:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[6.295266] (wheel_controller) StderrLine: {'line': b'   23 |         wheel_sub_ = this->\x1b[01;31m\x1b[Kcreate_subscription<std_msgs::msg/float64_multi_array>\x1b[m\x1b[K(\n'}
+[6.295427] (wheel_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.299798] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:23:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KRobotStatePublisher::create_subscription<<expression error> >(const char [15], int, RobotStatePublisher::RobotStatePublisher()::<lambda(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.300607] (wheel_controller) StderrLine: {'line': b'   23 |         wheel_sub_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg/float64_multi_array>(\x1b[m\x1b[K\n'}
+[6.300786] (wheel_controller) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[6.300931] (wheel_controller) StderrLine: {'line': b'   24 | \x1b[01;31m\x1b[K            "wheel_position", 10,\x1b[m\x1b[K\n'}
+[6.301069] (wheel_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                                 \n'}
+[6.301206] (wheel_controller) StderrLine: {'line': b'   25 | \x1b[01;31m\x1b[K            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {\x1b[m\x1b[K\n'}
+[6.301343] (wheel_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K       \n'}
+[6.301476] (wheel_controller) StderrLine: {'line': b'   26 | \x1b[01;31m\x1b[K                if(msg->data.size() >= 2){\x1b[m\x1b[K\n'}
+[6.301609] (wheel_controller) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                        \n'}
+[6.301738] (wheel_controller) StderrLine: {'line': b'   27 | \x1b[01;31m\x1b[K                    wheel_left_ = -msg->data[0] * 0.0174533;\x1b[m\x1b[K\n'}
+[6.301871] (wheel_controller) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                      \n'}
+[6.302000] (wheel_controller) StderrLine: {'line': b'   28 | \x1b[01;31m\x1b[K                    wheel_right_ = -msg->data[1] * 0.0174533;\x1b[m\x1b[K\n'}
+[6.302134] (wheel_controller) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                     \n'}
+[6.302268] (wheel_controller) StderrLine: {'line': b'   29 | \x1b[01;31m\x1b[K                }\x1b[m\x1b[K\n'}
+[6.302397] (wheel_controller) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~\x1b[m\x1b[K                                                                 \n'}
+[6.302575] (wheel_controller) StderrLine: {'line': b'   30 | \x1b[01;31m\x1b[K            }\x1b[m\x1b[K\n'}
+[6.302707] (wheel_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~\x1b[m\x1b[K                                                                     \n'}
+[6.302837] (wheel_controller) StderrLine: {'line': b'   31 | \x1b[01;31m\x1b[K        )\x1b[m\x1b[K;\n'}
+[6.302966] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~\x1b[m\x1b[K                                                                         \n'}
+[6.303095] (wheel_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[6.303227] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[6.303360] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.303490] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:1\x1b[m\x1b[K:\n'}
+[6.303620] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.303781] (wheel_controller) StderrLine: {'line': b'  219 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[6.303914] (wheel_controller) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.304043] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.304212] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:23:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.304397] (wheel_controller) StderrLine: {'line': b'   23 |         wheel_sub_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg/float64_multi_array>(\x1b[m\x1b[K\n'}
+[6.304534] (wheel_controller) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[6.304665] (wheel_controller) StderrLine: {'line': b'   24 | \x1b[01;31m\x1b[K            "wheel_position", 10,\x1b[m\x1b[K\n'}
+[6.304794] (wheel_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                                 \n'}
+[6.305112] (wheel_controller) StderrLine: {'line': b'   25 | \x1b[01;31m\x1b[K            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {\x1b[m\x1b[K\n'}
+[6.305248] (wheel_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K       \n'}
+[6.305601] (wheel_controller) StderrLine: {'line': b'   26 | \x1b[01;31m\x1b[K                if(msg->data.size() >= 2){\x1b[m\x1b[K\n'}
+[6.305756] (wheel_controller) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                        \n'}
+[6.305895] (wheel_controller) StderrLine: {'line': b'   27 | \x1b[01;31m\x1b[K                    wheel_left_ = -msg->data[0] * 0.0174533;\x1b[m\x1b[K\n'}
+[6.306033] (wheel_controller) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                      \n'}
+[6.306187] (wheel_controller) StderrLine: {'line': b'   28 | \x1b[01;31m\x1b[K                    wheel_right_ = -msg->data[1] * 0.0174533;\x1b[m\x1b[K\n'}
+[6.306320] (wheel_controller) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                     \n'}
+[6.306451] (wheel_controller) StderrLine: {'line': b'   29 | \x1b[01;31m\x1b[K                }\x1b[m\x1b[K\n'}
+[6.306730] (wheel_controller) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~\x1b[m\x1b[K                                                                 \n'}
+[6.306886] (wheel_controller) StderrLine: {'line': b'   30 | \x1b[01;31m\x1b[K            }\x1b[m\x1b[K\n'}
+[6.307023] (wheel_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~\x1b[m\x1b[K                                                                     \n'}
+[6.307155] (wheel_controller) StderrLine: {'line': b'   31 | \x1b[01;31m\x1b[K        )\x1b[m\x1b[K;\n'}
+[6.307286] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~\x1b[m\x1b[K                                                                         \n'}
+[6.345044] (-) TimerEvent: {}
+[6.445740] (-) TimerEvent: {}
+[6.552239] (-) TimerEvent: {}
+[6.653192] (-) TimerEvent: {}
+[6.753906] (-) TimerEvent: {}
+[6.854629] (-) TimerEvent: {}
+[6.955380] (-) TimerEvent: {}
+[7.056179] (-) TimerEvent: {}
+[7.156942] (-) TimerEvent: {}
+[7.257817] (-) TimerEvent: {}
+[7.358584] (-) TimerEvent: {}
+[7.459311] (-) TimerEvent: {}
+[7.560025] (-) TimerEvent: {}
+[7.660919] (-) TimerEvent: {}
+[7.761693] (-) TimerEvent: {}
+[7.862707] (-) TimerEvent: {}
+[7.963460] (-) TimerEvent: {}
+[8.064215] (-) TimerEvent: {}
+[8.164941] (-) TimerEvent: {}
+[8.265667] (-) TimerEvent: {}
+[8.366456] (-) TimerEvent: {}
+[8.467167] (-) TimerEvent: {}
+[8.567937] (-) TimerEvent: {}
+[8.668684] (-) TimerEvent: {}
+[8.769391] (-) TimerEvent: {}
+[8.870094] (-) TimerEvent: {}
+[8.970798] (-) TimerEvent: {}
+[9.071598] (-) TimerEvent: {}
+[9.172363] (-) TimerEvent: {}
+[9.273099] (-) TimerEvent: {}
+[9.373915] (-) TimerEvent: {}
+[9.474707] (-) TimerEvent: {}
+[9.575455] (-) TimerEvent: {}
+[9.676177] (-) TimerEvent: {}
+[9.776922] (-) TimerEvent: {}
+[9.877636] (-) TimerEvent: {}
+[9.978341] (-) TimerEvent: {}
+[10.079034] (-) TimerEvent: {}
+[10.179789] (-) TimerEvent: {}
+[10.280662] (-) TimerEvent: {}
+[10.381404] (-) TimerEvent: {}
+[10.482149] (-) TimerEvent: {}
+[10.582994] (-) TimerEvent: {}
+[10.683765] (-) TimerEvent: {}
+[10.784538] (-) TimerEvent: {}
+[10.885246] (-) TimerEvent: {}
+[10.986044] (-) TimerEvent: {}
+[11.086798] (-) TimerEvent: {}
+[11.187504] (-) TimerEvent: {}
+[11.288244] (-) TimerEvent: {}
+[11.388979] (-) TimerEvent: {}
+[11.489718] (-) TimerEvent: {}
+[11.590433] (-) TimerEvent: {}
+[11.691208] (-) TimerEvent: {}
+[11.791960] (-) TimerEvent: {}
+[11.892679] (-) TimerEvent: {}
+[11.993398] (-) TimerEvent: {}
+[12.094136] (-) TimerEvent: {}
+[12.194923] (-) TimerEvent: {}
+[12.295744] (-) TimerEvent: {}
+[12.396557] (-) TimerEvent: {}
+[12.497283] (-) TimerEvent: {}
+[12.598263] (-) TimerEvent: {}
+[12.699019] (-) TimerEvent: {}
+[12.786900] (wheel_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/state_publisher.dir/build.make:76\xef\xbc\x9aCMakeFiles/state_publisher.dir/src/state_publisher.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[12.787578] (wheel_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221\xef\xbc\x9aCMakeFiles/state_publisher.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[12.788391] (wheel_controller) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[12.794409] (wheel_controller) CommandEnded: {'returncode': 2}
+[12.799179] (-) TimerEvent: {}
+[12.824912] (wheel_controller) JobEnded: {'identifier': 'wheel_controller', 'rc': 2}
+[12.836510] (-) EventReactorShutdown: {}

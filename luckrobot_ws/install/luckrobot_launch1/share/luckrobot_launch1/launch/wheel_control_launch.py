@@ -34,6 +34,14 @@ def generate_launch_description():
         parameters=[{"use_sim_time": False}]
     )
 
+    state_publisher_node = launch_ros.actions.Node(
+        package=target_pkg,
+        executable="state_publisher_node",
+        name="state_publisher_node",
+        output="screen",
+        parameters=[{"use_sim_time": False}]
+    )
+
     # ==================== 事件动作：严格顺序启动 ====================
     # 事件1：底盘节点启动后 → 启动丝杠电机节点
     event_start_lead_screw = RegisterEventHandler(
@@ -51,9 +59,17 @@ def generate_launch_description():
         )
     )
 
+    event_start_state_publisher = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=danger_command_node,  # 监听语音播报节点启动
+            on_start=[state_publisher_node]        # 启动后执行的动作
+        )
+    )
+
     # ==================== 组装启动描述 ====================
     return launch.LaunchDescription([
         wheel_controller_node,          # 第一步：启动底盘节点
         event_start_lead_screw,         # 第二步：底盘启动后启动丝杠
-        event_start_danger_command      # 第三步：丝杠启动后启动危险指令
+        event_start_danger_command,      # 第三步：丝杠启动后启动危险指令
+        event_start_state_publisher
     ])

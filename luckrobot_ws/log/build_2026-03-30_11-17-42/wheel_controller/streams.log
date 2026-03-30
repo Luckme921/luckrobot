@@ -1,0 +1,38 @@
+[0.049s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6
+[0.982s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.982s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.983s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.984s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.984s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.985s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.985s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.985s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.986s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.986s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.987s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.987s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.020s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.191s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.192s] -- Configured cppcheck include dirs: 
+[1.192s] -- Configured cppcheck exclude dirs and/or files: 
+[1.193s] -- Added test 'lint_cmake' to check CMake code style
+[1.195s] -- Added test 'uncrustify' to check C / C++ code style
+[1.195s] -- Configured uncrustify additional arguments: 
+[1.195s] -- Added test 'xmllint' to check XML markup files
+[1.198s] -- Configuring done
+[1.207s] [31mCMake Error at CMakeLists.txt:21 (add_executable):
+[1.208s]   Cannot find source file:
+[1.208s] 
+[1.208s]     src/state_publisher.cpp
+[1.209s] 
+[1.209s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.209s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.209s] 
+[1.210s] [0m
+[1.210s] [31mCMake Error at CMakeLists.txt:21 (add_executable):
+[1.210s]   No SOURCES given to target: state_publisher_node
+[1.210s] 
+[1.210s] [0m
+[1.211s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.229s] gmake: *** [Makefile:390：cmake_check_build_system] 错误 1
+[1.233s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6

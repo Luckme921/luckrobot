@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:55 (install):
+  install TARGETS given target "state_publisher" which does not exist.
+
+[0m
+gmake: *** [Makefile:390：cmake_check_build_system] 错误 1

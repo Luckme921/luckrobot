@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller
 all: CMakeFiles/wheel_controller_node.dir/all
 all: CMakeFiles/lead_screw_motor_node.dir/all
 all: CMakeFiles/danger_command_node.dir/all
+all: CMakeFiles/state_publisher_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/wheel_controller_uninstall.dir/clean
 clean: CMakeFiles/wheel_controller_node.dir/clean
 clean: CMakeFiles/lead_screw_motor_node.dir/clean
 clean: CMakeFiles/danger_command_node.dir/clean
+clean: CMakeFiles/state_publisher_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -139,7 +141,7 @@ CMakeFiles/wheel_controller_uninstall.dir/clean:
 CMakeFiles/wheel_controller_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wheel_controller_node.dir/build.make CMakeFiles/wheel_controller_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wheel_controller_node.dir/build.make CMakeFiles/wheel_controller_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller/CMakeFiles --progress-num=5,6 "Built target wheel_controller_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller/CMakeFiles --progress-num=7,8 "Built target wheel_controller_node"
 .PHONY : CMakeFiles/wheel_controller_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -209,6 +211,32 @@ danger_command_node: CMakeFiles/danger_command_node.dir/rule
 CMakeFiles/danger_command_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/danger_command_node.dir/build.make CMakeFiles/danger_command_node.dir/clean
 .PHONY : CMakeFiles/danger_command_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/state_publisher_node.dir
+
+# All Build rule for target.
+CMakeFiles/state_publisher_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_publisher_node.dir/build.make CMakeFiles/state_publisher_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_publisher_node.dir/build.make CMakeFiles/state_publisher_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller/CMakeFiles --progress-num=5,6 "Built target state_publisher_node"
+.PHONY : CMakeFiles/state_publisher_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/state_publisher_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/state_publisher_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller/CMakeFiles 0
+.PHONY : CMakeFiles/state_publisher_node.dir/rule
+
+# Convenience name for target.
+state_publisher_node: CMakeFiles/state_publisher_node.dir/rule
+.PHONY : state_publisher_node
+
+# clean rule for target.
+CMakeFiles/state_publisher_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_publisher_node.dir/build.make CMakeFiles/state_publisher_node.dir/clean
+.PHONY : CMakeFiles/state_publisher_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

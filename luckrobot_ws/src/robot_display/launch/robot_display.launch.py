@@ -25,10 +25,10 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description}]
     )
     # 关节状态发布节点
-    joint_state_publisher_node = launch_ros.actions.Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-    )
+    # joint_state_publisher_node = launch_ros.actions.Node(
+    #     package='joint_state_publisher',
+    #     executable='joint_state_publisher',
+    # )
     # RViz 节点
     rviz_node = launch_ros.actions.Node(
         package='rviz2',
@@ -37,7 +37,7 @@ def generate_launch_description():
     )
     return launch.LaunchDescription([
         action_declare_arg_mode_path,
-        joint_state_publisher_node,
+        #joint_state_publisher_node,
         robot_state_publisher_node,
         rviz_node
     ])

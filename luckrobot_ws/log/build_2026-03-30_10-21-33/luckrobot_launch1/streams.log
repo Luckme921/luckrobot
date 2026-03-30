@@ -1,0 +1,20 @@
+[2.572s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/src/luckrobot_launch1': PYTHONPATH=/home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/luckrobot_launch1 build --build-base /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build install --record /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/install.log --single-version-externally-managed install_data
+[3.523s] running egg_info
+[3.561s] writing ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/PKG-INFO
+[3.561s] writing dependency_links to ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/dependency_links.txt
+[3.562s] writing requirements to ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/requires.txt
+[3.562s] writing top-level names to ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/top_level.txt
+[3.667s] reading manifest file '../../build/luckrobot_launch1/luckrobot_launch1.egg-info/SOURCES.txt'
+[3.670s] adding license file 'LICENSE'
+[3.671s] writing manifest file '../../build/luckrobot_launch1/luckrobot_launch1.egg-info/SOURCES.txt'
+[3.672s] running build
+[3.672s] running build_py
+[3.672s] running install
+[3.685s] running install_lib
+[3.726s] running install_data
+[3.726s] running install_egg_info
+[3.768s] removing '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1-0.0.0-py3.10.egg-info' (and everything under it)
+[3.768s] Copying ../../build/luckrobot_launch1/luckrobot_launch1.egg-info to /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1-0.0.0-py3.10.egg-info
+[3.770s] running install_scripts
+[3.925s] writing list of installed files to '/home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/install.log'
+[4.047s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/src/luckrobot_launch1' returned '0': PYTHONPATH=/home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/luckrobot_launch1 build --build-base /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/build install --record /home/nvidia/luckrobot/luckrobot_ws/build/luckrobot_launch1/install.log --single-version-externally-managed install_data

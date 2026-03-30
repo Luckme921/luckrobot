@@ -1,0 +1,19 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:1[m[K:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:[m[K In constructor ‘[01m[KRobotStateFinalPublisher::RobotStateFinalPublisher()[m[K’:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:50:41:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K\xe5[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   50 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"✅ 终极修复版 - 100%匹配URDF"[m[K);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:50:62:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   50 |         RCLCPP_INFO(this->get_logger(), "✅ 终极修复版 - 100%[01;36m[K匹[m[K配URDF");
+      |                                                              [01;36m[K^[m[K

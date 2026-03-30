@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
-     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="robot_display">
   <link name="base_footprint"/>
@@ -32,7 +29,7 @@
       <material
         name="">
         <color
-          rgba="1 1 1 1" />
+          rgba="1.0 1.0 1.0 1" />
       </material>
     </visual>
     <collision>
@@ -77,7 +74,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0.2 1 0.2 1" />
       </material>
     </visual>
     <collision>
@@ -130,7 +127,7 @@
       <material
         name="">
         <color
-          rgba="0.75294 0.75294 0.75294 1" />
+          rgba="0.2 1 0.2 1" />
       </material>
     </visual>
     <collision>
@@ -183,7 +180,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="1 0.5 0 1" />
       </material>
     </visual>
     <collision>
@@ -200,7 +197,7 @@
     name="screw_joint"
     type="prismatic">
     <origin
-      xyz="0.061648 5E-05 0.48875"
+      xyz="0.061648 5E-05 0.671"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -209,10 +206,10 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
+      lower="-0.2"
       upper="0"
-      effort="0"
-      velocity="0" />
+      effort="100"
+      velocity="0.1" />
   </joint>
   <link
     name="camera_link">
@@ -241,7 +238,7 @@
       <material
         name="">
         <color
-          rgba="0.75294 0.75294 0.75294 1" />
+          rgba="1 1 0 1" />
       </material>
     </visual>
     <collision>
@@ -268,7 +265,7 @@
       xyz="0 0 0" />
   </joint>
   <link
-    name="livox_link">
+    name="livox_frame">
     <inertial>
       <origin
         xyz="-0.0011535 -1.685E-05 0.004186"
@@ -294,7 +291,7 @@
       <material
         name="">
         <color
-          rgba="0.75294 0.75294 0.75294 1" />
+          rgba="0 0.2 0.8 1" />
       </material>
     </visual>
     <collision>
@@ -316,8 +313,9 @@
     <parent
       link="base_link" />
     <child
-      link="livox_link" />
+      link="livox_frame" />
     <axis
       xyz="0 0 0" />
   </joint>
+
 </robot>

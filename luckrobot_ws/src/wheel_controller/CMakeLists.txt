@@ -11,13 +11,23 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(PkgConfig REQUIRED)
+find_package(sensor_msgs REQUIRED)
 pkg_check_modules(LIBSERIAL REQUIRED libserial)
 
 # 编译节点
 add_executable(wheel_controller_node src/wheel_controller_node.cpp)
 add_executable(lead_screw_motor_node src/lead_screw_motor_node.cpp)
 add_executable(danger_command_node src/danger_command_node.cpp)
-ament_target_dependencies(danger_command_node rclcpp std_msgs)
+add_executable(state_publisher_node src/state_publisher_node.cpp)
+ament_target_dependencies(state_publisher_node
+  rclcpp
+  std_msgs
+  sensor_msgs
+)
+ament_target_dependencies(danger_command_node
+  rclcpp
+  std_msgs
+)
 ament_target_dependencies(wheel_controller_node 
   rclcpp 
   geometry_msgs 
@@ -43,7 +53,7 @@ target_link_libraries(lead_screw_motor_node
 
 # 安装可执行文件
 install(
-  TARGETS wheel_controller_node lead_screw_motor_node danger_command_node
+  TARGETS wheel_controller_node lead_screw_motor_node danger_command_node state_publisher_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -1,0 +1,20 @@
+[0.052s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6
+[1.042s] [ 37%] Built target danger_command_node
+[1.043s] [ 37%] [32mBuilding CXX object CMakeFiles/state_publisher.dir/src/state_publisher.cpp.o[0m
+[1.043s] [ 62%] Built target lead_screw_motor_node
+[1.044s] [ 87%] Built target wheel_controller_node
+[6.107s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krcpp[m[K’ does not name a type
+[6.107s]    76 |     [01;31m[Krcpp[m[K::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
+[6.108s]       |     [01;31m[K^~~~[m[K
+[6.150s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:[m[K In constructor ‘[01m[KRobotStatePublisher::RobotStatePublisher()[m[K’:
+[6.151s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:48:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_pub_[m[K’ was not declared in this scope
+[6.151s]    48 |         [01;31m[Kjoint_pub_[m[K = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 10);
+[6.151s]       |         [01;31m[K^~~~~~~~~~[m[K
+[6.201s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:[m[K In member function ‘[01m[Kvoid RobotStatePublisher::publish_state()[m[K’:
+[6.201s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher.cpp:71:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_pub_[m[K’ was not declared in this scope
+[6.202s]    71 |         [01;31m[Kjoint_pub_[m[K->publish(msg);
+[6.202s]       |         [01;31m[K^~~~~~~~~~[m[K
+[14.225s] gmake[2]: *** [CMakeFiles/state_publisher.dir/build.make:76：CMakeFiles/state_publisher.dir/src/state_publisher.cpp.o] 错误 1
+[14.225s] gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/state_publisher.dir/all] 错误 2
+[14.226s] gmake: *** [Makefile:146：all] 错误 2
+[14.231s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6

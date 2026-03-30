@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target state_publisher_node[0m
+[ 25%] Built target wheel_controller_node
+[ 50%] Built target lead_screw_motor_node
+[ 75%] Built target danger_command_node
+[ 87%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In lambda function:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:48:32:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+=[m[K’ (operand types are ‘[01m[Kstd::atomic<float>[m[K’ and ‘[01m[Kfloat[m[K’)
+   48 |                 [01;31m[Ktarget_pos_mm_ += delta[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In member function ‘[01m[Kvoid RobotStatePublisher::smooth_control()[m[K’:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:81:29:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+=[m[K’ (operand types are ‘[01m[Kstd::atomic<float>[m[K’ and ‘[01m[Kfloat[m[K’)
+   81 |             [01;31m[Kcurrent_pos_mm_ += step[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:83:29:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-=[m[K’ (operand types are ‘[01m[Kstd::atomic<float>[m[K’ and ‘[01m[Kfloat[m[K’)
+   83 |             [01;31m[Kcurrent_pos_mm_ -= step[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/state_publisher_node.dir/build.make:76：CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/state_publisher_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
