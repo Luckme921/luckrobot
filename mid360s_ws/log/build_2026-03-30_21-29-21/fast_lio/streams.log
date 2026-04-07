@@ -1,0 +1,130 @@
+[0.027s] Invoking command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/mid360s_ws/build/fast_lio -- -j6 -l6
+[0.175s] [  2%] Built target fast_lio__cpp
+[0.181s] [ 11%] Built target fast_lio__rosidl_generator_c
+[0.196s] [ 11%] Built target ament_cmake_python_symlink_fast_lio
+[0.224s] [ 31%] Built target fast_lio__rosidl_typesupport_cpp
+[0.224s] [ 31%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[0.225s] [ 37%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[0.229s] [ 45%] Built target fast_lio__rosidl_typesupport_introspection_c
+[0.247s] [ 54%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[0.247s] [ 62%] Built target fast_lio__rosidl_typesupport_c
+[0.296s] [ 62%] Built target fast_lio
+[0.321s] [ 74%] Built target fastlio_mapping
+[0.347s] [ 77%] Built target fast_lio__py
+[0.396s] [ 82%] Built target fast_lio__rosidl_generator_py
+[0.445s] [ 94%] Built target fast_lio__rosidl_typesupport_c__pyext
+[0.445s] [ 94%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[0.447s] [100%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[1.074s] running egg_info
+[1.113s] writing fast_lio.egg-info/PKG-INFO
+[1.114s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[1.115s] writing top-level names to fast_lio.egg-info/top_level.txt
+[1.227s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[1.228s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[1.350s] [100%] Built target ament_cmake_python_build_fast_lio_egg
+[1.378s] Invoked command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/mid360s_ws/build/fast_lio -- -j6 -l6
+[1.407s] Invoking command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/mid360s_ws/build/fast_lio
+[1.426s] -- Install configuration: "Release"
+[1.427s] -- Execute custom install script
+[1.428s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[1.429s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[1.429s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[1.430s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[1.430s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[1.430s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[1.431s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/library_path.sh
+[1.431s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/library_path.dsv
+[1.432s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[1.432s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.433s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[1.433s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[1.433s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[1.434s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp
+[1.434s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[1.434s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.435s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.435s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.436s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[1.436s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.437s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[1.437s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/pythonpath.sh
+[1.437s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[1.438s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[1.438s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.438s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.438s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[1.439s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[1.440s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[1.440s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.440s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[1.440s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.441s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.441s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.441s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[1.441s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[1.442s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[1.442s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[1.442s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.443s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.444s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.444s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/msg/Pose6D.idl
+[1.444s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/msg/Pose6D.msg
+[1.445s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/fast_lio/fastlio_mapping
+[1.445s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/avia.yaml
+[1.446s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/horizon.yaml
+[1.446s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/mid360.yaml
+[1.446s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/ouster64.yaml
+[1.446s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/config/velodyne.yaml
+[1.447s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[1.447s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/launch/mapping.launch.py
+[1.447s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[1.448s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[1.448s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[1.448s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[1.449s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[1.449s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/path.sh
+[1.449s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/environment/path.dsv
+[1.450s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/local_setup.bash
+[1.450s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/local_setup.sh
+[1.450s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/local_setup.zsh
+[1.450s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/local_setup.dsv
+[1.451s] -- Symlinking: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.dsv
+[1.470s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[1.470s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[1.470s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.471s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[1.471s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[1.472s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.472s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.472s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.472s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[1.473s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[1.473s] -- Up-to-date symlink: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/package.xml
+[1.474s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[1.474s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[1.474s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[1.475s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[1.475s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[1.476s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[1.476s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[1.555s] Listing '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[1.555s] Listing '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[1.566s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[1.567s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[1.568s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[1.568s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[1.568s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[1.568s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[1.569s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.569s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[1.569s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[1.570s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[1.570s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[1.570s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[1.571s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[1.571s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[1.571s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[1.571s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[1.572s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[1.572s] -- Up-to-date: /home/nvidia/luckrobot/mid360s_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[1.577s] Invoked command in '/home/nvidia/luckrobot/mid360s_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/mid360s_ws/build/fast_lio

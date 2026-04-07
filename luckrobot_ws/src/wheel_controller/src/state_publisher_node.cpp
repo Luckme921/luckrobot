@@ -93,7 +93,7 @@ private:
         msg.header.stamp = get_clock()->now();
         msg.name = {LEFT_JOINT, RIGHT_JOINT, SCREW_JOINT};
         msg.position = {
-            wheel_l_.load() * PI / 180.0,   // 角度转弧度
+            -wheel_l_.load() * PI / 180.0,   // 角度转弧度
             wheel_r_.load() * PI / 180.0,   // 角度转弧度
             screw_pos_.load() / 1000.0f
         };

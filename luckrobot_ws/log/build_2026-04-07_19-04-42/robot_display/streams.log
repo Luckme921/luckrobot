@@ -1,0 +1,34 @@
+[0.024s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/robot_display -- -j6 -l6
+[0.122s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/robot_display -- -j6 -l6
+[0.148s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/luckrobot_ws/build/robot_display
+[0.170s] -- Install configuration: ""
+[0.170s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/launch
+[0.170s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/launch/robot_display.launch.py
+[0.171s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/urdf
+[0.171s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/urdf/0robot.SLDASM.urdf
+[0.171s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/urdf/0robot.SLDASM.csv
+[0.171s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/config
+[0.171s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/config/joint_names_0all_robot.SLDASM.yaml
+[0.172s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes
+[0.172s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/whell_left_link.STL
+[0.175s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/base_link.STL
+[0.192s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/livox_link.STL
+[0.201s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/camera_link.STL
+[0.223s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/wheel_right_link.STL
+[0.227s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/screw_link.STL
+[0.229s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/ament_index/resource_index/package_run_dependencies/robot_display
+[0.229s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/ament_index/resource_index/parent_prefix_path/robot_display
+[0.229s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/environment/ament_prefix_path.sh
+[0.230s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/environment/ament_prefix_path.dsv
+[0.230s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/environment/path.sh
+[0.230s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/environment/path.dsv
+[0.230s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/local_setup.bash
+[0.230s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/local_setup.sh
+[0.230s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/local_setup.zsh
+[0.231s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/local_setup.dsv
+[0.231s] -- Installing: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.dsv
+[0.231s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/ament_index/resource_index/packages/robot_display
+[0.231s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/cmake/robot_displayConfig.cmake
+[0.231s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/cmake/robot_displayConfig-version.cmake
+[0.231s] -- Up-to-date: /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/package.xml
+[0.235s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/robot_display' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/luckrobot_ws/build/robot_display
