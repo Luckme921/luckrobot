@@ -9,6 +9,7 @@
 #include <atomic>
 #include <iomanip>
 #include <sstream>
+#include <thread>
 
 // ==================== 配置常量 ====================
 const char* SERIAL_PORT = "/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0";
@@ -21,9 +22,12 @@ const uint8_t LEFT_DANGER_CMD[] = {0xAA, 0x55, 0x00, 0x0A, 0xFB};
 const uint8_t RIGHT_DANGER_CMD[] = {0xAA, 0x55, 0x00, 0x0B, 0xFB}; 
 const int CMD_LENGTH = 5;              
 
-// 核心配置：冷却期改为3秒（3000ms）
-const int COOLDOWN_MS = 3000;          // 关键修改：4000 → 3000
+const int COOLDOWN_MS = 3000;
 const int SERIAL_WRITE_TIMEOUT_MS = 500; 
+
+// [强化配置] 针对CH340的超长重试机制
+const int MAX_INIT_RETRIES = 15;       // 最多尝试15次
+const int RETRY_WAIT_MS = 2000;        // 每次等待2秒，给足USB初始化时间
 
 // ==================== 核心节点类 ====================
 class DangerCommandNode : public rclcpp::Node {
@@ -34,12 +38,45 @@ public:
                           right_dangerous_(false),
                           last_left_send_ms_(0),
                           last_right_send_ms_(0) {
-        // 初始化串口
-        if (!init_serial()) {
-            RCLCPP_FATAL(this->get_logger(), "串口初始化失败！");
+        // ==================== [强化修改开始] 带冷启动的串口初始化 ====================
+        RCLCPP_INFO(this->get_logger(), "========================================");
+        RCLCPP_INFO(this->get_logger(), "正在尝试连接 CH340 设备...");
+        RCLCPP_INFO(this->get_logger(), "目标: %s", SERIAL_PORT);
+        RCLCPP_INFO(this->get_logger(), "========================================");
+
+        bool connected = false;
+        for (int i = 0; i < MAX_INIT_RETRIES && rclcpp::ok(); ++i) {
+            RCLCPP_INFO(this->get_logger(), "[尝试 %d/%d] 正在打开串口...", i + 1, MAX_INIT_RETRIES);
+
+            // 1. 确保上次的句柄已彻底关闭
+            if (serial_fd_ >= 0) {
+                close(serial_fd_);
+                serial_fd_ = -1;
+                std::this_thread::sleep_for(std::chrono::milliseconds(100)); // 彻底释放
+            }
+
+            // 2. 尝试初始化
+            if (init_serial()) {
+                connected = true;
+                RCLCPP_INFO(this->get_logger(), "========================================");
+                RCLCPP_INFO(this->get_logger(), "串口连接成功！");
+                RCLCPP_INFO(this->get_logger(), "========================================");
+                break;
+            } else {
+                // 3. 失败处理
+                if (i < MAX_INIT_RETRIES - 1) {
+                    RCLCPP_WARN(this->get_logger(), "连接失败，%dms 后重试... (提示: 请检查USB线是否插紧)", RETRY_WAIT_MS);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(RETRY_WAIT_MS));
+                }
+            }
+        }
+
+        if (!connected || serial_fd_ < 0) {
+            RCLCPP_FATAL(this->get_logger(), "经过多次尝试，无法连接串口，节点退出。");
             rclcpp::shutdown();
             return;
         }
+        // ==================== [强化修改结束] ====================
 
         // 订阅距离话题
         obstacle_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
@@ -62,18 +99,18 @@ public:
     }
 
 private:
-    // 串口初始化（无修改）
+    // 串口初始化（保持原样，仅被上面的逻辑调用）
     bool init_serial() {
         serial_fd_ = open(SERIAL_PORT, O_RDWR | O_NOCTTY);
         if (serial_fd_ < 0) {
-            RCLCPP_ERROR(this->get_logger(), "打开串口失败: %s (errno: %d)", strerror(errno), errno);
+            RCLCPP_ERROR(this->get_logger(), "  [错误] open() 失败: %s (errno: %d)", strerror(errno), errno);
             return false;
         }
 
         struct termios tty;
         memset(&tty, 0, sizeof(tty));
         if (tcgetattr(serial_fd_, &tty) != 0) {
-            RCLCPP_ERROR(this->get_logger(), "获取串口属性失败: %s", strerror(errno));
+            RCLCPP_ERROR(this->get_logger(), "  [错误] 获取属性失败: %s", strerror(errno));
             close(serial_fd_);
             serial_fd_ = -1;
             return false;
@@ -94,7 +131,7 @@ private:
         tty.c_cc[VMIN] = CMD_LENGTH;
 
         if (tcsetattr(serial_fd_, TCSANOW, &tty) != 0) {
-            RCLCPP_ERROR(this->get_logger(), "设置串口属性失败: %s", strerror(errno));
+            RCLCPP_ERROR(this->get_logger(), "  [错误] 设置属性失败: %s", strerror(errno));
             close(serial_fd_);
             serial_fd_ = -1;
             return false;
@@ -104,7 +141,7 @@ private:
         return true;
     }
 
-    // 指令转16进制（调试用）
+    // 指令转16进制
     std::string cmd_to_hex(const uint8_t* cmd, int len) {
         std::stringstream ss;
         ss << std::hex << std::uppercase << std::setfill('0');
@@ -114,7 +151,7 @@ private:
         return ss.str();
     }
 
-    // 发送指令（无修改）
+    // 发送指令
     bool send_command(const uint8_t* cmd, int cmd_len) {
         if (serial_fd_ < 0 || !cmd || cmd_len <= 0) return false;
 
@@ -131,7 +168,7 @@ private:
         return true;
     }
 
-    // 距离回调（仅更新状态）
+    // 距离回调
     void obstacle_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
         std::lock_guard<std::mutex> lock(state_mutex_);
         
@@ -143,13 +180,13 @@ private:
         }
     }
 
-    // 核心冷却期逻辑（3秒间隔）
+    // 核心冷却期逻辑
     void check_and_send() {
         std::lock_guard<std::mutex> lock(state_mutex_);
         
         uint64_t now_ms = this->now().nanoseconds() / 1000000;
 
-        // 左轮处理（3秒冷却期）
+        // 左轮处理
         if (left_dangerous_) {
             uint64_t time_since_last = (last_left_send_ms_ == 0) ? COOLDOWN_MS + 1 : (now_ms - last_left_send_ms_);
             
@@ -159,13 +196,10 @@ private:
                 if (send_command(LEFT_DANGER_CMD, CMD_LENGTH)) {
                     last_left_send_ms_ = now_ms;
                 }
-            } else {
-                RCLCPP_DEBUG(this->get_logger(), "左轮危险 | 冷却期中（剩余%ldms）→ 不发送", 
-                              COOLDOWN_MS - time_since_last);
             }
         }
 
-        // 右轮处理（3秒冷却期）
+        // 右轮处理
         if (right_dangerous_) {
             uint64_t time_since_last = (last_right_send_ms_ == 0) ? COOLDOWN_MS + 1 : (now_ms - last_right_send_ms_);
             
@@ -175,9 +209,6 @@ private:
                 if (send_command(RIGHT_DANGER_CMD, CMD_LENGTH)) {
                     last_right_send_ms_ = now_ms;
                 }
-            } else {
-                RCLCPP_DEBUG(this->get_logger(), "右轮危险 | 冷却期中（剩余%ldms）→ 不发送", 
-                              COOLDOWN_MS - time_since_last);
             }
         }
     }
