@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot name="robot_display">
+  <link name="body"/>
+
+  <joint name="body_to_base_footprint_joint" type="fixed">
+    <parent link="body" />
+    <child link="base_footprint" />
+    <origin xyz="0.274505096 -0.023340782 -0.811089435" rpy="0.0000583155 -0.3490658504 -0.000170503" />
+  </joint>
+
   <link name="base_footprint"/>
   
   <link name="base_link">
@@ -146,7 +154,6 @@
     <limit lower="-0.2" upper="0" effort="100" velocity="0.1" />
   </joint>
 
-  <!-- 原相机实体link，已重命名为camera_poo_link -->
   <link name="camera_poo_link">
     <inertial>
       <origin xyz="0.0141559028046791 -0.0470107561831965 -0.000119325004315163" rpy="0 0 0" />
@@ -176,24 +183,20 @@
     </collision>
   </link>
 
-  <!-- 相机本体与丝杠的固定关节，子级已同步改为camera_poo_link -->
   <joint name="camera_joint" type="fixed">
     <origin xyz="0.0336516678874285 0.0474500000000005 0.324490381056767" rpy="0 0.5235987755983 0" />
     <parent link="screw_link" />
     <child link="camera_poo_link" />
   </joint>
 
-  <!-- 新增空link：无任何物理/视觉/碰撞属性，仅作为坐标系 -->
   <link name="camera_link"/>
 
-  <!-- 固定关节：实现新camera_link在camera_poo_link的X轴正方向平移22.92mm -->
   <joint name="camera_poo_to_camera_joint" type="fixed">
     <parent link="camera_poo_link" />
     <child link="camera_link" />
     <origin xyz="0.02292 0 0" rpy="0 0 0" />
   </joint>
 
-  <!-- 原雷达实体link，重命名为 livox_poo_link，保留所有物理/视觉/碰撞属性 -->
   <link name="livox_poo_link">
     <inertial>
       <origin xyz="-0.0011535215104774 -1.68497683204461E-05 0.0041860206540324" rpy="0 0 0" />
@@ -223,38 +226,18 @@
     </collision>
   </link>
 
-  <!-- 完全还原为你最初的原始参数，无任何修改，保证雷达本体安装位姿不变 -->
   <joint name="livox_joint" type="fixed">
     <origin xyz="0.0170020182229269 5.3506078218414E-05 0.87097369906952" rpy="0 0.349065850398866 0.000160221167896802" />
     <parent link="base_link" />
     <child link="livox_poo_link" />
   </joint>
 
-  <!-- 新增空link：作为最终的、偏移后的雷达坐标系 -->
   <link name="livox_frame"/>
 
-  <!-- 核心偏移关节：沿雷达自身Z轴正方向偏移21.08mm，完全符合你的需求 -->
   <joint name="livox_poo_to_livox_joint" type="fixed">
     <parent link="livox_poo_link" />
     <child link="livox_frame" />
     <origin xyz="0 0 0.02108" rpy="0 0 0" />
   </joint>
 
-  <!-- ==================== 以下为本次新增的两个坐标系 ==================== -->
-  <!-- 新增：camera_init坐标系，与livox_frame完全重合 -->
-  <link name="camera_init"/>
-  <joint name="livox_frame_to_camera_init_joint" type="fixed">
-    <parent link="livox_frame" />
-    <child link="camera_init" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
-  <!-- 新增：body坐标系，在livox_frame坐标系下按指定偏移定义 -->
-  <link name="livox_body"/>
-  <joint name="livox_frame_to_body_joint" type="fixed">
-    <parent link="livox_frame" />
-    <child link="livox_body" />
-    <!-- 单位已从mm转换为URDF标准单位米：x=1.0mm=0.001m, y=23.29mm=0.02329m, z=-44.12mm=-0.04412m -->
-    <origin xyz="0.001 0.02329 -0.04412" rpy="0 0 0" />
-  </joint>
 </robot>
