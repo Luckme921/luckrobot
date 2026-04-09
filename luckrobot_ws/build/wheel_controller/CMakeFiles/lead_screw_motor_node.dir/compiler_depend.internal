@@ -725,4 +725,9 @@ CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o
  /usr/include/aarch64-linux-gnu/bits/termios-tcflow.h
  /usr/include/aarch64-linux-gnu/bits/termios-misc.h
  /usr/include/aarch64-linux-gnu/sys/ttydefaults.h
+ /usr/include/c++/11/queue
+ /usr/include/c++/11/deque
+ /usr/include/c++/11/bits/stl_deque.h
+ /usr/include/c++/11/bits/deque.tcc
+ /usr/include/c++/11/bits/stl_queue.h
 

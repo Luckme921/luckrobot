@@ -1,0 +1,137 @@
+[0.024s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6
+[0.105s] [35m[1mConsolidate compiler generated dependencies of target state_publisher_node[0m
+[0.129s] [ 25%] Built target danger_command_node
+[0.130s] [ 50%] Built target lead_screw_motor_node
+[0.133s] [ 75%] Built target wheel_controller_node
+[0.138s] [ 87%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
+[4.776s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:42:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[4.777s]    42 |         [01;31m[K)[m[K;
+[4.777s]       |         [01;31m[K^[m[K
+[4.781s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:45:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kscrew_sub_[m[K’ does not name a type
+[4.781s]    45 |         [01;31m[Kscrew_sub_[m[K = this->create_subscription<std_msgs::msg::Float32>(
+[4.781s]       |         [01;31m[K^~~~~~~~~~[m[K
+[4.796s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In constructor ‘[01m[KJointPublisher::JointPublisher()[m[K’:
+[4.796s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_l_[m[K’ was not declared in this scope
+[4.796s]    24 |         [01;31m[Kwheel_l_[m[K = 0.0;
+[4.797s]       |         [01;31m[K^~~~~~~~[m[K
+[4.808s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:25:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_r_[m[K’ was not declared in this scope
+[4.808s]    25 |         [01;31m[Kwheel_r_[m[K = 0.0;
+[4.808s]       |         [01;31m[K^~~~~~~~[m[K
+[4.820s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kscrew_pos_[m[K’ was not declared in this scope
+[4.820s]    26 |         [01;31m[Kscrew_pos_[m[K = 0.0;
+[4.820s]       |         [01;31m[K^~~~~~~~~~[m[K
+[4.833s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_sub_[m[K’ was not declared in this scope
+[4.833s]    29 |         [01;31m[Kwheel_sub_[m[K = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+[4.833s]       |         [01;31m[K^~~~~~~~~~[m[K
+[4.833s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:31:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ksslocal[m[K’ has not been declared
+[4.833s]    31 |             [this]([01;31m[Ksslocal[m[K://flow/file_open?url=const+std_msgs%3A%3Amsg%3A%3AFloat64MultiArray%3A%3ASharedPtr+msg&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=) {
+[4.834s]       |                    [01;31m[K^~~~~~~[m[K
+[4.834s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:31:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K:[m[K’ token
+[4.834s]    31 |             [this](sslocal[01;31m[K:[m[K//flow/file_open?url=const+std_msgs%3A%3Amsg%3A%3AFloat64MultiArray%3A%3ASharedPtr+msg&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=) {
+[4.834s]       |                           [01;31m[K^[m[K
+[4.834s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:32:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[4.835s]    32 |                 if (msg->data.size() < 2) return[01;31m[K;[m[K
+[4.835s]       |                                                 [01;31m[K^[m[K
+[4.835s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:31:19:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[4.835s]    31 |             [this][01;36m[K([m[Ksslocal://flow/file_open?url=const+std_msgs%3A%3Amsg%3A%3AFloat64MultiArray%3A%3ASharedPtr+msg&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=) {
+[4.835s]       |                   [01;36m[K^[m[K
+[4.835s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In lambda function:
+[4.835s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:32:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[4.836s]    32 |                 if (msg->data.size() < 2) return[01;31m[K;[m[K
+[4.836s]       |                                                 [01;31m[K^[m[K
+[4.836s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In constructor ‘[01m[KJointPublisher::JointPublisher()[m[K’:
+[4.836s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:32:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[4.836s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:29:81:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[4.836s]    29 |         wheel_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>[01;36m[K([m[K
+[4.836s]       |                                                                                 [01;36m[K^[m[K
+[4.836s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:33:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[4.836s]    33 |                 double l = [01;31m[Kmsg[m[K->data[0];
+[4.837s]       |                            [01;31m[K^~~[m[K
+[4.837s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:33:28:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[4.837s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[4.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[4.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[4.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:33[m[K,
+[4.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[4.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.838s]                  from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:1[m[K:
+[4.839s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[4.839s]    28 | namespace [01;36m[Kmsg[m[K
+[4.839s]       |           [01;36m[K^~~[m[K
+[4.839s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[4.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[4.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[4.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[4.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.840s]                  from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:1[m[K:
+[4.840s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[4.841s]    28 | namespace [01;36m[Kmsg[m[K
+[4.841s]       |           [01;36m[K^~~[m[K
+[4.841s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:24[m[K,
+[4.841s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[4.841s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[4.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[4.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[4.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.842s]                  from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:1[m[K:
+[4.842s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[4.842s]    28 | namespace [01;36m[Kmsg[m[K
+[4.842s]       |           [01;36m[K^~~[m[K
+[4.843s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp:21[m[K,
+[4.843s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:21[m[K,
+[4.843s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/float64_multi_array.hpp:7[m[K,
+[4.843s]                  from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:2[m[K:
+[4.843s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[4.843s]    28 | namespace [01;36m[Kmsg[m[K
+[4.843s]       |           [01;36m[K^~~[m[K
+[4.843s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:7[m[K,
+[4.843s]                  from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:4[m[K:
+[4.844s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:32:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+[4.844s]    32 | namespace [01;36m[Kmsg[m[K
+[4.844s]       |           [01;36m[K^~~[m[K
+[4.844s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K At global scope:
+[4.844s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:50:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[4.844s]    50 |         [01;31m[K)[m[K;
+[4.844s]       |         [01;31m[K^[m[K
+[4.844s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ does not name a type; did you mean ‘[01m[Ktimer_t[m[K’?
+[4.844s]    53 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(
+[4.845s]       |         [01;31m[K^~~~~~[m[K
+[4.845s]       |         [32m[Ktimer_t[m[K
+[4.845s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ does not name a type
+[4.845s]    58 |         [01;31m[Kpub_[m[K = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 10);
+[4.845s]       |         [01;31m[K^~~~[m[K
+[4.845s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:59:5:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[4.845s]    59 |     [01;31m[K}[m[K
+[4.845s]       |     [01;31m[K^[m[K
+[4.845s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:61:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+[4.846s]    61 | [01;31m[Kprivate[m[K:
+[4.846s]       | [01;31m[K^~~~~~~[m[K
+[5.013s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:82:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[5.013s]    82 | [01;31m[K}[m[K;
+[5.013s]       | [01;31m[K^[m[K
+[5.985s] gmake[2]: *** [CMakeFiles/state_publisher_node.dir/build.make:76：CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o] 错误 1
+[5.985s] gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/state_publisher_node.dir/all] 错误 2
+[5.986s] gmake: *** [Makefile:146：all] 错误 2
+[5.991s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6

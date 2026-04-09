@@ -1,0 +1,146 @@
+[35m[1mConsolidate compiler generated dependencies of target lead_screw_motor_node[0m
+[ 50%] Built target wheel_controller_node
+[ 50%] Built target danger_command_node
+[ 62%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o[0m
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:58:2:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K#[m[K’ in program
+   58 | }[01;31m[K#[m[Kinclude <rclcpp/rclcpp.hpp>
+      |  [01;31m[K^[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:58:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinclude[m[K’ does not name a type
+   58 | }#[01;31m[Kinclude[m[K <rclcpp/rclcpp.hpp>
+      |   [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/deque:69[m[K,
+                 from [01m[K/usr/include/c++/11/queue:60[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:64[m[K:
+[01m[K/usr/include/c++/11/bits/deque.tcc:69:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+   69 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:94:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdeque[m[K’ does not name a type
+   94 |     [01;31m[Kdeque[m[K<_Tp, _Alloc>&
+      |     [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:136:16:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kdeque[m[K’
+  136 |       typename [01;31m[Kdeque[m[K<_Tp, _Alloc>::reference
+      |                [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:136:16:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+[01m[K/usr/include/c++/11/bits/deque.tcc:160:16:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kdeque[m[K’
+  160 |       typename [01;31m[Kdeque[m[K<_Tp, _Alloc>::reference
+      |                [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:160:16:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+[01m[K/usr/include/c++/11/bits/deque.tcc:186:16:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kdeque[m[K’
+  186 |       typename [01;31m[Kdeque[m[K<_Tp, _Alloc>::iterator
+      |                [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:186:16:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+[01m[K/usr/include/c++/11/bits/deque.tcc:209:14:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kdeque[m[K’
+  209 |     typename [01;31m[Kdeque[m[K<_Tp, _Alloc>::iterator
+      |              [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:209:19:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  209 |     typename deque[01;31m[K<[m[K_Tp, _Alloc>::iterator
+      |                   [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:234:14:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kdeque[m[K’
+  234 |     typename [01;31m[Kdeque[m[K<_Tp, _Alloc>::iterator
+      |              [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:234:19:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  234 |     typename deque[01;31m[K<[m[K_Tp, _Alloc>::iterator
+      |                   [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:257:14:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kdeque[m[K’
+  257 |     typename [01;31m[Kdeque[m[K<_Tp, _Alloc>::iterator
+      |              [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:257:19:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  257 |     typename deque[01;31m[K<[m[K_Tp, _Alloc>::iterator
+      |                   [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:291:7:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+  291 |       [01;31m[Kdeque[m[K<_Tp, _Alloc>::
+      |       [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:307:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  307 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:350:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  350 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:374:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  374 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:393:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  393 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:419:7:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+  419 |       [01;31m[Kdeque[m[K<_Tp, _Alloc>::
+      |       [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:443:7:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+  443 |       [01;31m[Kdeque[m[K<_Tp, _Alloc>::
+      |       [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:484:7:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+  484 |       [01;31m[Kdeque[m[K<_Tp, _Alloc>::
+      |       [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:523:7:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+  523 |       [01;31m[Kdeque[m[K<_Tp, _Alloc>::
+      |       [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:560:15:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  560 |     void deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |               [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:576:15:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  576 |     void deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |               [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:589:7:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+  589 |       [01;31m[Kdeque[m[K<_Tp, _Alloc>::
+      |       [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:598:7:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+  598 |       [01;31m[Kdeque[m[K<_Tp, _Alloc>::
+      |       [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:644:16:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kdeque[m[K’
+  644 |       typename [01;31m[Kdeque[m[K<_Tp, _Alloc>::iterator
+      |                [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:644:16:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+[01m[K/usr/include/c++/11/bits/deque.tcc:685:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  685 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:771:7:[m[K [01;31m[Kerror: [m[Ktoo many template-parameter-lists
+  771 |       [01;31m[Kdeque[m[K<_Tp, _Alloc>::
+      |       [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:859:11:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  859 |      deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |           [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:881:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  881 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:906:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  906 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+[01m[K/usr/include/c++/11/bits/deque.tcc:931:10:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+  931 |     deque[01;31m[K<[m[K_Tp, _Alloc>::
+      |          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/queue:60[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:64[m[K:
+[01m[K/usr/include/c++/11/deque:83:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kdeque[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+   83 |       using deque = std::[01;31m[Kdeque[m[K<_Tp, polymorphic_allocator<_Tp>>;
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/deque:70:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::deque[m[K’ is defined in header ‘[01m[K<deque>[m[K’; did you forget to ‘[01m[K#include <deque>[m[K’?
+   69 | #include <bits/deque.tcc>
+  +++ |+[32m[K#include <deque>[m[K
+   70 | 
+In file included from [01m[K/usr/include/c++/11/queue:64[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:64[m[K:
+[01m[K/usr/include/c++/11/bits/stl_queue.h:95:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kdeque[m[K’ does not name a type
+   95 |   template<typename _Tp, typename _Sequence = [01;31m[Kdeque[m[K<_Tp> >
+      |                                               [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_queue.h:95:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[K<[m[K’ token
+   95 |   template<typename _Tp, typename _Sequence = deque[01;31m[K<[m[K_Tp> >
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:84:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass JointPublisher[m[K’
+   84 | class [01;31m[KJointPublisher[m[K : public rclcpp::Node
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:12:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass JointPublisher[m[K’
+   12 | class [01;36m[KJointPublisher[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:154:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint main(int, char**)[m[K’
+  154 | int [01;31m[Kmain[m[K(int argc, char** argv)
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:53:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint main(int, char**)[m[K’ previously defined here
+   53 | int [01;36m[Kmain[m[K(int argc, char** argv) {
+      |     [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/state_publisher_node.dir/build.make:76：CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/state_publisher_node.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 87%] [32m[1mLinking CXX executable lead_screw_motor_node[0m
+[ 87%] Built target lead_screw_motor_node
+gmake: *** [Makefile:146：all] 错误 2

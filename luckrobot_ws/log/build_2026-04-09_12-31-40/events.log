@@ -1,0 +1,204 @@
+[0.000000] (-) TimerEvent: {}
+[0.000530] (-) JobUnselected: {'identifier': 'keyboard_control'}
+[0.000945] (-) JobUnselected: {'identifier': 'luckrobot_launch1'}
+[0.001512] (-) JobUnselected: {'identifier': 'robot_display'}
+[0.001827] (wheel_controller) JobQueued: {'identifier': 'wheel_controller', 'dependencies': OrderedDict()}
+[0.002178] (wheel_controller) JobStarted: {'identifier': 'wheel_controller'}
+[0.018470] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'cmake'}
+[0.019615] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'build'}
+[0.020789] (wheel_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '172.20.10.4 52235 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nvidia'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/nvidia/miniconda3'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/home/nvidia/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nvidia/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller'), ('CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('SSH_CONNECTION', '172.20.10.4 52235 172.20.10.2 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099190] (-) TimerEvent: {}
+[0.104547] (wheel_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lead_screw_motor_node\x1b[0m\n'}
+[0.105064] (wheel_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target state_publisher_node\x1b[0m\n'}
+[0.130540] (wheel_controller) StdoutLine: {'line': b'[ 50%] Built target wheel_controller_node\n'}
+[0.131032] (wheel_controller) StdoutLine: {'line': b'[ 50%] Built target danger_command_node\n'}
+[0.143882] (wheel_controller) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o\x1b[0m\n'}
+[0.145966] (wheel_controller) StdoutLine: {'line': b'[ 87%] Built target state_publisher_node\n'}
+[0.199349] (-) TimerEvent: {}
+[0.300005] (-) TimerEvent: {}
+[0.400658] (-) TimerEvent: {}
+[0.501342] (-) TimerEvent: {}
+[0.602006] (-) TimerEvent: {}
+[0.702673] (-) TimerEvent: {}
+[0.803349] (-) TimerEvent: {}
+[0.904028] (-) TimerEvent: {}
+[1.004707] (-) TimerEvent: {}
+[1.105380] (-) TimerEvent: {}
+[1.206080] (-) TimerEvent: {}
+[1.306756] (-) TimerEvent: {}
+[1.407430] (-) TimerEvent: {}
+[1.508093] (-) TimerEvent: {}
+[1.608743] (-) TimerEvent: {}
+[1.709394] (-) TimerEvent: {}
+[1.810094] (-) TimerEvent: {}
+[1.910754] (-) TimerEvent: {}
+[2.011400] (-) TimerEvent: {}
+[2.112055] (-) TimerEvent: {}
+[2.212724] (-) TimerEvent: {}
+[2.313375] (-) TimerEvent: {}
+[2.414008] (-) TimerEvent: {}
+[2.514652] (-) TimerEvent: {}
+[2.615306] (-) TimerEvent: {}
+[2.715973] (-) TimerEvent: {}
+[2.816645] (-) TimerEvent: {}
+[2.917325] (-) TimerEvent: {}
+[3.018022] (-) TimerEvent: {}
+[3.118693] (-) TimerEvent: {}
+[3.219382] (-) TimerEvent: {}
+[3.320061] (-) TimerEvent: {}
+[3.420738] (-) TimerEvent: {}
+[3.521424] (-) TimerEvent: {}
+[3.622089] (-) TimerEvent: {}
+[3.722739] (-) TimerEvent: {}
+[3.823394] (-) TimerEvent: {}
+[3.924062] (-) TimerEvent: {}
+[4.024719] (-) TimerEvent: {}
+[4.125367] (-) TimerEvent: {}
+[4.226013] (-) TimerEvent: {}
+[4.326684] (-) TimerEvent: {}
+[4.427368] (-) TimerEvent: {}
+[4.528062] (-) TimerEvent: {}
+[4.628764] (-) TimerEvent: {}
+[4.729643] (-) TimerEvent: {}
+[4.830352] (-) TimerEvent: {}
+[4.832827] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:45:104:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kuint16\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kuint16_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.833397] (wheel_controller) StderrLine: {'line': b'   45 | std::vector<uint8_t> build_write_multiple(uint8_t slave, uint16_t reg, uint16_t cnt, const std::vector<\x1b[01;31m\x1b[Kuint16\x1b[m\x1b[K>& vals) {\n'}
+[4.833563] (wheel_controller) StderrLine: {'line': b'      |                                                                                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.833695] (wheel_controller) StderrLine: {'line': b'      |                                                                                                        \x1b[32m\x1b[Kuint16_t\x1b[m\x1b[K\n'}
+[4.833816] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:45:110:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.833934] (wheel_controller) StderrLine: {'line': b'   45 | std::vector<uint8_t> build_write_multiple(uint8_t slave, uint16_t reg, uint16_t cnt, const std::vector<uint16\x1b[01;31m\x1b[K>\x1b[m\x1b[K& vals) {\n'}
+[4.834045] (wheel_controller) StderrLine: {'line': b'      |                                                                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.834153] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:45:110:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[4.835188] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > build_write_multiple(uint8_t, uint16_t, uint16_t, const int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.835335] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:47:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbegin\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::begin\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.835543] (wheel_controller) StderrLine: {'line': b'   47 |     for (auto v : \x1b[01;31m\x1b[Kvals\x1b[m\x1b[K) { f.push_back(v>>8); f.push_back(v&0xFF); }\n'}
+[4.835657] (wheel_controller) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.835766] (wheel_controller) StderrLine: {'line': b'      |                   \x1b[32m\x1b[Kstd::begin\x1b[m\x1b[K\n'}
+[4.835872] (wheel_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/array:41\x1b[m\x1b[K,\n'}
+[4.835975] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[4.836080] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[4.836186] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[4.836324] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[4.836431] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:1\x1b[m\x1b[K:\n'}
+[4.836656] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/range_access.h:108:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::begin\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.836777] (wheel_controller) StderrLine: {'line': b'  108 |   template<typename _Tp> const _Tp* \x1b[01;36m\x1b[Kbegin\x1b[m\x1b[K(const valarray<_Tp>&) noexcept;\n'}
+[4.836886] (wheel_controller) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.836991] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:47:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kend\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::end\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.837328] (wheel_controller) StderrLine: {'line': b'   47 |     for (auto v : \x1b[01;31m\x1b[Kvals\x1b[m\x1b[K) { f.push_back(v>>8); f.push_back(v&0xFF); }\n'}
+[4.837457] (wheel_controller) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.837603] (wheel_controller) StderrLine: {'line': b'      |                   \x1b[32m\x1b[Kstd::end\x1b[m\x1b[K\n'}
+[4.837720] (wheel_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/array:41\x1b[m\x1b[K,\n'}
+[4.837831] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[4.837938] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[4.838045] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[4.838151] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[4.838256] (wheel_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:1\x1b[m\x1b[K:\n'}
+[4.838361] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/range_access.h:110:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::end\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.838490] (wheel_controller) StderrLine: {'line': b'  110 |   template<typename _Tp> const _Tp* \x1b[01;36m\x1b[Kend\x1b[m\x1b[K(const valarray<_Tp>&) noexcept;\n'}
+[4.838717] (wheel_controller) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.925442] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[4.925952] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:151:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KShared\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.926170] (wheel_controller) StderrLine: {'line': b'  151 |     rclcpp::Publisher<std_msgs::msg::Float32>::\x1b[01;31m\x1b[KShared\x1b[m\x1b[K pub_;\n'}
+[4.926305] (wheel_controller) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.930447] (-) TimerEvent: {}
+[4.967066] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLeadScrewMotorNode::LeadScrewMotorNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.967541] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:62:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksub_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.967706] (wheel_controller) StderrLine: {'line': b'   62 |         \x1b[01;31m\x1b[Kpub_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::Float32>("/lead_screw/current_position", qos);\n'}
+[4.967841] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.967962] (wheel_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ksub_\x1b[m\x1b[K\n'}
+[4.982225] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LeadScrewMotorNode::homing()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.982696] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:96:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid initialization of reference of type \xe2\x80\x98\x1b[01m\x1b[Kconst int&\x1b[m\x1b[K\xe2\x80\x99 from expression of type \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.982845] (wheel_controller) StderrLine: {'line': b'   96 |             build_write_single(SLAVE_ID,0x1023,2), \x1b[01;31m\x1b[Kbuild_write_multiple(SLAVE_ID,0x1024,2,{(uint16_t)HOMING_SPEED,(uint16_t)(HOMING_SPEED>>16)})\x1b[m\x1b[K,\n'}
+[4.982973] (wheel_controller) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.983247] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:45:113:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin passing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > build_write_multiple(uint8_t, uint16_t, uint16_t, const int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.983571] (wheel_controller) StderrLine: {'line': b'   45 | std::vector<uint8_t> build_write_multiple(uint8_t slave, uint16_t reg, uint16_t cnt, \x1b[01;36m\x1b[Kconst std::vector<uint16>& vals\x1b[m\x1b[K) {\n'}
+[4.983719] (wheel_controller) StderrLine: {'line': b'      |                                                                                      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.983846] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:98:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[K{build_write_single(uint8_t, uint16_t, uint16_t)(512, 9), build_write_single(uint8_t, uint16_t, uint16_t)(4099, 6), build_write_single(uint8_t, uint16_t, uint16_t)(4131, 2), <expression error>, build_write_single(uint8_t, uint16_t, uint16_t)(775, 0), build_write_single(uint8_t, uint16_t, uint16_t)(3336, 128)}\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<unsigned char, std::allocator<unsigned char> > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.984028] (wheel_controller) StderrLine: {'line': b'   98 |         \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[4.984152] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.984287] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[4.984399] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\n'}
+[4.987136] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LeadScrewMotorNode::move(float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.987702] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:128:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid initialization of reference of type \xe2\x80\x98\x1b[01m\x1b[Kconst int&\x1b[m\x1b[K\xe2\x80\x99 from expression of type \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.987855] (wheel_controller) StderrLine: {'line': b'  128 |             \x1b[01;31m\x1b[Kbuild_write_multiple(SLAVE_ID,0x100E,2,{(uint16_t)s,(uint16_t)(s>>16)})\x1b[m\x1b[K,\n'}
+[4.988031] (wheel_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.988149] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:45:113:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin passing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > build_write_multiple(uint8_t, uint16_t, uint16_t, const int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.988300] (wheel_controller) StderrLine: {'line': b'   45 | std::vector<uint8_t> build_write_multiple(uint8_t slave, uint16_t reg, uint16_t cnt, \x1b[01;36m\x1b[Kconst std::vector<uint16>& vals\x1b[m\x1b[K) {\n'}
+[4.988420] (wheel_controller) StderrLine: {'line': b'      |                                                                                      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.988536] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:129:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid initialization of reference of type \xe2\x80\x98\x1b[01m\x1b[Kconst int&\x1b[m\x1b[K\xe2\x80\x99 from expression of type \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.988666] (wheel_controller) StderrLine: {'line': b'  129 |             \x1b[01;31m\x1b[Kbuild_write_multiple(SLAVE_ID,0x1019,2,{(uint16_t)MOVE_SPEED,(uint16_t)(MOVE_SPEED>>16)})\x1b[m\x1b[K,\n'}
+[4.988779] (wheel_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.988888] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:45:113:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin passing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > build_write_multiple(uint8_t, uint16_t, uint16_t, const int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.989001] (wheel_controller) StderrLine: {'line': b'   45 | std::vector<uint8_t> build_write_multiple(uint8_t slave, uint16_t reg, uint16_t cnt, \x1b[01;36m\x1b[Kconst std::vector<uint16>& vals\x1b[m\x1b[K) {\n'}
+[4.989114] (wheel_controller) StderrLine: {'line': b'      |                                                                                      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.989249] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:131:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[K{build_write_single(uint8_t, uint16_t, uint16_t)(512, 9), build_write_single(uint8_t, uint16_t, uint16_t)(3345, 1), build_write_single(uint8_t, uint16_t, uint16_t)(4099, 1), <expression error>, <expression error>, build_write_single(uint8_t, uint16_t, uint16_t)(3346, 507), build_write_single(uint8_t, uint16_t, uint16_t)(3336, 1)}\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<unsigned char, std::allocator<unsigned char> > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.989425] (wheel_controller) StderrLine: {'line': b'  131 |         \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[4.989537] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.989644] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[4.989751] (wheel_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\n'}
+[5.013069] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LeadScrewMotorNode::publish_pos()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.013789] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:147:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksub_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.014048] (wheel_controller) StderrLine: {'line': b'  147 |         std_msgs::msg::Float32 m; m.data = pos_.load(); \x1b[01;31m\x1b[Kpub_\x1b[m\x1b[K->publish(m);\n'}
+[5.014201] (wheel_controller) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.014328] (wheel_controller) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[Ksub_\x1b[m\x1b[K\n'}
+[5.030618] (-) TimerEvent: {}
+[5.131283] (-) TimerEvent: {}
+[5.231955] (-) TimerEvent: {}
+[5.332659] (-) TimerEvent: {}
+[5.433362] (-) TimerEvent: {}
+[5.534035] (-) TimerEvent: {}
+[5.634711] (-) TimerEvent: {}
+[5.735411] (-) TimerEvent: {}
+[5.836129] (-) TimerEvent: {}
+[5.936812] (-) TimerEvent: {}
+[6.037517] (-) TimerEvent: {}
+[6.138182] (-) TimerEvent: {}
+[6.238858] (-) TimerEvent: {}
+[6.339536] (-) TimerEvent: {}
+[6.440259] (-) TimerEvent: {}
+[6.540973] (-) TimerEvent: {}
+[6.641741] (-) TimerEvent: {}
+[6.742552] (-) TimerEvent: {}
+[6.843280] (-) TimerEvent: {}
+[6.943946] (-) TimerEvent: {}
+[7.044774] (-) TimerEvent: {}
+[7.145472] (-) TimerEvent: {}
+[7.246135] (-) TimerEvent: {}
+[7.346808] (-) TimerEvent: {}
+[7.447463] (-) TimerEvent: {}
+[7.548125] (-) TimerEvent: {}
+[7.648825] (-) TimerEvent: {}
+[7.749481] (-) TimerEvent: {}
+[7.850121] (-) TimerEvent: {}
+[7.950922] (-) TimerEvent: {}
+[8.051721] (-) TimerEvent: {}
+[8.152398] (-) TimerEvent: {}
+[8.253067] (-) TimerEvent: {}
+[8.353759] (-) TimerEvent: {}
+[8.454405] (-) TimerEvent: {}
+[8.555054] (-) TimerEvent: {}
+[8.655713] (-) TimerEvent: {}
+[8.756375] (-) TimerEvent: {}
+[8.857028] (-) TimerEvent: {}
+[8.957734] (-) TimerEvent: {}
+[9.058421] (-) TimerEvent: {}
+[9.159101] (-) TimerEvent: {}
+[9.259771] (-) TimerEvent: {}
+[9.360447] (-) TimerEvent: {}
+[9.461119] (-) TimerEvent: {}
+[9.561798] (-) TimerEvent: {}
+[9.662464] (-) TimerEvent: {}
+[9.763126] (-) TimerEvent: {}
+[9.863742] (-) TimerEvent: {}
+[9.964384] (-) TimerEvent: {}
+[10.065034] (-) TimerEvent: {}
+[10.165728] (-) TimerEvent: {}
+[10.266390] (-) TimerEvent: {}
+[10.367041] (-) TimerEvent: {}
+[10.420823] (wheel_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lead_screw_motor_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[10.421489] (wheel_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:169\xef\xbc\x9aCMakeFiles/lead_screw_motor_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[10.422398] (wheel_controller) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[10.427913] (wheel_controller) CommandEnded: {'returncode': 2}
+[10.463542] (wheel_controller) JobEnded: {'identifier': 'wheel_controller', 'rc': 2}
+[10.467118] (-) TimerEvent: {}
+[10.474953] (-) EventReactorShutdown: {}

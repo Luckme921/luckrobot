@@ -1,0 +1,15 @@
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kvoid LeadScrewMotorNode::send(const std::vector<unsigned char, std::allocator<unsigned char> >&)[m[K’:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:94:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   94 |         std::lock_guard<std::mutex lock(serial_mutex_[01;31m[K)[m[K;
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kvoid LeadScrewMotorNode::callback(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:147:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  147 |         std::lock_guard<std::mutex lock(queue_mutex_[01;31m[K)[m[K;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kvoid LeadScrewMotorNode::worker_thread()[m[K’:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:160:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  160 |                 std::lock_guard<std::mutex lock(queue_mutex_[01;31m[K)[m[K;
+      |                                                             [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/lead_screw_motor_node.dir/build.make:76：CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/lead_screw_motor_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

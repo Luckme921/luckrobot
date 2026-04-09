@@ -1,0 +1,77 @@
+[ 62%] Built target wheel_controller_node
+[ 62%] [32mBuilding CXX object CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o[0m
+[ 62%] Built target danger_command_node
+[ 75%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:1[m[K:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kvoid LeadScrewMotorNode::move_relative(float)[m[K’:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:146:13:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::atomic<_Tp>::atomic(const std::atomic<_Tp>&) [with _Tp = float][m[K’
+  146 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "❌ 超上限！当前：%.1f | 指令：%.1f | 目标：%.1f | 上限：%.1f",
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/future:41[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/atomic:227:7:[m[K [01;36m[Knote: [m[Kdeclared here
+  227 |       [01;36m[Katomic[m[K(const atomic&) = delete;
+      |       [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:1[m[K:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:151:13:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::atomic<_Tp>::atomic(const std::atomic<_Tp>&) [with _Tp = float][m[K’
+  151 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "❌ 超下限！当前：%.1f | 指令：%.1f | 目标：%.1f | 下限：%.1f",
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/future:41[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/atomic:227:7:[m[K [01;36m[Knote: [m[Kdeclared here
+  227 |       [01;36m[Katomic[m[K(const atomic&) = delete;
+      |       [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:1[m[K:
+[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:182:9:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::atomic<_Tp>::atomic(const std::atomic<_Tp>&) [with _Tp = float][m[K’
+  182 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "✅ 运动完成！当前位置：%.1f mm", current_abs_pos_);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/future:41[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/atomic:227:7:[m[K [01;36m[Knote: [m[Kdeclared here
+  227 |       [01;36m[Katomic[m[K(const atomic&) = delete;
+      |       [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lead_screw_motor_node.dir/build.make:76：CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/lead_screw_motor_node.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 87%] [32m[1mLinking CXX executable state_publisher_node[0m
+[ 87%] Built target state_publisher_node
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,176 @@
+[0.000000] (-) TimerEvent: {}
+[0.000818] (-) JobUnselected: {'identifier': 'keyboard_control'}
+[0.001043] (-) JobUnselected: {'identifier': 'luckrobot_launch1'}
+[0.001340] (-) JobUnselected: {'identifier': 'robot_display'}
+[0.001421] (wheel_controller) JobQueued: {'identifier': 'wheel_controller', 'dependencies': OrderedDict()}
+[0.001489] (wheel_controller) JobStarted: {'identifier': 'wheel_controller'}
+[0.019215] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'cmake'}
+[0.020488] (wheel_controller) JobProgress: {'identifier': 'wheel_controller', 'progress': 'build'}
+[0.021696] (wheel_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '172.20.10.4 51831 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nvidia/luckrobot'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/nvidia/miniconda3'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '5'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/home/nvidia/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nvidia/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller'), ('CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('SSH_CONNECTION', '172.20.10.4 51831 172.20.10.2 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.098529] (-) TimerEvent: {}
+[0.107372] (wheel_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target state_publisher_node\x1b[0m\n'}
+[0.107922] (wheel_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lead_screw_motor_node\x1b[0m\n'}
+[0.134274] (wheel_controller) StdoutLine: {'line': b'[ 37%] Built target danger_command_node\n'}
+[0.134812] (wheel_controller) StdoutLine: {'line': b'[ 50%] Built target wheel_controller_node\n'}
+[0.145949] (wheel_controller) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o\x1b[0m\n'}
+[0.151093] (wheel_controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o\x1b[0m\n'}
+[0.198705] (-) TimerEvent: {}
+[0.299427] (-) TimerEvent: {}
+[0.400104] (-) TimerEvent: {}
+[0.500803] (-) TimerEvent: {}
+[0.601486] (-) TimerEvent: {}
+[0.702176] (-) TimerEvent: {}
+[0.802868] (-) TimerEvent: {}
+[0.903589] (-) TimerEvent: {}
+[1.004305] (-) TimerEvent: {}
+[1.105080] (-) TimerEvent: {}
+[1.205798] (-) TimerEvent: {}
+[1.306525] (-) TimerEvent: {}
+[1.407259] (-) TimerEvent: {}
+[1.507981] (-) TimerEvent: {}
+[1.608680] (-) TimerEvent: {}
+[1.709442] (-) TimerEvent: {}
+[1.810170] (-) TimerEvent: {}
+[1.910917] (-) TimerEvent: {}
+[2.011635] (-) TimerEvent: {}
+[2.112322] (-) TimerEvent: {}
+[2.213024] (-) TimerEvent: {}
+[2.313744] (-) TimerEvent: {}
+[2.414464] (-) TimerEvent: {}
+[2.515171] (-) TimerEvent: {}
+[2.615845] (-) TimerEvent: {}
+[2.716542] (-) TimerEvent: {}
+[2.817265] (-) TimerEvent: {}
+[2.917976] (-) TimerEvent: {}
+[3.018693] (-) TimerEvent: {}
+[3.119456] (-) TimerEvent: {}
+[3.220128] (-) TimerEvent: {}
+[3.320833] (-) TimerEvent: {}
+[3.421525] (-) TimerEvent: {}
+[3.522217] (-) TimerEvent: {}
+[3.622922] (-) TimerEvent: {}
+[3.723655] (-) TimerEvent: {}
+[3.824351] (-) TimerEvent: {}
+[3.925084] (-) TimerEvent: {}
+[4.025767] (-) TimerEvent: {}
+[4.126419] (-) TimerEvent: {}
+[4.227238] (-) TimerEvent: {}
+[4.327949] (-) TimerEvent: {}
+[4.428660] (-) TimerEvent: {}
+[4.529351] (-) TimerEvent: {}
+[4.630050] (-) TimerEvent: {}
+[4.730740] (-) TimerEvent: {}
+[4.831476] (-) TimerEvent: {}
+[4.932178] (-) TimerEvent: {}
+[5.032898] (-) TimerEvent: {}
+[5.103836] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool LeadScrewMotorNode::init_serial()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.104440] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:108:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""ms\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.104642] (wheel_controller) StderrLine: {'line': b'  108 |             std::this_thread::sleep_for(\x1b[01;31m\x1b[K500ms\x1b[m\x1b[K);\n'}
+[5.104984] (wheel_controller) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.105132] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LeadScrewMotorNode::send_cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.105268] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:115:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""ms\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.105390] (wheel_controller) StderrLine: {'line': b'  115 |         std::this_thread::sleep_for(\x1b[01;31m\x1b[K200ms\x1b[m\x1b[K);\n'}
+[5.105504] (wheel_controller) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.126544] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LeadScrewMotorNode::thread_homing()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.127116] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:130:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""s\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.127291] (wheel_controller) StderrLine: {'line': b'  130 |         std::this_thread::sleep_for(\x1b[01;31m\x1b[K25s\x1b[m\x1b[K);\n'}
+[5.127414] (wheel_controller) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.133011] (-) TimerEvent: {}
+[5.134212] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LeadScrewMotorNode::thread_worker()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.134624] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:164:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""ms\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.134776] (wheel_controller) StderrLine: {'line': b'  164 |             std::this_thread::sleep_for(\x1b[01;31m\x1b[K50ms\x1b[m\x1b[K);\n'}
+[5.134929] (wheel_controller) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.233208] (-) TimerEvent: {}
+[5.333974] (-) TimerEvent: {}
+[5.434661] (-) TimerEvent: {}
+[5.535380] (-) TimerEvent: {}
+[5.636049] (-) TimerEvent: {}
+[5.736727] (-) TimerEvent: {}
+[5.837390] (-) TimerEvent: {}
+[5.848776] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KJointPublisher::JointPublisher()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.849282] (wheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:45:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""ms\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.849459] (wheel_controller) StderrLine: {'line': b'   45 |         timer_ = this->create_wall_timer(\x1b[01;31m\x1b[K20ms\x1b[m\x1b[K, std::bind(&JointPublisher::publish, this));\n'}
+[5.849598] (wheel_controller) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.937555] (-) TimerEvent: {}
+[6.038250] (-) TimerEvent: {}
+[6.138926] (-) TimerEvent: {}
+[6.239628] (-) TimerEvent: {}
+[6.340318] (-) TimerEvent: {}
+[6.441016] (-) TimerEvent: {}
+[6.541729] (-) TimerEvent: {}
+[6.642423] (-) TimerEvent: {}
+[6.743109] (-) TimerEvent: {}
+[6.843783] (-) TimerEvent: {}
+[6.944464] (-) TimerEvent: {}
+[7.045153] (-) TimerEvent: {}
+[7.145835] (-) TimerEvent: {}
+[7.246506] (-) TimerEvent: {}
+[7.347201] (-) TimerEvent: {}
+[7.447904] (-) TimerEvent: {}
+[7.548581] (-) TimerEvent: {}
+[7.649270] (-) TimerEvent: {}
+[7.749968] (-) TimerEvent: {}
+[7.850695] (-) TimerEvent: {}
+[7.951433] (-) TimerEvent: {}
+[8.052147] (-) TimerEvent: {}
+[8.152837] (-) TimerEvent: {}
+[8.253524] (-) TimerEvent: {}
+[8.354212] (-) TimerEvent: {}
+[8.454887] (-) TimerEvent: {}
+[8.555594] (-) TimerEvent: {}
+[8.656272] (-) TimerEvent: {}
+[8.756967] (-) TimerEvent: {}
+[8.857652] (-) TimerEvent: {}
+[8.958337] (-) TimerEvent: {}
+[9.059044] (-) TimerEvent: {}
+[9.159717] (-) TimerEvent: {}
+[9.260398] (-) TimerEvent: {}
+[9.361117] (-) TimerEvent: {}
+[9.461815] (-) TimerEvent: {}
+[9.562516] (-) TimerEvent: {}
+[9.663331] (-) TimerEvent: {}
+[9.764025] (-) TimerEvent: {}
+[9.864708] (-) TimerEvent: {}
+[9.965406] (-) TimerEvent: {}
+[10.066097] (-) TimerEvent: {}
+[10.166780] (-) TimerEvent: {}
+[10.267485] (-) TimerEvent: {}
+[10.368176] (-) TimerEvent: {}
+[10.468882] (-) TimerEvent: {}
+[10.569579] (-) TimerEvent: {}
+[10.617722] (wheel_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lead_screw_motor_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[10.618373] (wheel_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:169\xef\xbc\x9aCMakeFiles/lead_screw_motor_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[10.618582] (wheel_controller) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[10.669718] (-) TimerEvent: {}
+[10.770343] (-) TimerEvent: {}
+[10.871021] (-) TimerEvent: {}
+[10.971813] (-) TimerEvent: {}
+[11.072627] (-) TimerEvent: {}
+[11.173472] (-) TimerEvent: {}
+[11.274303] (-) TimerEvent: {}
+[11.375191] (-) TimerEvent: {}
+[11.476037] (-) TimerEvent: {}
+[11.576904] (-) TimerEvent: {}
+[11.677719] (-) TimerEvent: {}
+[11.778533] (-) TimerEvent: {}
+[11.879370] (-) TimerEvent: {}
+[11.980187] (-) TimerEvent: {}
+[12.080986] (-) TimerEvent: {}
+[12.181780] (-) TimerEvent: {}
+[12.282539] (-) TimerEvent: {}
+[12.383372] (-) TimerEvent: {}
+[12.484213] (-) TimerEvent: {}
+[12.585033] (-) TimerEvent: {}
+[12.685849] (-) TimerEvent: {}
+[12.786674] (-) TimerEvent: {}
+[12.887520] (-) TimerEvent: {}
+[12.988296] (-) TimerEvent: {}
+[13.089106] (-) TimerEvent: {}
+[13.189956] (-) TimerEvent: {}
+[13.285504] (wheel_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/state_publisher_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[13.286302] (wheel_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221\xef\xbc\x9aCMakeFiles/state_publisher_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[13.286853] (wheel_controller) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[13.290015] (-) TimerEvent: {}
+[13.293278] (wheel_controller) CommandEnded: {'returncode': 2}
+[13.334181] (wheel_controller) JobEnded: {'identifier': 'wheel_controller', 'rc': 2}
+[13.337610] (-) EventReactorShutdown: {}

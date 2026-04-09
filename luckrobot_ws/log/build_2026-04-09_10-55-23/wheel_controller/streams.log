@@ -1,0 +1,34 @@
+[0.022s] Invoking command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6
+[0.106s] [35m[1mConsolidate compiler generated dependencies of target state_publisher_node[0m
+[0.107s] [35m[1mConsolidate compiler generated dependencies of target lead_screw_motor_node[0m
+[0.133s] [ 37%] Built target danger_command_node
+[0.133s] [ 50%] Built target wheel_controller_node
+[0.145s] [ 62%] [32mBuilding CXX object CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o[0m
+[0.150s] [ 75%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
+[5.103s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kbool LeadScrewMotorNode::init_serial()[m[K’:
+[5.103s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:108:41:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[5.103s]   108 |             std::this_thread::sleep_for([01;31m[K500ms[m[K);
+[5.104s]       |                                         [01;31m[K^~~~~[m[K
+[5.104s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kvoid LeadScrewMotorNode::send_cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&)[m[K’:
+[5.104s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:115:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[5.104s]   115 |         std::this_thread::sleep_for([01;31m[K200ms[m[K);
+[5.104s]       |                                     [01;31m[K^~~~~[m[K
+[5.125s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kvoid LeadScrewMotorNode::thread_homing()[m[K’:
+[5.126s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:130:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+[5.126s]   130 |         std::this_thread::sleep_for([01;31m[K25s[m[K);
+[5.126s]       |                                     [01;31m[K^~~[m[K
+[5.133s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kvoid LeadScrewMotorNode::thread_worker()[m[K’:
+[5.133s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:164:41:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[5.133s]   164 |             std::this_thread::sleep_for([01;31m[K50ms[m[K);
+[5.133s]       |                                         [01;31m[K^~~~[m[K
+[5.848s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In constructor ‘[01m[KJointPublisher::JointPublisher()[m[K’:
+[5.848s] [01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:45:42:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[5.848s]    45 |         timer_ = this->create_wall_timer([01;31m[K20ms[m[K, std::bind(&JointPublisher::publish, this));
+[5.848s]       |                                          [01;31m[K^~~~[m[K
+[10.617s] gmake[2]: *** [CMakeFiles/lead_screw_motor_node.dir/build.make:76：CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o] 错误 1
+[10.617s] gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/lead_screw_motor_node.dir/all] 错误 2
+[10.617s] gmake[1]: *** 正在等待未完成的任务....
+[13.285s] gmake[2]: *** [CMakeFiles/state_publisher_node.dir/build.make:76：CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o] 错误 1
+[13.285s] gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/state_publisher_node.dir/all] 错误 2
+[13.286s] gmake: *** [Makefile:146：all] 错误 2
+[13.292s] Invoked command in '/home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/luckrobot_ws/build/wheel_controller -- -j6 -l6
