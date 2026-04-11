@@ -1,0 +1,19 @@
+# ROS2 编译产物
+build/
+install/
+log/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 点云地图（单独备份）
+*.pcd
+*.ply
