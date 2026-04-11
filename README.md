@@ -28,12 +28,12 @@
 4. 支持外部IMU。
 5. 支持基于ARM的平台，如Khadas VIM3、Nivida TX2、Raspberry Pi 4B（8G RAM）。
 ### 3.2 定位算法：FAST_LIO_LOCALIZATION_HUMANOID
-1. 流程
+**流程:**
 <div align="center">
 <img src="image/loc.png" width=90% />
 </div>
 
-2. 基于离线点云地图的稳健本地化  
+**基于离线点云地图的稳健本地化**  
 此解决方案能够处理**粗略的初始姿态** ，支持**稳健的定位** ，并且离线点云地图保证不会因长时间工作而**累积的定位误差**（不同于常见的 SLAM）。彩色点云的可视化效果更好。
 <div align="center">
 <img src="image/loc.gif" width=30% />

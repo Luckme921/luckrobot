@@ -238,4 +238,10 @@
     <child link="livox_frame" />
     <origin xyz="0 0 0.02108" rpy="0 0 0" />
   </joint>
+  <link name="imu_link"/>
+  <joint name="livox_frame_to_livox_body_joint" type="fixed">
+    <parent link="livox_frame" />
+    <child link="imu_link" />
+    <origin xyz="0.011 0.02329 -0.04412" rpy="0 0 0" />
+  </joint>
 </robot>
