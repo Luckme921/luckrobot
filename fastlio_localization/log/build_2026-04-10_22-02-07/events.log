@@ -1,0 +1,2244 @@
+[0.000000] (-) TimerEvent: {}
+[0.000975] (fast_lio) JobQueued: {'identifier': 'fast_lio', 'dependencies': OrderedDict()}
+[0.001234] (open3d_loc) JobQueued: {'identifier': 'open3d_loc', 'dependencies': OrderedDict()}
+[0.001478] (fast_lio) JobStarted: {'identifier': 'fast_lio'}
+[0.014760] (open3d_loc) JobStarted: {'identifier': 'open3d_loc'}
+[0.024878] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'cmake'}
+[0.025742] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/fastlio_localization/install/fast_lio'], 'cwd': '/home/nvidia/luckrobot/fastlio_localization/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.101 65486 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nvidia/luckrobot/fastlio_localization/src'), ('SSH_TTY', '/dev/pts/6'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/nvidia/miniconda3'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '19'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/home/nvidia/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nvidia/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/fastlio_localization/build/fast_lio'), ('CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('SSH_CONNECTION', '192.168.3.101 65486 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.030919] (open3d_loc) JobProgress: {'identifier': 'open3d_loc', 'progress': 'cmake'}
+[0.031679] (open3d_loc) Command: {'cmd': ['/usr/bin/cmake', '/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/luckrobot/fastlio_localization/install/open3d_loc'], 'cwd': '/home/nvidia/luckrobot/fastlio_localization/build/open3d_loc', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.101 65486 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nvidia/luckrobot/fastlio_localization/src'), ('SSH_TTY', '/dev/pts/6'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/nvidia/miniconda3'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '19'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/home/nvidia/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nvidia/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/fastlio_localization/build/open3d_loc'), ('CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('SSH_CONNECTION', '192.168.3.101 65486 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099562] (-) TimerEvent: {}
+[0.131716] (fast_lio) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.132452] (open3d_loc) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199719] (-) TimerEvent: {}
+[0.237921] (fast_lio) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.254157] (open3d_loc) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.258421] (fast_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.275158] (open3d_loc) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299892] (-) TimerEvent: {}
+[0.400585] (-) TimerEvent: {}
+[0.404992] (open3d_loc) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.407060] (fast_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.429632] (open3d_loc) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.431687] (fast_lio) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.433248] (fast_lio) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.433628] (open3d_loc) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.434888] (fast_lio) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.435298] (open3d_loc) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.445821] (open3d_loc) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.446201] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500746] (-) TimerEvent: {}
+[0.600522] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.601160] (-) TimerEvent: {}
+[0.603952] (open3d_loc) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.626044] (fast_lio) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.627054] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.628632] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.629842] (open3d_loc) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.630909] (open3d_loc) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.631302] (fast_lio) StderrLine: {'line': b'\x1b[0mCurrent CPU archtecture: aarch64\x1b[0m\n'}
+[0.632455] (open3d_loc) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.648686] (open3d_loc) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701357] (-) TimerEvent: {}
+[0.802061] (-) TimerEvent: {}
+[0.902705] (-) TimerEvent: {}
+[0.999541] (open3d_loc) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.002782] (-) TimerEvent: {}
+[1.103258] (-) TimerEvent: {}
+[1.203898] (-) TimerEvent: {}
+[1.207031] (open3d_loc) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.304071] (-) TimerEvent: {}
+[1.305045] (open3d_loc) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.315859] (open3d_loc) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.318411] (fast_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[1.323388] (fast_lio) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.332632] (open3d_loc) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.357214] (open3d_loc) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.389656] (open3d_loc) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.404160] (-) TimerEvent: {}
+[1.480182] (open3d_loc) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.486397] (open3d_loc) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.504246] (-) TimerEvent: {}
+[1.604725] (-) TimerEvent: {}
+[1.634167] (fast_lio) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.645591] (open3d_loc) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.701120] (open3d_loc) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.704789] (-) TimerEvent: {}
+[1.772439] (open3d_loc) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.793554] (open3d_loc) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.804917] (-) TimerEvent: {}
+[1.831832] (fast_lio) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.905141] (-) TimerEvent: {}
+[1.906087] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.916626] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.929397] (open3d_loc) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.930664] (open3d_loc) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.932505] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.954764] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.984909] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.005282] (-) TimerEvent: {}
+[2.068016] (fast_lio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.073767] (fast_lio) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.085479] (open3d_loc) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.089254] (open3d_loc) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.105451] (-) TimerEvent: {}
+[2.206212] (-) TimerEvent: {}
+[2.216098] (open3d_loc) StdoutLine: {'line': b'-- Found rclpy: 3.3.20 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.220302] (open3d_loc) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.228352] (fast_lio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.243655] (open3d_loc) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.274115] (open3d_loc) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.276768] (fast_lio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.305793] (open3d_loc) StdoutLine: {'line': b'-- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.306184] (-) TimerEvent: {}
+[2.325051] (open3d_loc) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.349968] (fast_lio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.367814] (fast_lio) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.406415] (-) TimerEvent: {}
+[2.486324] (open3d_loc) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.504801] (fast_lio) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.505918] (fast_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.506475] (-) TimerEvent: {}
+[2.514893] (open3d_loc) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.517157] (open3d_loc) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.517485] (open3d_loc) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.522817] (open3d_loc) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.19 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[2.529820] (open3d_loc) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.25.19 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)\n'}
+[2.540323] (open3d_loc) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[2.606686] (-) TimerEvent: {}
+[2.609246] (open3d_loc) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.629410] (open3d_loc) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[2.652543] (fast_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.654855] (fast_lio) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.695679] (open3d_loc) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.696192] (open3d_loc) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.706797] (-) TimerEvent: {}
+[2.778079] (fast_lio) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.18 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[2.778552] (open3d_loc) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[2.798142] (open3d_loc) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.806930] (-) TimerEvent: {}
+[2.829470] (fast_lio) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.853282] (fast_lio) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.861442] (open3d_loc) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[2.861768] (open3d_loc) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[2.885585] (fast_lio) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.907021] (-) TimerEvent: {}
+[2.915841] (fast_lio) StdoutLine: {'line': b'-- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[2.933387] (fast_lio) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[2.967248] (fast_lio) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[3.007227] (-) TimerEvent: {}
+[3.044520] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[3.064470] (fast_lio) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[3.107416] (-) TimerEvent: {}
+[3.120506] (fast_lio) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[3.121068] (fast_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.195046] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[3.207584] (-) TimerEvent: {}
+[3.218314] (fast_lio) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[3.299259] (fast_lio) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[3.299755] (fast_lio) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[3.307674] (-) TimerEvent: {}
+[3.408266] (-) TimerEvent: {}
+[3.508912] (-) TimerEvent: {}
+[3.609579] (-) TimerEvent: {}
+[3.710272] (-) TimerEvent: {}
+[3.810945] (-) TimerEvent: {}
+[3.911636] (-) TimerEvent: {}
+[4.012323] (-) TimerEvent: {}
+[4.113003] (-) TimerEvent: {}
+[4.213719] (-) TimerEvent: {}
+[4.314666] (-) TimerEvent: {}
+[4.415476] (-) TimerEvent: {}
+[4.516208] (-) TimerEvent: {}
+[4.616960] (-) TimerEvent: {}
+[4.717602] (-) TimerEvent: {}
+[4.724075] (open3d_loc) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[4.760981] (open3d_loc) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[4.817973] (-) TimerEvent: {}
+[4.843333] (open3d_loc) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[4.845901] (open3d_loc) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.918055] (-) TimerEvent: {}
+[4.967902] (open3d_loc) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.018193] (-) TimerEvent: {}
+[5.106883] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[5.118294] (-) TimerEvent: {}
+[5.128973] (fast_lio) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[5.196539] (fast_lio) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[5.199742] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.218416] (-) TimerEvent: {}
+[5.236691] (open3d_loc) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[5.247544] (open3d_loc) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.257797] (open3d_loc) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.305571] (fast_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.318544] (-) TimerEvent: {}
+[5.419166] (-) TimerEvent: {}
+[5.505707] (open3d_loc) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[5.519250] (-) TimerEvent: {}
+[5.562964] (fast_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[5.573464] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.583585] (fast_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.619370] (-) TimerEvent: {}
+[5.719908] (-) TimerEvent: {}
+[5.754508] (open3d_loc) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.820050] (-) TimerEvent: {}
+[5.826096] (fast_lio) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[5.920198] (-) TimerEvent: {}
+[5.996938] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[5.998198] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[5.999507] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[6.000799] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[6.002157] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[6.003492] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[6.004147] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[6.004756] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[6.006177] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[6.007557] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[6.012320] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[6.013638] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[6.015181] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[6.016695] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[6.018161] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[6.019629] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[6.020240] (-) TimerEvent: {}
+[6.021101] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[6.023157] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[6.024729] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[6.026094] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[6.027417] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[6.028001] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[6.028727] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[6.030088] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[6.031518] (open3d_loc) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[6.051757] (open3d_loc) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[6.071724] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[6.114256] (open3d_loc) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda-12.6 (found suitable exact version "12.6") \n'}
+[6.120359] (-) TimerEvent: {}
+[6.139456] (open3d_loc) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[6.178759] (open3d_loc) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[6.204963] (open3d_loc) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[6.206667] (open3d_loc) StdoutLine: {'line': b"-- Checking for module 'yaml-cpp'\n"}
+[6.220479] (-) TimerEvent: {}
+[6.230492] (open3d_loc) StdoutLine: {'line': b'--   Found yaml-cpp, version 0.7.0\n'}
+[6.289760] (open3d_loc) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:37 (find_package):\n'}
+[6.290508] (open3d_loc) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[6.290811] (open3d_loc) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[6.291072] (open3d_loc) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[6.291315] (open3d_loc) StderrLine: {'line': b'\n'}
+[6.291546] (open3d_loc) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[6.291766] (open3d_loc) StderrLine: {'line': b'\n'}
+[6.291978] (open3d_loc) StderrLine: {'line': b'    /usr\n'}
+[6.292186] (open3d_loc) StderrLine: {'line': b'\n'}
+[6.292395] (open3d_loc) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[6.292604] (open3d_loc) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[6.292813] (open3d_loc) StderrLine: {'line': b'\x1b[0m\n'}
+[6.308875] (fast_lio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[6.310303] (fast_lio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[6.311624] (fast_lio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[6.312911] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[6.314274] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[6.315598] (fast_lio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[6.316242] (fast_lio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[6.316851] (fast_lio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[6.317492] (open3d_loc) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.10.0") \n'}
+[6.318212] (fast_lio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[6.319726] (fast_lio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[6.320529] (-) TimerEvent: {}
+[6.321246] (fast_lio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[6.322638] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[6.324189] (fast_lio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[6.325704] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[6.327106] (open3d_loc) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem system \n'}
+[6.327294] (fast_lio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[6.328680] (fast_lio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[6.330176] (fast_lio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[6.331578] (fast_lio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[6.333151] (fast_lio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[6.334518] (fast_lio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[6.334808] (open3d_loc) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/nvidia/open3d141/lib/cmake/Open3D/Open3DConfig.cmake:18 (cmake_policy):\n'}
+[6.334940] (open3d_loc) StderrLine: {'line': b'  The OLD behavior for policy CMP0072 will be removed from a future version\n'}
+[6.335068] (open3d_loc) StderrLine: {'line': b'  of CMake.\n'}
+[6.335174] (open3d_loc) StderrLine: {'line': b'\n'}
+[6.335277] (open3d_loc) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[6.335378] (open3d_loc) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[6.335476] (open3d_loc) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[6.335575] (open3d_loc) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[6.335673] (open3d_loc) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[6.335769] (open3d_loc) StderrLine: {'line': b'  CMakeLists.txt:45 (find_package)\n'}
+[6.335866] (open3d_loc) StderrLine: {'line': b'\n'}
+[6.336005] (open3d_loc) StderrLine: {'line': b'\x1b[0m\n'}
+[6.336107] (fast_lio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[6.336462] (fast_lio) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[6.337088] (fast_lio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[6.338579] (fast_lio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[6.340067] (fast_lio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[6.393589] (fast_lio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[6.396071] (fast_lio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[6.396325] (fast_lio) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.420734] (-) TimerEvent: {}
+[6.521361] (-) TimerEvent: {}
+[6.525521] (fast_lio) StdoutLine: {'line': b'-- Found livox_ros_driver2: 1.0.0 (/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)\n'}
+[6.564696] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[6.585985] (fast_lio) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:89 (find_package):\n'}
+[6.586498] (fast_lio) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[6.586644] (fast_lio) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[6.586764] (fast_lio) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[6.586874] (fast_lio) StderrLine: {'line': b'\n'}
+[6.586981] (fast_lio) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[6.587089] (fast_lio) StderrLine: {'line': b'\n'}
+[6.587191] (fast_lio) StderrLine: {'line': b'    /usr\n'}
+[6.587289] (fast_lio) StderrLine: {'line': b'\n'}
+[6.587385] (fast_lio) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[6.587483] (fast_lio) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[6.587582] (fast_lio) StderrLine: {'line': b'\x1b[0m\n'}
+[6.599602] (fast_lio) StderrLine: {'line': b'\x1b[0mEigen:/usr/include/eigen3\x1b[0m\n'}
+[6.599987] (fast_lio) StdoutLine: {'line': b'-- PCL: /usr/include/pcl-1.12\n'}
+[6.621471] (-) TimerEvent: {}
+[6.722047] (-) TimerEvent: {}
+[6.785868] (open3d_loc) StdoutLine: {'line': b'-- Found OpenMP_C: -fopenmp (found version "4.5") \n'}
+[6.822226] (-) TimerEvent: {}
+[6.922873] (-) TimerEvent: {}
+[6.969059] (open3d_loc) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[6.969914] (open3d_loc) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5")  \n'}
+[7.023067] (-) TimerEvent: {}
+[7.039041] (open3d_loc) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[7.045144] (open3d_loc) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   \n'}
+[7.048741] (open3d_loc) StdoutLine: {'line': b'-- Found Open3D: /home/nvidia/open3d141/lib/cmake/Open3D/Open3DConfig.cmake (found version "0.14.1") \n'}
+[7.085843] (open3d_loc) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.123204] (-) TimerEvent: {}
+[7.153664] (fast_lio) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[7.223301] (-) TimerEvent: {}
+[7.289105] (open3d_loc) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.294021] (open3d_loc) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.295342] (open3d_loc) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/include\n'}
+[7.295540] (open3d_loc) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.299276] (open3d_loc) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.299459] (open3d_loc) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.301057] (open3d_loc) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.303218] (open3d_loc) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.304942] (open3d_loc) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.308679] (open3d_loc) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.308905] (open3d_loc) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.310410] (open3d_loc) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.313762] (open3d_loc) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.323395] (-) TimerEvent: {}
+[7.423855] (-) TimerEvent: {}
+[7.428751] (open3d_loc) StdoutLine: {'line': b'-- Generating done\n'}
+[7.459374] (open3d_loc) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/luckrobot/fastlio_localization/build/open3d_loc\n'}
+[7.515887] (open3d_loc) CommandEnded: {'returncode': 0}
+[7.517335] (open3d_loc) JobProgress: {'identifier': 'open3d_loc', 'progress': 'build'}
+[7.519666] (open3d_loc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/luckrobot/fastlio_localization/build/open3d_loc', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/luckrobot/fastlio_localization/build/open3d_loc', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.101 65486 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nvidia/luckrobot/fastlio_localization/src'), ('SSH_TTY', '/dev/pts/6'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/nvidia/miniconda3'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '19'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/home/nvidia/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nvidia/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/fastlio_localization/build/open3d_loc'), ('CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('SSH_CONNECTION', '192.168.3.101 65486 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[7.524156] (-) TimerEvent: {}
+[7.624632] (-) TimerEvent: {}
+[7.634751] (open3d_loc) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/open3d_registration.dir/src/open3d_registration/open3d_registration.cpp.o\x1b[0m\n'}
+[7.637233] (open3d_loc) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/open3d_conversions.dir/src/open3d_conversions/open3d_conversions.cpp.o\x1b[0m\n'}
+[7.724791] (-) TimerEvent: {}
+[7.812675] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.824906] (-) TimerEvent: {}
+[7.925469] (-) TimerEvent: {}
+[8.026061] (-) TimerEvent: {}
+[8.048000] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.094882] (fast_lio) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[8.099540] (fast_lio) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[8.126146] (-) TimerEvent: {}
+[8.150252] (fast_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[8.150766] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.150905] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[8.151021] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[8.196964] (fast_lio) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[8.226262] (-) TimerEvent: {}
+[8.326783] (-) TimerEvent: {}
+[8.427342] (-) TimerEvent: {}
+[8.527898] (-) TimerEvent: {}
+[8.551792] (fast_lio) StdoutLine: {'line': b'-- Using numpy include directory: /usr/local/lib/python3.10/dist-packages/numpy/core/include\n'}
+[8.603746] (fast_lio) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.628029] (-) TimerEvent: {}
+[8.728655] (-) TimerEvent: {}
+[8.744831] (fast_lio) StdoutLine: {'line': b'-- Generating done\n'}
+[8.785064] (fast_lio) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/luckrobot/fastlio_localization/build/fast_lio\n'}
+[8.828776] (-) TimerEvent: {}
+[8.845670] (fast_lio) CommandEnded: {'returncode': 0}
+[8.847220] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'build'}
+[8.848017] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/luckrobot/fastlio_localization/build/fast_lio', '--', '-j6', '-l6'], 'cwd': '/home/nvidia/luckrobot/fastlio_localization/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.101 65486 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nvidia/luckrobot/fastlio_localization/src'), ('SSH_TTY', '/dev/pts/6'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/nvidia/miniconda3'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '19'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/home/nvidia/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nvidia/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/fastlio_localization/build/fast_lio'), ('CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('SSH_CONNECTION', '192.168.3.101 65486 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[8.928980] (-) TimerEvent: {}
+[8.932434] (fast_lio) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.951514] (fast_lio) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[8.969355] (fast_lio) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_fast_lio\n'}
+[9.029144] (-) TimerEvent: {}
+[9.129708] (-) TimerEvent: {}
+[9.230255] (-) TimerEvent: {}
+[9.330829] (-) TimerEvent: {}
+[9.431419] (-) TimerEvent: {}
+[9.487539] (fast_lio) StdoutLine: {'line': b'running egg_info\n'}
+[9.488992] (fast_lio) StdoutLine: {'line': b'creating fast_lio.egg-info\n'}
+[9.489486] (fast_lio) StdoutLine: {'line': b'writing fast_lio.egg-info/PKG-INFO\n'}
+[9.490001] (fast_lio) StdoutLine: {'line': b'writing dependency_links to fast_lio.egg-info/dependency_links.txt\n'}
+[9.490534] (fast_lio) StdoutLine: {'line': b'writing top-level names to fast_lio.egg-info/top_level.txt\n'}
+[9.491085] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[9.496554] (fast_lio) StdoutLine: {'line': b"reading manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[9.497714] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[9.531645] (-) TimerEvent: {}
+[9.591682] (fast_lio) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_fast_lio_egg\n'}
+[9.600229] (fast_lio) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o\x1b[0m\n'}
+[9.604871] (fast_lio) StdoutLine: {'line': b'[  8%] Built target fast_lio__cpp\n'}
+[9.626182] (fast_lio) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.626646] (fast_lio) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[9.626806] (fast_lio) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.631849] (-) TimerEvent: {}
+[9.732516] (-) TimerEvent: {}
+[9.830613] (fast_lio) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libfast_lio__rosidl_generator_c.so\x1b[0m\n'}
+[9.832651] (-) TimerEvent: {}
+[9.906653] (fast_lio) StdoutLine: {'line': b'[ 20%] Built target fast_lio__rosidl_generator_c\n'}
+[9.932828] (-) TimerEvent: {}
+[9.933303] (fast_lio) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.960286] (fast_lio) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.960826] (fast_lio) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.033016] (-) TimerEvent: {}
+[10.133689] (-) TimerEvent: {}
+[10.234360] (-) TimerEvent: {}
+[10.288098] (fast_lio) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[10.334517] (-) TimerEvent: {}
+[10.379599] (open3d_loc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/Open3D.h:31\x1b[m\x1b[K,\n'}
+[10.380158] (open3d_loc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/include/open3d_registration/open3d_registration.h:5\x1b[m\x1b[K,\n'}
+[10.380395] (open3d_loc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:1\x1b[m\x1b[K:\n'}
+[10.380630] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/camera/PinholeCameraIntrinsic.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double> open3d::camera::PinholeCameraIntrinsic::GetFocalLength() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.380844] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/camera/PinholeCameraIntrinsic.h:93:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 in GCC 10.1\n'}
+[10.381089] (open3d_loc) StderrLine: {'line': b'   93 |     std::pair<double, double> GetFocalLength() const \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[10.381290] (open3d_loc) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.434680] (-) TimerEvent: {}
+[10.441211] (fast_lio) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[10.534858] (-) TimerEvent: {}
+[10.635597] (-) TimerEvent: {}
+[10.652242] (fast_lio) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[10.655400] (fast_lio) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[10.735827] (-) TimerEvent: {}
+[10.752907] (fast_lio) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o\x1b[0m\n'}
+[10.756369] (fast_lio) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.797609] (fast_lio) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o\x1b[0m\n'}
+[10.836043] (-) TimerEvent: {}
+[10.906455] (fast_lio) StdoutLine: {'line': b'[ 48%] Built target fast_lio__rosidl_typesupport_c\n'}
+[10.936268] (-) TimerEvent: {}
+[10.977553] (fast_lio) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.010824] (fast_lio) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[11.036513] (-) TimerEvent: {}
+[11.098370] (fast_lio) StdoutLine: {'line': b'[ 54%] Built target fast_lio__rosidl_typesupport_cpp\n'}
+[11.121578] (fast_lio) StdoutLine: {'line': b'[ 54%] Built target fast_lio__rosidl_typesupport_introspection_c\n'}
+[11.136741] (-) TimerEvent: {}
+[11.138887] (open3d_loc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/Open3D.h:31\x1b[m\x1b[K,\n'}
+[11.139323] (open3d_loc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/include/open3d_conversions/open3d_conversions.h:19\x1b[m\x1b[K,\n'}
+[11.139473] (open3d_loc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:1\x1b[m\x1b[K:\n'}
+[11.139599] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/camera/PinholeCameraIntrinsic.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double> open3d::camera::PinholeCameraIntrinsic::GetFocalLength() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.139720] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/camera/PinholeCameraIntrinsic.h:93:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 in GCC 10.1\n'}
+[11.139837] (open3d_loc) StderrLine: {'line': b'   93 |     std::pair<double, double> GetFocalLength() const \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[11.139947] (open3d_loc) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[11.159970] (fast_lio) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[11.206630] (fast_lio) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[11.220549] (fast_lio) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[11.236977] (-) TimerEvent: {}
+[11.337733] (-) TimerEvent: {}
+[11.438475] (-) TimerEvent: {}
+[11.539173] (-) TimerEvent: {}
+[11.558022] (fast_lio) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.639367] (-) TimerEvent: {}
+[11.656925] (fast_lio) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.666991] (fast_lio) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.739568] (-) TimerEvent: {}
+[11.810842] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_c\n'}
+[11.824987] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio__rosidl_typesupport_introspection_cpp\n'}
+[11.839775] (-) TimerEvent: {}
+[11.881027] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp\n'}
+[11.923975] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio\n'}
+[11.939974] (-) TimerEvent: {}
+[11.966777] (fast_lio) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.040153] (-) TimerEvent: {}
+[12.140805] (-) TimerEvent: {}
+[12.241520] (-) TimerEvent: {}
+[12.342244] (-) TimerEvent: {}
+[12.442908] (-) TimerEvent: {}
+[12.543561] (-) TimerEvent: {}
+[12.644237] (-) TimerEvent: {}
+[12.744906] (-) TimerEvent: {}
+[12.845583] (-) TimerEvent: {}
+[12.881380] (fast_lio) StdoutLine: {'line': b'[ 74%] Built target fast_lio__py\n'}
+[12.926630] (fast_lio) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o\x1b[0m\n'}
+[12.945786] (-) TimerEvent: {}
+[13.046659] (-) TimerEvent: {}
+[13.147368] (-) TimerEvent: {}
+[13.240773] (fast_lio) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so\x1b[0m\n'}
+[13.247565] (-) TimerEvent: {}
+[13.322359] (fast_lio) StdoutLine: {'line': b'[ 80%] Built target fast_lio__rosidl_generator_py\n'}
+[13.347757] (-) TimerEvent: {}
+[13.369232] (fast_lio) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[13.440974] (fast_lio) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[13.447954] (-) TimerEvent: {}
+[13.468905] (fast_lio) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[13.548185] (-) TimerEvent: {}
+[13.645765] (fast_lio) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[13.648313] (-) TimerEvent: {}
+[13.680951] (fast_lio) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[13.748552] (-) TimerEvent: {}
+[13.754789] (fast_lio) StdoutLine: {'line': b'[ 94%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.770643] (fast_lio) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[13.799567] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext\n'}
+[13.836679] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_c__pyext\n'}
+[13.848747] (-) TimerEvent: {}
+[13.949457] (-) TimerEvent: {}
+[14.050121] (-) TimerEvent: {}
+[14.151878] (-) TimerEvent: {}
+[14.252557] (-) TimerEvent: {}
+[14.353270] (-) TimerEvent: {}
+[14.453978] (-) TimerEvent: {}
+[14.548883] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[14.549376] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:114:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kpreprocess_cost\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.549536] (open3d_loc) StderrLine: {'line': b'  114 |             auto \x1b[01;35m\x1b[Kpreprocess_cost\x1b[m\x1b[K = std::chrono::duration_cast<std::chrono::milliseconds>(preprocess_e - preprocess_s).count();\n'}
+[14.549663] (open3d_loc) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.554067] (-) TimerEvent: {}
+[14.586205] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix4d pcd_tools::RegistrationMultiScaleIcp(std::shared_ptr<open3d::geometry::PointCloud>, std::shared_ptr<open3d::geometry::PointCloud>, double, int, std::vector<double>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.586691] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:127:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kpreprocess_all_cost\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.586835] (open3d_loc) StderrLine: {'line': b'  127 |         auto \x1b[01;35m\x1b[Kpreprocess_all_cost\x1b[m\x1b[K = std::chrono::duration_cast<std::chrono::milliseconds>(preprocess_all_e - preprocess_all_s).count();\n'}
+[14.586976] (open3d_loc) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.587085] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:147:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kicp_cost\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.587193] (open3d_loc) StderrLine: {'line': b'  147 |         auto \x1b[01;35m\x1b[Kicp_cost\x1b[m\x1b[K = std::chrono::duration_cast<std::chrono::milliseconds>(icp_e - icp_s).count();\n'}
+[14.587298] (open3d_loc) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.654215] (-) TimerEvent: {}
+[14.755352] (-) TimerEvent: {}
+[14.856521] (-) TimerEvent: {}
+[14.957705] (-) TimerEvent: {}
+[15.058910] (-) TimerEvent: {}
+[15.160083] (-) TimerEvent: {}
+[15.261262] (-) TimerEvent: {}
+[15.346601] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool pcd_tools::Open3dRegistration::RegistrationPipeline()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.347055] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:340:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kfpfh_time_s\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[15.347214] (open3d_loc) StderrLine: {'line': b'  340 |             std::chrono::high_resolution_clock::time_point \x1b[01;35m\x1b[Kfpfh_time_s\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[15.347398] (open3d_loc) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.347517] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:349:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kfpfh_time_e\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[15.347636] (open3d_loc) StderrLine: {'line': b'  349 |             std::chrono::high_resolution_clock::time_point \x1b[01;35m\x1b[Kfpfh_time_e\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[15.347745] (open3d_loc) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.361397] (-) TimerEvent: {}
+[15.393419] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:354:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kicp_time_s\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[15.394044] (open3d_loc) StderrLine: {'line': b'  354 |             std::chrono::high_resolution_clock::time_point \x1b[01;35m\x1b[Kicp_time_s\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[15.394194] (open3d_loc) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.394310] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:358:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kicp_time_e\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[15.394422] (open3d_loc) StderrLine: {'line': b'  358 |             std::chrono::high_resolution_clock::time_point \x1b[01;35m\x1b[Kicp_time_e\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[15.394527] (open3d_loc) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.394627] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:335:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kstart_time\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[15.394731] (open3d_loc) StderrLine: {'line': b'  335 |         std::chrono::high_resolution_clock::time_point \x1b[01;35m\x1b[Kstart_time\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[15.394830] (open3d_loc) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.394928] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_registration/open3d_registration.cpp:364:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Ktotal_time\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[15.395073] (open3d_loc) StderrLine: {'line': b'  364 |         std::chrono::high_resolution_clock::time_point \x1b[01;35m\x1b[Ktotal_time\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[15.395176] (open3d_loc) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.461539] (-) TimerEvent: {}
+[15.562742] (-) TimerEvent: {}
+[15.663907] (-) TimerEvent: {}
+[15.765078] (-) TimerEvent: {}
+[15.866242] (-) TimerEvent: {}
+[15.967433] (-) TimerEvent: {}
+[16.068679] (-) TimerEvent: {}
+[16.170042] (-) TimerEvent: {}
+[16.271217] (-) TimerEvent: {}
+[16.372380] (-) TimerEvent: {}
+[16.473556] (-) TimerEvent: {}
+[16.574746] (-) TimerEvent: {}
+[16.676008] (-) TimerEvent: {}
+[16.777246] (-) TimerEvent: {}
+[16.878454] (-) TimerEvent: {}
+[16.979670] (-) TimerEvent: {}
+[17.080876] (-) TimerEvent: {}
+[17.182089] (-) TimerEvent: {}
+[17.283224] (-) TimerEvent: {}
+[17.384406] (-) TimerEvent: {}
+[17.485584] (-) TimerEvent: {}
+[17.586833] (-) TimerEvent: {}
+[17.687968] (-) TimerEvent: {}
+[17.789130] (-) TimerEvent: {}
+[17.890293] (-) TimerEvent: {}
+[17.991505] (-) TimerEvent: {}
+[18.092711] (-) TimerEvent: {}
+[18.193980] (-) TimerEvent: {}
+[18.295144] (-) TimerEvent: {}
+[18.396317] (-) TimerEvent: {}
+[18.497552] (-) TimerEvent: {}
+[18.598736] (-) TimerEvent: {}
+[18.699862] (-) TimerEvent: {}
+[18.801026] (-) TimerEvent: {}
+[18.902211] (-) TimerEvent: {}
+[19.003372] (-) TimerEvent: {}
+[19.104563] (-) TimerEvent: {}
+[19.205763] (-) TimerEvent: {}
+[19.306805] (-) TimerEvent: {}
+[19.407933] (-) TimerEvent: {}
+[19.509050] (-) TimerEvent: {}
+[19.610234] (-) TimerEvent: {}
+[19.711464] (-) TimerEvent: {}
+[19.812656] (-) TimerEvent: {}
+[19.913739] (-) TimerEvent: {}
+[20.015689] (-) TimerEvent: {}
+[20.116828] (-) TimerEvent: {}
+[20.218045] (-) TimerEvent: {}
+[20.319197] (-) TimerEvent: {}
+[20.420353] (-) TimerEvent: {}
+[20.521543] (-) TimerEvent: {}
+[20.622917] (-) TimerEvent: {}
+[20.724116] (-) TimerEvent: {}
+[20.825352] (-) TimerEvent: {}
+[20.926422] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid open3d_conversions::open3dToRos(const open3d::t::geometry::PointCloud&, sensor_msgs::msg::PointCloud2&, std::string, int, ...)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.926960] (-) TimerEvent: {}
+[20.927960] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:160:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[20.928323] (open3d_loc) StderrLine: {'line': b'  160 |         for (size_t i = 0; i < o3d_TensorList_points.GetShape()[0]; i++, ++ros_pc2_x, ++ros_pc2_y, ++ros_pc2_z)\n'}
+[20.928472] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:174:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[20.928628] (open3d_loc) StderrLine: {'line': b'  174 |         for (size_t i = 0; i < o3d_TensorList_points.GetShape()[0]; i++, ++ros_pc2_r, ++ros_pc2_g, ++ros_pc2_b)\n'}
+[20.929508] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:190:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[20.929767] (open3d_loc) StderrLine: {'line': b'  190 |           for (size_t i = 0; i < o3d_TensorList_points.GetShape()[0];\n'}
+[20.931010] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:204:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[20.931228] (open3d_loc) StderrLine: {'line': b'  204 |           for (size_t i = 0; i < o3d_TensorList_points.GetShape()[0];\n'}
+[20.931474] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:184:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ko3d_TensorList_fields\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[20.931618] (open3d_loc) StderrLine: {'line': b'  184 |         const open3d::core::Tensor &\x1b[01;35m\x1b[Ko3d_TensorList_fields\x1b[m\x1b[K = pointcloud.GetPointAttr(*field_name);\n'}
+[20.931734] (open3d_loc) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.934068] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid open3d_conversions::rosToOpen3d(const std::shared_ptr<const sensor_msgs::msg::PointCloud2_<std::allocator<void> > >&, open3d::t::geometry::PointCloud&, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.934308] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:229:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<sensor_msgs::msg::PointField_<std::allocator<void> >, std::allocator<sensor_msgs::msg::PointField_<std::allocator<void> > > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[20.934470] (open3d_loc) StderrLine: {'line': b'  229 |     for (int num_fields = 0; \x1b[01;35m\x1b[Knum_fields < ros_pc2->fields.size()\x1b[m\x1b[K; num_fields++)\n'}
+[20.934583] (open3d_loc) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.939088] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/open3d_conversions/open3d_conversions.cpp:225:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kdtype_lf\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[20.939362] (open3d_loc) StderrLine: {'line': b'  225 |     open3d::core::Dtype \x1b[01;35m\x1b[Kdtype_lf\x1b[m\x1b[K = open3d::core::Dtype::Float64;\n'}
+[20.939491] (open3d_loc) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[21.027103] (-) TimerEvent: {}
+[21.128199] (-) TimerEvent: {}
+[21.154224] (open3d_loc) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libopen3d_registration.a\x1b[0m\n'}
+[21.223821] (open3d_loc) StdoutLine: {'line': b'[ 50%] Built target open3d_registration\n'}
+[21.228356] (-) TimerEvent: {}
+[21.328961] (-) TimerEvent: {}
+[21.429598] (-) TimerEvent: {}
+[21.530326] (-) TimerEvent: {}
+[21.631011] (-) TimerEvent: {}
+[21.731704] (-) TimerEvent: {}
+[21.832392] (-) TimerEvent: {}
+[21.933561] (-) TimerEvent: {}
+[22.034141] (-) TimerEvent: {}
+[22.134955] (-) TimerEvent: {}
+[22.235906] (-) TimerEvent: {}
+[22.336631] (-) TimerEvent: {}
+[22.437355] (-) TimerEvent: {}
+[22.538064] (-) TimerEvent: {}
+[22.638997] (-) TimerEvent: {}
+[22.739704] (-) TimerEvent: {}
+[22.840555] (-) TimerEvent: {}
+[22.941204] (-) TimerEvent: {}
+[23.041793] (-) TimerEvent: {}
+[23.142495] (-) TimerEvent: {}
+[23.243153] (-) TimerEvent: {}
+[23.343701] (-) TimerEvent: {}
+[23.444242] (-) TimerEvent: {}
+[23.544771] (-) TimerEvent: {}
+[23.645303] (-) TimerEvent: {}
+[23.745850] (-) TimerEvent: {}
+[23.846431] (-) TimerEvent: {}
+[23.947068] (-) TimerEvent: {}
+[24.047670] (-) TimerEvent: {}
+[24.148331] (-) TimerEvent: {}
+[24.249061] (-) TimerEvent: {}
+[24.349701] (-) TimerEvent: {}
+[24.450313] (-) TimerEvent: {}
+[24.550855] (-) TimerEvent: {}
+[24.651404] (-) TimerEvent: {}
+[24.751940] (-) TimerEvent: {}
+[24.852452] (-) TimerEvent: {}
+[24.952973] (-) TimerEvent: {}
+[25.053533] (-) TimerEvent: {}
+[25.154213] (-) TimerEvent: {}
+[25.194810] (fast_lio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[25.195280] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[25.195422] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[25.195542] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[25.195650] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[25.195754] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[25.195855] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[25.195956] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/microsec_time_clock.hpp:18\x1b[m\x1b[K,\n'}
+[25.196054] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31\x1b[m\x1b[K,\n'}
+[25.196152] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36\x1b[m\x1b[K,\n'}
+[25.196249] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/sync/file_lock.hpp:26\x1b[m\x1b[K,\n'}
+[25.196346] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46\x1b[m\x1b[K,\n'}
+[25.196486] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73\x1b[m\x1b[K,\n'}
+[25.196588] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/src/IMU_Processing.hpp:18\x1b[m\x1b[K,\n'}
+[25.196688] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/src/laserMapping.cpp:47\x1b[m\x1b[K:\n'}
+[25.196786] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.196914] (fast_lio) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[25.197014] (fast_lio) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.254359] (-) TimerEvent: {}
+[25.354949] (-) TimerEvent: {}
+[25.455504] (-) TimerEvent: {}
+[25.556053] (-) TimerEvent: {}
+[25.656582] (-) TimerEvent: {}
+[25.757113] (-) TimerEvent: {}
+[25.857655] (-) TimerEvent: {}
+[25.958305] (-) TimerEvent: {}
+[26.058891] (-) TimerEvent: {}
+[26.159548] (-) TimerEvent: {}
+[26.260207] (-) TimerEvent: {}
+[26.360794] (-) TimerEvent: {}
+[26.461390] (-) TimerEvent: {}
+[26.561966] (-) TimerEvent: {}
+[26.662528] (-) TimerEvent: {}
+[26.763140] (-) TimerEvent: {}
+[26.863816] (-) TimerEvent: {}
+[26.964501] (-) TimerEvent: {}
+[27.065187] (-) TimerEvent: {}
+[27.165876] (-) TimerEvent: {}
+[27.266620] (-) TimerEvent: {}
+[27.367326] (-) TimerEvent: {}
+[27.468018] (-) TimerEvent: {}
+[27.568687] (-) TimerEvent: {}
+[27.669369] (-) TimerEvent: {}
+[27.770061] (-) TimerEvent: {}
+[27.870733] (-) TimerEvent: {}
+[27.971400] (-) TimerEvent: {}
+[28.072089] (-) TimerEvent: {}
+[28.172777] (-) TimerEvent: {}
+[28.273467] (-) TimerEvent: {}
+[28.374189] (-) TimerEvent: {}
+[28.474871] (-) TimerEvent: {}
+[28.575540] (-) TimerEvent: {}
+[28.676208] (-) TimerEvent: {}
+[28.776902] (-) TimerEvent: {}
+[28.877594] (-) TimerEvent: {}
+[28.978298] (-) TimerEvent: {}
+[29.078951] (-) TimerEvent: {}
+[29.179661] (-) TimerEvent: {}
+[29.280404] (-) TimerEvent: {}
+[29.381067] (-) TimerEvent: {}
+[29.481651] (-) TimerEvent: {}
+[29.582234] (-) TimerEvent: {}
+[29.682790] (-) TimerEvent: {}
+[29.783331] (-) TimerEvent: {}
+[29.883919] (-) TimerEvent: {}
+[29.984575] (-) TimerEvent: {}
+[30.085180] (-) TimerEvent: {}
+[30.185828] (-) TimerEvent: {}
+[30.286525] (-) TimerEvent: {}
+[30.387161] (-) TimerEvent: {}
+[30.487741] (-) TimerEvent: {}
+[30.588276] (-) TimerEvent: {}
+[30.688776] (-) TimerEvent: {}
+[30.789299] (-) TimerEvent: {}
+[30.889850] (-) TimerEvent: {}
+[30.990395] (-) TimerEvent: {}
+[31.090966] (-) TimerEvent: {}
+[31.191568] (-) TimerEvent: {}
+[31.292167] (-) TimerEvent: {}
+[31.392831] (-) TimerEvent: {}
+[31.493415] (-) TimerEvent: {}
+[31.594021] (-) TimerEvent: {}
+[31.694640] (-) TimerEvent: {}
+[31.795201] (-) TimerEvent: {}
+[31.895802] (-) TimerEvent: {}
+[31.996444] (-) TimerEvent: {}
+[32.097051] (-) TimerEvent: {}
+[32.197722] (-) TimerEvent: {}
+[32.298423] (-) TimerEvent: {}
+[32.399053] (-) TimerEvent: {}
+[32.499621] (-) TimerEvent: {}
+[32.600175] (-) TimerEvent: {}
+[32.700738] (-) TimerEvent: {}
+[32.801285] (-) TimerEvent: {}
+[32.901831] (-) TimerEvent: {}
+[33.002383] (-) TimerEvent: {}
+[33.102972] (-) TimerEvent: {}
+[33.203614] (-) TimerEvent: {}
+[33.304192] (-) TimerEvent: {}
+[33.404799] (-) TimerEvent: {}
+[33.505474] (-) TimerEvent: {}
+[33.606061] (-) TimerEvent: {}
+[33.706622] (-) TimerEvent: {}
+[33.807170] (-) TimerEvent: {}
+[33.907741] (-) TimerEvent: {}
+[34.008344] (-) TimerEvent: {}
+[34.109111] (-) TimerEvent: {}
+[34.209813] (-) TimerEvent: {}
+[34.310524] (-) TimerEvent: {}
+[34.411174] (-) TimerEvent: {}
+[34.511855] (-) TimerEvent: {}
+[34.612430] (-) TimerEvent: {}
+[34.712972] (-) TimerEvent: {}
+[34.813553] (-) TimerEvent: {}
+[34.914426] (-) TimerEvent: {}
+[35.015141] (-) TimerEvent: {}
+[35.115839] (-) TimerEvent: {}
+[35.216527] (-) TimerEvent: {}
+[35.317333] (-) TimerEvent: {}
+[35.404239] (open3d_loc) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libopen3d_conversions.a\x1b[0m\n'}
+[35.417718] (-) TimerEvent: {}
+[35.482509] (open3d_loc) StdoutLine: {'line': b'[ 66%] Built target open3d_conversions\n'}
+[35.517904] (-) TimerEvent: {}
+[35.534157] (open3d_loc) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/global_localization_node.dir/src/global_localization.cpp.o\x1b[0m\n'}
+[35.618078] (-) TimerEvent: {}
+[35.718705] (-) TimerEvent: {}
+[35.819306] (-) TimerEvent: {}
+[35.919928] (-) TimerEvent: {}
+[36.020563] (-) TimerEvent: {}
+[36.121186] (-) TimerEvent: {}
+[36.221889] (-) TimerEvent: {}
+[36.322540] (-) TimerEvent: {}
+[36.423108] (-) TimerEvent: {}
+[36.523730] (-) TimerEvent: {}
+[36.624323] (-) TimerEvent: {}
+[36.725031] (-) TimerEvent: {}
+[36.825652] (-) TimerEvent: {}
+[36.926200] (-) TimerEvent: {}
+[37.026884] (-) TimerEvent: {}
+[37.127515] (-) TimerEvent: {}
+[37.228112] (-) TimerEvent: {}
+[37.328741] (-) TimerEvent: {}
+[37.429319] (-) TimerEvent: {}
+[37.498050] (fast_lio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/include/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83\x1b[m\x1b[K,\n'}
+[37.498489] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/include/IKFoM_toolkit/esekfom/esekfom.hpp:49\x1b[m\x1b[K,\n'}
+[37.498636] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/include/use-ikfom.hpp:4\x1b[m\x1b[K,\n'}
+[37.498757] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/src/IMU_Processing.hpp:22\x1b[m\x1b[K,\n'}
+[37.498868] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/src/laserMapping.cpp:47\x1b[m\x1b[K:\n'}
+[37.498972] (fast_lio) StderrLine: {'line': b'/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/include/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_FIter, _FIter> MTK::cos_sinc_sqrt(const scalar&) [with scalar = double]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[37.499082] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/include/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kscalar MTK::exp(MTK::vectview<scalar, dim>, MTK::vectview<const scalar, dim>, const scalar&) [with scalar = double; int n = 3]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[37.499195] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/include/IKFoM_toolkit/esekfom/../mtk/types/S2.hpp:140:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid MTK::S2<_scalar, den, num, S2_typ>::boxplus(MTK::vectview<const _scalar, 2>, MTK::S2<_scalar, den, num, S2_typ>::scalar) [with _scalar = double; int den = 98090; int num = 10000; int S2_typ = 1; MTK::S2<_scalar, den, num, S2_typ>::scalar = double]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[37.499354] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/include/use-ikfom.hpp:12:1:\x1b[m\x1b[K   required from here\n'}
+[37.499459] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/FAST_LIO/include/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 in GCC 10.1\n'}
+[37.499581] (fast_lio) StderrLine: {'line': b'  143 | std::pair<scalar, scalar> \x1b[01;36m\x1b[Kcos_sinc_sqrt\x1b[m\x1b[K(const scalar &x2){\n'}
+[37.499686] (fast_lio) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[37.529425] (-) TimerEvent: {}
+[37.629965] (-) TimerEvent: {}
+[37.730548] (-) TimerEvent: {}
+[37.831259] (-) TimerEvent: {}
+[37.931960] (-) TimerEvent: {}
+[38.032583] (-) TimerEvent: {}
+[38.133178] (-) TimerEvent: {}
+[38.233805] (-) TimerEvent: {}
+[38.334435] (-) TimerEvent: {}
+[38.435160] (-) TimerEvent: {}
+[38.535817] (-) TimerEvent: {}
+[38.636517] (-) TimerEvent: {}
+[38.737151] (-) TimerEvent: {}
+[38.837717] (-) TimerEvent: {}
+[38.938361] (-) TimerEvent: {}
+[39.038945] (-) TimerEvent: {}
+[39.139559] (-) TimerEvent: {}
+[39.240200] (-) TimerEvent: {}
+[39.340813] (-) TimerEvent: {}
+[39.444433] (-) TimerEvent: {}
+[39.545030] (-) TimerEvent: {}
+[39.645747] (-) TimerEvent: {}
+[39.746395] (-) TimerEvent: {}
+[39.846993] (-) TimerEvent: {}
+[39.947626] (-) TimerEvent: {}
+[40.048234] (-) TimerEvent: {}
+[40.148935] (-) TimerEvent: {}
+[40.249612] (-) TimerEvent: {}
+[40.350312] (-) TimerEvent: {}
+[40.450974] (-) TimerEvent: {}
+[40.551630] (-) TimerEvent: {}
+[40.652276] (-) TimerEvent: {}
+[40.752891] (-) TimerEvent: {}
+[40.853613] (-) TimerEvent: {}
+[40.954286] (-) TimerEvent: {}
+[41.054879] (-) TimerEvent: {}
+[41.155483] (-) TimerEvent: {}
+[41.256131] (-) TimerEvent: {}
+[41.356759] (-) TimerEvent: {}
+[41.457404] (-) TimerEvent: {}
+[41.558009] (-) TimerEvent: {}
+[41.658637] (-) TimerEvent: {}
+[41.759229] (-) TimerEvent: {}
+[41.859953] (-) TimerEvent: {}
+[41.960592] (-) TimerEvent: {}
+[42.061133] (-) TimerEvent: {}
+[42.161733] (-) TimerEvent: {}
+[42.262469] (-) TimerEvent: {}
+[42.363179] (-) TimerEvent: {}
+[42.463810] (-) TimerEvent: {}
+[42.564390] (-) TimerEvent: {}
+[42.665098] (-) TimerEvent: {}
+[42.765726] (-) TimerEvent: {}
+[42.866352] (-) TimerEvent: {}
+[42.966983] (-) TimerEvent: {}
+[43.067516] (-) TimerEvent: {}
+[43.168102] (-) TimerEvent: {}
+[43.268739] (-) TimerEvent: {}
+[43.369336] (-) TimerEvent: {}
+[43.469987] (-) TimerEvent: {}
+[43.570574] (-) TimerEvent: {}
+[43.671205] (-) TimerEvent: {}
+[43.771825] (-) TimerEvent: {}
+[43.872456] (-) TimerEvent: {}
+[43.926864] (open3d_loc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/Open3D.h:31\x1b[m\x1b[K,\n'}
+[43.927383] (open3d_loc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:22\x1b[m\x1b[K:\n'}
+[43.927533] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/camera/PinholeCameraIntrinsic.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double> open3d::camera::PinholeCameraIntrinsic::GetFocalLength() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[43.927657] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/open3d141/include/open3d/camera/PinholeCameraIntrinsic.h:93:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 in GCC 10.1\n'}
+[43.927773] (open3d_loc) StderrLine: {'line': b'   93 |     std::pair<double, double> GetFocalLength() const \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[43.927878] (open3d_loc) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[43.972591] (-) TimerEvent: {}
+[44.073141] (-) TimerEvent: {}
+[44.173631] (-) TimerEvent: {}
+[44.274213] (-) TimerEvent: {}
+[44.374840] (-) TimerEvent: {}
+[44.475532] (-) TimerEvent: {}
+[44.576160] (-) TimerEvent: {}
+[44.676738] (-) TimerEvent: {}
+[44.777441] (-) TimerEvent: {}
+[44.878103] (-) TimerEvent: {}
+[44.978773] (-) TimerEvent: {}
+[45.079426] (-) TimerEvent: {}
+[45.180070] (-) TimerEvent: {}
+[45.280773] (-) TimerEvent: {}
+[45.381488] (-) TimerEvent: {}
+[45.482171] (-) TimerEvent: {}
+[45.582769] (-) TimerEvent: {}
+[45.683446] (-) TimerEvent: {}
+[45.784147] (-) TimerEvent: {}
+[45.884844] (-) TimerEvent: {}
+[45.985564] (-) TimerEvent: {}
+[46.086194] (-) TimerEvent: {}
+[46.186765] (-) TimerEvent: {}
+[46.287471] (-) TimerEvent: {}
+[46.388203] (-) TimerEvent: {}
+[46.488915] (-) TimerEvent: {}
+[46.589593] (-) TimerEvent: {}
+[46.690180] (-) TimerEvent: {}
+[46.790910] (-) TimerEvent: {}
+[46.891547] (-) TimerEvent: {}
+[46.992129] (-) TimerEvent: {}
+[47.092723] (-) TimerEvent: {}
+[47.193406] (-) TimerEvent: {}
+[47.294128] (-) TimerEvent: {}
+[47.394775] (-) TimerEvent: {}
+[47.495323] (-) TimerEvent: {}
+[47.595930] (-) TimerEvent: {}
+[47.696612] (-) TimerEvent: {}
+[47.797257] (-) TimerEvent: {}
+[47.897870] (-) TimerEvent: {}
+[47.998606] (-) TimerEvent: {}
+[48.099293] (-) TimerEvent: {}
+[48.199933] (-) TimerEvent: {}
+[48.300556] (-) TimerEvent: {}
+[48.401198] (-) TimerEvent: {}
+[48.480422] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GloabalLocalization::CallbackBaselink2Odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[48.480908] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:467:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kodom_cbk_s\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[48.481072] (open3d_loc) StderrLine: {'line': b'  467 |     auto \x1b[01;35m\x1b[Kodom_cbk_s\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[48.481202] (open3d_loc) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[48.496883] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GloabalLocalization::CallbackScan(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[48.497193] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:597:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kcbk_s\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[48.497329] (open3d_loc) StderrLine: {'line': b'  597 |     auto \x1b[01;35m\x1b[Kcbk_s\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[48.497445] (open3d_loc) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[48.497549] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:627:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kcbk_e\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[48.497656] (open3d_loc) StderrLine: {'line': b'  627 |     auto \x1b[01;35m\x1b[Kcbk_e\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[48.497755] (open3d_loc) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[48.501265] (-) TimerEvent: {}
+[48.514900] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GloabalLocalization::LocalizationInitialize()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[48.515310] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:689:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kreg0_s\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[48.515455] (open3d_loc) StderrLine: {'line': b'  689 |             auto \x1b[01;35m\x1b[Kreg0_s\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[48.515619] (open3d_loc) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[48.567925] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GloabalLocalization::Localization()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[48.568318] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:922:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kreg0_s\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[48.568449] (open3d_loc) StderrLine: {'line': b'  922 |             auto \x1b[01;35m\x1b[Kreg0_s\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[48.568561] (open3d_loc) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[48.568665] (open3d_loc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/luckrobot/fastlio_localization/src/FAST_LIO_LOCALIZATION_HUMANOID/open3d_loc/src/global_localization.cpp:811:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kfitness\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[48.568789] (open3d_loc) StderrLine: {'line': b'  811 |     double \x1b[01;35m\x1b[Kfitness\x1b[m\x1b[K = 0;\n'}
+[48.568893] (open3d_loc) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[48.601414] (-) TimerEvent: {}
+[48.702042] (-) TimerEvent: {}
+[48.802738] (-) TimerEvent: {}
+[48.903411] (-) TimerEvent: {}
+[49.004080] (-) TimerEvent: {}
+[49.104701] (-) TimerEvent: {}
+[49.205264] (-) TimerEvent: {}
+[49.305934] (-) TimerEvent: {}
+[49.406577] (-) TimerEvent: {}
+[49.507244] (-) TimerEvent: {}
+[49.607756] (-) TimerEvent: {}
+[49.708304] (-) TimerEvent: {}
+[49.808957] (-) TimerEvent: {}
+[49.909613] (-) TimerEvent: {}
+[50.010325] (-) TimerEvent: {}
+[50.110953] (-) TimerEvent: {}
+[50.211480] (-) TimerEvent: {}
+[50.312003] (-) TimerEvent: {}
+[50.412570] (-) TimerEvent: {}
+[50.513213] (-) TimerEvent: {}
+[50.613742] (-) TimerEvent: {}
+[50.714350] (-) TimerEvent: {}
+[50.815009] (-) TimerEvent: {}
+[50.915651] (-) TimerEvent: {}
+[51.016305] (-) TimerEvent: {}
+[51.117018] (-) TimerEvent: {}
+[51.217666] (-) TimerEvent: {}
+[51.318207] (-) TimerEvent: {}
+[51.418782] (-) TimerEvent: {}
+[51.519448] (-) TimerEvent: {}
+[51.620067] (-) TimerEvent: {}
+[51.720758] (-) TimerEvent: {}
+[51.821437] (-) TimerEvent: {}
+[51.922063] (-) TimerEvent: {}
+[52.022577] (-) TimerEvent: {}
+[52.123154] (-) TimerEvent: {}
+[52.223832] (-) TimerEvent: {}
+[52.324494] (-) TimerEvent: {}
+[52.425196] (-) TimerEvent: {}
+[52.525831] (-) TimerEvent: {}
+[52.626427] (-) TimerEvent: {}
+[52.727037] (-) TimerEvent: {}
+[52.827628] (-) TimerEvent: {}
+[52.928286] (-) TimerEvent: {}
+[53.028892] (-) TimerEvent: {}
+[53.129471] (-) TimerEvent: {}
+[53.230201] (-) TimerEvent: {}
+[53.330842] (-) TimerEvent: {}
+[53.431428] (-) TimerEvent: {}
+[53.532076] (-) TimerEvent: {}
+[53.632586] (-) TimerEvent: {}
+[53.733181] (-) TimerEvent: {}
+[53.833864] (-) TimerEvent: {}
+[53.934525] (-) TimerEvent: {}
+[54.035123] (-) TimerEvent: {}
+[54.135833] (-) TimerEvent: {}
+[54.236530] (-) TimerEvent: {}
+[54.337184] (-) TimerEvent: {}
+[54.437717] (-) TimerEvent: {}
+[54.538297] (-) TimerEvent: {}
+[54.638866] (-) TimerEvent: {}
+[54.739487] (-) TimerEvent: {}
+[54.840056] (-) TimerEvent: {}
+[54.940713] (-) TimerEvent: {}
+[55.041304] (-) TimerEvent: {}
+[55.141828] (-) TimerEvent: {}
+[55.242430] (-) TimerEvent: {}
+[55.343078] (-) TimerEvent: {}
+[55.443704] (-) TimerEvent: {}
+[55.544341] (-) TimerEvent: {}
+[55.644871] (-) TimerEvent: {}
+[55.745376] (-) TimerEvent: {}
+[55.845963] (-) TimerEvent: {}
+[55.946653] (-) TimerEvent: {}
+[56.047356] (-) TimerEvent: {}
+[56.148049] (-) TimerEvent: {}
+[56.248802] (-) TimerEvent: {}
+[56.349554] (-) TimerEvent: {}
+[56.450219] (-) TimerEvent: {}
+[56.550804] (-) TimerEvent: {}
+[56.651439] (-) TimerEvent: {}
+[56.752039] (-) TimerEvent: {}
+[56.852785] (-) TimerEvent: {}
+[56.953458] (-) TimerEvent: {}
+[57.054086] (-) TimerEvent: {}
+[57.154739] (-) TimerEvent: {}
+[57.255437] (-) TimerEvent: {}
+[57.356052] (-) TimerEvent: {}
+[57.456639] (-) TimerEvent: {}
+[57.557265] (-) TimerEvent: {}
+[57.657795] (-) TimerEvent: {}
+[57.758395] (-) TimerEvent: {}
+[57.859018] (-) TimerEvent: {}
+[57.959600] (-) TimerEvent: {}
+[58.060242] (-) TimerEvent: {}
+[58.160758] (-) TimerEvent: {}
+[58.261337] (-) TimerEvent: {}
+[58.361971] (-) TimerEvent: {}
+[58.462505] (-) TimerEvent: {}
+[58.563078] (-) TimerEvent: {}
+[58.663727] (-) TimerEvent: {}
+[58.764331] (-) TimerEvent: {}
+[58.864957] (-) TimerEvent: {}
+[58.965525] (-) TimerEvent: {}
+[59.066160] (-) TimerEvent: {}
+[59.166692] (-) TimerEvent: {}
+[59.267284] (-) TimerEvent: {}
+[59.367901] (-) TimerEvent: {}
+[59.468429] (-) TimerEvent: {}
+[59.568987] (-) TimerEvent: {}
+[59.669500] (-) TimerEvent: {}
+[59.770095] (-) TimerEvent: {}
+[59.870711] (-) TimerEvent: {}
+[59.971270] (-) TimerEvent: {}
+[60.071949] (-) TimerEvent: {}
+[60.172545] (-) TimerEvent: {}
+[60.273129] (-) TimerEvent: {}
+[60.373752] (-) TimerEvent: {}
+[60.474298] (-) TimerEvent: {}
+[60.574891] (-) TimerEvent: {}
+[60.675517] (-) TimerEvent: {}
+[60.776116] (-) TimerEvent: {}
+[60.876748] (-) TimerEvent: {}
+[60.977323] (-) TimerEvent: {}
+[61.077972] (-) TimerEvent: {}
+[61.178503] (-) TimerEvent: {}
+[61.279098] (-) TimerEvent: {}
+[61.379719] (-) TimerEvent: {}
+[61.480240] (-) TimerEvent: {}
+[61.580753] (-) TimerEvent: {}
+[61.681247] (-) TimerEvent: {}
+[61.781752] (-) TimerEvent: {}
+[61.882347] (-) TimerEvent: {}
+[61.982967] (-) TimerEvent: {}
+[62.083554] (-) TimerEvent: {}
+[62.184248] (-) TimerEvent: {}
+[62.284864] (-) TimerEvent: {}
+[62.385444] (-) TimerEvent: {}
+[62.486061] (-) TimerEvent: {}
+[62.586561] (-) TimerEvent: {}
+[62.687105] (-) TimerEvent: {}
+[62.787807] (-) TimerEvent: {}
+[62.888438] (-) TimerEvent: {}
+[62.989020] (-) TimerEvent: {}
+[63.089692] (-) TimerEvent: {}
+[63.190381] (-) TimerEvent: {}
+[63.291007] (-) TimerEvent: {}
+[63.391585] (-) TimerEvent: {}
+[63.492263] (-) TimerEvent: {}
+[63.592898] (-) TimerEvent: {}
+[63.693415] (-) TimerEvent: {}
+[63.793891] (-) TimerEvent: {}
+[63.894462] (-) TimerEvent: {}
+[63.995070] (-) TimerEvent: {}
+[64.095628] (-) TimerEvent: {}
+[64.196249] (-) TimerEvent: {}
+[64.296778] (-) TimerEvent: {}
+[64.397359] (-) TimerEvent: {}
+[64.498047] (-) TimerEvent: {}
+[64.598707] (-) TimerEvent: {}
+[64.699312] (-) TimerEvent: {}
+[64.799946] (-) TimerEvent: {}
+[64.900554] (-) TimerEvent: {}
+[65.001182] (-) TimerEvent: {}
+[65.101740] (-) TimerEvent: {}
+[65.202454] (-) TimerEvent: {}
+[65.303074] (-) TimerEvent: {}
+[65.403671] (-) TimerEvent: {}
+[65.504286] (-) TimerEvent: {}
+[65.604811] (-) TimerEvent: {}
+[65.705397] (-) TimerEvent: {}
+[65.806034] (-) TimerEvent: {}
+[65.906634] (-) TimerEvent: {}
+[66.007332] (-) TimerEvent: {}
+[66.107993] (-) TimerEvent: {}
+[66.208669] (-) TimerEvent: {}
+[66.309297] (-) TimerEvent: {}
+[66.409809] (-) TimerEvent: {}
+[66.510390] (-) TimerEvent: {}
+[66.611022] (-) TimerEvent: {}
+[66.711619] (-) TimerEvent: {}
+[66.812306] (-) TimerEvent: {}
+[66.912932] (-) TimerEvent: {}
+[67.013438] (-) TimerEvent: {}
+[67.114025] (-) TimerEvent: {}
+[67.214713] (-) TimerEvent: {}
+[67.315331] (-) TimerEvent: {}
+[67.415937] (-) TimerEvent: {}
+[67.516546] (-) TimerEvent: {}
+[67.617052] (-) TimerEvent: {}
+[67.717630] (-) TimerEvent: {}
+[67.818266] (-) TimerEvent: {}
+[67.918851] (-) TimerEvent: {}
+[68.019548] (-) TimerEvent: {}
+[68.120137] (-) TimerEvent: {}
+[68.220670] (-) TimerEvent: {}
+[68.321374] (-) TimerEvent: {}
+[68.422095] (-) TimerEvent: {}
+[68.522814] (-) TimerEvent: {}
+[68.623435] (-) TimerEvent: {}
+[68.724037] (-) TimerEvent: {}
+[68.824685] (-) TimerEvent: {}
+[68.925274] (-) TimerEvent: {}
+[69.025867] (-) TimerEvent: {}
+[69.126577] (-) TimerEvent: {}
+[69.227212] (-) TimerEvent: {}
+[69.327875] (-) TimerEvent: {}
+[69.428503] (-) TimerEvent: {}
+[69.529103] (-) TimerEvent: {}
+[69.629812] (-) TimerEvent: {}
+[69.730365] (-) TimerEvent: {}
+[69.830964] (-) TimerEvent: {}
+[69.931587] (-) TimerEvent: {}
+[70.032171] (-) TimerEvent: {}
+[70.132809] (-) TimerEvent: {}
+[70.233426] (-) TimerEvent: {}
+[70.334037] (-) TimerEvent: {}
+[70.434547] (-) TimerEvent: {}
+[70.535119] (-) TimerEvent: {}
+[70.635732] (-) TimerEvent: {}
+[70.736265] (-) TimerEvent: {}
+[70.836855] (-) TimerEvent: {}
+[70.937493] (-) TimerEvent: {}
+[71.038128] (-) TimerEvent: {}
+[71.138732] (-) TimerEvent: {}
+[71.239305] (-) TimerEvent: {}
+[71.339942] (-) TimerEvent: {}
+[71.440467] (-) TimerEvent: {}
+[71.541067] (-) TimerEvent: {}
+[71.641686] (-) TimerEvent: {}
+[71.742220] (-) TimerEvent: {}
+[71.842804] (-) TimerEvent: {}
+[71.943424] (-) TimerEvent: {}
+[72.044018] (-) TimerEvent: {}
+[72.144629] (-) TimerEvent: {}
+[72.245173] (-) TimerEvent: {}
+[72.345802] (-) TimerEvent: {}
+[72.446347] (-) TimerEvent: {}
+[72.546939] (-) TimerEvent: {}
+[72.647557] (-) TimerEvent: {}
+[72.748077] (-) TimerEvent: {}
+[72.848667] (-) TimerEvent: {}
+[72.949288] (-) TimerEvent: {}
+[73.049807] (-) TimerEvent: {}
+[73.150398] (-) TimerEvent: {}
+[73.251006] (-) TimerEvent: {}
+[73.351580] (-) TimerEvent: {}
+[73.452168] (-) TimerEvent: {}
+[73.552754] (-) TimerEvent: {}
+[73.653328] (-) TimerEvent: {}
+[73.753913] (-) TimerEvent: {}
+[73.854507] (-) TimerEvent: {}
+[73.955091] (-) TimerEvent: {}
+[74.055669] (-) TimerEvent: {}
+[74.156256] (-) TimerEvent: {}
+[74.256825] (-) TimerEvent: {}
+[74.357413] (-) TimerEvent: {}
+[74.458044] (-) TimerEvent: {}
+[74.558618] (-) TimerEvent: {}
+[74.659185] (-) TimerEvent: {}
+[74.759735] (-) TimerEvent: {}
+[74.860326] (-) TimerEvent: {}
+[74.960909] (-) TimerEvent: {}
+[75.061485] (-) TimerEvent: {}
+[75.162089] (-) TimerEvent: {}
+[75.262707] (-) TimerEvent: {}
+[75.363308] (-) TimerEvent: {}
+[75.463928] (-) TimerEvent: {}
+[75.564519] (-) TimerEvent: {}
+[75.665087] (-) TimerEvent: {}
+[75.765632] (-) TimerEvent: {}
+[75.866236] (-) TimerEvent: {}
+[75.966845] (-) TimerEvent: {}
+[76.067445] (-) TimerEvent: {}
+[76.168028] (-) TimerEvent: {}
+[76.268609] (-) TimerEvent: {}
+[76.369221] (-) TimerEvent: {}
+[76.469853] (-) TimerEvent: {}
+[76.570481] (-) TimerEvent: {}
+[76.671079] (-) TimerEvent: {}
+[76.771663] (-) TimerEvent: {}
+[76.872263] (-) TimerEvent: {}
+[76.972907] (-) TimerEvent: {}
+[77.073557] (-) TimerEvent: {}
+[77.174176] (-) TimerEvent: {}
+[77.274760] (-) TimerEvent: {}
+[77.375369] (-) TimerEvent: {}
+[77.475994] (-) TimerEvent: {}
+[77.576602] (-) TimerEvent: {}
+[77.677201] (-) TimerEvent: {}
+[77.777793] (-) TimerEvent: {}
+[77.878398] (-) TimerEvent: {}
+[77.979016] (-) TimerEvent: {}
+[78.079610] (-) TimerEvent: {}
+[78.180249] (-) TimerEvent: {}
+[78.280881] (-) TimerEvent: {}
+[78.381472] (-) TimerEvent: {}
+[78.482099] (-) TimerEvent: {}
+[78.582701] (-) TimerEvent: {}
+[78.683321] (-) TimerEvent: {}
+[78.783918] (-) TimerEvent: {}
+[78.884504] (-) TimerEvent: {}
+[78.985129] (-) TimerEvent: {}
+[79.085739] (-) TimerEvent: {}
+[79.186366] (-) TimerEvent: {}
+[79.286946] (-) TimerEvent: {}
+[79.387518] (-) TimerEvent: {}
+[79.488121] (-) TimerEvent: {}
+[79.588740] (-) TimerEvent: {}
+[79.689330] (-) TimerEvent: {}
+[79.789927] (-) TimerEvent: {}
+[79.890515] (-) TimerEvent: {}
+[79.991118] (-) TimerEvent: {}
+[80.091704] (-) TimerEvent: {}
+[80.192310] (-) TimerEvent: {}
+[80.292909] (-) TimerEvent: {}
+[80.393469] (-) TimerEvent: {}
+[80.494080] (-) TimerEvent: {}
+[80.594699] (-) TimerEvent: {}
+[80.695302] (-) TimerEvent: {}
+[80.795907] (-) TimerEvent: {}
+[80.896508] (-) TimerEvent: {}
+[80.997101] (-) TimerEvent: {}
+[81.097674] (-) TimerEvent: {}
+[81.198257] (-) TimerEvent: {}
+[81.298819] (-) TimerEvent: {}
+[81.399412] (-) TimerEvent: {}
+[81.500024] (-) TimerEvent: {}
+[81.600651] (-) TimerEvent: {}
+[81.701248] (-) TimerEvent: {}
+[81.801854] (-) TimerEvent: {}
+[81.902436] (-) TimerEvent: {}
+[82.003029] (-) TimerEvent: {}
+[82.103643] (-) TimerEvent: {}
+[82.204248] (-) TimerEvent: {}
+[82.304890] (-) TimerEvent: {}
+[82.405529] (-) TimerEvent: {}
+[82.506166] (-) TimerEvent: {}
+[82.606811] (-) TimerEvent: {}
+[82.707427] (-) TimerEvent: {}
+[82.808030] (-) TimerEvent: {}
+[82.908649] (-) TimerEvent: {}
+[83.009252] (-) TimerEvent: {}
+[83.109886] (-) TimerEvent: {}
+[83.210505] (-) TimerEvent: {}
+[83.311164] (-) TimerEvent: {}
+[83.411825] (-) TimerEvent: {}
+[83.512469] (-) TimerEvent: {}
+[83.613172] (-) TimerEvent: {}
+[83.713811] (-) TimerEvent: {}
+[83.814432] (-) TimerEvent: {}
+[83.915022] (-) TimerEvent: {}
+[84.015587] (-) TimerEvent: {}
+[84.116179] (-) TimerEvent: {}
+[84.216777] (-) TimerEvent: {}
+[84.317346] (-) TimerEvent: {}
+[84.417971] (-) TimerEvent: {}
+[84.518552] (-) TimerEvent: {}
+[84.619198] (-) TimerEvent: {}
+[84.719780] (-) TimerEvent: {}
+[84.820354] (-) TimerEvent: {}
+[84.920949] (-) TimerEvent: {}
+[85.021483] (-) TimerEvent: {}
+[85.122060] (-) TimerEvent: {}
+[85.222704] (-) TimerEvent: {}
+[85.323321] (-) TimerEvent: {}
+[85.423844] (-) TimerEvent: {}
+[85.524347] (-) TimerEvent: {}
+[85.624916] (-) TimerEvent: {}
+[85.725537] (-) TimerEvent: {}
+[85.826089] (-) TimerEvent: {}
+[85.926761] (-) TimerEvent: {}
+[86.027376] (-) TimerEvent: {}
+[86.127923] (-) TimerEvent: {}
+[86.228491] (-) TimerEvent: {}
+[86.329117] (-) TimerEvent: {}
+[86.429661] (-) TimerEvent: {}
+[86.530206] (-) TimerEvent: {}
+[86.630762] (-) TimerEvent: {}
+[86.731399] (-) TimerEvent: {}
+[86.831983] (-) TimerEvent: {}
+[86.932600] (-) TimerEvent: {}
+[87.033133] (-) TimerEvent: {}
+[87.133656] (-) TimerEvent: {}
+[87.234195] (-) TimerEvent: {}
+[87.334801] (-) TimerEvent: {}
+[87.435333] (-) TimerEvent: {}
+[87.535828] (-) TimerEvent: {}
+[87.636377] (-) TimerEvent: {}
+[87.736985] (-) TimerEvent: {}
+[87.837540] (-) TimerEvent: {}
+[87.938198] (-) TimerEvent: {}
+[88.038812] (-) TimerEvent: {}
+[88.139347] (-) TimerEvent: {}
+[88.239916] (-) TimerEvent: {}
+[88.340550] (-) TimerEvent: {}
+[88.441084] (-) TimerEvent: {}
+[88.541602] (-) TimerEvent: {}
+[88.642144] (-) TimerEvent: {}
+[88.742736] (-) TimerEvent: {}
+[88.843256] (-) TimerEvent: {}
+[88.943851] (-) TimerEvent: {}
+[89.044377] (-) TimerEvent: {}
+[89.144909] (-) TimerEvent: {}
+[89.245466] (-) TimerEvent: {}
+[89.346061] (-) TimerEvent: {}
+[89.446600] (-) TimerEvent: {}
+[89.547119] (-) TimerEvent: {}
+[89.647676] (-) TimerEvent: {}
+[89.748335] (-) TimerEvent: {}
+[89.848921] (-) TimerEvent: {}
+[89.949571] (-) TimerEvent: {}
+[90.050224] (-) TimerEvent: {}
+[90.150780] (-) TimerEvent: {}
+[90.251342] (-) TimerEvent: {}
+[90.351998] (-) TimerEvent: {}
+[90.452606] (-) TimerEvent: {}
+[90.553208] (-) TimerEvent: {}
+[90.653769] (-) TimerEvent: {}
+[90.754407] (-) TimerEvent: {}
+[90.855087] (-) TimerEvent: {}
+[90.955777] (-) TimerEvent: {}
+[91.056472] (-) TimerEvent: {}
+[91.157133] (-) TimerEvent: {}
+[91.257750] (-) TimerEvent: {}
+[91.358370] (-) TimerEvent: {}
+[91.458940] (-) TimerEvent: {}
+[91.559580] (-) TimerEvent: {}
+[91.660254] (-) TimerEvent: {}
+[91.760886] (-) TimerEvent: {}
+[91.861576] (-) TimerEvent: {}
+[91.962295] (-) TimerEvent: {}
+[92.062989] (-) TimerEvent: {}
+[92.163658] (-) TimerEvent: {}
+[92.264319] (-) TimerEvent: {}
+[92.364994] (-) TimerEvent: {}
+[92.465666] (-) TimerEvent: {}
+[92.566367] (-) TimerEvent: {}
+[92.667071] (-) TimerEvent: {}
+[92.767742] (-) TimerEvent: {}
+[92.868371] (-) TimerEvent: {}
+[92.968963] (-) TimerEvent: {}
+[93.069619] (-) TimerEvent: {}
+[93.170224] (-) TimerEvent: {}
+[93.270797] (-) TimerEvent: {}
+[93.371389] (-) TimerEvent: {}
+[93.471988] (-) TimerEvent: {}
+[93.572669] (-) TimerEvent: {}
+[93.673306] (-) TimerEvent: {}
+[93.773966] (-) TimerEvent: {}
+[93.874674] (-) TimerEvent: {}
+[93.975305] (-) TimerEvent: {}
+[94.075900] (-) TimerEvent: {}
+[94.176569] (-) TimerEvent: {}
+[94.277162] (-) TimerEvent: {}
+[94.377699] (-) TimerEvent: {}
+[94.478382] (-) TimerEvent: {}
+[94.578950] (-) TimerEvent: {}
+[94.679497] (-) TimerEvent: {}
+[94.780106] (-) TimerEvent: {}
+[94.880768] (-) TimerEvent: {}
+[94.981389] (-) TimerEvent: {}
+[95.082063] (-) TimerEvent: {}
+[95.182697] (-) TimerEvent: {}
+[95.283313] (-) TimerEvent: {}
+[95.383864] (-) TimerEvent: {}
+[95.484415] (-) TimerEvent: {}
+[95.584957] (-) TimerEvent: {}
+[95.685444] (-) TimerEvent: {}
+[95.785956] (-) TimerEvent: {}
+[95.886738] (-) TimerEvent: {}
+[95.987373] (-) TimerEvent: {}
+[96.087922] (-) TimerEvent: {}
+[96.188483] (-) TimerEvent: {}
+[96.288985] (-) TimerEvent: {}
+[96.389515] (-) TimerEvent: {}
+[96.490007] (-) TimerEvent: {}
+[96.590459] (-) TimerEvent: {}
+[96.690914] (-) TimerEvent: {}
+[96.791381] (-) TimerEvent: {}
+[96.891948] (-) TimerEvent: {}
+[96.992593] (-) TimerEvent: {}
+[97.093312] (-) TimerEvent: {}
+[97.193979] (-) TimerEvent: {}
+[97.294533] (-) TimerEvent: {}
+[97.395072] (-) TimerEvent: {}
+[97.495576] (-) TimerEvent: {}
+[97.596067] (-) TimerEvent: {}
+[97.696538] (-) TimerEvent: {}
+[97.797032] (-) TimerEvent: {}
+[97.897567] (-) TimerEvent: {}
+[97.998160] (-) TimerEvent: {}
+[98.098727] (-) TimerEvent: {}
+[98.199306] (-) TimerEvent: {}
+[98.299850] (-) TimerEvent: {}
+[98.400419] (-) TimerEvent: {}
+[98.501019] (-) TimerEvent: {}
+[98.601595] (-) TimerEvent: {}
+[98.702177] (-) TimerEvent: {}
+[98.802756] (-) TimerEvent: {}
+[98.903401] (-) TimerEvent: {}
+[99.003975] (-) TimerEvent: {}
+[99.104588] (-) TimerEvent: {}
+[99.205222] (-) TimerEvent: {}
+[99.306008] (-) TimerEvent: {}
+[99.406483] (-) TimerEvent: {}
+[99.506955] (-) TimerEvent: {}
+[99.607569] (-) TimerEvent: {}
+[99.708151] (-) TimerEvent: {}
+[99.808648] (-) TimerEvent: {}
+[99.909145] (-) TimerEvent: {}
+[99.933009] (open3d_loc) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable global_localization_node\x1b[0m\n'}
+[100.009344] (-) TimerEvent: {}
+[100.109990] (-) TimerEvent: {}
+[100.210612] (-) TimerEvent: {}
+[100.311201] (-) TimerEvent: {}
+[100.411802] (-) TimerEvent: {}
+[100.512389] (-) TimerEvent: {}
+[100.612954] (-) TimerEvent: {}
+[100.713668] (-) TimerEvent: {}
+[100.814507] (-) TimerEvent: {}
+[100.915286] (-) TimerEvent: {}
+[101.015872] (-) TimerEvent: {}
+[101.116497] (-) TimerEvent: {}
+[101.217095] (-) TimerEvent: {}
+[101.317706] (-) TimerEvent: {}
+[101.418339] (-) TimerEvent: {}
+[101.518944] (-) TimerEvent: {}
+[101.619554] (-) TimerEvent: {}
+[101.720169] (-) TimerEvent: {}
+[101.820786] (-) TimerEvent: {}
+[101.921434] (-) TimerEvent: {}
+[102.022061] (-) TimerEvent: {}
+[102.122676] (-) TimerEvent: {}
+[102.223300] (-) TimerEvent: {}
+[102.323876] (-) TimerEvent: {}
+[102.424450] (-) TimerEvent: {}
+[102.525029] (-) TimerEvent: {}
+[102.625637] (-) TimerEvent: {}
+[102.726279] (-) TimerEvent: {}
+[102.826893] (-) TimerEvent: {}
+[102.927490] (-) TimerEvent: {}
+[103.028082] (-) TimerEvent: {}
+[103.128681] (-) TimerEvent: {}
+[103.229283] (-) TimerEvent: {}
+[103.329856] (-) TimerEvent: {}
+[103.430536] (-) TimerEvent: {}
+[103.531139] (-) TimerEvent: {}
+[103.631748] (-) TimerEvent: {}
+[103.732375] (-) TimerEvent: {}
+[103.832977] (-) TimerEvent: {}
+[103.933622] (-) TimerEvent: {}
+[104.034249] (-) TimerEvent: {}
+[104.134857] (-) TimerEvent: {}
+[104.235488] (-) TimerEvent: {}
+[104.336117] (-) TimerEvent: {}
+[104.436707] (-) TimerEvent: {}
+[104.537299] (-) TimerEvent: {}
+[104.637876] (-) TimerEvent: {}
+[104.738482] (-) TimerEvent: {}
+[104.839083] (-) TimerEvent: {}
+[104.939756] (-) TimerEvent: {}
+[105.040333] (-) TimerEvent: {}
+[105.140935] (-) TimerEvent: {}
+[105.241504] (-) TimerEvent: {}
+[105.342063] (-) TimerEvent: {}
+[105.442622] (-) TimerEvent: {}
+[105.543179] (-) TimerEvent: {}
+[105.643726] (-) TimerEvent: {}
+[105.744433] (-) TimerEvent: {}
+[105.845028] (-) TimerEvent: {}
+[105.945604] (-) TimerEvent: {}
+[106.046205] (-) TimerEvent: {}
+[106.146777] (-) TimerEvent: {}
+[106.247345] (-) TimerEvent: {}
+[106.347850] (-) TimerEvent: {}
+[106.448326] (-) TimerEvent: {}
+[106.548922] (-) TimerEvent: {}
+[106.649550] (-) TimerEvent: {}
+[106.750151] (-) TimerEvent: {}
+[106.850736] (-) TimerEvent: {}
+[106.951331] (-) TimerEvent: {}
+[107.051936] (-) TimerEvent: {}
+[107.152502] (-) TimerEvent: {}
+[107.253054] (-) TimerEvent: {}
+[107.353627] (-) TimerEvent: {}
+[107.454223] (-) TimerEvent: {}
+[107.554767] (-) TimerEvent: {}
+[107.655330] (-) TimerEvent: {}
+[107.755864] (-) TimerEvent: {}
+[107.856362] (-) TimerEvent: {}
+[107.956911] (-) TimerEvent: {}
+[108.057457] (-) TimerEvent: {}
+[108.158002] (-) TimerEvent: {}
+[108.258540] (-) TimerEvent: {}
+[108.359058] (-) TimerEvent: {}
+[108.459497] (-) TimerEvent: {}
+[108.559939] (-) TimerEvent: {}
+[108.660365] (-) TimerEvent: {}
+[108.760974] (-) TimerEvent: {}
+[108.861573] (-) TimerEvent: {}
+[108.962178] (-) TimerEvent: {}
+[109.062606] (-) TimerEvent: {}
+[109.163089] (-) TimerEvent: {}
+[109.263662] (-) TimerEvent: {}
+[109.364191] (-) TimerEvent: {}
+[109.464644] (-) TimerEvent: {}
+[109.565164] (-) TimerEvent: {}
+[109.665719] (-) TimerEvent: {}
+[109.766208] (-) TimerEvent: {}
+[109.866655] (-) TimerEvent: {}
+[109.967234] (-) TimerEvent: {}
+[110.067758] (-) TimerEvent: {}
+[110.168256] (-) TimerEvent: {}
+[110.172659] (open3d_loc) StdoutLine: {'line': b'[100%] Built target global_localization_node\n'}
+[110.197012] (open3d_loc) CommandEnded: {'returncode': 0}
+[110.198392] (open3d_loc) JobProgress: {'identifier': 'open3d_loc', 'progress': 'install'}
+[110.218108] (open3d_loc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/luckrobot/fastlio_localization/build/open3d_loc'], 'cwd': '/home/nvidia/luckrobot/fastlio_localization/build/open3d_loc', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.101 65486 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nvidia/luckrobot/fastlio_localization/src'), ('SSH_TTY', '/dev/pts/6'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/nvidia/miniconda3'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '19'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/home/nvidia/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nvidia/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/fastlio_localization/build/open3d_loc'), ('CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('SSH_CONNECTION', '192.168.3.101 65486 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[110.238272] (open3d_loc) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[110.238720] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/lib/libopen3d_registration.a\n'}
+[110.239392] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/lib/libopen3d_conversions.a\n'}
+[110.240435] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/lib/open3d_loc/global_localization_node\n'}
+[110.268397] (-) TimerEvent: {}
+[110.368980] (-) TimerEvent: {}
+[110.469554] (-) TimerEvent: {}
+[110.531095] (open3d_loc) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/lib/open3d_loc/global_localization_node" to ""\n'}
+[110.531610] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc//launch\n'}
+[110.531835] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc//launch/localization_3d_g1.launch.py\n'}
+[110.532620] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc//launch/open3d_loc_g1.launch.py\n'}
+[110.532920] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc//config\n'}
+[110.533160] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc//config/loc_param_g1.yaml\n'}
+[110.533454] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc//rviz_cfg\n'}
+[110.533668] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc//rviz_cfg/fastlio.rviz\n'}
+[110.534103] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc//rviz_cfg/.gitignore\n'}
+[110.534337] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/include/open3d_loc\n'}
+[110.534596] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/include/open3d_loc/open3d_conversions\n'}
+[110.534762] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/include/open3d_loc/open3d_conversions/open3d_conversions.h\n'}
+[110.534943] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/include/open3d_loc/open3d_conversions/DpgtConversions.h\n'}
+[110.535142] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/include/open3d_loc/open3d_conversions/RosConversions.h\n'}
+[110.535355] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/include/open3d_loc/open3d_registration\n'}
+[110.535576] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/include/open3d_loc/open3d_registration/open3d_registration.h\n'}
+[110.535982] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/ament_index/resource_index/package_run_dependencies/open3d_loc\n'}
+[110.536295] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/ament_index/resource_index/parent_prefix_path/open3d_loc\n'}
+[110.536608] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/environment/ament_prefix_path.sh\n'}
+[110.536830] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/environment/ament_prefix_path.dsv\n'}
+[110.537054] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/environment/path.sh\n'}
+[110.537278] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/environment/path.dsv\n'}
+[110.537498] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/local_setup.bash\n'}
+[110.537708] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/local_setup.sh\n'}
+[110.537953] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/local_setup.zsh\n'}
+[110.538176] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/local_setup.dsv\n'}
+[110.538371] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/package.dsv\n'}
+[110.538663] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/ament_index/resource_index/packages/open3d_loc\n'}
+[110.538929] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/cmake/open3d_locConfig.cmake\n'}
+[110.539106] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/cmake/open3d_locConfig-version.cmake\n'}
+[110.539328] (open3d_loc) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/open3d_loc/share/open3d_loc/package.xml\n'}
+[110.543456] (open3d_loc) CommandEnded: {'returncode': 0}
+[110.570132] (-) TimerEvent: {}
+[110.582291] (open3d_loc) JobEnded: {'identifier': 'open3d_loc', 'rc': 0}
+[110.670259] (-) TimerEvent: {}
+[110.770731] (-) TimerEvent: {}
+[110.871215] (-) TimerEvent: {}
+[110.971715] (-) TimerEvent: {}
+[111.072172] (-) TimerEvent: {}
+[111.172631] (-) TimerEvent: {}
+[111.273230] (-) TimerEvent: {}
+[111.373774] (-) TimerEvent: {}
+[111.474287] (-) TimerEvent: {}
+[111.574884] (-) TimerEvent: {}
+[111.675403] (-) TimerEvent: {}
+[111.775882] (-) TimerEvent: {}
+[111.876330] (-) TimerEvent: {}
+[111.976884] (-) TimerEvent: {}
+[112.077399] (-) TimerEvent: {}
+[112.177884] (-) TimerEvent: {}
+[112.278504] (-) TimerEvent: {}
+[112.379092] (-) TimerEvent: {}
+[112.479695] (-) TimerEvent: {}
+[112.580253] (-) TimerEvent: {}
+[112.680827] (-) TimerEvent: {}
+[112.781380] (-) TimerEvent: {}
+[112.882050] (-) TimerEvent: {}
+[112.982756] (-) TimerEvent: {}
+[113.083205] (-) TimerEvent: {}
+[113.183678] (-) TimerEvent: {}
+[113.284212] (-) TimerEvent: {}
+[113.384744] (-) TimerEvent: {}
+[113.485185] (-) TimerEvent: {}
+[113.585653] (-) TimerEvent: {}
+[113.686238] (-) TimerEvent: {}
+[113.786665] (-) TimerEvent: {}
+[113.887123] (-) TimerEvent: {}
+[113.987637] (-) TimerEvent: {}
+[114.088183] (-) TimerEvent: {}
+[114.188713] (-) TimerEvent: {}
+[114.289298] (-) TimerEvent: {}
+[114.390022] (-) TimerEvent: {}
+[114.490547] (-) TimerEvent: {}
+[114.591006] (-) TimerEvent: {}
+[114.691434] (-) TimerEvent: {}
+[114.791868] (-) TimerEvent: {}
+[114.892299] (-) TimerEvent: {}
+[114.992844] (-) TimerEvent: {}
+[115.093378] (-) TimerEvent: {}
+[115.193913] (-) TimerEvent: {}
+[115.294397] (-) TimerEvent: {}
+[115.394912] (-) TimerEvent: {}
+[115.495339] (-) TimerEvent: {}
+[115.595802] (-) TimerEvent: {}
+[115.696409] (-) TimerEvent: {}
+[115.797040] (-) TimerEvent: {}
+[115.897648] (-) TimerEvent: {}
+[115.998231] (-) TimerEvent: {}
+[116.098841] (-) TimerEvent: {}
+[116.199386] (-) TimerEvent: {}
+[116.299967] (-) TimerEvent: {}
+[116.400561] (-) TimerEvent: {}
+[116.501131] (-) TimerEvent: {}
+[116.601736] (-) TimerEvent: {}
+[116.702516] (-) TimerEvent: {}
+[116.803098] (-) TimerEvent: {}
+[116.903663] (-) TimerEvent: {}
+[117.004251] (-) TimerEvent: {}
+[117.104814] (-) TimerEvent: {}
+[117.205385] (-) TimerEvent: {}
+[117.305982] (-) TimerEvent: {}
+[117.406553] (-) TimerEvent: {}
+[117.507163] (-) TimerEvent: {}
+[117.607726] (-) TimerEvent: {}
+[117.708334] (-) TimerEvent: {}
+[117.808886] (-) TimerEvent: {}
+[117.909473] (-) TimerEvent: {}
+[118.010297] (-) TimerEvent: {}
+[118.110881] (-) TimerEvent: {}
+[118.211488] (-) TimerEvent: {}
+[118.312048] (-) TimerEvent: {}
+[118.412655] (-) TimerEvent: {}
+[118.513224] (-) TimerEvent: {}
+[118.613819] (-) TimerEvent: {}
+[118.714423] (-) TimerEvent: {}
+[118.815002] (-) TimerEvent: {}
+[118.915586] (-) TimerEvent: {}
+[119.016185] (-) TimerEvent: {}
+[119.116924] (-) TimerEvent: {}
+[119.217574] (-) TimerEvent: {}
+[119.318159] (-) TimerEvent: {}
+[119.418710] (-) TimerEvent: {}
+[119.519390] (-) TimerEvent: {}
+[119.620326] (-) TimerEvent: {}
+[119.721101] (-) TimerEvent: {}
+[119.821788] (-) TimerEvent: {}
+[119.922498] (-) TimerEvent: {}
+[120.023179] (-) TimerEvent: {}
+[120.123858] (-) TimerEvent: {}
+[120.224537] (-) TimerEvent: {}
+[120.325218] (-) TimerEvent: {}
+[120.426006] (-) TimerEvent: {}
+[120.526899] (-) TimerEvent: {}
+[120.627645] (-) TimerEvent: {}
+[120.728350] (-) TimerEvent: {}
+[120.829043] (-) TimerEvent: {}
+[120.929737] (-) TimerEvent: {}
+[121.030465] (-) TimerEvent: {}
+[121.131159] (-) TimerEvent: {}
+[121.231854] (-) TimerEvent: {}
+[121.332556] (-) TimerEvent: {}
+[121.433112] (-) TimerEvent: {}
+[121.534111] (-) TimerEvent: {}
+[121.634906] (-) TimerEvent: {}
+[121.735657] (-) TimerEvent: {}
+[121.836357] (-) TimerEvent: {}
+[121.937052] (-) TimerEvent: {}
+[122.037748] (-) TimerEvent: {}
+[122.138341] (-) TimerEvent: {}
+[122.239332] (-) TimerEvent: {}
+[122.340157] (-) TimerEvent: {}
+[122.440735] (-) TimerEvent: {}
+[122.541622] (-) TimerEvent: {}
+[122.642453] (-) TimerEvent: {}
+[122.743156] (-) TimerEvent: {}
+[122.843854] (-) TimerEvent: {}
+[122.944538] (-) TimerEvent: {}
+[123.045220] (-) TimerEvent: {}
+[123.145916] (-) TimerEvent: {}
+[123.246645] (-) TimerEvent: {}
+[123.347331] (-) TimerEvent: {}
+[123.447874] (-) TimerEvent: {}
+[123.548769] (-) TimerEvent: {}
+[123.649552] (-) TimerEvent: {}
+[123.750279] (-) TimerEvent: {}
+[123.850981] (-) TimerEvent: {}
+[123.951481] (-) TimerEvent: {}
+[124.052187] (-) TimerEvent: {}
+[124.152883] (-) TimerEvent: {}
+[124.253577] (-) TimerEvent: {}
+[124.354284] (-) TimerEvent: {}
+[124.454983] (-) TimerEvent: {}
+[124.555757] (-) TimerEvent: {}
+[124.656634] (-) TimerEvent: {}
+[124.757383] (-) TimerEvent: {}
+[124.858087] (-) TimerEvent: {}
+[124.958582] (-) TimerEvent: {}
+[125.059281] (-) TimerEvent: {}
+[125.159774] (-) TimerEvent: {}
+[125.260270] (-) TimerEvent: {}
+[125.360970] (-) TimerEvent: {}
+[125.461650] (-) TimerEvent: {}
+[125.562448] (-) TimerEvent: {}
+[125.663338] (-) TimerEvent: {}
+[125.764074] (-) TimerEvent: {}
+[125.864785] (-) TimerEvent: {}
+[125.965283] (-) TimerEvent: {}
+[126.066009] (-) TimerEvent: {}
+[126.166710] (-) TimerEvent: {}
+[126.267415] (-) TimerEvent: {}
+[126.368120] (-) TimerEvent: {}
+[126.468825] (-) TimerEvent: {}
+[126.569381] (-) TimerEvent: {}
+[126.670276] (-) TimerEvent: {}
+[126.771035] (-) TimerEvent: {}
+[126.871735] (-) TimerEvent: {}
+[126.972423] (-) TimerEvent: {}
+[127.073104] (-) TimerEvent: {}
+[127.173583] (-) TimerEvent: {}
+[127.274282] (-) TimerEvent: {}
+[127.374973] (-) TimerEvent: {}
+[127.475674] (-) TimerEvent: {}
+[127.576225] (-) TimerEvent: {}
+[127.677126] (-) TimerEvent: {}
+[127.777900] (-) TimerEvent: {}
+[127.878629] (-) TimerEvent: {}
+[127.979333] (-) TimerEvent: {}
+[128.079826] (-) TimerEvent: {}
+[128.180518] (-) TimerEvent: {}
+[128.281197] (-) TimerEvent: {}
+[128.381897] (-) TimerEvent: {}
+[128.482618] (-) TimerEvent: {}
+[128.583162] (-) TimerEvent: {}
+[128.684031] (-) TimerEvent: {}
+[128.784800] (-) TimerEvent: {}
+[128.885505] (-) TimerEvent: {}
+[128.986208] (-) TimerEvent: {}
+[129.086666] (-) TimerEvent: {}
+[129.187300] (-) TimerEvent: {}
+[129.287986] (-) TimerEvent: {}
+[129.388685] (-) TimerEvent: {}
+[129.489389] (-) TimerEvent: {}
+[129.589926] (-) TimerEvent: {}
+[129.690823] (-) TimerEvent: {}
+[129.791598] (-) TimerEvent: {}
+[129.892307] (-) TimerEvent: {}
+[129.993004] (-) TimerEvent: {}
+[130.093699] (-) TimerEvent: {}
+[130.194426] (-) TimerEvent: {}
+[130.295142] (-) TimerEvent: {}
+[130.395848] (-) TimerEvent: {}
+[130.496557] (-) TimerEvent: {}
+[130.597257] (-) TimerEvent: {}
+[130.698062] (-) TimerEvent: {}
+[130.798960] (-) TimerEvent: {}
+[130.899708] (-) TimerEvent: {}
+[131.000417] (-) TimerEvent: {}
+[131.100911] (-) TimerEvent: {}
+[131.201372] (-) TimerEvent: {}
+[131.302037] (-) TimerEvent: {}
+[131.402742] (-) TimerEvent: {}
+[131.503448] (-) TimerEvent: {}
+[131.604150] (-) TimerEvent: {}
+[131.704935] (-) TimerEvent: {}
+[131.805831] (-) TimerEvent: {}
+[131.906615] (-) TimerEvent: {}
+[132.007326] (-) TimerEvent: {}
+[132.107815] (-) TimerEvent: {}
+[132.208519] (-) TimerEvent: {}
+[132.309014] (-) TimerEvent: {}
+[132.409726] (-) TimerEvent: {}
+[132.510455] (-) TimerEvent: {}
+[132.611156] (-) TimerEvent: {}
+[132.711703] (-) TimerEvent: {}
+[132.812631] (-) TimerEvent: {}
+[132.913411] (-) TimerEvent: {}
+[133.014130] (-) TimerEvent: {}
+[133.114828] (-) TimerEvent: {}
+[133.215310] (-) TimerEvent: {}
+[133.315991] (-) TimerEvent: {}
+[133.416692] (-) TimerEvent: {}
+[133.517394] (-) TimerEvent: {}
+[133.618097] (-) TimerEvent: {}
+[133.718653] (-) TimerEvent: {}
+[133.819531] (-) TimerEvent: {}
+[133.920284] (-) TimerEvent: {}
+[134.020985] (-) TimerEvent: {}
+[134.121684] (-) TimerEvent: {}
+[134.222401] (-) TimerEvent: {}
+[134.323090] (-) TimerEvent: {}
+[134.423862] (-) TimerEvent: {}
+[134.524568] (-) TimerEvent: {}
+[134.625271] (-) TimerEvent: {}
+[134.725788] (-) TimerEvent: {}
+[134.826629] (-) TimerEvent: {}
+[134.927358] (-) TimerEvent: {}
+[135.028044] (-) TimerEvent: {}
+[135.128745] (-) TimerEvent: {}
+[135.229217] (-) TimerEvent: {}
+[135.329905] (-) TimerEvent: {}
+[135.430627] (-) TimerEvent: {}
+[135.531322] (-) TimerEvent: {}
+[135.632015] (-) TimerEvent: {}
+[135.732541] (-) TimerEvent: {}
+[135.833355] (-) TimerEvent: {}
+[135.934101] (-) TimerEvent: {}
+[136.034798] (-) TimerEvent: {}
+[136.135495] (-) TimerEvent: {}
+[136.235978] (-) TimerEvent: {}
+[136.336672] (-) TimerEvent: {}
+[136.437375] (-) TimerEvent: {}
+[136.538071] (-) TimerEvent: {}
+[136.638774] (-) TimerEvent: {}
+[136.739468] (-) TimerEvent: {}
+[136.840247] (-) TimerEvent: {}
+[136.941135] (-) TimerEvent: {}
+[137.041901] (-) TimerEvent: {}
+[137.142641] (-) TimerEvent: {}
+[137.243142] (-) TimerEvent: {}
+[137.343836] (-) TimerEvent: {}
+[137.444545] (-) TimerEvent: {}
+[137.545250] (-) TimerEvent: {}
+[137.645977] (-) TimerEvent: {}
+[137.746673] (-) TimerEvent: {}
+[137.847445] (-) TimerEvent: {}
+[137.948315] (-) TimerEvent: {}
+[138.049065] (-) TimerEvent: {}
+[138.149777] (-) TimerEvent: {}
+[138.250294] (-) TimerEvent: {}
+[138.351002] (-) TimerEvent: {}
+[138.451711] (-) TimerEvent: {}
+[138.552411] (-) TimerEvent: {}
+[138.653111] (-) TimerEvent: {}
+[138.753808] (-) TimerEvent: {}
+[138.854376] (-) TimerEvent: {}
+[138.955242] (-) TimerEvent: {}
+[139.055987] (-) TimerEvent: {}
+[139.156495] (-) TimerEvent: {}
+[139.257197] (-) TimerEvent: {}
+[139.357665] (-) TimerEvent: {}
+[139.458377] (-) TimerEvent: {}
+[139.559067] (-) TimerEvent: {}
+[139.659773] (-) TimerEvent: {}
+[139.760473] (-) TimerEvent: {}
+[139.860998] (-) TimerEvent: {}
+[139.961838] (-) TimerEvent: {}
+[140.062610] (-) TimerEvent: {}
+[140.163104] (-) TimerEvent: {}
+[140.264173] (-) TimerEvent: {}
+[140.364646] (-) TimerEvent: {}
+[140.465330] (-) TimerEvent: {}
+[140.566035] (-) TimerEvent: {}
+[140.666736] (-) TimerEvent: {}
+[140.767425] (-) TimerEvent: {}
+[140.867956] (-) TimerEvent: {}
+[140.968778] (-) TimerEvent: {}
+[141.069525] (-) TimerEvent: {}
+[141.170247] (-) TimerEvent: {}
+[141.270798] (-) TimerEvent: {}
+[141.371437] (-) TimerEvent: {}
+[141.472185] (-) TimerEvent: {}
+[141.572889] (-) TimerEvent: {}
+[141.673599] (-) TimerEvent: {}
+[141.774300] (-) TimerEvent: {}
+[141.874790] (-) TimerEvent: {}
+[141.975575] (-) TimerEvent: {}
+[142.076325] (-) TimerEvent: {}
+[142.177050] (-) TimerEvent: {}
+[142.277750] (-) TimerEvent: {}
+[142.378278] (-) TimerEvent: {}
+[142.478993] (-) TimerEvent: {}
+[142.579483] (-) TimerEvent: {}
+[142.680186] (-) TimerEvent: {}
+[142.780879] (-) TimerEvent: {}
+[142.881570] (-) TimerEvent: {}
+[142.982304] (-) TimerEvent: {}
+[143.083137] (-) TimerEvent: {}
+[143.183673] (-) TimerEvent: {}
+[143.284394] (-) TimerEvent: {}
+[143.384890] (-) TimerEvent: {}
+[143.485601] (-) TimerEvent: {}
+[143.586321] (-) TimerEvent: {}
+[143.687023] (-) TimerEvent: {}
+[143.787719] (-) TimerEvent: {}
+[143.888423] (-) TimerEvent: {}
+[143.988950] (-) TimerEvent: {}
+[144.089574] (-) TimerEvent: {}
+[144.190359] (-) TimerEvent: {}
+[144.291068] (-) TimerEvent: {}
+[144.391566] (-) TimerEvent: {}
+[144.492266] (-) TimerEvent: {}
+[144.592970] (-) TimerEvent: {}
+[144.693664] (-) TimerEvent: {}
+[144.794384] (-) TimerEvent: {}
+[144.895080] (-) TimerEvent: {}
+[144.995609] (-) TimerEvent: {}
+[145.096435] (-) TimerEvent: {}
+[145.197186] (-) TimerEvent: {}
+[145.297913] (-) TimerEvent: {}
+[145.398652] (-) TimerEvent: {}
+[145.499344] (-) TimerEvent: {}
+[145.600035] (-) TimerEvent: {}
+[145.700735] (-) TimerEvent: {}
+[145.801447] (-) TimerEvent: {}
+[145.902147] (-) TimerEvent: {}
+[146.002684] (-) TimerEvent: {}
+[146.103551] (-) TimerEvent: {}
+[146.204312] (-) TimerEvent: {}
+[146.305033] (-) TimerEvent: {}
+[146.405741] (-) TimerEvent: {}
+[146.506279] (-) TimerEvent: {}
+[146.606967] (-) TimerEvent: {}
+[146.707655] (-) TimerEvent: {}
+[146.808360] (-) TimerEvent: {}
+[146.909064] (-) TimerEvent: {}
+[147.009589] (-) TimerEvent: {}
+[147.110438] (-) TimerEvent: {}
+[147.211205] (-) TimerEvent: {}
+[147.312004] (-) TimerEvent: {}
+[147.412730] (-) TimerEvent: {}
+[147.513232] (-) TimerEvent: {}
+[147.613928] (-) TimerEvent: {}
+[147.714647] (-) TimerEvent: {}
+[147.815352] (-) TimerEvent: {}
+[147.916050] (-) TimerEvent: {}
+[148.016570] (-) TimerEvent: {}
+[148.117154] (-) TimerEvent: {}
+[148.217919] (-) TimerEvent: {}
+[148.318717] (-) TimerEvent: {}
+[148.419455] (-) TimerEvent: {}
+[148.519960] (-) TimerEvent: {}
+[148.620670] (-) TimerEvent: {}
+[148.721375] (-) TimerEvent: {}
+[148.822096] (-) TimerEvent: {}
+[148.922793] (-) TimerEvent: {}
+[149.023487] (-) TimerEvent: {}
+[149.124267] (-) TimerEvent: {}
+[149.225151] (-) TimerEvent: {}
+[149.325902] (-) TimerEvent: {}
+[149.426653] (-) TimerEvent: {}
+[149.527152] (-) TimerEvent: {}
+[149.627862] (-) TimerEvent: {}
+[149.728564] (-) TimerEvent: {}
+[149.829266] (-) TimerEvent: {}
+[149.929757] (-) TimerEvent: {}
+[150.030471] (-) TimerEvent: {}
+[150.131025] (-) TimerEvent: {}
+[150.231700] (-) TimerEvent: {}
+[150.332241] (-) TimerEvent: {}
+[150.432758] (-) TimerEvent: {}
+[150.533259] (-) TimerEvent: {}
+[150.633742] (-) TimerEvent: {}
+[150.734248] (-) TimerEvent: {}
+[150.834749] (-) TimerEvent: {}
+[150.935242] (-) TimerEvent: {}
+[151.035732] (-) TimerEvent: {}
+[151.136289] (-) TimerEvent: {}
+[151.236965] (-) TimerEvent: {}
+[151.337716] (-) TimerEvent: {}
+[151.438472] (-) TimerEvent: {}
+[151.539199] (-) TimerEvent: {}
+[151.639764] (-) TimerEvent: {}
+[151.740526] (-) TimerEvent: {}
+[151.841226] (-) TimerEvent: {}
+[151.941929] (-) TimerEvent: {}
+[152.042437] (-) TimerEvent: {}
+[152.142990] (-) TimerEvent: {}
+[152.243681] (-) TimerEvent: {}
+[152.344467] (-) TimerEvent: {}
+[152.445193] (-) TimerEvent: {}
+[152.545907] (-) TimerEvent: {}
+[152.646621] (-) TimerEvent: {}
+[152.747316] (-) TimerEvent: {}
+[152.848015] (-) TimerEvent: {}
+[152.948723] (-) TimerEvent: {}
+[153.049419] (-) TimerEvent: {}
+[153.150012] (-) TimerEvent: {}
+[153.250861] (-) TimerEvent: {}
+[153.351612] (-) TimerEvent: {}
+[153.452331] (-) TimerEvent: {}
+[153.553038] (-) TimerEvent: {}
+[153.653541] (-) TimerEvent: {}
+[153.754036] (-) TimerEvent: {}
+[153.854715] (-) TimerEvent: {}
+[153.955402] (-) TimerEvent: {}
+[154.056090] (-) TimerEvent: {}
+[154.156606] (-) TimerEvent: {}
+[154.257199] (-) TimerEvent: {}
+[154.357731] (-) TimerEvent: {}
+[154.458276] (-) TimerEvent: {}
+[154.558984] (-) TimerEvent: {}
+[154.659479] (-) TimerEvent: {}
+[154.760178] (-) TimerEvent: {}
+[154.860703] (-) TimerEvent: {}
+[154.961505] (-) TimerEvent: {}
+[155.062233] (-) TimerEvent: {}
+[155.162743] (-) TimerEvent: {}
+[155.263542] (-) TimerEvent: {}
+[155.364390] (-) TimerEvent: {}
+[155.465126] (-) TimerEvent: {}
+[155.565770] (-) TimerEvent: {}
+[155.666225] (-) TimerEvent: {}
+[155.766659] (-) TimerEvent: {}
+[155.867297] (-) TimerEvent: {}
+[155.967956] (-) TimerEvent: {}
+[156.068643] (-) TimerEvent: {}
+[156.169188] (-) TimerEvent: {}
+[156.270062] (-) TimerEvent: {}
+[156.370883] (-) TimerEvent: {}
+[156.471693] (-) TimerEvent: {}
+[156.572494] (-) TimerEvent: {}
+[156.673283] (-) TimerEvent: {}
+[156.773855] (-) TimerEvent: {}
+[156.874620] (-) TimerEvent: {}
+[156.975163] (-) TimerEvent: {}
+[157.075734] (-) TimerEvent: {}
+[157.176596] (-) TimerEvent: {}
+[157.277255] (-) TimerEvent: {}
+[157.282547] (fast_lio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable fastlio_mapping\x1b[0m\n'}
+[157.377425] (-) TimerEvent: {}
+[157.478102] (-) TimerEvent: {}
+[157.578691] (-) TimerEvent: {}
+[157.679172] (-) TimerEvent: {}
+[157.779657] (-) TimerEvent: {}
+[157.880122] (-) TimerEvent: {}
+[157.980604] (-) TimerEvent: {}
+[158.081136] (-) TimerEvent: {}
+[158.181653] (-) TimerEvent: {}
+[158.282269] (-) TimerEvent: {}
+[158.382843] (-) TimerEvent: {}
+[158.483318] (-) TimerEvent: {}
+[158.583787] (-) TimerEvent: {}
+[158.684248] (-) TimerEvent: {}
+[158.784695] (-) TimerEvent: {}
+[158.885174] (-) TimerEvent: {}
+[158.985756] (-) TimerEvent: {}
+[159.086409] (-) TimerEvent: {}
+[159.187071] (-) TimerEvent: {}
+[159.287700] (-) TimerEvent: {}
+[159.388315] (-) TimerEvent: {}
+[159.488782] (-) TimerEvent: {}
+[159.589230] (-) TimerEvent: {}
+[159.689733] (-) TimerEvent: {}
+[159.790412] (-) TimerEvent: {}
+[159.891042] (-) TimerEvent: {}
+[159.980710] (fast_lio) StdoutLine: {'line': b'[100%] Built target fastlio_mapping\n'}
+[159.991202] (-) TimerEvent: {}
+[160.007777] (fast_lio) CommandEnded: {'returncode': 0}
+[160.010338] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'install'}
+[160.011806] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/luckrobot/fastlio_localization/build/fast_lio'], 'cwd': '/home/nvidia/luckrobot/fastlio_localization/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'nvidia'), ('SSH_CLIENT', '192.168.3.101 65486 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera/lib:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/lib:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nvidia/luckrobot/fastlio_localization/src'), ('SSH_TTY', '/dev/pts/6'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/nvidia/miniconda3'), ('COLCON_PREFIX_PATH', '/home/nvidia/luckrobot/mid360s_ws/install:/home/nvidia/luckrobot/orbbecsdk_ws/install:/home/nvidia/luckrobot/luckrobot_ws/install:/home/nvidia/luckrobot/livox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424325004505'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '19'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/nvidia/.local/bin:/home/nvidia/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nvidia/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/luckrobot/fastlio_localization/build/fast_lio'), ('CONDA_EXE', '/home/nvidia/miniconda3/bin/conda'), ('SSH_CONNECTION', '192.168.3.101 65486 192.168.3.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control/lib/python3.10/site-packages:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/luckrobot/luckrobot_ws/install/wheel_controller:/home/nvidia/luckrobot/luckrobot_ws/install/robot_display:/home/nvidia/luckrobot/mid360s_ws/install/fast_lio:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_description:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera:/home/nvidia/luckrobot/orbbecsdk_ws/install/orbbec_camera_msgs:/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[160.032600] (fast_lio) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[160.033050] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio\n'}
+[160.033460] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio\n'}
+[160.033745] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[160.033925] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h\n'}
+[160.034414] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[160.034629] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h\n'}
+[160.034820] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h\n'}
+[160.035025] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.c\n'}
+[160.035257] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h\n'}
+[160.035484] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h\n'}
+[160.035911] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/environment/library_path.sh\n'}
+[160.036189] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/environment/library_path.dsv\n'}
+[160.036587] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so\n'}
+[160.037140] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""\n'}
+[160.037307] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio\n'}
+[160.037508] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[160.037645] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[160.037804] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h\n'}
+[160.037935] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[160.038131] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so\n'}
+[160.038619] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[160.038798] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio\n'}
+[160.039004] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[160.039134] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[160.039292] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp\n'}
+[160.039419] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp\n'}
+[160.039577] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp\n'}
+[160.039747] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp\n'}
+[160.039919] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp\n'}
+[160.040098] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[160.040305] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio\n'}
+[160.040495] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[160.040655] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[160.040818] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[160.040990] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/dds_fastrtps\n'}
+[160.041121] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[160.041301] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so\n'}
+[160.041890] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[160.042350] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio\n'}
+[160.042521] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[160.042683] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[160.043138] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[160.043300] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.c\n'}
+[160.043524] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h\n'}
+[160.043857] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so\n'}
+[160.044427] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""\n'}
+[160.044783] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so\n'}
+[160.045088] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""\n'}
+[160.045458] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio\n'}
+[160.045750] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[160.046064] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[160.046303] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[160.046630] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.cpp\n'}
+[160.046865] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so\n'}
+[160.047173] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[160.047450] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so\n'}
+[160.047759] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""\n'}
+[160.048059] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/environment/pythonpath.sh\n'}
+[160.048369] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/environment/pythonpath.dsv\n'}
+[160.048646] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info\n'}
+[160.048922] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[160.049256] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[160.049535] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[160.049849] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[160.050156] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio\n'}
+[160.050445] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[160.050744] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py\n'}
+[160.051032] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[160.051349] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg\n'}
+[160.051629] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py\n'}
+[160.051854] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c\n'}
+[160.052070] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py\n'}
+[160.052287] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[160.052503] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so\n'}
+[160.052716] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c\n'}
+[160.052926] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[160.053140] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[160.091312] (-) TimerEvent: {}
+[160.127332] (fast_lio) StdoutLine: {'line': b"Listing '/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...\n"}
+[160.127721] (fast_lio) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...\n"}
+[160.127858] (fast_lio) StdoutLine: {'line': b"Listing '/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...\n"}
+[160.127974] (fast_lio) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...\n"}
+[160.128083] (fast_lio) StdoutLine: {'line': b"Compiling '/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...\n"}
+[160.138641] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[160.139080] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[160.139409] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[160.140087] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[160.140332] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[160.140944] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[160.141155] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so\n'}
+[160.141703] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""\n'}
+[160.141994] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/msg/Pose6D.idl\n'}
+[160.142325] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/msg/Pose6D.msg\n'}
+[160.142736] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/fast_lio/fastlio_mapping\n'}
+[160.148260] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/luckrobot/fastlio_localization/install/fast_lio/lib/fast_lio/fastlio_mapping" to ""\n'}
+[160.148655] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/config\n'}
+[160.149000] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/config/mid360.yaml\n'}
+[160.149655] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/config/avia.yaml\n'}
+[160.150212] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/config/horizon.yaml\n'}
+[160.150751] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/config/ouster64.yaml\n'}
+[160.151205] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/config/velodyne.yaml\n'}
+[160.151557] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/launch\n'}
+[160.151936] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/launch/mapping.launch.py\n'}
+[160.152394] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch\n'}
+[160.152863] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/rviz\n'}
+[160.153187] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/rviz/fastlio.rviz\n'}
+[160.154112] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio\n'}
+[160.154744] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio\n'}
+[160.155100] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh\n'}
+[160.155431] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv\n'}
+[160.155775] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/environment/path.sh\n'}
+[160.156090] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/environment/path.dsv\n'}
+[160.156437] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/local_setup.bash\n'}
+[160.156763] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/local_setup.sh\n'}
+[160.157309] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/local_setup.zsh\n'}
+[160.157723] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/local_setup.dsv\n'}
+[160.158175] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/package.dsv\n'}
+[160.158798] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/ament_index/resource_index/packages/fast_lio\n'}
+[160.159462] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake\n'}
+[160.159985] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake\n'}
+[160.160527] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[160.161055] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[160.161569] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake\n'}
+[160.162213] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[160.162739] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[160.163277] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake\n'}
+[160.163807] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[160.164336] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake\n'}
+[160.164863] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake\n'}
+[160.165393] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[160.165908] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[160.166474] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake\n'}
+[160.166927] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake\n'}
+[160.167413] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake\n'}
+[160.167884] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake\n'}
+[160.168327] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake\n'}
+[160.168750] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[160.169169] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[160.169634] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[160.170079] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[160.170532] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[160.170986] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[160.171431] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake\n'}
+[160.171780] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake\n'}
+[160.172191] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/nvidia/luckrobot/fastlio_localization/install/fast_lio/share/fast_lio/package.xml\n'}
+[160.178716] (fast_lio) CommandEnded: {'returncode': 0}
+[160.191662] (-) TimerEvent: {}
+[160.237123] (fast_lio) JobEnded: {'identifier': 'fast_lio', 'rc': 0}
+[160.239919] (-) EventReactorShutdown: {}

@@ -5,7 +5,7 @@
   <joint name="body_to_base_footprint_joint" type="fixed">
     <parent link="body" />
     <child link="base_footprint" />
-    <origin xyz="0.274505096 -0.023340782 -0.811089435" rpy="0.0000583155 -0.3490658504 -0.000170503" />
+    <origin xyz="-0.0194585 -0.0233408 -0.8560610" rpy="0 0 0" />
   </joint>
 
   <link name="base_footprint"/>
@@ -233,11 +233,9 @@
   </joint>
 
   <link name="livox_frame"/>
-
   <joint name="livox_poo_to_livox_joint" type="fixed">
     <parent link="livox_poo_link" />
     <child link="livox_frame" />
     <origin xyz="0 0 0.02108" rpy="0 0 0" />
   </joint>
-
 </robot>

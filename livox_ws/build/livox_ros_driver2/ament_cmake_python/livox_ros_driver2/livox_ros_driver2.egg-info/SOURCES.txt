@@ -4,3 +4,6 @@ livox_ros_driver2.egg-info/PKG-INFO
 livox_ros_driver2.egg-info/SOURCES.txt
 livox_ros_driver2.egg-info/dependency_links.txt
 livox_ros_driver2.egg-info/top_level.txt
+livox_ros_driver2/msg/__init__.py
+livox_ros_driver2/msg/_custom_msg.py
+livox_ros_driver2/msg/_custom_point.py

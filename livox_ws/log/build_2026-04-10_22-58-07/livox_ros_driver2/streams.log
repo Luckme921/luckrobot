@@ -1,0 +1,184 @@
+[0.023s] Invoking command in '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2 -- -j6 -l6
+[0.129s] [  1%] Built target livox_interfaces2__cpp
+[0.130s] [  8%] Built target livox_interfaces2__rosidl_generator_c
+[0.142s] [ 12%] Built target livox_ros_driver2_node
+[0.158s] [ 12%] Built target ament_cmake_python_copy_livox_ros_driver2
+[0.184s] [ 19%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[0.186s] [ 33%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[0.187s] [ 33%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[0.202s] [ 43%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[0.202s] [ 47%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[0.214s] [ 54%] Built target livox_interfaces2__rosidl_typesupport_c
+[0.255s] [ 54%] Built target livox_interfaces2
+[0.280s] [ 82%] Built target livox_ros_driver2
+[0.310s] [ 84%] Built target livox_interfaces2__py
+[0.355s] [ 89%] Built target livox_interfaces2__rosidl_generator_py
+[0.399s] [ 96%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext
+[0.400s] [ 96%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext
+[0.400s] [100%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext
+[0.713s] running egg_info
+[0.714s] writing livox_ros_driver2.egg-info/PKG-INFO
+[0.714s] writing dependency_links to livox_ros_driver2.egg-info/dependency_links.txt
+[0.715s] writing top-level names to livox_ros_driver2.egg-info/top_level.txt
+[0.722s] reading manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[0.723s] writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[0.793s] [100%] Built target ament_cmake_python_build_livox_ros_driver2_egg
+[0.823s] Invoked command in '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2 -- -j6 -l6
+[0.849s] Invoking command in '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2
+[0.869s] -- Install configuration: ""
+[0.869s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/rosidl_interfaces/livox_ros_driver2
+[0.869s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[0.870s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[0.870s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.h
+[0.870s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.h
+[0.870s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[0.870s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.c
+[0.870s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.h
+[0.871s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.h
+[0.871s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.h
+[0.871s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.c
+[0.872s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.h
+[0.872s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.h
+[0.872s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.h
+[0.872s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_c__visibility_control.h
+[0.873s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.sh
+[0.873s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.dsv
+[0.873s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so
+[0.873s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[0.873s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[0.874s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[0.874s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h
+[0.874s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h
+[0.874s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.874s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so
+[0.875s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[0.875s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[0.875s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.875s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[0.875s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_c.h
+[0.876s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.c
+[0.876s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.c
+[0.876s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h
+[0.876s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so
+[0.876s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so
+[0.876s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[0.877s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[0.877s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.hpp
+[0.877s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[0.877s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.hpp
+[0.877s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__traits.hpp
+[0.878s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.hpp
+[0.878s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__builder.hpp
+[0.878s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.hpp
+[0.878s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__builder.hpp
+[0.878s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.hpp
+[0.878s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__traits.hpp
+[0.879s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.hpp
+[0.879s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.879s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[0.879s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[0.879s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[0.880s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[0.880s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp
+[0.880s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/dds_fastrtps
+[0.880s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.880s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so
+[0.880s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[0.880s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[0.880s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[0.881s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.cpp
+[0.881s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp
+[0.881s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp
+[0.881s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp
+[0.881s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so
+[0.881s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so
+[0.881s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.sh
+[0.882s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.dsv
+[0.882s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info
+[0.882s] -- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/dependency_links.txt
+[0.882s] -- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/PKG-INFO
+[0.882s] -- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/top_level.txt
+[0.882s] -- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/SOURCES.txt
+[0.882s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2
+[0.883s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c
+[0.883s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c
+[0.883s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py
+[0.883s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[0.883s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg
+[0.883s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py
+[0.884s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py
+[0.884s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg_s.c
+[0.884s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point_s.c
+[0.884s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py
+[0.884s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[0.884s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[0.884s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so
+[0.885s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.944s] Listing '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2'...
+[0.944s] Listing '/home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg'...
+[0.955s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[0.955s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[0.956s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[0.956s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so
+[0.957s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.idl
+[0.957s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.idl
+[0.957s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.msg
+[0.957s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.msg
+[0.957s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node
+[0.958s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2.so
+[0.958s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config
+[0.959s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS2.rviz
+[0.959s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/HAP_config.json
+[0.959s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS1.rviz
+[0.959s] -- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/mixed_HAP_MID360_config.json
+[0.959s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360_config.json
+[0.959s] -- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360s_config.json
+[0.960s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2
+[0.960s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_mixed.py
+[0.960s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_MID360_launch.py
+[0.960s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_MID360s_launch.py
+[0.961s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_HAP_launch.py
+[0.961s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_HAP_launch.py
+[0.961s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360s_launch.py
+[0.961s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360_launch.py
+[0.961s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/package_run_dependencies/livox_ros_driver2
+[0.962s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/parent_prefix_path/livox_ros_driver2
+[0.962s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.sh
+[0.962s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.dsv
+[0.962s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.sh
+[0.962s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.dsv
+[0.962s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.bash
+[0.963s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.sh
+[0.963s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.zsh
+[0.963s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.dsv
+[0.963s] -- Installing: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv
+[0.963s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/packages/livox_ros_driver2
+[0.964s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport.cmake
+[0.964s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport-noconfig.cmake
+[0.964s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport.cmake
+[0.964s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.964s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport.cmake
+[0.965s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.965s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport.cmake
+[0.965s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport-noconfig.cmake
+[0.965s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cppExport.cmake
+[0.966s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.966s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.966s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport.cmake
+[0.966s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.966s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport.cmake
+[0.966s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport-noconfig.cmake
+[0.967s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport.cmake
+[0.967s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport-noconfig.cmake
+[0.967s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/ament_index/resource_index/rclcpp_components/livox_ros_driver2
+[0.967s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake-extras.cmake
+[0.967s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.967s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.967s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_libraries-extras.cmake
+[0.968s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_targets-extras.cmake
+[0.968s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.968s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.968s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake
+[0.968s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config-version.cmake
+[0.968s] -- Up-to-date: /home/nvidia/luckrobot/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.xml
+[0.972s] Invoked command in '/home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1:/home/nvidia/luckrobot/luckrobot_ws/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/luckrobot/livox_ws/build/livox_ros_driver2

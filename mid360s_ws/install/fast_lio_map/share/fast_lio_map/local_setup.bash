@@ -1,0 +1,1 @@
+/home/nvidia/luckrobot/mid360s_ws/build/fast_lio_map/ament_cmake_environment_hooks/local_setup.bash

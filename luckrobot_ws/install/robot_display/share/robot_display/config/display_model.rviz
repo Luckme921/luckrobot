@@ -27,7 +27,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud2
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -53,13 +53,13 @@ Visualization Manager:
       Class: rviz_default_plugins/RobotModel
       Collision Enabled: false
       Description File: /home/nvidia/luckrobot/luckrobot_ws/src/robot_display/urdf/0robot.SLDASM.urdf
-      Description Source: File
+      Description Source: Topic
       Description Topic:
         Depth: 5
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: ""
+        Value: /robot_description
       Enabled: true
       Links:
         All Links Enabled: true
@@ -76,6 +76,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         camera_link:
           Alpha: 1
           Show Axes: false
@@ -126,6 +130,8 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
+        body:
+          Value: true
         camera_link:
           Value: true
         camera_poo_link:
@@ -135,10 +141,6 @@ Visualization Manager:
         livox_poo_link:
           Value: true
         screw_link:
-          Value: true
-        wheel_right_link:
-          Value: true
-        whell_left_link:
           Value: true
       Marker Scale: 0.4000000059604645
       Name: TF
@@ -150,15 +152,8 @@ Visualization Manager:
           base_link:
             livox_poo_link:
               livox_frame:
-                {}
-            screw_link:
-              camera_poo_link:
-                camera_link:
+                body:
                   {}
-            wheel_right_link:
-              {}
-            whell_left_link:
-              {}
       Update Interval: 0
       Value: true
     - Angle Tolerance: 0.10000000149011612
@@ -410,7 +405,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 4.8824663162231445
+      Distance: 2.870237112045288
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -425,10 +420,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6653981804847717
+      Pitch: 0.7703981399536133
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.264029860496521
+      Yaw: 0.7490296363830566
     Saved: ~
 Window Geometry:
   Displays:
@@ -446,5 +441,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 2560
-  X: -781
-  Y: 232
+  X: 0
+  Y: 23

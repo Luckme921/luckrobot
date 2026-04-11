@@ -1,6 +1,0 @@
-{
-  "package_name": "fast_lio",
-  "non_idl_tuples": [
-    "/home/nvidia/luckrobot/mid360s_ws/src/FAST_LIO_ROS2:msg/Pose6D.msg"
-  ]
-}

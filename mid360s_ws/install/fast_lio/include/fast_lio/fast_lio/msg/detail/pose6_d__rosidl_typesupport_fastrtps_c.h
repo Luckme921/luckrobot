@@ -1,1 +1,0 @@
-/home/nvidia/luckrobot/mid360s_ws/build/fast_lio/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
