@@ -23,10 +23,10 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/humble\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/home/nvidia/luckrobot/fastlio_localization/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nvidia/luckrobot/livox_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nvidia/luckrobot/luckrobot_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nvidia/luckrobot/orbbecsdk_ws/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/nvidia/luckrobot/fastlio_localization/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)

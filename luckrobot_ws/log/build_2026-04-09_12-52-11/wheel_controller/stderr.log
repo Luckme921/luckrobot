@@ -1,8 +1,0 @@
-[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In function ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > build_write_multiple(uint8_t, uint16_t, uint16_t, const std::vector<short unsigned int>&)[m[K’:
-[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:48:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kmodbus_crc[m[K’ was not declared in this scope; did you mean ‘[01m[Kmodbus_crc16[m[K’?
-   48 |     uint16_t crc = [01;31m[Kmodbus_crc[m[K(f); f.push_back(crc&0xFF); f.push_back((crc>>8)&0xFF); return f;
-      |                    [01;31m[K^~~~~~~~~~[m[K
-      |                    [32m[Kmodbus_crc16[m[K
-gmake[2]: *** [CMakeFiles/lead_screw_motor_node.dir/build.make:76：CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/lead_screw_motor_node.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

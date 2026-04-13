@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target state_publisher_node[0m
-[ 37%] Built target danger_command_node
-[ 50%] Built target lead_screw_motor_node
-[ 75%] Built target wheel_controller_node
-[ 87%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m

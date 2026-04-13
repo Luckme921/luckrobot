@@ -5,7 +5,6 @@
 /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/whell_left_link.STL
 /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/base_link.STL
 /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/livox_link.STL
-/home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/camera_link.STL
 /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/wheel_right_link.STL
 /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/robot_display/meshes/screw_link.STL
 /home/nvidia/luckrobot/luckrobot_ws/install/robot_display/share/ament_index/resource_index/package_run_dependencies/robot_display

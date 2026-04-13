@@ -5,7 +5,7 @@
   <joint name="body_to_base_footprint_joint" type="fixed">
     <parent link="body" />
     <child link="base_footprint" />
-    <origin xyz="-0.0194585 -0.0233408 -0.8560610" rpy="0 0 0" />
+    <origin xyz="-0.0139987 -0.0233413 -0.8458771" rpy="0 0 0" />
   </joint>
 
   <link name="base_footprint"/>
@@ -119,16 +119,19 @@
 
   <link name="screw_link">
     <inertial>
-      <origin xyz="-0.00769620815871298 3.50362013748799E-06 0.0288829961541191" rpy="0 0 0" />
-      <mass value="0.477619946924312" />
+      <origin
+        xyz="-0.00427100433072362 3.13763129416249E-05 0.047332346870503"
+        rpy="0 0 0" />
+      <mass
+        value="0.510258972883763" />
       <inertia
-        ixx="0.00325280225415715"
-        ixy="3.30969826037761E-09"
-        ixz="-2.28880534043066E-06"
-        iyy="0.000831911086109197"
-        iyz="-3.29348610207974E-09"
-        izz="0.00264549391304978" />
-    </inertial>
+        ixx="0.00329335052583588"
+        ixy="2.96626302923215E-07"
+        ixz="-2.59064528728889E-06"
+        iyy="0.00083633633896411"
+        iyz="8.71877566364901E-08"
+        izz="0.00268588094530677" />
+    </inertial>    
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
@@ -154,61 +157,18 @@
     <limit lower="-0.2" upper="0" effort="100" velocity="0.1" />
   </joint>
 
-  <link name="camera_poo_link">
-    <inertial>
-      <origin xyz="0.0141559028046791 -0.0470107561831965 -0.000119325004315163" rpy="0 0 0" />
-      <mass value="0.0326390241085313" />
-      <inertia
-        ixx="4.07693585659203E-05"
-        ixy="2.08779440174718E-07"
-        ixz="-8.11014549496065E-08"
-        iyy="4.42525295935665E-06"
-        iyz="2.25017432153555E-07"
-        izz="4.01659365922531E-05" />
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://robot_display/meshes/camera_link.STL" />
-      </geometry>
-      <material name="">
-        <color rgba="1 1 0 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://robot_display/meshes/camera_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="camera_joint" type="fixed">
-    <origin xyz="0.0336516678874285 0.0474500000000005 0.324490381056767" rpy="0 0.5235987755983 0" />
-    <parent link="screw_link" />
-    <child link="camera_poo_link" />
-  </joint>
-
-  <link name="camera_link"/>
-
-  <joint name="camera_poo_to_camera_joint" type="fixed">
-    <parent link="camera_poo_link" />
-    <child link="camera_link" />
-    <origin xyz="0.02292 0 0" rpy="0 0 0" />
-  </joint>
-
   <link name="livox_poo_link">
     <inertial>
       <origin xyz="-0.0011535215104774 -1.68497683204461E-05 0.0041860206540324" rpy="0 0 0" />
       <mass value="0.0525930263369941" />
       <inertia
-        ixx="1.13650314609516E-05"
-        ixy="-5.6844398475156E-09"
-        ixz="5.26601377270881E-10"
-        iyy="1.13966414073652E-05"
-        iyz="-6.4096263936136E-10"
-        izz="1.91792981689664E-05" />
-    </inertial>
+        ixx="1.13651947226529E-05"
+        ixy="-5.6033368334055E-09"
+        ixz="4.23764794898073E-10"
+        iyy="1.13970227331633E-05"
+        iyz="-6.00563014356558E-10"
+        izz="1.91794026196399E-05" />
+      </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
@@ -227,7 +187,9 @@
   </link>
 
   <joint name="livox_joint" type="fixed">
-    <origin xyz="0.0170020182229269 5.3506078218414E-05 0.87097369906952" rpy="0 0.349065850398866 0.000160221167896802" />
+    <origin
+      xyz="0.00299873713924339 5.12624561495789E-05 0.858417099999998"
+      rpy="0 0 0" />
     <parent link="base_link" />
     <child link="livox_poo_link" />
   </joint>
@@ -238,6 +200,7 @@
     <child link="livox_frame" />
     <origin xyz="0 0 0.02108" rpy="0 0 0" />
   </joint>
+  
   <link name="imu_link"/>
   <joint name="livox_frame_to_livox_body_joint" type="fixed">
     <parent link="livox_frame" />

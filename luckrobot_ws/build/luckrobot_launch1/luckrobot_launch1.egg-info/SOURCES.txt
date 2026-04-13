@@ -5,6 +5,7 @@ setup.py
 ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/PKG-INFO
 ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/SOURCES.txt
 ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/dependency_links.txt
+../../build/luckrobot_launch1/luckrobot_launch1.egg-info/entry_points.txt
 ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/requires.txt
 ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/top_level.txt
 ../../build/luckrobot_launch1/luckrobot_launch1.egg-info/zip-safe

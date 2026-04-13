@@ -1,6 +1,0 @@
-[ 62%] Built target wheel_controller_node
-[ 62%] [32mBuilding CXX object CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o[0m
-[ 62%] Built target danger_command_node
-[ 75%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
-[ 87%] [32m[1mLinking CXX executable state_publisher_node[0m
-[ 87%] Built target state_publisher_node

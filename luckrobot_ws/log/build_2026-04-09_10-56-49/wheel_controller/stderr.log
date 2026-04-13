@@ -1,8 +1,0 @@
-[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:[m[K In constructor ‘[01m[KJointPublisher::JointPublisher()[m[K’:
-[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/state_publisher_node.cpp:45:42:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
-   45 |         timer_ = this->create_wall_timer([01;31m[K20ms[m[K, std::bind(&JointPublisher::publish, this));
-      |                                          [01;31m[K^~~~[m[K
-gmake[2]: *** [CMakeFiles/state_publisher_node.dir/build.make:76：CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/state_publisher_node.dir/all] 错误 2
-gmake[1]: *** 正在等待未完成的任务....
-gmake: *** [Makefile:146：all] 错误 2

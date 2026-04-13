@@ -1,4 +1,0 @@
-[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:[m[K In member function ‘[01m[Kvoid LeadScrewMotorNode::send_modbus_cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, const string&)[m[K’:
-[01m[K/home/nvidia/luckrobot/luckrobot_ws/src/wheel_controller/src/lead_screw_motor_node.cpp:127:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcmd_desc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-  127 |     void send_modbus_cmd(const std::vector<uint8_t>& frame, [01;35m[Kconst std::string& cmd_desc[m[K) {
-      |                                                             [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K

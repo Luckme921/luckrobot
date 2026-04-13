@@ -4,3 +4,5 @@ fast_lio_map.egg-info/PKG-INFO
 fast_lio_map.egg-info/SOURCES.txt
 fast_lio_map.egg-info/dependency_links.txt
 fast_lio_map.egg-info/top_level.txt
+fast_lio_map/msg/__init__.py
+fast_lio_map/msg/_pose6_d.py

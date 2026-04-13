@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target danger_command_node[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/lead_screw_motor_node.dir/src/lead_screw_motor_node.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/state_publisher_node.dir/src/state_publisher_node.cpp.o[0m
-[ 50%] Built target wheel_controller_node
-[ 75%] Built target danger_command_node
-[ 87%] [32m[1mLinking CXX executable lead_screw_motor_node[0m
-[ 87%] Built target lead_screw_motor_node

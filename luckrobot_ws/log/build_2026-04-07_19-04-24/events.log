@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000652] (-) JobUnselected: {'identifier': 'keyboard_control'}
-[0.000742] (-) JobUnselected: {'identifier': 'luckrobot_launch1'}
-[0.000790] (-) JobUnselected: {'identifier': 'robot_display'}
-[0.000852] (-) JobUnselected: {'identifier': 'wheel_controller'}
-[0.001295] (-) EventReactorShutdown: {}
