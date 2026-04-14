@@ -35,14 +35,21 @@ double CustomPlanner::getHeuristic(unsigned int x1, unsigned int y1, unsigned in
 bool CustomPlanner::isNodeValid(unsigned int x, unsigned int y) {
   if (x >= costmap_->getSizeInCellsX() || y >= costmap_->getSizeInCellsY()) return false;
   unsigned char cost = costmap_->getCost(x, y);
-  // 严格避障：远离致命障碍物和膨胀区
+  // 严格避障：拒绝致命障碍物和内切膨胀区
   return (cost != nav2_costmap_2d::LETHAL_OBSTACLE && 
           cost != nav2_costmap_2d::INSCRIBED_INFLATED_OBSTACLE && 
           cost != nav2_costmap_2d::NO_INFORMATION);
 }
 
-std::vector<std::pair<int, int>> CustomPlanner::getNeighbors() {
-  return {{0, 1}, {1, 0}, {0, -1}, {-1, 0}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
+// 【核心改造】蜂窝网格 (Hexagonal Grid) 的邻居映射
+std::vector<std::pair<int, int>> CustomPlanner::getHexNeighbors(unsigned int y) {
+  if (y % 2 == 0) {
+    // 偶数行 (y=0, 2, 4...) 的 6 个邻居
+    return {{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {1, -1}};
+  } else {
+    // 奇数行 (y=1, 3, 5...) 的 6 个邻居
+    return {{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {-1, 1}, {-1, -1}};
+  }
 }
 
 nav_msgs::msg::Path CustomPlanner::createPlan(
@@ -64,7 +71,6 @@ nav_msgs::msg::Path CustomPlanner::createPlan(
     throw nav2_core::PlannerException("起点或终点不在地图内");
   }
 
-  // A* 搜索核心
   std::priority_queue<std::shared_ptr<AStarNode>, std::vector<std::shared_ptr<AStarNode>>, CompareNode> open_list;
   std::vector<bool> closed_list(costmap_->getSizeInCellsX() * costmap_->getSizeInCellsY(), false);
 
@@ -86,17 +92,25 @@ nav_msgs::msg::Path CustomPlanner::createPlan(
       break;
     }
 
-    for (const auto& dir : getNeighbors()) {
+    // 使用六边形规则获取邻居
+    for (const auto& dir : getHexNeighbors(current_node->y)) {
       unsigned int next_x = current_node->x + dir.first;
       unsigned int next_y = current_node->y + dir.second;
 
       if (isNodeValid(next_x, next_y)) {
         int next_index = next_y * costmap_->getSizeInCellsX() + next_x;
         if (!closed_list[next_index]) {
-          double move_cost = (dir.first == 0 || dir.second == 0) ? 1.0 : 1.414;
-          // 添加代价地图惩罚，让路径尽量远离墙壁
+          
+          // 六边形网格中，移动到相邻 6 个格子的物理距离成本视为完全相等 (1.0)
+          // 这是蜂窝网格之所以“圆滑”的物理学基础！
+          double move_cost = 1.0;
+          
+          // 读取代价地图的值 (0~254)
           double penalty = static_cast<double>(costmap_->getCost(next_x, next_y)) / 254.0;
-          double g_cost = current_node->g_cost + move_cost + (penalty * 3.0); 
+          
+          // 【动态避障核心】：给障碍物极高的惩罚权重 (* 15.0)
+          // 哪怕路人只是被雷达扫到一点点外边，A* 也会像躲避瘟疫一样绕开他
+          double g_cost = current_node->g_cost + move_cost + (penalty * 15.0); 
           double h_cost = getHeuristic(next_x, next_y, goal_x, goal_y);
           
           open_list.push(std::make_shared<AStarNode>(next_x, next_y, g_cost, h_cost, current_node));
@@ -125,7 +139,7 @@ nav_msgs::msg::Path CustomPlanner::createPlan(
     global_path.poses.back() = goal;
     return global_path;
   } else {
-    throw nav2_core::PlannerException("A* 算法未能找到路径");
+    throw nav2_core::PlannerException("蜂窝 A* 未能找到路径");
   }
 }
 

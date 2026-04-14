@@ -29,7 +29,7 @@ struct AStarNode {
       : x(x), y(y), g_cost(g), h_cost(h), f_cost(g + h), parent(p) {}
 };
 
-// A* 优先队列比较器
+// A* 优先队列比较器 (f_cost 越小越优先)
 struct CompareNode {
   bool operator()(const std::shared_ptr<AStarNode>& a, const std::shared_ptr<AStarNode>& b) const {
     return a->f_cost > b->f_cost;
@@ -61,7 +61,9 @@ private:
   // A* 辅助函数
   double getHeuristic(unsigned int x1, unsigned int y1, unsigned int x2, unsigned int y2);
   bool isNodeValid(unsigned int x, unsigned int y);
-  std::vector<std::pair<int, int>> getNeighbors();
+  
+  // 【核心】：根据当前所在的行(y)，动态返回蜂窝网格的 6 个邻居
+  std::vector<std::pair<int, int>> getHexNeighbors(unsigned int y);
 };
 
 } // namespace nav2_custom_planner
