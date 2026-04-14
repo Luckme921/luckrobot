@@ -1,6 +1,6 @@
 # 家庭服务机器人
 ## 1.项目介绍
-主控基于Jetson orin nano super8G;ros2humble版本;导航基于Mid360s;机械臂基于huggingface的lerobot;PCB与CNC来源立创免费打样。
+主控基于Jetson orin nano super8G;Ros2humble版本;导航基于Mid360s;机械臂基于huggingface的lerobot;PCB与CNC来源立创免费打样。
 ## 2.使用说明
 可结合本人blibli此系列视频进行操作(未更新)，视频链接：[家庭服务机器人全栈怒挫中](https://www.bilibili.com/video/BV1C8AGzwE5Z?vd_source=956043e91d9fa045c1e7c746411b5102)  
 借鉴项目(现在已完成全部环境部署运行，导航完成，遥操训练正在制作，零件等全由本人DIY )：  
@@ -41,6 +41,7 @@
 <img src="image/GO2-1.gif" width=53% />
 </div>
 
+### 3.3图压缩&Nav2
 **基于 ROS2 和 PCL 库，用于将 `.pcd` 点云文件转换为用于 Navigation 的 `pgm` 栅格地图**
 
 |pcd|pgm|
