@@ -78,55 +78,18 @@ controller_server:
 
     progress_checker:
       plugin: "nav2_controller::SimpleProgressChecker"
-      required_movement_radius: 0.15   # <--- 保持 0.15，放宽进度检查
-      movement_time_allowance: 10.0
+      required_movement_radius: 0.05   # <--- 修改：只要移动 5cm 就算有进度
+      movement_time_allowance: 45.0    # <--- 修改：给足 45 秒原地旋转对准的时间，杜绝轻易超时报错
     general_goal_checker:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.40    # <--- 修改：放宽到 40 厘米。进入目标圈内就算到达
-      yaw_goal_tolerance: 3.14   # <--- 修改：放宽到 180 度。彻底不管车头朝向，到了就行
+      xy_goal_tolerance: 0.20    # 放宽到 20 厘米。进入目标圈内就算到达
+      yaw_goal_tolerance: 0.20   # 误差在 11.5 度以内就算到达
     FollowPath:
       plugin: "nav2_custom_controller::CustomController"
-      max_linear_speed: 0.1
-      max_angular_speed: 1.0
-      # plugin: "dwb_core::DWBLocalPlanner"
-      # debug_trajectory_details: True
-      # min_vel_x: 0.0
-      # min_vel_y: 0.0
-      # max_vel_x: 0.26
-      # max_vel_y: 0.0
-      # max_vel_theta: 1.0
-      # min_speed_xy: 0.10       # <--- 修改：强制最小起步线速度为 0.1 m/s，克服静摩擦死区
-      # max_speed_xy: 0.26
-      # min_speed_theta: 0.30    # <--- 修改：强制最小起步角速度为 0.3 rad/s，确保两轮能转起来
-      # acc_lim_x: 2.5
-      # acc_lim_y: 0.0
-      # acc_lim_theta: 1.5       
-      # decel_lim_x: -2.5
-      # decel_lim_y: 0.0
-      # decel_lim_theta: -1.5    
-      # vx_samples: 20
-      # vy_samples: 5
-      # vtheta_samples: 20
-      # sim_time: 1.7
-      # linear_granularity: 0.05
-      # angular_granularity: 0.025
-      # transform_tolerance: 0.2
-      # xy_goal_tolerance: 0.40    # <--- 同步放宽
-      # trans_stopped_velocity: 0.25
-      # short_circuit_trajectory_evaluation: True
-      # stateful: True
-      # critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      # BaseObstacle.scale: 0.02
-      # PathAlign.scale: 0.0       # <--- 修改：降为 0.0，彻底根治路径对齐“强迫症”
-      # PathAlign.forward_point_distance: 0.1
-      # GoalAlign.scale: 0.0       # <--- 修改：降为 0.0，不强求车头精准对齐目标点
-      # GoalAlign.forward_point_distance: 0.1
-      # PathDist.scale: 32.0       # 保持高权重，依然会贴着路线走
-      # GoalDist.scale: 24.0
-      # RotateToGoal.scale: 0.0    # <--- 修改：降为 0.0，禁止原地打转对齐，边走边拐弯！
-      # RotateToGoal.slowing_factor: 5.0
-      # RotateToGoal.lookahead_time: -1.0
+      max_linear_speed: 0.10
+      max_angular_speed: 0.70    # 强制限制最大角速度，抑制超调
+      lookahead_dist: 0.80       # 前视距离拉大，无视微小偏移
 
 local_costmap:
   local_costmap:
@@ -140,12 +103,12 @@ local_costmap:
       width: 3
       height: 3
       resolution: 0.05
-      robot_radius: 0.20  
+      robot_radius: 0.28         # 微调：0.28 (稍微瘦身)
       plugins: ["obstacle_layer", "inflation_layer"] 
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 4.0
-        inflation_radius: 0.25 
+        cost_scaling_factor: 2.5 # 微调：2.5 (让膨胀梯度变陡，危险区变薄)
+        inflation_radius: 0.45   # 微调：0.40
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
@@ -170,7 +133,7 @@ global_costmap:
       global_frame: map
       robot_base_frame: base_link
       use_sim_time: False
-      robot_radius: 0.20  
+      robot_radius: 0.28         # 全局同步减小到 0.28
       resolution: 0.05
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
@@ -193,8 +156,8 @@ global_costmap:
         map_subscribe_transient_local: True
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 4.0
-        inflation_radius: 0.25
+        cost_scaling_factor: 2.5 # 全局同步修改到 3.0
+        inflation_radius: 0.45   # 全局同步修改到 0.40
       always_send_full_costmap: True
 
 map_server:
@@ -226,6 +189,7 @@ behavior_server:
     costmap_topic: local_costmap/costmap_raw
     footprint_topic: local_costmap/published_footprint
     cycle_frequency: 10.0
+    # 1. 把 backup 加回插件列表，满足行为树的加载要求
     behavior_plugins: ["spin", "backup", "drive_on_heading", "assisted_teleop", "wait"]
     spin:
       plugin: "nav2_behaviors/Spin"

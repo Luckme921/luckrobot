@@ -35,22 +35,17 @@ protected:
   std::shared_ptr<tf2_ros::Buffer> tf_;
   std::shared_ptr<nav2_costmap_2d::Costmap2DROS> costmap_ros_;
   nav2_util::LifecycleNode::SharedPtr node_;
-  nav2_costmap_2d::Costmap2D *costmap_;
   nav_msgs::msg::Path global_plan_;
   
-  // 核心控制参数
   double max_angular_speed_;
   double max_linear_speed_;
-  double lookahead_dist_; // 新增：前视距离
+  double lookahead_dist_; 
 
-  // 状态机标志位：当前是否处于“原地旋转”状态
   bool is_rotating_ = false;
 
-  // 获取路径中前方一定距离的前视目标点
   geometry_msgs::msg::PoseStamped
   getNearestTargetPose(const geometry_msgs::msg::PoseStamped &current_pose);
   
-  // 计算目标点方向和当前位置的角度差
   double
   calculateAngleDifference(const geometry_msgs::msg::PoseStamped &current_pose,
                            const geometry_msgs::msg::PoseStamped &target_pose);

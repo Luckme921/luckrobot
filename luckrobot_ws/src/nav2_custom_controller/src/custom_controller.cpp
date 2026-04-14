@@ -3,14 +3,10 @@
 #include "nav2_util/geometry_utils.hpp"
 #include "nav2_util/node_utils.hpp"
 #include <algorithm>
-#include <chrono>
-#include <iostream>
-#include <memory>
-#include <string>
-#include <thread>
 #include <cmath>
 
 namespace nav2_custom_controller {
+
 void CustomController::configure(
     const rclcpp_lifecycle::LifecycleNode::WeakPtr &parent, std::string name,
     std::shared_ptr<tf2_ros::Buffer> tf,
@@ -20,146 +16,127 @@ void CustomController::configure(
   tf_ = tf;
   plugin_name_ = name;
 
-  // 严格按照你的硬件限制，默认锁死线速度 0.1，角速度 1.0
   nav2_util::declare_parameter_if_not_declared(
       node_, plugin_name_ + ".max_linear_speed", rclcpp::ParameterValue(0.1));
   node_->get_parameter(plugin_name_ + ".max_linear_speed", max_linear_speed_);
   
+  // 限制最高转速为 0.7，防止巨大惯性导致甩过头
   nav2_util::declare_parameter_if_not_declared(
-      node_, plugin_name_ + ".max_angular_speed", rclcpp::ParameterValue(1.0));
+      node_, plugin_name_ + ".max_angular_speed", rclcpp::ParameterValue(0.7)); 
   node_->get_parameter(plugin_name_ + ".max_angular_speed", max_angular_speed_);
 
-  // 设置前视距离：看向前方 0.4 米处，防止近视眼导致的疯狂超调
+  // 【治标核心】前视距离拉大到 0.8 米，无视微小偏离
   nav2_util::declare_parameter_if_not_declared(
-      node_, plugin_name_ + ".lookahead_dist", rclcpp::ParameterValue(0.4));
+      node_, plugin_name_ + ".lookahead_dist", rclcpp::ParameterValue(0.8));
   node_->get_parameter(plugin_name_ + ".lookahead_dist", lookahead_dist_);
 }
 
-void CustomController::cleanup() {
-  RCLCPP_INFO(node_->get_logger(), "清理控制器：%s", plugin_name_.c_str());
-}
-
-void CustomController::activate() {
-  RCLCPP_INFO(node_->get_logger(), "激活控制器：%s", plugin_name_.c_str());
-  is_rotating_ = false; // 激活时重置状态
-}
-
-void CustomController::deactivate() {
-  RCLCPP_INFO(node_->get_logger(), "停用控制器：%s", plugin_name_.c_str());
-}
+void CustomController::cleanup() { RCLCPP_INFO(node_->get_logger(), "清理控制器"); }
+void CustomController::activate() { is_rotating_ = false; }
+void CustomController::deactivate() {}
 
 geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
     const geometry_msgs::msg::PoseStamped &pose,
     const geometry_msgs::msg::Twist &, nav2_core::GoalChecker *) {
   
-  if (global_plan_.poses.empty()) {
-    throw nav2_core::PlannerException("收到长度为零的路径");
-  }
+  if (global_plan_.poses.empty()) throw nav2_core::PlannerException("路径为空");
 
-  // 1. 将机器人当前姿态转换到全局计划坐标系中
   geometry_msgs::msg::PoseStamped pose_in_globalframe;
-  if (!nav2_util::transformPoseInTargetFrame(
-          pose, pose_in_globalframe, *tf_, global_plan_.header.frame_id, 0.1)) {
-    throw nav2_core::PlannerException("无法将机器人姿态转换为全局坐标系");
+  if (!nav2_util::transformPoseInTargetFrame(pose, pose_in_globalframe, *tf_, global_plan_.header.frame_id, 0.1)) {
+    throw nav2_core::PlannerException("TF转换失败");
   }
 
-  // 2. 获取前视目标点
   auto target_pose = getNearestTargetPose(pose_in_globalframe);
-  
-  // 3. 计算角度差
   auto angle_diff = calculateAngleDifference(pose_in_globalframe, target_pose);
 
-  // 4. 【核心迟滞状态机】严格控制输出
-  double start_turn_thresh = 0.20; // 约 11.5 度，偏差大于此值开始原地转
-  double stop_turn_thresh = 0.05;  // 约 2.8 度，转到偏差小于此值才允许直行
+  // 【终极迟滞区间】：偏离超过 28度(0.5rad) 才转，对准到 3度(0.05rad) 以内才直行
+  double start_turn_thresh = 0.50; 
+  double stop_turn_thresh = 0.05;  
 
   if (is_rotating_) {
-    // 如果正在转，只有对得很准了才能停下
-    if (fabs(angle_diff) < stop_turn_thresh) {
-      is_rotating_ = false;
-    }
+    if (fabs(angle_diff) <= stop_turn_thresh) is_rotating_ = false;
   } else {
-    // 如果正在直行，只有偏得比较多了才允许停下开始转
-    if (fabs(angle_diff) > start_turn_thresh) {
-      is_rotating_ = true;
-    }
+    if (fabs(angle_diff) >= start_turn_thresh) is_rotating_ = true;
   }
 
   geometry_msgs::msg::TwistStamped cmd_vel;
-  cmd_vel.header.frame_id = pose.header.frame_id; // 必须是 base_link
+  cmd_vel.header.frame_id = pose.header.frame_id;
   cmd_vel.header.stamp = node_->get_clock()->now();
 
-  // 严格执行你的硬件约束
   if (is_rotating_) {
     cmd_vel.twist.linear.x = 0.0;
-    // 根据偏差方向，输出正 1.0 或 负 1.0
-    cmd_vel.twist.angular.z = (angle_diff > 0.0) ? max_angular_speed_ : -max_angular_speed_;
+    
+    // 【比例减速逻辑】最后阶段柔和刹车，稳稳停住
+    double min_angular_speed = 0.10; // 极低速保底
+    double slowdown_range = 0.60;    // 距离目标 34度 就开始慢慢踩刹车
+    double current_max_speed = std::min(max_angular_speed_, 0.70); 
+
+    double current_abs_error = fabs(angle_diff);
+    double target_angular_speed = current_max_speed;
+    
+    if (current_abs_error < slowdown_range) {
+        double ratio = (current_abs_error - stop_turn_thresh) / (slowdown_range - stop_turn_thresh);
+        ratio = std::max(0.0, std::min(1.0, ratio));
+        target_angular_speed = min_angular_speed + ratio * (current_max_speed - min_angular_speed);
+    }
+    
+    // 极性映射：目标在左(正差)，发负速度左转；目标在右(负差)，发正速度右转
+    cmd_vel.twist.angular.z = (angle_diff > 0.0) ? -target_angular_speed : target_angular_speed;
+    
   } else {
-    // 纯直行
     cmd_vel.twist.linear.x = max_linear_speed_;
     cmd_vel.twist.angular.z = 0.0;
   }
 
-  RCLCPP_INFO(node_->get_logger(), "发送速度(%.2f, %.2f) 角度偏差:%.2f",
+  RCLCPP_INFO(node_->get_logger(), "状态:%s 发送速度(%.2f, %.2f) 角度偏差:%.2f",
+              is_rotating_ ? "旋转" : "直行", 
               cmd_vel.twist.linear.x, cmd_vel.twist.angular.z, angle_diff);
               
   return cmd_vel;
 }
 
 void CustomController::setSpeedLimit(const double &, const bool &) {}
-
-void CustomController::setPlan(const nav_msgs::msg::Path &path) {
-  global_plan_ = path;
-}
+void CustomController::setPlan(const nav_msgs::msg::Path &path) { global_plan_ = path; }
 
 geometry_msgs::msg::PoseStamped CustomController::getNearestTargetPose(
     const geometry_msgs::msg::PoseStamped &current_pose) {
-  using nav2_util::geometry_utils::euclidean_distance;
   
-  // 1. 找到距离当前车体最近的点
-  int nearest_pose_index = 0;
-  double min_dist = euclidean_distance(current_pose, global_plan_.poses.front());
-  for (size_t i = 1; i < global_plan_.poses.size(); i++) {
-    double dist = euclidean_distance(current_pose, global_plan_.poses[i]);
-    if (dist < min_dist) {
-      nearest_pose_index = i;
-      min_dist = dist;
-    }
-  }
+  if (global_plan_.poses.size() < 2) return global_plan_.poses.back();
 
-  // 2. 擦除已经走过的路径
-  global_plan_.poses.erase(global_plan_.poses.begin(),
-                           global_plan_.poses.begin() + nearest_pose_index);
-
-  // 3. 【修复原逻辑缺陷】：往后寻找距离车体 lookahead_dist_ 的点
+  int nearest_idx = 0;
+  double min_dist = 1e9;
   for (size_t i = 0; i < global_plan_.poses.size(); i++) {
-      double dist = euclidean_distance(current_pose, global_plan_.poses[i]);
-      if (dist >= lookahead_dist_) {
-          return global_plan_.poses[i];
-      }
+    double dist = std::hypot(global_plan_.poses[i].pose.position.x - current_pose.pose.position.x, 
+                             global_plan_.poses[i].pose.position.y - current_pose.pose.position.y);
+    if (dist < min_dist) { min_dist = dist; nearest_idx = i; }
   }
-  
-  // 如果路径剩下的长度不足前视距离，直接返回最后一个点（终点）
-  return global_plan_.poses.back();
+
+  double accum_dist = 0.0;
+  int target_idx = nearest_idx;
+  for (size_t i = nearest_idx; i < global_plan_.poses.size() - 1; i++) {
+    accum_dist += std::hypot(global_plan_.poses[i+1].pose.position.x - global_plan_.poses[i].pose.position.x, 
+                             global_plan_.poses[i+1].pose.position.y - global_plan_.poses[i].pose.position.y);
+    if (accum_dist >= lookahead_dist_) { target_idx = i + 1; break; }
+  }
+
+  if (target_idx == nearest_idx && !global_plan_.poses.empty()) target_idx = global_plan_.poses.size() - 1;
+
+  if (nearest_idx > 0) {
+    global_plan_.poses.erase(global_plan_.poses.begin(), global_plan_.poses.begin() + nearest_idx);
+    target_idx -= nearest_idx;
+  }
+  return global_plan_.poses[target_idx];
 }
 
 double CustomController::calculateAngleDifference(
     const geometry_msgs::msg::PoseStamped &current_pose,
     const geometry_msgs::msg::PoseStamped &target_pose) {
-  
   float current_robot_yaw = tf2::getYaw(current_pose.pose.orientation);
-  float target_angle =
-      std::atan2(target_pose.pose.position.y - current_pose.pose.position.y,
-                 target_pose.pose.position.x - current_pose.pose.position.x);
-                 
+  float target_angle = std::atan2(target_pose.pose.position.y - current_pose.pose.position.y,
+                                  target_pose.pose.position.x - current_pose.pose.position.x);
   double angle_diff = target_angle - current_robot_yaw;
-  
-  // 角度归一化到 -PI 到 PI
-  if (angle_diff < -M_PI) {
-    angle_diff += 2.0 * M_PI;
-  } else if (angle_diff > M_PI) {
-    angle_diff -= 2.0 * M_PI;
-  }
+  if (angle_diff < -M_PI) angle_diff += 2.0 * M_PI;
+  else if (angle_diff > M_PI) angle_diff -= 2.0 * M_PI;
   return angle_diff;
 }
 } // namespace nav2_custom_controller
