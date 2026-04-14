@@ -9,8 +9,8 @@ def generate_launch_description():
     nav2_luckrobot_dir = get_package_share_directory('nav2_luckrobot')
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
     
-    rviz_config_dir = os.path.join(nav2_bringup_dir, 'rviz', 'nav2_default_view.rviz')
-    
+    # rviz_config_dir = os.path.join(nav2_bringup_dir, 'rviz', 'nav2_default_view.rviz')
+    rviz_config_dir = os.path.join(nav2_luckrobot_dir, 'rviz', 'my_nav2_view.rviz')
     # 强制实车环境使用 False
     use_sim_time = launch.substitutions.LaunchConfiguration('use_sim_time', default='false')
     
