@@ -45,10 +45,7 @@ protected:
 
   geometry_msgs::msg::PoseStamped
   getNearestTargetPose(const geometry_msgs::msg::PoseStamped &current_pose);
-  
-  double
-  calculateAngleDifference(const geometry_msgs::msg::PoseStamped &current_pose,
-                           const geometry_msgs::msg::PoseStamped &target_pose);
+  double calculateAngleDifference(const geometry_msgs::msg::PoseStamped &current_pose, const geometry_msgs::msg::PoseStamped &target_pose);
 };
 
 } // namespace nav2_custom_controller

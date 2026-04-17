@@ -20,12 +20,10 @@ void CustomController::configure(
       node_, plugin_name_ + ".max_linear_speed", rclcpp::ParameterValue(0.1));
   node_->get_parameter(plugin_name_ + ".max_linear_speed", max_linear_speed_);
   
-  // 限制最高转速为 0.7，防止巨大惯性导致甩过头
   nav2_util::declare_parameter_if_not_declared(
       node_, plugin_name_ + ".max_angular_speed", rclcpp::ParameterValue(0.7)); 
   node_->get_parameter(plugin_name_ + ".max_angular_speed", max_angular_speed_);
 
-  // 【治标核心】前视距离拉大到 0.8 米，无视微小偏离
   nav2_util::declare_parameter_if_not_declared(
       node_, plugin_name_ + ".lookahead_dist", rclcpp::ParameterValue(0.8));
   node_->get_parameter(plugin_name_ + ".lookahead_dist", lookahead_dist_);
@@ -49,8 +47,10 @@ geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
   auto target_pose = getNearestTargetPose(pose_in_globalframe);
   auto angle_diff = calculateAngleDifference(pose_in_globalframe, target_pose);
 
-  // 【终极迟滞区间】：偏离超过 28度(0.5rad) 才转，对准到 3度(0.05rad) 以内才直行
-  double start_turn_thresh = 0.50; 
+  // 【核心修复1】：收紧触发自转的阈值，防止瞎走撞墙
+  // 偏差超过约 8.5度 立刻停下旋转，不再让它带病直行
+  double start_turn_thresh = 0.15; 
+  // 对准到约 3度 内才允许起步直行
   double stop_turn_thresh = 0.05;  
 
   if (is_rotating_) {
@@ -64,11 +64,10 @@ geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
   cmd_vel.header.stamp = node_->get_clock()->now();
 
   if (is_rotating_) {
-    cmd_vel.twist.linear.x = 0.0;
+    cmd_vel.twist.linear.x = 0.0; // 纯旋转
     
-    // 【比例减速逻辑】最后阶段柔和刹车，稳稳停住
-    double min_angular_speed = 0.10; // 极低速保底
-    double slowdown_range = 0.60;    // 距离目标 34度 就开始慢慢踩刹车
+    double min_angular_speed = 0.08; 
+    double slowdown_range = 0.60;   
     double current_max_speed = std::min(max_angular_speed_, 0.70); 
 
     double current_abs_error = fabs(angle_diff);
@@ -80,10 +79,11 @@ geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
         target_angular_speed = min_angular_speed + ratio * (current_max_speed - min_angular_speed);
     }
     
-    // 极性映射：目标在左(正差)，发负速度左转；目标在右(负差)，发正速度右转
     cmd_vel.twist.angular.z = (angle_diff > 0.0) ? -target_angular_speed : target_angular_speed;
     
   } else {
+    // 【核心修复2】：恢复绝对纯粹的直行
+    // 没有任何角速度输出，彻底解决小车边走边转的现象
     cmd_vel.twist.linear.x = max_linear_speed_;
     cmd_vel.twist.angular.z = 0.0;
   }
@@ -100,9 +100,7 @@ void CustomController::setPlan(const nav_msgs::msg::Path &path) { global_plan_ =
 
 geometry_msgs::msg::PoseStamped CustomController::getNearestTargetPose(
     const geometry_msgs::msg::PoseStamped &current_pose) {
-  
   if (global_plan_.poses.size() < 2) return global_plan_.poses.back();
-
   int nearest_idx = 0;
   double min_dist = 1e9;
   for (size_t i = 0; i < global_plan_.poses.size(); i++) {
@@ -110,7 +108,6 @@ geometry_msgs::msg::PoseStamped CustomController::getNearestTargetPose(
                              global_plan_.poses[i].pose.position.y - current_pose.pose.position.y);
     if (dist < min_dist) { min_dist = dist; nearest_idx = i; }
   }
-
   double accum_dist = 0.0;
   int target_idx = nearest_idx;
   for (size_t i = nearest_idx; i < global_plan_.poses.size() - 1; i++) {
@@ -118,9 +115,7 @@ geometry_msgs::msg::PoseStamped CustomController::getNearestTargetPose(
                              global_plan_.poses[i+1].pose.position.y - global_plan_.poses[i].pose.position.y);
     if (accum_dist >= lookahead_dist_) { target_idx = i + 1; break; }
   }
-
   if (target_idx == nearest_idx && !global_plan_.poses.empty()) target_idx = global_plan_.poses.size() - 1;
-
   if (nearest_idx > 0) {
     global_plan_.poses.erase(global_plan_.poses.begin(), global_plan_.poses.begin() + nearest_idx);
     target_idx -= nearest_idx;
