@@ -7,8 +7,9 @@
 #include <thread>
 #include <atomic>
 #include <mutex>
+#include <cmath>
 
-// 限位：0 ~ -462mm（你要求的）
+// 限位：0 ~ -462mm
 const float MAX_LIMIT = 0.0f;
 const float MIN_LIMIT = -462.0f;
 
@@ -52,7 +53,6 @@ public:
     LeadScrewMotorNode() : Node("lead_screw_motor_node"), serial_(std::make_shared<LibSerial::SerialPort>()) {
         if (!init_serial()) { RCLCPP_FATAL(this->get_logger(), "串口初始化失败"); rclcpp::shutdown(); return; }
 
-        // 🔥 【唯一修改】可靠QoS订阅，100%收到指令，永不丢失
         sub_ = this->create_subscription<std_msgs::msg::Float32>(
             "/lead_screw/displacement",
             rclcpp::QoS(rclcpp::KeepLast(100)).reliable().durability_volatile(),
@@ -62,7 +62,7 @@ public:
         pub_ = this->create_publisher<std_msgs::msg::Float32>("/lead_screw/current_position", 10);
         std::thread(&LeadScrewMotorNode::homing, this).detach();
 
-        RCLCPP_INFO(this->get_logger(), "✅ 丝杠节点(终极可靠版)");
+        RCLCPP_INFO(this->get_logger(), "✅ 丝杠节点(精准状态轮询版)");
         RCLCPP_INFO(this->get_logger(), "📏 限位：0 ~ -462mm");
     }
 
@@ -81,32 +81,95 @@ private:
         } catch (...) { return false; }
     }
 
+    // 仅发送数据的底层函数
     void send(const std::vector<uint8_t>& f) {
         std::lock_guard<std::mutex> lock(serial_mutex_);
         serial_->Write(f);
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
 
+    // 🔥 发送指令并接收返回值的函数（带超时机制）
+    bool send_and_receive(const std::vector<uint8_t>& tx_frame, std::vector<uint8_t>& rx_data, size_t expected_len) {
+        std::lock_guard<std::mutex> lock(serial_mutex_);
+        serial_->FlushIOBuffers(); // 清空历史残留数据
+        serial_->Write(tx_frame);
+        
+        rx_data.clear();
+        auto start_time = std::chrono::steady_clock::now();
+        // 500ms 超时等待数据返回
+        while (rx_data.size() < expected_len) {
+            if (serial_->IsDataAvailable()) {
+                uint8_t byte;
+                serial_->ReadByte(byte, 10);
+                rx_data.push_back(byte);
+            }
+            if (std::chrono::steady_clock::now() - start_time > std::chrono::milliseconds(500)) {
+                return false; 
+            }
+        }
+        return true;
+    }
+
     void homing() {
-        RCLCPP_INFO(this->get_logger(), "🔧 回零中...");
+        RCLCPP_INFO(this->get_logger(), "🔧 触发回零中...");
+        
+        // 1. 下发回零启动序列
         std::vector<std::vector<uint8_t>> cmds = {
             build_write_single(SLAVE_ID,0x0200,9), build_write_single(SLAVE_ID,0x1003,6),
             build_write_single(SLAVE_ID,0x1023,2), build_write_multiple(SLAVE_ID,0x1024,2,{(uint16_t)HOMING_SPEED,(uint16_t)(HOMING_SPEED>>16)}),
             build_write_single(SLAVE_ID,0x0307,0), build_write_single(SLAVE_ID,0x0D08,128)
         };
         for(auto c:cmds) send(c);
-        std::this_thread::sleep_for(std::chrono::seconds(25));
-        send(build_write_single(SLAVE_ID,0x0D08,256));
+
+        // 2. 状态轮询指令与期待的正确回复
+        std::vector<uint8_t> check_status_cmd = {0x01, 0x03, 0x0B, 0x07, 0x00, 0x02, 0x77, 0xEE};
+        std::vector<uint8_t> target_reply = {0x01, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 0xFA, 0x33};
+        std::vector<uint8_t> rx_buf;
+
+        RCLCPP_INFO(this->get_logger(), "🔍 正在高频查询电机内部回零状态...");
+
+        // 🔥 【核心优化】死循环查询状态，查到 00 00 才放行
+        bool is_homing_finished = false;
+        while (rclcpp::ok() && !is_homing_finished) {
+            std::this_thread::sleep_for(std::chrono::milliseconds(500)); // 每半秒问一次
+            
+            if (send_and_receive(check_status_cmd, rx_buf, 9)) {
+                // 如果收到的回复与设定的目标帧完全一致
+                if (rx_buf == target_reply) {
+                    is_homing_finished = true;
+                    RCLCPP_INFO(this->get_logger(), "🎯 收到确认回复！电机彻底回零完成！");
+                } else {
+                    RCLCPP_DEBUG(this->get_logger(), "电机正在回零动作中...");
+                }
+            } else {
+                RCLCPP_WARN(this->get_logger(), "⚠️ 状态查询超时，总线可能繁忙，重试中...");
+            }
+        }
+
+        // 3. 收到结束状态后，发送停止回零控制字
+        RCLCPP_INFO(this->get_logger(), "⏹️ 发送解除回零状态指令...");
+        send(build_write_single(SLAVE_ID, 0x0D08, 256));
         
-        pos_ = 0.0f; home_done_ = true;
+        // 4. 重置坐标并彻底解锁移动权限
+        pos_ = 0.0f; 
+        home_done_.store(true);
         publish_pos();
-        RCLCPP_INFO(this->get_logger(), "✅ 回零完成");
+        RCLCPP_INFO(this->get_logger(), "✅ 丝杠节点已就绪，允许接收移动指令！");
     }
 
     void move(float delta) {
-        std::lock_guard<std::mutex> lock(move_mutex_);
+        // 🔥 【排队挂起逻辑】：收到 ROS 话题后检查是否回零结束。
+        // 如果电机还在回零，本线程会在此死循环等待，直到 homing() 把 home_done_ 设为 true。
+        if (!home_done_.load()) {
+            RCLCPP_INFO(this->get_logger(), "⏳ 收到移动指令(%.1f)，但回零尚未结束，已挂起等待...", delta);
+            while (!home_done_.load()) {
+                std::this_thread::sleep_for(std::chrono::milliseconds(500));
+            }
+            RCLCPP_INFO(this->get_logger(), "▶️ 等待结束！立即执行堆积的移动指令(%.1f)", delta);
+        }
 
-        if(!home_done_) return;
+        // 获取锁，执行正式的下降动作
+        std::lock_guard<std::mutex> lock(move_mutex_);
 
         float curr = pos_.load();
         float target = curr + delta;
@@ -136,6 +199,7 @@ private:
     }
 
     void callback(const std_msgs::msg::Float32::SharedPtr msg) {
+        // 创建独立线程去执行，保证就算被 move() 里的 while 挂起，也不会卡死整个 ROS 节点通信
         std::thread(&LeadScrewMotorNode::move, this, msg->data).detach();
     }
 

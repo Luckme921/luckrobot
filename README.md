@@ -2,7 +2,7 @@
 ## 1.项目介绍
 主控基于Jetson orin nano super8G;Ros2humble版本;导航基于Mid360s;机械臂基于huggingface的lerobot;PCB与CNC来源立创免费打样。
 ## 2.使用说明
-可结合本人blibli此系列视频进行操作(未更新)，视频链接：[家庭服务机器人全栈怒挫中](https://www.bilibili.com/video/BV1C8AGzwE5Z?vd_source=956043e91d9fa045c1e7c746411b5102)  
+可结合本人blibli此系列视频进行操作(未更新)，视频链接：[jetson nano部署fastlio2建图加定位，A*规划导航](https://www.bilibili.com/video/BV1tbQGBkE4F?vd_source=956043e91d9fa045c1e7c746411b5102)  
 借鉴项目(现在已完成全部环境部署运行，导航完成，遥操训练正在制作，零件等全由本人DIY )：  
 - 建图算法：fast_lio2_ros2：[https://github.com/Ericsii/FAST_LIO_ROS2?tab=readme-ov-file](https://github.com/Ericsii/FAST_LIO_ROS2?tab=readme-ov-file)
 - 定位算法：FAST_LIO_LOCALIZATION_HUMANOID：[https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID/tree/humble#](https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID/tree/humble#)

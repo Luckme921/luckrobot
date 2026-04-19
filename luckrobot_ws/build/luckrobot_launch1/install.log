@@ -3,6 +3,7 @@
 /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/ament_index/resource_index/packages/luckrobot_launch1
 /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/package.xml
 /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/launch/wheel_control_launch.py
+/home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/share/luckrobot_launch1/launch/luckrobot_bringup.launch.py
 /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1-0.0.0-py3.10.egg-info/entry_points.txt
 /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/nvidia/luckrobot/luckrobot_ws/install/luckrobot_launch1/lib/python3.10/site-packages/luckrobot_launch1-0.0.0-py3.10.egg-info/zip-safe
