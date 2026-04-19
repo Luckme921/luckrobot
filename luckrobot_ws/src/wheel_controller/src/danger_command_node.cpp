@@ -25,9 +25,8 @@ const int CMD_LENGTH = 5;
 const int COOLDOWN_MS = 3000;
 const int SERIAL_WRITE_TIMEOUT_MS = 500; 
 
-// [强化配置] 针对CH340的超长重试机制
-const int MAX_INIT_RETRIES = 15;       // 最多尝试15次
-const int RETRY_WAIT_MS = 2000;        // 每次等待2秒，给足USB初始化时间
+const int MAX_INIT_RETRIES = 15;       
+const int RETRY_WAIT_MS = 2000;        
 
 // ==================== 核心节点类 ====================
 class DangerCommandNode : public rclcpp::Node {
@@ -37,46 +36,10 @@ public:
                           left_dangerous_(false),
                           right_dangerous_(false),
                           last_left_send_ms_(0),
-                          last_right_send_ms_(0) {
-        // ==================== [强化修改开始] 带冷启动的串口初始化 ====================
-        RCLCPP_INFO(this->get_logger(), "========================================");
-        RCLCPP_INFO(this->get_logger(), "正在尝试连接 CH340 设备...");
-        RCLCPP_INFO(this->get_logger(), "目标: %s", SERIAL_PORT);
-        RCLCPP_INFO(this->get_logger(), "========================================");
-
-        bool connected = false;
-        for (int i = 0; i < MAX_INIT_RETRIES && rclcpp::ok(); ++i) {
-            RCLCPP_INFO(this->get_logger(), "[尝试 %d/%d] 正在打开串口...", i + 1, MAX_INIT_RETRIES);
-
-            // 1. 确保上次的句柄已彻底关闭
-            if (serial_fd_ >= 0) {
-                close(serial_fd_);
-                serial_fd_ = -1;
-                std::this_thread::sleep_for(std::chrono::milliseconds(100)); // 彻底释放
-            }
-
-            // 2. 尝试初始化
-            if (init_serial()) {
-                connected = true;
-                RCLCPP_INFO(this->get_logger(), "========================================");
-                RCLCPP_INFO(this->get_logger(), "串口连接成功！");
-                RCLCPP_INFO(this->get_logger(), "========================================");
-                break;
-            } else {
-                // 3. 失败处理
-                if (i < MAX_INIT_RETRIES - 1) {
-                    RCLCPP_WARN(this->get_logger(), "连接失败，%dms 后重试... (提示: 请检查USB线是否插紧)", RETRY_WAIT_MS);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(RETRY_WAIT_MS));
-                }
-            }
-        }
-
-        if (!connected || serial_fd_ < 0) {
-            RCLCPP_FATAL(this->get_logger(), "经过多次尝试，无法连接串口，节点退出。");
-            rclcpp::shutdown();
-            return;
-        }
-        // ==================== [强化修改结束] ====================
+                          last_right_send_ms_(0),
+                          retry_count_(0) {
+        
+        RCLCPP_INFO(this->get_logger(), "🚀 危险报警节点启动 (异步自动重连版)");
 
         // 订阅距离话题
         obstacle_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
@@ -84,28 +47,67 @@ public:
             10,
             std::bind(&DangerCommandNode::obstacle_callback, this, std::placeholders::_1));
 
-        // 定时器：200ms检查
+        // 业务检查定时器：200ms检查一次危险状态
         check_timer_ = this->create_wall_timer(
             std::chrono::milliseconds(200),
             std::bind(&DangerCommandNode::check_and_send, this));
 
-        RCLCPP_INFO(this->get_logger(), "节点启动成功！冷却期: %dms", COOLDOWN_MS);
-        RCLCPP_INFO(this->get_logger(), "串口: %s (115200 8N1)", SERIAL_PORT);
+        // 🔥 [核心优化] 异步初始化定时器：不再阻塞构造函数，后台每 2 秒尝试一次连接
+        init_timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(RETRY_WAIT_MS),
+            std::bind(&DangerCommandNode::async_init_serial, this));
+
+        // 启动时立刻触发一次连接尝试
+        async_init_serial();
     }
 
     ~DangerCommandNode() {
         if (serial_fd_ >= 0) close(serial_fd_);
-        RCLCPP_INFO(this->get_logger(), "节点退出");
+        RCLCPP_INFO(this->get_logger(), "节点安全退出");
     }
 
 private:
-    // 串口初始化（保持原样，仅被上面的逻辑调用）
-    bool init_serial() {
-        serial_fd_ = open(SERIAL_PORT, O_RDWR | O_NOCTTY);
-        if (serial_fd_ < 0) {
-            RCLCPP_ERROR(this->get_logger(), "  [错误] open() 失败: %s (errno: %d)", strerror(errno), errno);
-            return false;
+    // 🔥 [核心优化] 后台异步重连逻辑
+    void async_init_serial() {
+        // 如果已经连上，直接返回
+        if (serial_fd_ >= 0) return;
+
+        if (retry_count_ == 0) {
+            RCLCPP_INFO(this->get_logger(), "正在尝试连接 CH340 串口设备...");
         }
+
+        if (init_serial()) {
+            RCLCPP_INFO(this->get_logger(), "========================================");
+            RCLCPP_INFO(this->get_logger(), "✅ 串口连接成功！(冷却期: %dms)", COOLDOWN_MS);
+            RCLCPP_INFO(this->get_logger(), "========================================");
+            
+            // 连上后，停止重连定时器，清空重试次数
+            if (init_timer_) {
+                init_timer_->cancel();
+            }
+            retry_count_ = 0;
+        } else {
+            retry_count_++;
+            if (retry_count_ >= MAX_INIT_RETRIES) {
+                RCLCPP_FATAL(this->get_logger(), "❌ 经过 %d 次尝试仍无法连接，彻底放弃，节点终止！", MAX_INIT_RETRIES);
+                rclcpp::shutdown();
+            } else {
+                RCLCPP_WARN(this->get_logger(), "⏳ 连接失败，将在后台重试 (%d/%d)...", retry_count_, MAX_INIT_RETRIES);
+            }
+        }
+    }
+
+    // 串口底层初始化
+    bool init_serial() {
+        // 🔥 [核心优化] 增加 O_NDELAY 标志。
+        // CH340 经常会因为没有载波信号导致 open() 函数死锁挂起。O_NDELAY 强制立刻打开！
+        serial_fd_ = open(SERIAL_PORT, O_RDWR | O_NOCTTY | O_NDELAY);
+        if (serial_fd_ < 0) {
+            return false; // 打开失败，交由外层重连
+        }
+
+        // 打开成功后，恢复阻塞模式，供后续读写使用
+        fcntl(serial_fd_, F_SETFL, 0);
 
         struct termios tty;
         memset(&tty, 0, sizeof(tty));
@@ -153,13 +155,20 @@ private:
 
     // 发送指令
     bool send_command(const uint8_t* cmd, int cmd_len) {
+        // 如果没连上，不执行发送
         if (serial_fd_ < 0 || !cmd || cmd_len <= 0) return false;
 
         tcflush(serial_fd_, TCOFLUSH);
         ssize_t sent = write(serial_fd_, cmd, cmd_len);
         
         if (sent != cmd_len) {
-            RCLCPP_ERROR(this->get_logger(), "指令发送失败: 期望%d，实际%ld", cmd_len, sent);
+            RCLCPP_ERROR(this->get_logger(), "⚠️ 指令发送失败，可能是USB断开！触发重新连接...");
+            // 🔥 [核心优化] 发送失败直接关闭文件描述符，并在后台重新启动重连定时器
+            close(serial_fd_);
+            serial_fd_ = -1;
+            if (init_timer_) {
+                init_timer_->reset();
+            }
             return false;
         }
 
@@ -184,6 +193,9 @@ private:
     void check_and_send() {
         std::lock_guard<std::mutex> lock(state_mutex_);
         
+        // 如果串口尚未就绪，不执行检测
+        if (serial_fd_ < 0) return;
+
         uint64_t now_ms = this->now().nanoseconds() / 1000000;
 
         // 左轮处理
@@ -216,12 +228,14 @@ private:
     // 成员变量
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr obstacle_sub_;
     rclcpp::TimerBase::SharedPtr check_timer_;
+    rclcpp::TimerBase::SharedPtr init_timer_; // 异步重连定时器
     
     int serial_fd_;                         
     bool left_dangerous_;                   
     bool right_dangerous_;                  
     uint64_t last_left_send_ms_;            
     uint64_t last_right_send_ms_;           
+    int retry_count_;
     std::mutex state_mutex_;                
 };
 
