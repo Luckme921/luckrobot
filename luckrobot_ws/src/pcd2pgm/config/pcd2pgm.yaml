@@ -1,0 +1,28 @@
+pcd2pgm:
+  ros__parameters:
+    # 1. 绝对路径（完美匹配你 config 里的路径）
+    pcd_file: /home/nvidia/luckrobot/mid360s_ws/map/test_cleaned.pcd 
+    
+    # 2. 坐标系转换（严格保持全0，FAST-LIO 的地图已经对齐了世界坐标系）
+    odom_to_lidar_odom: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]      
+    
+    # 3. 开启高度切片（必须为 false）
+    flag_pass_through: false                                 
+    
+    # 4. 2D 地图分辨率（依然保持 5cm，Nav2 的最佳标准）
+    map_resolution: 0.05                                    
+    
+    # 5. 避免话题冲突，我们可以顺手改个名字，或者关掉定位节点再跑
+    map_topic_name: map                                     
+    
+    # 6. 【核心修改】扩大搜索半径
+    thre_radius: 0.8                                        
+    
+    # 7. Z轴最大值（保持与 scan_2d 完全一致：雷达上方 10cm）
+    thre_z_max: 0.2                                         
+    
+    # 8. Z轴最小值（保持与 scan_2d 完全一致：雷达下方 40cm）
+    thre_z_min: -0.4                                        
+    
+    # 9. 【核心修改】降低点数要求。在 0.8m 半径内只要有 10 个点就保留，防止稀疏的墙壁被删掉
+    thres_point_count: 10
