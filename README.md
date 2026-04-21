@@ -7,7 +7,10 @@
 - 建图算法：fast_lio2_ros2：[https://github.com/Ericsii/FAST_LIO_ROS2?tab=readme-ov-file](https://github.com/Ericsii/FAST_LIO_ROS2?tab=readme-ov-file)
 - 定位算法：FAST_LIO_LOCALIZATION_HUMANOID：[https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID/tree/humble#](https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID/tree/humble#)
 - 3D-2D图压缩用于Nav2:[https://github.com/LihanChen2004/pcd2pgm](https://github.com/LihanChen2004/pcd2pgm)
-- 机械臂：双臂lerobot：[https://github.com/lerobot/lerobot](https://github.com/lerobot/lerobot)
+- 机械臂：双臂lerobot：[https://github.com/lerobot/lerobot](https://github.com/lerobot/lerobot)  
+
+**livox_ws为mid360s的ros2驱动文件;mid360s_ws为fastlio2的建图文件；**  
+**fastlio_localization为open3d定位文件；luckrobot_ws为底盘驱动、键盘控制、部分tf链条与Nav2导航文件等** 
 ## 3.🤔🤔🤔算法核心
 ### 3.1 建图算法：FAST-LIO 2.0 (2021-07-05 Update)
 <div align="left">
