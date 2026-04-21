@@ -17,3 +17,6 @@ __pycache__/
 # 点云地图（单独备份）
 *.pcd
 *.ply
+
+#项目无用文件
+orbbecsdk_ws/
