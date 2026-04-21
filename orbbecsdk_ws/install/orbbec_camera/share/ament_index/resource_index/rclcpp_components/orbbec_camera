@@ -1,4 +1,0 @@
-orbbec_camera::OBCameraNodeDriver;lib/liborbbec_camera.so
-orbbec_camera::FrameLatencyNode;lib/libframe_latency.so
-orbbec_camera::tools::StartBenchmark;lib/libstart_benchmark.so
-orbbec_camera::tools::MultiCameraSubscriber;lib/libmulti_save_rgbir.so

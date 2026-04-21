@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nvidia/luckrobot/mid360s_ws/build/fast_lio_map/rosidl_generator_py/fast_lio_map/fast_lio_map_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" "TARGETS" "fast_lio_map__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/fast_lio_map")

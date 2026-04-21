@@ -1,3 +1,0 @@
-[console_scripts]
-keyboard_teleop = keyboard_control.keyboard_teleop:main
-

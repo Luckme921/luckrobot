@@ -1,9 +1,0 @@
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/uninstall.dir
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/robot_display_uninstall.dir
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/test.dir
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/edit_cache.dir
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/rebuild_cache.dir
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/list_install_components.dir
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/install.dir
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/install/local.dir
-/home/nvidia/luckrobot/luckrobot_ws/build/robot_display/CMakeFiles/install/strip.dir
