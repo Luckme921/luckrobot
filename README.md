@@ -8,15 +8,15 @@
 - 定位算法：FAST_LIO_LOCALIZATION_HUMANOID：[https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID/tree/humble#](https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID/tree/humble#)
 - 3D-2D图压缩用于Nav2:[https://github.com/LihanChen2004/pcd2pgm](https://github.com/LihanChen2004/pcd2pgm)
 - 机械臂：双臂lerobot：[https://github.com/lerobot/lerobot](https://github.com/lerobot/lerobot)  
-### 2.1 ⚠️若您想部署该项目的导航部分，请先确保源项目网址分步部署成功
-**livox_ws为mid360s的ros2驱动文件;**  
-**mid360s_ws为fastlio2的建图文件；**  
-**fastlio_localization为open3d定位文件；**  
-**luckrobot_ws为底盘驱动、部分tf链条与Nav2导航文件等**   
+### 2.1 若您想部署该项目的导航部分，请先确保源项目网址分步部署成功⚠️⚠️⚠️
+- **livox_ws为mid360s的ros2驱动文件;**  
+- **mid360s_ws为fastlio2的建图文件；**  
+- **fastlio_localization为open3d定位文件；**  
+- **luckrobot_ws为底盘驱动、部分tf链条与Nav2导航文件等**   
 
 ### 2.2 该代码仓库相对于原克隆网址做了代码修改，以下是本人部署步骤，可作为您的参考：
 - 首先确定您的mid360s的sdk安装没问题，在ros2的rviz2下能正常可视化到3d点云，注意MID360s_config.json配置的旋转平移矩阵。对应该项目的livox_ws文件夹
-- 确定您的mid360s部署fast_lio2建图没问题，注意config下的mid360.yaml的配置，理解每一项；该launch启动文件包名称我做了修改：ros2 launch fast_lio_map mapping.launch.py，否则会和fastlio_localization下的fastlio有一定的冲突。对应该项目的mid360s_ws文件夹
+- 确定您的mid360s部署fast_lio2建图没问题，注意config下的mid360.yaml的配置，理解每一项；该launch启动文件包的名称我做了修改：ros2 launch fast_lio_map mapping.launch.py，否则会和fastlio_localization下的fastlio有一定的命名冲突。对应该项目的mid360s_ws文件夹
 - 紧接着部署FAST_LIO_LOCALIZATION_HUMANOID，open3d启动会消耗较大的cpu资源，除部署阶段不建议开启rviz。对应该项目的fastlio_localization文件夹：其子文件夹FAST_LIO与建图文件基本保持一致，注意对比config下的配置文件区别；open3d_loc下的global_localization.cpp文件我也做了优化修改，您可自行对比，重点注意launch下的两个文件的配置内容，我也做了部分修改
 - 在部署上述项目阶段，注意tf链条与各项数据输出是否正确。然后我们将3d点云图体素滤波等，可参考luckrobot_ws/src/map_clear文件。后部署3D-2D图压缩项目，对应文件luckrobot_ws/src/pcd2pgm，注意理解config下的配置文件各项（我的仓库该config中有解释），注意您的压缩高度范围，需要和后续的导航点云高度提取范围保持一致
 - 在导航之前运行sudo apt install ros-${ROS_DISTRO}-pointcloud-to-laserscan，这个功能包可以将你的所选高度范围的3d点云投影压缩为2d，另外还需要做一些重映射，防止话题冲突，这部分代码都在open3d的open3d_loc_g1.launch.py下有介绍
