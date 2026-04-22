@@ -4,12 +4,11 @@
 ## 2.使用说明🌟🌟🌟
 可结合本人blibli此系列视频进行操作(未更新)，视频链接：[jetson nano部署fastlio2建图加定位，A*规划导航](https://www.bilibili.com/video/BV1tbQGBkE4F?vd_source=956043e91d9fa045c1e7c746411b5102)  
 借鉴项目(现在已完成全部环境部署运行，导航完成，遥操训练正在制作，零件等全由本人DIY )：  
-### 2.1 ⚠️ 注意：如果您想在您的设备上部署该导航项目，首先请您请确保以下项目克隆部署成功：
 - 建图算法：fast_lio2_ros2：[https://github.com/Ericsii/FAST_LIO_ROS2?tab=readme-ov-file](https://github.com/Ericsii/FAST_LIO_ROS2?tab=readme-ov-file)
 - 定位算法：FAST_LIO_LOCALIZATION_HUMANOID：[https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID/tree/humble#](https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID/tree/humble#)
 - 3D-2D图压缩用于Nav2:[https://github.com/LihanChen2004/pcd2pgm](https://github.com/LihanChen2004/pcd2pgm)
 - 机械臂：双臂lerobot：[https://github.com/lerobot/lerobot](https://github.com/lerobot/lerobot)  
-
+### 2.1 ⚠️若您想部署该项目的导航部分，请先确保源项目网址分步部署成功
 **livox_ws为mid360s的ros2驱动文件;**  
 **mid360s_ws为fastlio2的建图文件；**  
 **fastlio_localization为open3d定位文件；**  
