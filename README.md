@@ -22,13 +22,14 @@
 - 在导航之前运行sudo apt install ros-${ROS_DISTRO}-pointcloud-to-laserscan，这个功能包可以将你的所选高度范围的3d点云投影压缩为2d，另外还需要做一些重映射，防止话题冲突，这部分代码都在open3d的open3d_loc_g1.launch.py下有介绍
 - luckrobot_ws下为本人开发的cpp包。keyboard_control为键盘控制，发布cmdvel控制小车移动建图；robot_display主要为机器人的静态tf发布；wheel_controller为控制小车底盘、丝杠、语音指令与动态tf发布节点；nav2三个文件夹分别为控制器、规划器和nav2的配置三个文件夹，可结合鱼香ros的自定义规划控制算法进行理解这几个包；luckrobot_launch1为一键启动该机器人导航定位等功能的包
 ### 2.3 Node Graph与TF tree
-**以下为运行：ros2 launch luckrobot_launch1 luckrobot_bringup.launch.py 生成的tf链条与节点关系图**
+**以下为运行：ros2 launch luckrobot_launch1 luckrobot_bringup.launch.py 生成的节点关系图与tf链条图**
 <div align="center">
 <img src="image/rosgraph.png" width=90% />
 </div>
 <div align="center">
 <img src="image/tftree.png" width=90% />
 </div>
+
 ## 3.算法核心🤔🤔🤔
 ### 3.1 建图算法：FAST-LIO 2.0 (2021-07-05 Update)
 <div align="left">
