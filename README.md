@@ -30,6 +30,8 @@
 <img src="image/tftree.png" width=90% />
 </div>
 
+**tftree中：body和imu_link重合，都为雷达imu坐标系**
+
 ## 3.算法核心🤔🤔🤔
 ### 3.1 建图算法：FAST-LIO 2.0 (2021-07-05 Update)
 <div align="left">
