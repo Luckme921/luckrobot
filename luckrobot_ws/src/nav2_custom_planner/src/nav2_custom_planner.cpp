@@ -181,3 +181,4 @@ nav_msgs::msg::Path CustomPlanner::createPlan(const geometry_msgs::msg::PoseStam
 
 #include "pluginlib/class_list_macros.hpp"
 PLUGINLIB_EXPORT_CLASS(nav2_custom_planner::CustomPlanner, nav2_core::GlobalPlanner)
+

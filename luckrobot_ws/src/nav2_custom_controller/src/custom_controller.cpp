@@ -21,7 +21,7 @@ void CustomController::configure(
   node_->get_parameter(plugin_name_ + ".max_linear_speed", max_linear_speed_);
   
   nav2_util::declare_parameter_if_not_declared(
-      node_, plugin_name_ + ".max_angular_speed", rclcpp::ParameterValue(0.7)); 
+      node_, plugin_name_ + ".max_angular_speed", rclcpp::ParameterValue(0.5)); 
   node_->get_parameter(plugin_name_ + ".max_angular_speed", max_angular_speed_);
 
   nav2_util::declare_parameter_if_not_declared(
@@ -46,13 +46,11 @@ geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
 
   auto target_pose = getNearestTargetPose(pose_in_globalframe);
   
-  // 获取真正的终点
   auto final_goal = global_plan_.poses.back();
   double dist_to_final = std::hypot(final_goal.pose.position.x - pose_in_globalframe.pose.position.x, 
                                     final_goal.pose.position.y - pose_in_globalframe.pose.position.y);
 
-  // 判定是否进入终点领域 (阈值必须小于 GoalChecker)
-  bool at_xy_goal = (dist_to_final <= 0.12);
+  bool at_xy_goal = (dist_to_final <= 0.04);
 
   double target_angle;
   if (at_xy_goal) {
@@ -64,9 +62,9 @@ geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
 
   double angle_diff = calculateAngleDifference(pose_in_globalframe, target_angle);
 
-  // 【保留原有的严苛控制逻辑】
+  // [修改] 将停止阈值从 0.05 放宽到 0.06 (约3.4度)，防止在极小误差内反复横跳
   double start_turn_thresh = 0.15; 
-  double stop_turn_thresh = 0.05;  
+  double stop_turn_thresh = 0.06;  
 
   if (at_xy_goal) {
       is_rotating_ = true; 
@@ -85,16 +83,14 @@ geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
   if (is_rotating_) {
     cmd_vel.twist.linear.x = 0.0; 
     
-    // 【末点优化逻辑】：如果是在终点领域进行最后的对准
     if (at_xy_goal) {
         if (fabs(angle_diff) <= stop_turn_thresh) {
-            // 对准后绝对刹死，等待 GoalChecker 判定
             cmd_vel.twist.angular.z = 0.0;
         } else {
-            // 终点对准专用的激进参数：提高最低转速，缩短刹车距离
-            double min_angular_speed_final = 0.20; // 较快的基础速度，拒绝磨叽
-            double slowdown_range_final = 0.25;    // 离目标很近才开始减速
-            double current_max_speed = std::min(max_angular_speed_, 0.70); 
+            // [修改] 终点对准逻辑：降低最低转速，拉长减速带
+            double min_angular_speed_final = 0.08; 
+            double slowdown_range_final = 0.40;    
+            double current_max_speed = std::min(max_angular_speed_, 0.50); 
 
             double current_abs_error = fabs(angle_diff);
             double target_angular_speed = current_max_speed;
@@ -107,11 +103,11 @@ geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
             cmd_vel.twist.angular.z = (angle_diff > 0.0) ? -target_angular_speed : target_angular_speed;
         }
     } 
-    // 【行进中的普通旋转】：保持原有缓慢减速逻辑，防止行进间车身晃动
     else {
-        double min_angular_speed = 0.08; 
-        double slowdown_range = 0.60;   
-        double current_max_speed = std::min(max_angular_speed_, 0.70); 
+        // [修改] 行进中旋转逻辑：降低滑行转速，极大地拉长减速带
+        double min_angular_speed = 0.05; 
+        double slowdown_range = 0.80;   
+        double current_max_speed = std::min(max_angular_speed_, 0.50); 
 
         double current_abs_error = fabs(angle_diff);
         double target_angular_speed = current_max_speed;
@@ -125,11 +121,11 @@ geometry_msgs::msg::TwistStamped CustomController::computeVelocityCommands(
     }
     
   } else {
-    // 【保留原有的纯粹直行逻辑】
     cmd_vel.twist.linear.x = max_linear_speed_;
     cmd_vel.twist.angular.z = 0.0;
   }
 
+  // 调试信息可以保留，方便观察
   RCLCPP_INFO(node_->get_logger(), "状态:%s 发送速度(%.2f, %.2f) 角度偏差:%.2f",
               (at_xy_goal ? "终点对准" : (is_rotating_ ? "旋转" : "直行")), 
               cmd_vel.twist.linear.x, cmd_vel.twist.angular.z, angle_diff);
@@ -167,9 +163,8 @@ geometry_msgs::msg::PoseStamped CustomController::getNearestTargetPose(
 
 double CustomController::calculateAngleDifference(
     const geometry_msgs::msg::PoseStamped &current_pose,
-    const geometry_msgs::msg::PoseStamped &target_pose) { // <--- 关键恢复点
+    const geometry_msgs::msg::PoseStamped &target_pose) { 
   float current_robot_yaw = tf2::getYaw(current_pose.pose.orientation);
-  // 恢复回最稳妥的 atan2 计算，确保与你的旧版完全一致
   float target_angle = std::atan2(target_pose.pose.position.y - current_pose.pose.position.y,
                                   target_pose.pose.position.x - current_pose.pose.position.x);
   double angle_diff = target_angle - current_robot_yaw;
@@ -178,7 +173,6 @@ double CustomController::calculateAngleDifference(
   return angle_diff;
 }
 
-// 重载一个只接收目标角度的版本，专供终点对准使用
 double CustomController::calculateAngleDifference(
     const geometry_msgs::msg::PoseStamped &current_pose,
     double target_angle) {

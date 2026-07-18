@@ -19,7 +19,7 @@ def generate_launch_description():
     
     # 读取你通过 pcd2pgm 保存的干净的 2D 栅格地图
     map_yaml_path = launch.substitutions.LaunchConfiguration(
-        'map', default=os.path.join(nav2_luckrobot_dir, 'maps', 'test_map.yaml'))
+        'map', default=os.path.join(nav2_luckrobot_dir, 'maps', 'home.yaml'))
     
     nav2_param_path = launch.substitutions.LaunchConfiguration(
         'params_file', default=os.path.join(nav2_luckrobot_dir, 'config', 'nav2_params.yaml'))

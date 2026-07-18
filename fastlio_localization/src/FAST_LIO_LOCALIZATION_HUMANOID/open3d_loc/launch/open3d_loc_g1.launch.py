@@ -24,7 +24,7 @@ def generate_launch_description():
     ])
 
     # 地图文件路径 - 使用绝对路径指向源码目录中的地图文件
-    map_file = '/home/nvidia/luckrobot/mid360s_ws/map/test.pcd'
+    map_file = '/home/nvidia/luckrobot/mid360s_ws/map/home.pcd'
 
     # 静态TF发布节点 - camera_init to odom
     static_tf_camera_init2odom = Node(
@@ -87,15 +87,15 @@ def generate_launch_description():
                 # 'use_sim_time': LaunchConfiguration('use_sim_time')
                 'path_map': map_file,
                 'pcd_queue_maxsize': 10,
-                'voxelsize_coarse': 0.02,# 增大粗配准体素大小，大幅降低初始匹配时的 CPU 计算量
-                'voxelsize_fine': 0.3,# 增大精配准体素大小，0.3对室内全局定位
+                'voxelsize_coarse': 0.01,# 增大粗配准体素大小，大幅降低初始匹配时的 CPU 计算量
+                'voxelsize_fine': 0.2,# 增大精配准体素大小，0.3对室内全局定位
                 'threshold_fitness': 0.5,
                 'threshold_fitness_init': 0.5,
                 'loc_frequence': 2.0,# 将定位频率从2.5Hz降至2.0Hz，降低 CPU 调度频率
                 'save_scan': False,
                 'hidden_removal': False,
                 'maxpoints_source': 80000,
-                'maxpoints_target': 300000,# 限制目标点云(地图)参与配准的最大点数，极大降低 CPU 匹配负担
+                'maxpoints_target': 400000,# 限制目标点云(地图)参与配准的最大点数，极大降低 CPU 匹配负担
                 'filter_odom2map': False,
                 'kalman_processVar2': 0.001,
                 'kalman_estimatedMeasVar2': 0.02,
@@ -139,8 +139,8 @@ def generate_launch_description():
         parameters=[{
             'target_frame': 'body', # 统一投影到地面参考系 (如果TF树报错找不到它，可暂时改为 'body' 或 'base_link' 并调整高度)
             'transform_tolerance': 0.01,
-            'min_height': -0.4,                # 最低高度：-0.4米
-            'max_height': 0.2,               # 最高高度：0.2米
+            'min_height': -0.6,                # 最低高度：-0.6米
+            'max_height': 0.3,               # 最高高度：0.3米
             'angle_min': -3.14159,            # -180度
             'angle_max': 3.14159,             # 180度
             'angle_increment': 0.0087,        # 角度分辨率 (约0.5度)

@@ -25,13 +25,13 @@ class NavManagerNode : public rclcpp::Node {
 public:
     NavManagerNode() : Node("nav_manager_node") {
         
-        target_locations_["厨房桌子"]   = { 0.0,  0.0,  0., -300.0};
-        target_locations_["客厅茶几"]   = { 2.0,  2.0,  0.00, -450.0};
-        target_locations_["充电桩"]     = { 3.0,  3.0,  3.00,    0.0};
-        target_locations_["一号货架"]   = { 5.0, -2.0, -1.57, -400.0};
-        target_locations_["二号货架"]   = { 5.0, -3.0, -1.57, -462.0};
-        target_locations_["废料回收站"] = {-4.0, -4.0,  3.14, -100.0};
-        target_locations_["检验台"]     = { 1.5,  4.2,  1.57, -200.0};
+        target_locations_["原点"]   = { 0.0,  0.0,  0.0, -462.0};
+        target_locations_["餐桌"]   = { 0.875, 1.436, -2.546, 0.0};
+        target_locations_["桌子"]   = { 3.116, 2.368, -1.550, -200.0};
+        target_locations_["电视"]   = { 3.349, 3.031,  1.593, -250.0};
+        target_locations_["冰箱"]       = { 2.105, 4.050,  2.180, -100.0};
+        target_locations_["水池"]   = { 3.294, 4.550,  1.167,  0.0};
+        target_locations_["沙发"] = { 2.257, 1.117, -1.100, -300.0};
         target_locations_["包装区"]     = { 3.2, -1.5,  0.00, -350.0};
         target_locations_["工位A"]      = { 6.1,  0.5,  1.57, -150.0};
         target_locations_["工位B"]      = { 6.1,  2.5,  1.57, -150.0};
